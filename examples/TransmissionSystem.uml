@@ -1,0 +1,1805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ConstraintBlocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks" xmlns:DeprecatedElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_EHqYsMQVEeye8sWuuOEGkw" name="TransmissionSystem">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_EKXucMQVEeye8sWuuOEGkw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_EKgRUMQVEeye8sWuuOEGkw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_VaLvwMQdEeye8sWuuOEGkw" name="constraints"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_n7utQO17Eeye1tc9WkZ9XQ" name="requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_t-ncwO17Eeye1tc9WkZ9XQ" name="REQ-1 TS Responsability">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_0v3uIO17Eeye1tc9WkZ9XQ" name="REQ-1.1 Vehicle Simulator"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_-lXzoO17Eeye1tc9WkZ9XQ" name="REQ-1.2 Engine/Wheel Speed"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_ITgs4O18Eeye1tc9WkZ9XQ" name="REQ-1.3 Engine"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_PAOcgO18Eeye1tc9WkZ9XQ" name="REQ-1.4 Gearbox"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_4eyacO18Eeye1tc9WkZ9XQ" name="" client="_lqLr8O18Eeye1tc9WkZ9XQ" supplier="_0v3uIO17Eeye1tc9WkZ9XQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_5oqMkO18Eeye1tc9WkZ9XQ" name="" client="_v9vmcO18Eeye1tc9WkZ9XQ" supplier="_0v3uIO17Eeye1tc9WkZ9XQ"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7dZgoO18Eeye1tc9WkZ9XQ" name="REQ-1.3.1 Engine Torque"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Gv2FQO19Eeye1tc9WkZ9XQ" name="" client="_7dZgoO18Eeye1tc9WkZ9XQ" supplier="_ITgs4O18Eeye1tc9WkZ9XQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_SnawMO19Eeye1tc9WkZ9XQ" client="_HznPYO19Eeye1tc9WkZ9XQ" supplier="_7dZgoO18Eeye1tc9WkZ9XQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_d96HUO19Eeye1tc9WkZ9XQ" name="" client="_VPwEYO19Eeye1tc9WkZ9XQ" supplier="_7dZgoO18Eeye1tc9WkZ9XQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_3dxz8O19Eeye1tc9WkZ9XQ" name="" client="_jgOgYO19Eeye1tc9WkZ9XQ" supplier="_PAOcgO18Eeye1tc9WkZ9XQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_C6OCEO1-Eeye1tc9WkZ9XQ" name="" client="_4S8hYO19Eeye1tc9WkZ9XQ" supplier="_PAOcgO18Eeye1tc9WkZ9XQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_O5NjoO1-Eeye1tc9WkZ9XQ" name="" client="_GKF3YO1-Eeye1tc9WkZ9XQ" supplier="_PAOcgO18Eeye1tc9WkZ9XQ"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_m0SDYO2DEeyifeL_RvG16w" name="Leaf Requirements">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_GKF3YO1-Eeye1tc9WkZ9XQ" name="REQ-1.4.3 Transmission Torque"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_4S8hYO19Eeye1tc9WkZ9XQ" name="REQ-1.4.2 Gearbox Drive Mode"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_jgOgYO19Eeye1tc9WkZ9XQ" name="REQ-1.4.1 Gearshift Position"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_VPwEYO19Eeye1tc9WkZ9XQ" name="REQ-1.3.1.2 Engine Speed"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_HznPYO19Eeye1tc9WkZ9XQ" name="REQ-1.3.1.1 Pedal Position"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_lqLr8O18Eeye1tc9WkZ9XQ" name="REQ-1.1.1 Environment Parameters"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_v9vmcO18Eeye1tc9WkZ9XQ" name="REQ-1.1.2 Wheel Parameters"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HFlE4MQhEeye8sWuuOEGkw" name="transmissionsystem">
+      <packagedElement xmi:type="uml:Class" xmi:id="_hmhRwOEREeyXPMXG3lFeMw" name="System">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_WKF1QOESEeyXPMXG3lFeMw" name="env_cr" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ZCSxcOESEeyXPMXG3lFeMw" name="env_slope" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_bq_SAOESEeyXPMXG3lFeMw" name="env_ro" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ewu68OESEeyXPMXG3lFeMw" name="env_cd" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_g-tOYOESEeyXPMXG3lFeMw" name="fa" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_jEsDcOESEeyXPMXG3lFeMw" name="dT" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_llM4YOESEeyXPMXG3lFeMw" name="pedalPosition" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_nokeUOESEeyXPMXG3lFeMw" name="currentGear" type="_CvGFYMnKEeyPP-Oq7gEDJg" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_qIuG4OESEeyXPMXG3lFeMw" name="vehicleSpeed" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_sM7aUOESEeyXPMXG3lFeMw" name="driveGear" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_gfWZAOH7Eeyz1PUmZ5CQVw" name="fa">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_gfbRgOH7Eeyz1PUmZ5CQVw" role="_g-tOYOESEeyXPMXG3lFeMw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_gfb4kOH7Eeyz1PUmZ5CQVw" role="_ALG3UOATEey1V-BUgsLF0Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_k3qdEOH7Eeyz1PUmZ5CQVw" name="env_cd">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_k3uHcOH7Eeyz1PUmZ5CQVw" role="_ewu68OESEeyXPMXG3lFeMw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_k3uHceH7Eeyz1PUmZ5CQVw" role="_cI2KAOASEey1V-BUgsLF0Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_po27MOH7Eeyz1PUmZ5CQVw" name="env_ro">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_po5XcOH7Eeyz1PUmZ5CQVw" role="_bq_SAOESEeyXPMXG3lFeMw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_po5XceH7Eeyz1PUmZ5CQVw" role="_WckjsOASEey1V-BUgsLF0Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_sOgHwOH7Eeyz1PUmZ5CQVw" name="env_slope">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_sOikAOH7Eeyz1PUmZ5CQVw" role="_ZCSxcOESEeyXPMXG3lFeMw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_sOikAeH7Eeyz1PUmZ5CQVw" role="_krnLAN-_EeyQAoCiBoOCcw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_vcuXQOH7Eeyz1PUmZ5CQVw" name="env_cr">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_vcwzgOH7Eeyz1PUmZ5CQVw" role="_WKF1QOESEeyXPMXG3lFeMw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_vcwzgeH7Eeyz1PUmZ5CQVw" role="_lBF9sN-9EeyQAoCiBoOCcw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_xcfPkOH7Eeyz1PUmZ5CQVw" name="dT">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_xchr0OH7Eeyz1PUmZ5CQVw" role="_jEsDcOESEeyXPMXG3lFeMw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_xchr0eH7Eeyz1PUmZ5CQVw" role="_JzidsN1AEeyB6oChl77ysw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_zvqMEOH7Eeyz1PUmZ5CQVw" name="vehicleSpeed">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_zvsBQOH7Eeyz1PUmZ5CQVw" role="_UGL-8N_BEeyQAoCiBoOCcw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_zvsoUOH7Eeyz1PUmZ5CQVw" role="_qIuG4OESEeyXPMXG3lFeMw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_1dow0OH7Eeyz1PUmZ5CQVw" name="gearboxTorque">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_1drNEOH7Eeyz1PUmZ5CQVw" role="_SOWywOECEeyXPMXG3lFeMw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_1drNEeH7Eeyz1PUmZ5CQVw" role="_4bG2YOBtEeyqBLJ1Eszaaw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_CT9jAOH8Eeyz1PUmZ5CQVw" name="driveGear">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_CT_YMOH8Eeyz1PUmZ5CQVw" role="_gHBVQOEOEeyXPMXG3lFeMw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_CT__QOH8Eeyz1PUmZ5CQVw" role="_sM7aUOESEeyXPMXG3lFeMw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_IiBAsOH8Eeyz1PUmZ5CQVw" name="pedalPosition">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_IiDc8OH8Eeyz1PUmZ5CQVw" role="_llM4YOESEeyXPMXG3lFeMw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_IiDc8eH8Eeyz1PUmZ5CQVw" role="_CB4HoOEDEeyXPMXG3lFeMw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_JqQbIOH8Eeyz1PUmZ5CQVw" name="currentGear">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_JqS3YOH8Eeyz1PUmZ5CQVw" role="_nokeUOESEeyXPMXG3lFeMw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_JqS3YeH8Eeyz1PUmZ5CQVw" role="_IPReAOEDEeyXPMXG3lFeMw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_boDdcOH8Eeyz1PUmZ5CQVw" name="wheelSpeed - transmission system">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_boHu4OH8Eeyz1PUmZ5CQVw" role="_xi-HcOK-Eey2GPf_NkcRwg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_boHu4eH8Eeyz1PUmZ5CQVw" role="_MwuFYOECEeyXPMXG3lFeMw"/>
+        </ownedConnector>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_S-p3wNyjEeyZdrCSZvBi5g" name="Vehicle Simulator">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1DvM0N-7EeyBKe45X3175g" name="massFm" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FVqjMN-8EeyBKe45X3175g" name="massDriver">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Kr2kwN-8EeyBKe45X3175g" name="massCurb">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MPByQN-9EeyQAoCiBoOCcw" name="env_g" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_X7-4oOBtEeyz97SW6jXbYw" name="vehicle_speed_param" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            <defaultValue xmi:type="uml:LiteralReal" xmi:id="_dnMvAOBtEeyz97SW6jXbYw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_lBF9sN-9EeyQAoCiBoOCcw" name="env_cr" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_JzidsN1AEeyB6oChl77ysw" name="dT" visibility="public" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_krnLAN-_EeyQAoCiBoOCcw" name="env_slope" visibility="public" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_UGL-8N_BEeyQAoCiBoOCcw" name="vehicleSpeed" visibility="public" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_WckjsOASEey1V-BUgsLF0Q" name="env_ro" visibility="public" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_cI2KAOASEey1V-BUgsLF0Q" name="env_cd" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ALG3UOATEey1V-BUgsLF0Q" name="fa" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_4bG2YOBtEeyqBLJ1Eszaaw" name="gearboxTorque" visibility="public" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_xi-HcOK-Eey2GPf_NkcRwg" name="wheelSpeed" visibility="public" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_sPimkN06EeyZdrCSZvBi5g" name="miua">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_sPkbwN06EeyZdrCSZvBi5g" role="_eWTtgNyYEeyZdrCSZvBi5g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_sPkbwd06EeyZdrCSZvBi5g" role="_M-76kNfNEeyKDukxCNI3pQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_ztBr0N06EeyZdrCSZvBi5g" name="load">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_ztDhAN06EeyZdrCSZvBi5g" role="_Q1BbUNfNEeyKDukxCNI3pQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_ztDhAd06EeyZdrCSZvBi5g" role="_qgNekNyYEeyZdrCSZvBi5g"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_51A9wN06EeyZdrCSZvBi5g" name="rwd">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_51Cy8N06EeyZdrCSZvBi5g" role="_Z5SIkNyYEeyZdrCSZvBi5g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_51Cy8d06EeyZdrCSZvBi5g" role="_fjoZQNfXEeySbq2h8TnUHA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="__zni0N09EeyZdrCSZvBi5g" name="maxFrictionForce">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="__zpYAN09EeyZdrCSZvBi5g" role="_Fl26kNfVEeyKDukxCNI3pQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="__zpYAd09EeyZdrCSZvBi5g" role="_rGZ44NfXEeySbq2h8TnUHA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_zimLMN0_EeyB6oChl77ysw" name="gbx torque">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_zioAYN0_EeyB6oChl77ysw" role="_TkCFoNfVEeyKDukxCNI3pQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_zioncN0_EeyB6oChl77ysw" role="_j8q2ENfXEeySbq2h8TnUHA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_O0hrUN1AEeyB6oChl77ysw" name="dT">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_O0jggN1AEeyB6oChl77ysw" role="_KoWcsNfYEeySbq2h8TnUHA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_O0kHkN1AEeyB6oChl77ysw" role="_JzidsN1AEeyB6oChl77ysw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_9C0jQN-7EeyBKe45X3175g" name="massFm">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_9C2YcN-7EeyBKe45X3175g" role="_1DvM0N-7EeyBKe45X3175g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_9C2_gN-7EeyBKe45X3175g" role="_yMIzQNcYEeyO7PQk0pa-rA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_JPZ04N-8EeyBKe45X3175g" name="massDriver">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_JPcRIN-8EeyBKe45X3175g" role="_FVqjMN-8EeyBKe45X3175g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_JPcRId-8EeyBKe45X3175g" role="_1XqUENcYEeyO7PQk0pa-rA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_PGDfMN-8EeyBKe45X3175g" name="massCurb">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_PGFUYN-8EeyBKe45X3175g" role="_Kr2kwN-8EeyBKe45X3175g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_PGFUYd-8EeyBKe45X3175g" role="_6o8AcNcYEeyO7PQk0pa-rA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_FACcAN-9EeyQAoCiBoOCcw" name="totalMass - load force">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_FAK-4N-9EeyQAoCiBoOCcw" role="_4KxOcNfUEeyKDukxCNI3pQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_FAK-4d-9EeyQAoCiBoOCcw" role="_EjTpwNcXEeyO7PQk0pa-rA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_RfcjAN-9EeyQAoCiBoOCcw" name="load force - g">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_RffmUN-9EeyQAoCiBoOCcw" role="_MPByQN-9EeyQAoCiBoOCcw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_RfgNYN-9EeyQAoCiBoOCcw" role="_IC-1oNcXEeyO7PQk0pa-rA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_xXy0oN-9EeyQAoCiBoOCcw" name="env_cr - load force">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_xX138N-9EeyQAoCiBoOCcw" role="_lBF9sN-9EeyQAoCiBoOCcw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_xX138d-9EeyQAoCiBoOCcw" role="_P7SOoNcXEeyO7PQk0pa-rA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_W8aQEN-_EeyQAoCiBoOCcw" name="total mass - slope force">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_W8cFQN-_EeyQAoCiBoOCcw" role="_4KxOcNfUEeyKDukxCNI3pQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_W8cFQd-_EeyQAoCiBoOCcw" role="_sigrQN--EeyQAoCiBoOCcw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_iBrUUN-_EeyQAoCiBoOCcw" name="env_g - slope force">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_iBtJgN-_EeyQAoCiBoOCcw" role="_MPByQN-9EeyQAoCiBoOCcw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_iBtJgd-_EeyQAoCiBoOCcw" role="_uKCCsN--EeyQAoCiBoOCcw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_uh7I0N-_EeyQAoCiBoOCcw" name="env_slope">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_uh8-AN-_EeyQAoCiBoOCcw" role="_krnLAN-_EeyQAoCiBoOCcw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_uh9lEN-_EeyQAoCiBoOCcw" role="_vhwDkN--EeyQAoCiBoOCcw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_Jx_nwN_AEeyQAoCiBoOCcw" name="env_g - maxFrictionForce">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_JyBc8N_AEeyQAoCiBoOCcw" role="_MPByQN-9EeyQAoCiBoOCcw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_JyBc8d_AEeyQAoCiBoOCcw" role="_G2168NfNEeyKDukxCNI3pQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_R_SZUN_AEeyQAoCiBoOCcw" name="totalMass - maxFrictionForce">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_R_UOgN_AEeyQAoCiBoOCcw" role="_FnCf8NfNEeyKDukxCNI3pQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_R_UOgd_AEeyQAoCiBoOCcw" role="_4KxOcNfUEeyKDukxCNI3pQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_7QKgkN_AEeyQAoCiBoOCcw" name="totalMass">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_7QMVwN_AEeyQAoCiBoOCcw" role="_4KxOcNfUEeyKDukxCNI3pQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_7QM80N_AEeyQAoCiBoOCcw" role="_misdINfXEeySbq2h8TnUHA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_u5kh4N_BEeyQAoCiBoOCcw" name="vehicle_speed">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_u5mXEN_BEeyQAoCiBoOCcw" role="_UGL-8N_BEeyQAoCiBoOCcw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_u5mXEd_BEeyQAoCiBoOCcw" role="_X7-4oOBtEeyz97SW6jXbYw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_1CYPYOASEey1V-BUgsLF0Q" name="env_ro">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_1CbSsOASEey1V-BUgsLF0Q" role="_WckjsOASEey1V-BUgsLF0Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_1CbSseASEey1V-BUgsLF0Q" role="_hd1fYNcXEeyO7PQk0pa-rA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_6ZjvcOASEey1V-BUgsLF0Q" name="env_cd">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_6ZmLsOASEey1V-BUgsLF0Q" role="_cI2KAOASEey1V-BUgsLF0Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_6ZmLseASEey1V-BUgsLF0Q" role="_mTGlMNcXEeyO7PQk0pa-rA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_igDHMOATEey1V-BUgsLF0Q" name="force balance">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_igE8YOATEey1V-BUgsLF0Q" role="_-DmqENfUEeyKDukxCNI3pQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_igFjcOATEey1V-BUgsLF0Q" role="_6xVgsNfXEeySbq2h8TnUHA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_D2mcMOAUEey1V-BUgsLF0Q" name="vehicle_speed - drag force">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_D2o4cOAUEey1V-BUgsLF0Q" role="_X7-4oOBtEeyz97SW6jXbYw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_D2o4ceAUEey1V-BUgsLF0Q" role="_v2QWcNcXEeyO7PQk0pa-rA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_aOwJ8OAUEey1V-BUgsLF0Q" name="drag force">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_aOzNQOAUEey1V-BUgsLF0Q" role="_UG0fENfUEeyKDukxCNI3pQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_aOzNQeAUEey1V-BUgsLF0Q" role="_5t_xMNfTEeyKDukxCNI3pQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_c93bkOAUEey1V-BUgsLF0Q" name="load force">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_c95QwOAUEey1V-BUgsLF0Q" role="_a-kaANfUEeyKDukxCNI3pQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_c95QweAUEey1V-BUgsLF0Q" role="_zZGEoNfTEeyKDukxCNI3pQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_gb0wMOAUEey1V-BUgsLF0Q" name="slope force">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_gb3McOAUEey1V-BUgsLF0Q" role="_RMop0N-_EeyQAoCiBoOCcw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_gb3MceAUEey1V-BUgsLF0Q" role="_3RSeMNfTEeyKDukxCNI3pQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_ri9csOAUEey1V-BUgsLF0Q" name="frontal area">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_ri_R4OAUEey1V-BUgsLF0Q" role="_ALG3UOATEey1V-BUgsLF0Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_ri_48OAUEey1V-BUgsLF0Q" role="_qKftgNcXEeyO7PQk0pa-rA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_etu5QOBtEeyz97SW6jXbYw" name="vehicle_speed_in">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_et0_4OBtEeyz97SW6jXbYw" role="_X7-4oOBtEeyz97SW6jXbYw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_et1m8OBtEeyz97SW6jXbYw" role="_UbiioOBrEeycv_ul6zyjtw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_IUAowOBuEeyqBLJ1Eszaaw" name="gearbox_torque">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_IUHWcOBuEeyqBLJ1Eszaaw" role="_4bG2YOBtEeyqBLJ1Eszaaw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_IUHWceBuEeyqBLJ1Eszaaw" role="_j8q2ENfXEeySbq2h8TnUHA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_Th06IOBwEeyM45x-2cJqcQ" name="vehicleSpeed out">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_TiCVgOBwEeyM45x-2cJqcQ" role="_vmk4cNfXEeySbq2h8TnUHA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_TiC8kOBwEeyM45x-2cJqcQ" role="_X7-4oOBtEeyz97SW6jXbYw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_dCcF0OLCEey2GPf_NkcRwg" name="wheel speed">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_dCd7AOLCEey2GPf_NkcRwg" role="_cMFe4OK9Eey2GPf_NkcRwg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_dCd7AeLCEey2GPf_NkcRwg" role="_xi-HcOK-Eey2GPf_NkcRwg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_tDOo4OLCEey2GPf_NkcRwg" name="wheelSpeed - wheel rwd">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_tDQeEOLCEey2GPf_NkcRwg" role="_vmk4cNfXEeySbq2h8TnUHA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_tDQeEeLCEey2GPf_NkcRwg" role="_X40S4OK9Eey2GPf_NkcRwg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_2CBv4OLCEey2GPf_NkcRwg" name="wheel_rwd">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_2CC-AOLCEey2GPf_NkcRwg" role="_Z5SIkNyYEeyZdrCSZvBi5g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_2CC-AeLCEey2GPf_NkcRwg" role="_nKhJEOLCEey2GPf_NkcRwg"/>
+          </ownedConnector>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_spj7gNcYEeyO7PQk0pa-rA" name="Vehicle Total Mass">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_CwevUNcZEeyO7PQk0pa-rA" name="Total Mass">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_CwevUdcZEeyO7PQk0pa-rA">
+                <language>C</language>
+                <body>totalMass = massCurb * fm + massDriver</body>
+              </specification>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_yMIzQNcYEeyO7PQk0pa-rA" name="mass factor ">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_1XqUENcYEeyO7PQk0pa-rA" name="driver mass">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_6o8AcNcYEeyO7PQk0pa-rA" name="mass structure">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_4KxOcNfUEeyKDukxCNI3pQ" name="total mass">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_c5mfMNcXEeyO7PQk0pa-rA" name="Aerodynamic Drag Force">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_wjnywNcXEeyO7PQk0pa-rA" name="Force">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_1qbUgNcXEeyO7PQk0pa-rA">
+                <language>C</language>
+                <body>force = 0.5 * ro * cd * fa * speed^2</body>
+              </specification>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hd1fYNcXEeyO7PQk0pa-rA" name="air density">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_mTGlMNcXEeyO7PQk0pa-rA" name="drag coefficient">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_qKftgNcXEeyO7PQk0pa-rA" name="frontal area">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_v2QWcNcXEeyO7PQk0pa-rA" name="vehicle speed">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UG0fENfUEeyKDukxCNI3pQ" name="drag force">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_-vROkNcWEeyO7PQk0pa-rA" name="Road Load Force" visibility="package">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_TDxpkNcXEeyO7PQk0pa-rA" name="Force">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xa0iUNcXEeyO7PQk0pa-rA">
+                <language>C</language>
+                <body>force = m * g * cr * cos(slope)</body>
+              </specification>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_EjTpwNcXEeyO7PQk0pa-rA" name="mass">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_IC-1oNcXEeyO7PQk0pa-rA" name="gravity">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_P7SOoNcXEeyO7PQk0pa-rA" name="road load coefficient">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_a-kaANfUEeyKDukxCNI3pQ" name="load force">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_uhMhkNfTEeyKDukxCNI3pQ" name="Total Resistance Force">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_-D6okNfTEeyKDukxCNI3pQ" name="Total Force">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_-D6okdfTEeyKDukxCNI3pQ">
+                <language>C</language>
+                <body>resistance = load + slope + drag</body>
+              </specification>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_zZGEoNfTEeyKDukxCNI3pQ" name="load force">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_3RSeMNfTEeyKDukxCNI3pQ" name="slope Force">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_5t_xMNfTEeyKDukxCNI3pQ" name="drag force">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_-DmqENfUEeyKDukxCNI3pQ" name="Resistance Force">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cYItoNfXEeySbq2h8TnUHA" name="Vehicle Speed">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_IuuBkNfYEeySbq2h8TnUHA" name="Speed">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_IuuBkdfYEeySbq2h8TnUHA">
+                <language>C</language>
+                <body>speed_out = speed_in + (min(gbx_torque/rwd, frictionMaxForce) - forceBalance)/m * dT</body>
+              </specification>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_fjoZQNfXEeySbq2h8TnUHA" name="rwd">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_j8q2ENfXEeySbq2h8TnUHA" name="gearbox torque">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_misdINfXEeySbq2h8TnUHA" name="mass">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_rGZ44NfXEeySbq2h8TnUHA" name="maximum friction force">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_vmk4cNfXEeySbq2h8TnUHA" name="vehicle speed">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_6xVgsNfXEeySbq2h8TnUHA" name="force balance">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_KoWcsNfYEeySbq2h8TnUHA" name="time Interval">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UbiioOBrEeycv_ul6zyjtw" name="speed_in">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_6jVh8NfMEeyKDukxCNI3pQ" name="Maximum Friction Force">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_ZJOtMNfNEeyKDukxCNI3pQ" name="Force">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZJOtMdfNEeyKDukxCNI3pQ">
+                <language>C</language>
+                <body>maxFriction = m * g * miua * load</body>
+              </specification>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_FnCf8NfNEeyKDukxCNI3pQ" name="mass">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_G2168NfNEeyKDukxCNI3pQ" name="gravity">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_M-76kNfNEeyKDukxCNI3pQ" name="whell (tire) friction coefficient">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Q1BbUNfNEeyKDukxCNI3pQ" name="rear axle load coefficient">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Fl26kNfVEeyKDukxCNI3pQ" name="maximum Friction">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_e_mf4N--EeyQAoCiBoOCcw" name="Road Slope Force" visibility="public">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_qd8LcN--EeyQAoCiBoOCcw">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_qd8Lcd--EeyQAoCiBoOCcw">
+                <language>C</language>
+                <body>force = m * g * sin(slope)</body>
+              </specification>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_sigrQN--EeyQAoCiBoOCcw" name="mass">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_uKCCsN--EeyQAoCiBoOCcw" name="gravity">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_vhwDkN--EeyQAoCiBoOCcw" name="slope">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_RMop0N-_EeyQAoCiBoOCcw" name="slope force">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ViFsEOK9Eey2GPf_NkcRwg" name="Wheel Speed">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_fngc4OK9Eey2GPf_NkcRwg" name="WheelSpeed">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_fnhD8OK9Eey2GPf_NkcRwg" name="constraintSpec">
+                <language>C</language>
+                <body>wheelSpeed = vehicleSpeed/wheel_rwd</body>
+              </specification>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_X40S4OK9Eey2GPf_NkcRwg" name="vehicleSpeed"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_cMFe4OK9Eey2GPf_NkcRwg" name="wheelSpeed"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_nKhJEOLCEey2GPf_NkcRwg" name="wheel_rwd"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_E14GANJtEeyKp65yHsgyfA" name="Wheel">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Lypv0NfcEeySbq2h8TnUHA" name="width" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VuHoEN06EeyZdrCSZvBi5g" name="D" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_AFE-cN27EeyUrvQ0Lh3FUQ" name="miua_param" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_WXArsN-5EeyBKe45X3175g" name="load_param" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_Z5SIkNyYEeyZdrCSZvBi5g" name="rwd" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_eWTtgNyYEeyZdrCSZvBi5g" name="miua" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_qgNekNyYEeyZdrCSZvBi5g" name="load" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_WXGeoNffEeySbq2h8TnUHA" name="height">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_WXIT0NffEeySbq2h8TnUHA" role="_WAO-MNcYEeyO7PQk0pa-rA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_WXIT0dffEeySbq2h8TnUHA" role="_zU-kMNfUEeyKDukxCNI3pQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_arN_MNffEeySbq2h8TnUHA" name="width">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_arQbcNffEeySbq2h8TnUHA" role="_HUTVQNcYEeyO7PQk0pa-rA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_arQbcdffEeySbq2h8TnUHA" role="_Lypv0NfcEeySbq2h8TnUHA"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_3bIc4NyYEeyZdrCSZvBi5g" name="rwd">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_3bKSENyYEeyZdrCSZvBi5g" role="_seBTcNfUEeyKDukxCNI3pQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_3bKSEdyYEeyZdrCSZvBi5g" role="_Z5SIkNyYEeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_bXbZ8N06EeyZdrCSZvBi5g" name="diameter">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_bXdPIN06EeyZdrCSZvBi5g" role="_bcucENcYEeyO7PQk0pa-rA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_bXdPId06EeyZdrCSZvBi5g" role="_VuHoEN06EeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_SJxPMN-5EeyBKe45X3175g" name="miua">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_SJ384N-5EeyBKe45X3175g" role="_AFE-cN27EeyUrvQ0Lh3FUQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_SJ384d-5EeyBKe45X3175g" role="_eWTtgNyYEeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_exF8EN-5EeyBKe45X3175g" name="load">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_exMCsN-5EeyBKe45X3175g" role="_WXArsN-5EeyBKe45X3175g"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_exMCsd-5EeyBKe45X3175g" role="_qgNekNyYEeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TBG6oNcYEeyO7PQk0pa-rA" name="Wheel Dynamic Radius">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_inq_0NcYEeyO7PQk0pa-rA" name="Dynamic Radius">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_inq_0dcYEeyO7PQk0pa-rA">
+                  <language>C</language>
+                  <body>rwd = 0.98*(d/2 + h)</body>
+                </specification>
+              </ownedRule>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_WAO-MNcYEeyO7PQk0pa-rA" name="wheel height">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_bcucENcYEeyO7PQk0pa-rA" name="wheel diameter">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_seBTcNfUEeyKDukxCNI3pQ" name="whell dynamic radius">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_E2sDUNcYEeyO7PQk0pa-rA" name="Tire Height">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_KN4KcNcYEeyO7PQk0pa-rA" name="Height">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_MwSc0NcYEeyO7PQk0pa-rA">
+                  <language>C</language>
+                  <body>h = 30 * w / 100</body>
+                </specification>
+              </ownedRule>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_HUTVQNcYEeyO7PQk0pa-rA" name="width">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zU-kMNfUEeyKDukxCNI3pQ" name="height">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_XGaswOAkEeyC6I-5TDX_3g" name="Transmission System">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_MwuFYOECEeyXPMXG3lFeMw" name="wheelSpeed" visibility="public" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_SOWywOECEeyXPMXG3lFeMw" name="transmissionTorque" visibility="public" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_CB4HoOEDEeyXPMXG3lFeMw" name="pedalPosition" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_IPReAOEDEeyXPMXG3lFeMw" name="currentGear" type="_CvGFYMnKEeyPP-Oq7gEDJg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_gHBVQOEOEeyXPMXG3lFeMw" name="driveGear" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_wKXooOEEEeyXPMXG3lFeMw" name="Nmax">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_wKZd0OEEEeyXPMXG3lFeMw" role="_DzR6wNyYEeyZdrCSZvBi5g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_wKZd0eEEEeyXPMXG3lFeMw" role="_hWzHgNZMEeyztMSLcHqD0Q"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_5TctAOEEEeyXPMXG3lFeMw" name="Nmin">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_5TeiMOEEEeyXPMXG3lFeMw" role="_FJDa4NyYEeyZdrCSZvBi5g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_5TeiMeEEEeyXPMXG3lFeMw" role="_duN3QNZMEeyztMSLcHqD0Q"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_Jzk90OENEeyXPMXG3lFeMw" name="BindingConnector20">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_JzmzAOENEeyXPMXG3lFeMw" role="_CB4HoOEDEeyXPMXG3lFeMw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_JzmzAeENEeyXPMXG3lFeMw" role="_U6mgsNybEeyZdrCSZvBi5g"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_tbgfkOENEeyXPMXG3lFeMw" name="engineSpeed - engine">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_tbiUwOENEeyXPMXG3lFeMw" role="_do4AMOEAEeyXPMXG3lFeMw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_tbiUweENEeyXPMXG3lFeMw" role="_2AmGoNyaEeyZdrCSZvBi5g"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_GlsQEOEOEeyXPMXG3lFeMw" name="vehicleSpeed">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_GluFQOEOEeyXPMXG3lFeMw" role="_MwuFYOECEeyXPMXG3lFeMw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_GluFQeEOEeyXPMXG3lFeMw" role="_SM6TMOEAEeyXPMXG3lFeMw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_K0UzsOEOEeyXPMXG3lFeMw" name="currentGear">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_K0XP8OEOEeyXPMXG3lFeMw" role="_IPReAOEDEeyXPMXG3lFeMw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_K0XP8eEOEeyXPMXG3lFeMw" role="_EiPJQNZHEeyztMSLcHqD0Q"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_OdkLQOEOEeyXPMXG3lFeMw" name="engineSpeed gearbox">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_OdmAcOEOEeyXPMXG3lFeMw" role="_do4AMOEAEeyXPMXG3lFeMw"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_OdmAceEOEeyXPMXG3lFeMw" role="_W9dzgNyfEeyZdrCSZvBi5g"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_k8fPYOEOEeyXPMXG3lFeMw" name="driveGear">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_k8hEkOEOEeyXPMXG3lFeMw" role="_4mqvINZGEeyztMSLcHqD0Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_k8hEkeEOEeyXPMXG3lFeMw" role="_gHBVQOEOEeyXPMXG3lFeMw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_aACooOK-Eey2GPf_NkcRwg" name="i0 - engineSpeed">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_aAEd0OK-Eey2GPf_NkcRwg" role="_vlp48NyZEeyZdrCSZvBi5g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_aAFE4OK-Eey2GPf_NkcRwg" role="_MPvxMOEAEeyXPMXG3lFeMw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_fRFEcOK-Eey2GPf_NkcRwg" name="gearRatio - engineSpeed">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_fRHgsOK-Eey2GPf_NkcRwg" role="_BShsANZHEeyztMSLcHqD0Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_fRHgseK-Eey2GPf_NkcRwg" role="_OunAUOEAEeyXPMXG3lFeMw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_dGR80OLqEey2GPf_NkcRwg" name="engineTorque">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_dGTyAOLqEey2GPf_NkcRwg" role="_ZDAV8NyaEeyZdrCSZvBi5g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_dGUZEOLqEey2GPf_NkcRwg" role="_J5QHQOLqEey2GPf_NkcRwg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_0ZhZ0OLqEey2GPf_NkcRwg" name="transmissionTorque">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_0ZjPAOLqEey2GPf_NkcRwg" role="_xsykkNyZEeyZdrCSZvBi5g"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_0ZjPAeLqEey2GPf_NkcRwg" role="_SOWywOECEeyXPMXG3lFeMw"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_kN4hIOXpEeyrmpnLSXdn1g" name="driveGear - Engine - Gearbox">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_kN69YOXpEeyrmpnLSXdn1g" role="_4mqvINZGEeyztMSLcHqD0Q"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_kN69YeXpEeyrmpnLSXdn1g" role="_8yvMcOXoEeyrmpnLSXdn1g"/>
+          </ownedConnector>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_DrZxkOEAEeyXPMXG3lFeMw" name="Engine Current Speed">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_ZmoSwOEAEeyXPMXG3lFeMw">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZmoSweEAEeyXPMXG3lFeMw">
+                <language>C</language>
+                <body>engineSpeed = wheelSpeed * (30/math.pi) * i0 * gearRatio</body>
+              </specification>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_MPvxMOEAEeyXPMXG3lFeMw" name="i0">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_OunAUOEAEeyXPMXG3lFeMw" name="gearRatio">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_SM6TMOEAEeyXPMXG3lFeMw" name="wheelSpeed">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_do4AMOEAEeyXPMXG3lFeMw" name="engineSpeed">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_lsNp4NJtEeyKp65yHsgyfA" name="Engine" classifierBehavior="_fj3x4OLwEeyMdeINNWNrGg">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_0pGf8NJtEeyKp65yHsgyfA" name="pedalPosSampleVec" visibility="public" type="_HV-ZUNJvEeyKp65yHsgyfA">
+              <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_fc0dgNJvEeyKp65yHsgyfA">
+                <language>C</language>
+                <body>[306, 385, 439, 450, 450, 367]</body>
+              </defaultValue>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Znbz8NJuEeyKp65yHsgyfA" name="engSpeedSampleVec" visibility="public" type="_HV-ZUNJvEeyKp65yHsgyfA">
+              <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_iG43ENJvEeyKp65yHsgyfA">
+                <language>C</language>
+                <body>[1000, 2020, 2990, 3500, 5000, 6500]</body>
+              </defaultValue>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_RBjT4NLJEeyKp65yHsgyfA" name="torqueMapGasoline" visibility="public" type="_OIkUkNLJEeyKp65yHsgyfA">
+              <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_BxRyUNLKEeyKp65yHsgyfA">
+                <language>C</language>
+                <body>[[0; 1], [1; 2]]</body>
+              </defaultValue>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_DzR6wNyYEeyZdrCSZvBi5g" name="Nmax" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_FJDa4NyYEeyZdrCSZvBi5g" name="Nmin" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_ZDAV8NyaEeyZdrCSZvBi5g" name="engineTorque" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_2AmGoNyaEeyZdrCSZvBi5g" name="engineSpeed" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_U6mgsNybEeyZdrCSZvBi5g" name="pedalPosition" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_IZ3sUN_CEeyQAoCiBoOCcw" name="Nmax_param" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_TRc54N_CEeyQAoCiBoOCcw" name="Nmin_param" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UGhIUOLxEeyMdeINNWNrGg" name="engineSpeed_param" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_5Ikn0OXoEeyrmpnLSXdn1g" name="driveGear_param" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_8yvMcOXoEeyrmpnLSXdn1g" name="driveGear" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="__zyfANyaEeyZdrCSZvBi5g" name="engine torque">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="__z0UMNyaEeyZdrCSZvBi5g" role="_NJedANfVEeyKDukxCNI3pQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="__z0UMdyaEeyZdrCSZvBi5g" role="_ZDAV8NyaEeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_EXsvENybEeyZdrCSZvBi5g" name="engine speed">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_EXukQNybEeyZdrCSZvBi5g" role="_UGhIUOLxEeyMdeINNWNrGg"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_EXukQdybEeyZdrCSZvBi5g" role="_2AmGoNyaEeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_Pa-PQNybEeyZdrCSZvBi5g" name="pedal pos sample vec">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_PbArgNybEeyZdrCSZvBi5g" role="_VDi3ANcZEeyO7PQk0pa-rA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_PbArgdybEeyZdrCSZvBi5g" role="_0pGf8NJtEeyKp65yHsgyfA"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_RuPSYNybEeyZdrCSZvBi5g" name="torque map">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_RuQggNybEeyZdrCSZvBi5g" role="_iOxiMNcZEeyO7PQk0pa-rA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_RuRHkNybEeyZdrCSZvBi5g" role="_RBjT4NLJEeyKp65yHsgyfA"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_TQxcINybEeyZdrCSZvBi5g" name="speedSampleVec">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_TQzRUNybEeyZdrCSZvBi5g" role="_oY6wQNcZEeyO7PQk0pa-rA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_TQzRUdybEeyZdrCSZvBi5g" role="_Znbz8NJuEeyKp65yHsgyfA"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_aFKhENybEeyZdrCSZvBi5g" name="pedal position ">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_aFMWQNybEeyZdrCSZvBi5g" role="_lNMgQNfLEeyKDukxCNI3pQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_aFMWQdybEeyZdrCSZvBi5g" role="_U6mgsNybEeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_QTnPwN_CEeyQAoCiBoOCcw" name="Nmax">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_QTpE8N_CEeyQAoCiBoOCcw" role="_IZ3sUN_CEeyQAoCiBoOCcw"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_QTpE8d_CEeyQAoCiBoOCcw" role="_DzR6wNyYEeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_Vc9vMN_CEeyQAoCiBoOCcw" name="Nmin">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_Vc_kYN_CEeyQAoCiBoOCcw" role="_TRc54N_CEeyQAoCiBoOCcw"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_Vc_kYd_CEeyQAoCiBoOCcw" role="_FJDa4NyYEeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_qsYcYOK5Eey2GPf_NkcRwg" name="Nmin - Min constraint">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_qsa4oOK5Eey2GPf_NkcRwg" role="_TRc54N_CEeyQAoCiBoOCcw"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_qsa4oeK5Eey2GPf_NkcRwg" role="_It1TQOK5Eey2GPf_NkcRwg"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_LfiwcOK6Eey2GPf_NkcRwg" name="min max filter engineSpeed">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_LfkloOK6Eey2GPf_NkcRwg" role="_uXCJM-K5Eey2GPf_NkcRwg"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_LfkloeK6Eey2GPf_NkcRwg" role="_KCxiYOK4Eey2GPf_NkcRwg"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_OvdpEOK6Eey2GPf_NkcRwg" name="Nmax - max filter">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_OvgFUOK6Eey2GPf_NkcRwg" role="_uXCJNeK5Eey2GPf_NkcRwg"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_OvgFUeK6Eey2GPf_NkcRwg" role="_IZ3sUN_CEeyQAoCiBoOCcw"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_wKEXoOK6Eey2GPf_NkcRwg" name="engineSpeed - output filter to constraint">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_wKGM0OK6Eey2GPf_NkcRwg" role="_uXCJNOK5Eey2GPf_NkcRwg"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_wKGM0eK6Eey2GPf_NkcRwg" role="_PgZXgNcZEeyO7PQk0pa-rA"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_ZYBeMOLxEeyMdeINNWNrGg" name="engineSpeed filter in">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_ZYGWsOLxEeyMdeINNWNrGg" role="_UGhIUOLxEeyMdeINNWNrGg"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_ZYGWseLxEeyMdeINNWNrGg" role="_Ge0TcOK4Eey2GPf_NkcRwg"/>
+            </ownedConnector>
+            <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_fj3x4OLwEeyMdeINNWNrGg" name="Engine SM">
+              <region xmi:type="uml:Region" xmi:id="_gN_F4OLwEeyMdeINNWNrGg" name="engineSpeed">
+                <transition xmi:type="uml:Transition" xmi:id="_4jMWMOLwEeyMdeINNWNrGg" source="_nSPLwOLwEeyMdeINNWNrGg" target="_otawUOLwEeyMdeINNWNrGg"/>
+                <transition xmi:type="uml:Transition" xmi:id="_5gDnEOLwEeyMdeINNWNrGg" source="_otawUOLwEeyMdeINNWNrGg" target="_otawUOLwEeyMdeINNWNrGg">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_U21eoOXpEeyrmpnLSXdn1g" event="_OIAPIOXpEeyrmpnLSXdn1g"/>
+                </transition>
+                <subvertex xmi:type="uml:Pseudostate" xmi:id="_nSPLwOLwEeyMdeINNWNrGg" name="Begin"/>
+                <subvertex xmi:type="uml:State" xmi:id="_otawUOLwEeyMdeINNWNrGg" name="EngineSpeed">
+                  <entry xmi:type="uml:OpaqueBehavior" xmi:id="_02L48OLwEeyMdeINNWNrGg">
+                    <language>C</language>
+                    <body>engineSpeed_param = Nmin&#xD;
+driveGear_param = driveGear</body>
+                  </entry>
+                </subvertex>
+              </region>
+            </ownedBehavior>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_L_hRwNcZEeyO7PQk0pa-rA" name="Engine Current Torque" visibility="public">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_ddmXUNfLEeyKDukxCNI3pQ" name="Engine Torque">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_ddmXUdfLEeyKDukxCNI3pQ">
+                  <language>C</language>
+                  <body>torque = interpolate(engineSpeedVec, pedalPosVec, mapTorque, currentSpeed, pedalPos)</body>
+                </specification>
+              </ownedRule>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_PgZXgNcZEeyO7PQk0pa-rA" name="engine current speed">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VDi3ANcZEeyO7PQk0pa-rA" name="pedal position sample vector" type="_HV-ZUNJvEeyKp65yHsgyfA"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_iOxiMNcZEeyO7PQk0pa-rA" name="torque matrix map" type="_OIkUkNLJEeyKp65yHsgyfA"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_oY6wQNcZEeyO7PQk0pa-rA" name="engine speed vector" type="_HV-ZUNJvEeyKp65yHsgyfA"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_lNMgQNfLEeyKDukxCNI3pQ" name="pedalPosition">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NJedANfVEeyKDukxCNI3pQ" name="engine Torque">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_DTow4OK4Eey2GPf_NkcRwg" name="Engine Min Filter" visibility="package">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_jhEhsOK4Eey2GPf_NkcRwg">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_jhEhseK4Eey2GPf_NkcRwg">
+                  <language>C</language>
+                  <body>engineSpeed_out = max(engineSpeed_in, Nmin)</body>
+                </specification>
+              </ownedRule>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_Ge0TcOK4Eey2GPf_NkcRwg" name="engineSpeed_in">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_KCxiYOK4Eey2GPf_NkcRwg" name="engineSpeed">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_It1TQOK5Eey2GPf_NkcRwg" name="Nmin">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_uXCJMOK5Eey2GPf_NkcRwg" name="Engine Max Filter" visibility="package">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_ffvvYOK6Eey2GPf_NkcRwg">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_ffvvYeK6Eey2GPf_NkcRwg">
+                  <language>C</language>
+                  <body>engineSpeed = min(engineSpeed_in, Nmax)</body>
+                </specification>
+              </ownedRule>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_uXCJM-K5Eey2GPf_NkcRwg" name="engineSpeed_in">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_uXCJNOK5Eey2GPf_NkcRwg" name="engineSpeed">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_uXCJNeK5Eey2GPf_NkcRwg" name="Nmax">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_atvMsMQgEeye8sWuuOEGkw" name="GearBox" classifierBehavior="_bU5hEMQlEeye8sWuuOEGkw" isActive="true">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_4mqvINZGEeyztMSLcHqD0Q" name="currentDriveGear" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_BShsANZHEeyztMSLcHqD0Q" name="currentGearRatio" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_EiPJQNZHEeyztMSLcHqD0Q" name="currentGear" visibility="public" type="_CvGFYMnKEeyPP-Oq7gEDJg" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_W9dzgNyfEeyZdrCSZvBi5g" name="currentEngineSpeed" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_duN3QNZMEeyztMSLcHqD0Q" name="Nmin" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_hWzHgNZMEeyztMSLcHqD0Q" name="Nmax" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_vlp48NyZEeyZdrCSZvBi5g" name="i0" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_xsykkNyZEeyZdrCSZvBi5g" name="transmissionTorque" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_FTvMYN_DEeyQAoCiBoOCcw" name="currentDriveGear_param" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Hg3yUN_DEeyQAoCiBoOCcw" name="currentGearRatio_param" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VtQ_kN_DEeyQAoCiBoOCcw" name="i0_param" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Xv3JcN_DEeyQAoCiBoOCcw" name="eff_param" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_J5QHQOLqEey2GPf_NkcRwg" name="engineTorque" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_xR1H0N_DEeyQAoCiBoOCcw" name="gearbox torque">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_xR3kEN_DEeyQAoCiBoOCcw" role="_TkCFoNfVEeyKDukxCNI3pQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_xR3kEd_DEeyQAoCiBoOCcw" role="_xsykkNyZEeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_yraJ4N_DEeyQAoCiBoOCcw" name="i0">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_yrb_EN_DEeyQAoCiBoOCcw" role="_VtQ_kN_DEeyQAoCiBoOCcw"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_yrb_Ed_DEeyQAoCiBoOCcw" role="_vlp48NyZEeyZdrCSZvBi5g"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_z7vJUN_DEeyQAoCiBoOCcw" name="currentDriveGear">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_z7w-gN_DEeyQAoCiBoOCcw" role="_FTvMYN_DEeyQAoCiBoOCcw"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_z7w-gd_DEeyQAoCiBoOCcw" role="_4mqvINZGEeyztMSLcHqD0Q"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_10urQN_DEeyQAoCiBoOCcw" name="currentGearRatio">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_10wgcN_DEeyQAoCiBoOCcw" role="_Hg3yUN_DEeyQAoCiBoOCcw"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_10xHgN_DEeyQAoCiBoOCcw" role="_BShsANZHEeyztMSLcHqD0Q"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_Me0wcOLsEey2GPf_NkcRwg" name="engineTorque">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_Me2loOLsEey2GPf_NkcRwg" role="_J5QHQOLqEey2GPf_NkcRwg"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_Me2loeLsEey2GPf_NkcRwg" role="_WYijsNfMEeyKDukxCNI3pQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_QIY4IOLsEey2GPf_NkcRwg" name="eff">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_QIatUOLsEey2GPf_NkcRwg" role="_Xv3JcN_DEeyQAoCiBoOCcw"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_QIatUeLsEey2GPf_NkcRwg" role="_JMRWsNfMEeyKDukxCNI3pQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_Wc90kOLsEey2GPf_NkcRwg" name="i0 transmission toruqe">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_Wc_pwOLsEey2GPf_NkcRwg" role="_VtQ_kN_DEeyQAoCiBoOCcw"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_WdAQ0OLsEey2GPf_NkcRwg" role="_DbIegNfMEeyKDukxCNI3pQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_k5l2MOLsEey2GPf_NkcRwg" name="gearRatio">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_k5nrYOLsEey2GPf_NkcRwg" role="_Hg3yUN_DEeyQAoCiBoOCcw"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_k5nrYeLsEey2GPf_NkcRwg" role="_Q8nGgNfMEeyKDukxCNI3pQ"/>
+            </ownedConnector>
+            <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_bU5hEMQlEeye8sWuuOEGkw" name="GearBox SM">
+              <region xmi:type="uml:Region" xmi:id="__1cZ8MQyEeye8sWuuOEGkw" name="Region">
+                <transition xmi:type="uml:Transition" xmi:id="_4nFYwMTVEeyhtb6Vq-DBuQ" source="_2JLL4MTVEeyhtb6Vq-DBuQ" target="_KlSAwMQzEeye8sWuuOEGkw"/>
+                <transition xmi:type="uml:Transition" xmi:id="_Jh3pcMTXEeyhtb6Vq-DBuQ" name="Reverse" source="_KlSAwMQzEeye8sWuuOEGkw" target="_U7p-sMQzEeye8sWuuOEGkw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_9yEIgMTYEeyhtb6Vq-DBuQ" event="_2SCn0NZLEeyztMSLcHqD0Q"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_RFADsMTXEeyhtb6Vq-DBuQ" name="Neutral" source="_U7p-sMQzEeye8sWuuOEGkw" target="_e4rogMQzEeye8sWuuOEGkw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_HfP_gMTZEeyhtb6Vq-DBuQ" event="_8e8O8NZLEeyztMSLcHqD0Q"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_cfyE8MTXEeyhtb6Vq-DBuQ" name="Reverse" source="_e4rogMQzEeye8sWuuOEGkw" target="_U7p-sMQzEeye8sWuuOEGkw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_J9Q6EMTZEeyhtb6Vq-DBuQ" event="_2SCn0NZLEeyztMSLcHqD0Q"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_iImuoMTXEeyhtb6Vq-DBuQ" name="Parking" source="_U7p-sMQzEeye8sWuuOEGkw" target="_KlSAwMQzEeye8sWuuOEGkw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_EjCtEMTZEeyhtb6Vq-DBuQ" event="_uWwzUNZLEeyztMSLcHqD0Q"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_n5rVYMTXEeyhtb6Vq-DBuQ" name="Drive" source="_e4rogMQzEeye8sWuuOEGkw" target="_81ZT4MQzEeye8sWuuOEGkw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_NRmYoMTZEeyhtb6Vq-DBuQ" event="_DLIaINZMEeyztMSLcHqD0Q"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_yfju8MTXEeyhtb6Vq-DBuQ" name="Neutral" source="_81ZT4MQzEeye8sWuuOEGkw" target="_e4rogMQzEeye8sWuuOEGkw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_ctWPwMTrEeyhtb6Vq-DBuQ" event="_8e8O8NZLEeyztMSLcHqD0Q"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_7q898OIXEeyAy-jGKY3ZyQ" source="_KlSAwMQzEeye8sWuuOEGkw" target="_svTeAOIXEeyAy-jGKY3ZyQ"/>
+                <subvertex xmi:type="uml:State" xmi:id="_KlSAwMQzEeye8sWuuOEGkw" name="Parking">
+                  <entry xmi:type="uml:OpaqueBehavior" xmi:id="_Oo6UYMTaEeyhtb6Vq-DBuQ" name="Parking Behavior" visibility="public">
+                    <language>C</language>
+                    <body>currentGearRatio_param = 0;</body>
+                  </entry>
+                </subvertex>
+                <subvertex xmi:type="uml:State" xmi:id="_U7p-sMQzEeye8sWuuOEGkw" name="Reverse">
+                  <entry xmi:type="uml:OpaqueBehavior" xmi:id="_1Q07sMTiEeyhtb6Vq-DBuQ" name="Reverse Behavior">
+                    <language>C</language>
+                    <body>currentGearRatio_param = -4.71;</body>
+                  </entry>
+                </subvertex>
+                <subvertex xmi:type="uml:State" xmi:id="_e4rogMQzEeye8sWuuOEGkw" name="Neutral">
+                  <entry xmi:type="uml:OpaqueBehavior" xmi:id="_-5mz0MTiEeyhtb6Vq-DBuQ" name="Neutral Behavior">
+                    <language>C</language>
+                    <body>currentGearRatio_param = 0;</body>
+                  </entry>
+                </subvertex>
+                <subvertex xmi:type="uml:State" xmi:id="_81ZT4MQzEeye8sWuuOEGkw" name="Drive">
+                  <doActivity xmi:type="uml:StateMachine" xmi:id="_IdZ_MMQ8Eeye8sWuuOEGkw" name="Drive SM">
+                    <region xmi:type="uml:Region" xmi:id="_LQejwMQ8Eeye8sWuuOEGkw" name="Gear">
+                      <transition xmi:type="uml:Transition" xmi:id="_Jjmb4MTkEeyhtb6Vq-DBuQ" source="_k1YhYMQ8Eeye8sWuuOEGkw" target="_XbYaYMQ8Eeye8sWuuOEGkw"/>
+                      <transition xmi:type="uml:Transition" xmi:id="_QNYhYMTmEeyhtb6Vq-DBuQ" source="_XbYaYMQ8Eeye8sWuuOEGkw" target="_aAGZ4MQ8Eeye8sWuuOEGkw">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_slzvgMTmEeyhtb6Vq-DBuQ">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="__wW40MTmEeyhtb6Vq-DBuQ">
+                            <language>C</language>
+                            <body>RPM >= 2500</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_TY5MYMTsEeyhtb6Vq-DBuQ" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_PadaMMTnEeyhtb6Vq-DBuQ" source="_aAGZ4MQ8Eeye8sWuuOEGkw" target="_XbYaYMQ8Eeye8sWuuOEGkw">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_XkCwcMTnEeyhtb6Vq-DBuQ">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_aPGogMTnEeyhtb6Vq-DBuQ">
+                            <language>C</language>
+                            <body>RPM &lt;= 700</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_QlDLwMTsEeyhtb6Vq-DBuQ" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_i-5DIMTnEeyhtb6Vq-DBuQ" source="_aAGZ4MQ8Eeye8sWuuOEGkw" target="_ahaXMMQ8Eeye8sWuuOEGkw">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_mdcNoMTnEeyhtb6Vq-DBuQ">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_pMvFcMTnEeyhtb6Vq-DBuQ">
+                            <language>C</language>
+                            <body>RPM >= 2500</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_U16kAMTsEeyhtb6Vq-DBuQ" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_sfhr4MTnEeyhtb6Vq-DBuQ" source="_ahaXMMQ8Eeye8sWuuOEGkw" target="_aAGZ4MQ8Eeye8sWuuOEGkw">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_wRGgEMTnEeyhtb6Vq-DBuQ">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_znJO0MTnEeyhtb6Vq-DBuQ">
+                            <language>C</language>
+                            <body>RPM &lt;= 700</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_WPIZsMTsEeyhtb6Vq-DBuQ" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_2EIOoMTnEeyhtb6Vq-DBuQ" source="_ahaXMMQ8Eeye8sWuuOEGkw" target="_a6AdYMQ8Eeye8sWuuOEGkw">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_3r1MQMTnEeyhtb6Vq-DBuQ">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_59FdMMTnEeyhtb6Vq-DBuQ">
+                            <language>C</language>
+                            <body>RPM &lt;= 2500</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_Zi20QMTsEeyhtb6Vq-DBuQ" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_FFmCsMToEeyhtb6Vq-DBuQ" source="_a6AdYMQ8Eeye8sWuuOEGkw" target="_ahaXMMQ8Eeye8sWuuOEGkw">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_HTHDIMToEeyhtb6Vq-DBuQ">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_K035sMToEeyhtb6Vq-DBuQ">
+                            <language>C</language>
+                            <body>RPM &lt;= 700</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_XdAiEMTsEeyhtb6Vq-DBuQ" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_QtsHMMToEeyhtb6Vq-DBuQ" source="_a6AdYMQ8Eeye8sWuuOEGkw" target="_bXayIMQ8Eeye8sWuuOEGkw">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_VCVzQMToEeyhtb6Vq-DBuQ">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WP1hIMToEeyhtb6Vq-DBuQ">
+                            <language>C</language>
+                            <body>RPM >= 2500</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_wdVzAMTsEeyhtb6Vq-DBuQ" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_aXbBkMToEeyhtb6Vq-DBuQ" source="_bXayIMQ8Eeye8sWuuOEGkw" target="_a6AdYMQ8Eeye8sWuuOEGkw">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_dIwgwMToEeyhtb6Vq-DBuQ">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_foc2UMToEeyhtb6Vq-DBuQ">
+                            <language>C</language>
+                            <body>RPM &lt;= 700</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_y7B9cMTsEeyhtb6Vq-DBuQ" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_ggOfcNJoEeyPM_J-D-wR-Q" source="_bXayIMQ8Eeye8sWuuOEGkw" target="_Ym2IYNJoEeyPM_J-D-wR-Q">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_ggOfcdJoEeyPM_J-D-wR-Q">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ggOfctJoEeyPM_J-D-wR-Q">
+                            <language>C</language>
+                            <body>RPM >= 2500</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_ggOfc9JoEeyPM_J-D-wR-Q" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_n133UNJoEeyPM_J-D-wR-Q" source="_Ym2IYNJoEeyPM_J-D-wR-Q" target="_bXayIMQ8Eeye8sWuuOEGkw">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_n133UdJoEeyPM_J-D-wR-Q">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_n133UtJoEeyPM_J-D-wR-Q">
+                            <language>C</language>
+                            <body>RPM &lt;= 700</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_n133U9JoEeyPM_J-D-wR-Q" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_zTgYQNJoEeyPM_J-D-wR-Q" source="_q1qCMNJoEeyPM_J-D-wR-Q" target="_Ym2IYNJoEeyPM_J-D-wR-Q">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_zTgYQdJoEeyPM_J-D-wR-Q">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_zTgYQtJoEeyPM_J-D-wR-Q">
+                            <language>C</language>
+                            <body>RPM >= 2500</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_zTgYQ9JoEeyPM_J-D-wR-Q" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_BK17gNJpEeyPM_J-D-wR-Q" source="_Ym2IYNJoEeyPM_J-D-wR-Q" target="_q1qCMNJoEeyPM_J-D-wR-Q">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_BK17gdJpEeyPM_J-D-wR-Q">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK17gtJpEeyPM_J-D-wR-Q">
+                            <language>C</language>
+                            <body>RPM &lt;= 700</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_BK17g9JpEeyPM_J-D-wR-Q" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_i0FjANJpEeyPM_J-D-wR-Q" source="_q1qCMNJoEeyPM_J-D-wR-Q" target="_FL2S0NJpEeyPM_J-D-wR-Q">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_i0FjAdJpEeyPM_J-D-wR-Q">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_i0FjAtJpEeyPM_J-D-wR-Q">
+                            <language>C</language>
+                            <body>RPM &lt;= 2500</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_i0FjA9JpEeyPM_J-D-wR-Q" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_l8p2cNJpEeyPM_J-D-wR-Q" source="_FL2S0NJpEeyPM_J-D-wR-Q" target="_q1qCMNJoEeyPM_J-D-wR-Q">
+                        <ownedRule xmi:type="uml:Constraint" xmi:id="_l8p2cdJpEeyPM_J-D-wR-Q">
+                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_l8p2ctJpEeyPM_J-D-wR-Q">
+                            <language>C</language>
+                            <body>RPM &lt;= 700</body>
+                          </specification>
+                        </ownedRule>
+                        <trigger xmi:type="uml:Trigger" xmi:id="_l8p2c9JpEeyPM_J-D-wR-Q" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
+                      </transition>
+                      <transition xmi:type="uml:Transition" xmi:id="_lbUBwOXiEeyrmpnLSXdn1g" source="_XbYaYMQ8Eeye8sWuuOEGkw" target="_hjjtEOXiEeyrmpnLSXdn1g"/>
+                      <subvertex xmi:type="uml:State" xmi:id="_XbYaYMQ8Eeye8sWuuOEGkw" name="First">
+                        <entry xmi:type="uml:OpaqueBehavior" xmi:id="_fNzT8MTjEeyhtb6Vq-DBuQ">
+                          <language>C</language>
+                          <body>currentDriveGear_param = 1;&#xD;
+currentGearRatio_param = 4.71;</body>
+                        </entry>
+                      </subvertex>
+                      <subvertex xmi:type="uml:State" xmi:id="_aAGZ4MQ8Eeye8sWuuOEGkw" name="Second">
+                        <entry xmi:type="uml:OpaqueBehavior" xmi:id="_mLW78MTjEeyhtb6Vq-DBuQ">
+                          <language>C</language>
+                          <body>currentDriveGear_param = 2;&#xD;
+currentGearRatio_param = 3.14;</body>
+                        </entry>
+                      </subvertex>
+                      <subvertex xmi:type="uml:State" xmi:id="_ahaXMMQ8Eeye8sWuuOEGkw" name="Third">
+                        <entry xmi:type="uml:OpaqueBehavior" xmi:id="_u-SxMMTjEeyhtb6Vq-DBuQ">
+                          <language>C</language>
+                          <body>currentDriveGear_param = 3;&#xD;
+currentGearRatio_param = 2.11;</body>
+                        </entry>
+                      </subvertex>
+                      <subvertex xmi:type="uml:State" xmi:id="_a6AdYMQ8Eeye8sWuuOEGkw" name="Fourth">
+                        <entry xmi:type="uml:OpaqueBehavior" xmi:id="_0uf1QMTjEeyhtb6Vq-DBuQ">
+                          <language>C</language>
+                          <body>currentDriveGear_param = 4;&#xD;
+currentGearRatio_param = 1.67;</body>
+                        </entry>
+                      </subvertex>
+                      <subvertex xmi:type="uml:State" xmi:id="_bXayIMQ8Eeye8sWuuOEGkw" name="Fifth">
+                        <entry xmi:type="uml:OpaqueBehavior" xmi:id="_6MP3YMTjEeyhtb6Vq-DBuQ">
+                          <language>C</language>
+                          <body>currentDriveGear_param = 5;&#xD;
+currentGearRatio_param = 1.29;</body>
+                        </entry>
+                      </subvertex>
+                      <subvertex xmi:type="uml:Pseudostate" xmi:id="_k1YhYMQ8Eeye8sWuuOEGkw" name="Begin"/>
+                      <subvertex xmi:type="uml:State" xmi:id="_Ym2IYNJoEeyPM_J-D-wR-Q" name="Sixth">
+                        <entry xmi:type="uml:OpaqueBehavior" xmi:id="_ddEQcNJoEeyPM_J-D-wR-Q">
+                          <language>C</language>
+                          <body>currentDriveGear_param = 6;&#xD;
+currentGearRatio_param = 1.00;</body>
+                        </entry>
+                      </subvertex>
+                      <subvertex xmi:type="uml:State" xmi:id="_q1qCMNJoEeyPM_J-D-wR-Q" name="Seventh">
+                        <entry xmi:type="uml:OpaqueBehavior" xmi:id="_u6OD0NJoEeyPM_J-D-wR-Q">
+                          <language>C</language>
+                          <body>currentDriveGear_param = 7;&#xD;
+currentGearRatio_param = 0.84;</body>
+                        </entry>
+                      </subvertex>
+                      <subvertex xmi:type="uml:State" xmi:id="_FL2S0NJpEeyPM_J-D-wR-Q" name="Eighth">
+                        <entry xmi:type="uml:OpaqueBehavior" xmi:id="_KcK88NJpEeyPM_J-D-wR-Q">
+                          <language>C</language>
+                          <body>currentDriveGear_param = 8;&#xD;
+currentGearRatio_param = 0.67;</body>
+                        </entry>
+                      </subvertex>
+                      <subvertex xmi:type="uml:FinalState" xmi:id="_hjjtEOXiEeyrmpnLSXdn1g" name="End"/>
+                    </region>
+                  </doActivity>
+                </subvertex>
+                <subvertex xmi:type="uml:Pseudostate" xmi:id="_2JLL4MTVEeyhtb6Vq-DBuQ" name="Begin"/>
+                <subvertex xmi:type="uml:FinalState" xmi:id="_svTeAOIXEeyAy-jGKY3ZyQ" name="End"/>
+              </region>
+            </ownedBehavior>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_90KO8NfLEeyKDukxCNI3pQ" name="Gearbox Current Torque">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_fxWGINfMEeyKDukxCNI3pQ" name="GearBox Torque">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_fxWGIdfMEeyKDukxCNI3pQ">
+                  <language>C</language>
+                  <body>gearboxTorque = i0 * eff * gearRatio * engineTorque</body>
+                </specification>
+              </ownedRule>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_DbIegNfMEeyKDukxCNI3pQ" name="final drive ratio (differential)">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_JMRWsNfMEeyKDukxCNI3pQ" name="driveline efficiency">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_Q8nGgNfMEeyKDukxCNI3pQ" name="gearRatio">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_WYijsNfMEeyKDukxCNI3pQ" name="engine Torque">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TkCFoNfVEeyKDukxCNI3pQ" name="gearbox torque">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_iftGYN-6EeyBKe45X3175g" memberEnd="_ifttct-6EeyBKe45X3175g _ifttc9-6EeyBKe45X3175g">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ifttcN-6EeyBKe45X3175g" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ifttcd-6EeyBKe45X3175g" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_ifttct-6EeyBKe45X3175g" type="_atvMsMQgEeye8sWuuOEGkw" aggregation="composite" association="_iftGYN-6EeyBKe45X3175g"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_ifttc9-6EeyBKe45X3175g" type="_XGaswOAkEeyC6I-5TDX_3g" association="_iftGYN-6EeyBKe45X3175g"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_hTcHkN-6EeyBKe45X3175g" memberEnd="_hTcuot-6EeyBKe45X3175g _hTcuo9-6EeyBKe45X3175g">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hTcuoN-6EeyBKe45X3175g" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hTcuod-6EeyBKe45X3175g" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_hTcuot-6EeyBKe45X3175g" type="_lsNp4NJtEeyKp65yHsgyfA" aggregation="composite" association="_hTcHkN-6EeyBKe45X3175g"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_hTcuo9-6EeyBKe45X3175g" type="_XGaswOAkEeyC6I-5TDX_3g" association="_hTcHkN-6EeyBKe45X3175g"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_1Qx9QOEOEeyXPMXG3lFeMw" memberEnd="_1Q1noOEOEeyXPMXG3lFeMw _1Q2OsOEOEeyXPMXG3lFeMw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1QzLYOEOEeyXPMXG3lFeMw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1QzLYeEOEeyXPMXG3lFeMw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_1Q1noOEOEeyXPMXG3lFeMw" type="_S-p3wNyjEeyZdrCSZvBi5g" association="_1Qx9QOEOEeyXPMXG3lFeMw"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_1Q2OsOEOEeyXPMXG3lFeMw" type="_XGaswOAkEeyC6I-5TDX_3g" association="_1Qx9QOEOEeyXPMXG3lFeMw"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_l3gUIOLlEey2GPf_NkcRwg" memberEnd="_l3g7MuLlEey2GPf_NkcRwg _l3hiQOLlEey2GPf_NkcRwg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l3g7MOLlEey2GPf_NkcRwg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l3g7MeLlEey2GPf_NkcRwg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_l3g7MuLlEey2GPf_NkcRwg" type="_E14GANJtEeyKp65yHsgyfA" aggregation="composite" association="_l3gUIOLlEey2GPf_NkcRwg"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_l3hiQOLlEey2GPf_NkcRwg" type="_S-p3wNyjEeyZdrCSZvBi5g" association="_l3gUIOLlEey2GPf_NkcRwg"/>
+        </nestedClassifier>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lueqQMW1EeyyYa73KIbzUQ" name="usecases">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_5xJR4MW2EeyyYa73KIbzUQ" name="Driver"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_6keMQMW2EeyyYa73KIbzUQ" name="Verify car speed"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_7oGzgMW2EeyyYa73KIbzUQ" name="Input current state ">
+        <include xmi:type="uml:Include" xmi:id="_AeKRoN1fEeyB6oChl77ysw" addition="_0_t4YN1eEeyB6oChl77ysw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_DeTPgMW-EeyCIIi_6VszjA" memberEnd="_DeXg8MW-EeyCIIi_6VszjA _DeXg8cW-EeyCIIi_6VszjA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DeVrwMW-EeyCIIi_6VszjA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DeWS0MW-EeyCIIi_6VszjA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_DeXg8MW-EeyCIIi_6VszjA" name="verify car speed" type="_6keMQMW2EeyyYa73KIbzUQ" association="_DeTPgMW-EeyCIIi_6VszjA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_DeXg8cW-EeyCIIi_6VszjA" name="driver" type="_5xJR4MW2EeyyYa73KIbzUQ" association="_DeTPgMW-EeyCIIi_6VszjA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_E67lkMW-EeyCIIi_6VszjA" memberEnd="_E68MosW-EeyCIIi_6VszjA _E68Mo8W-EeyCIIi_6VszjA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E68MoMW-EeyCIIi_6VszjA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E68MocW-EeyCIIi_6VszjA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_E68MosW-EeyCIIi_6VszjA" name="change gearshift position" type="_7oGzgMW2EeyyYa73KIbzUQ" association="_E67lkMW-EeyCIIi_6VszjA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_E68Mo8W-EeyCIIi_6VszjA" name="driver" type="_5xJR4MW2EeyyYa73KIbzUQ" association="_E67lkMW-EeyCIIi_6VszjA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_VJ6B8NZOEeyZIs3E1iO4Yg" name="Input pedal position"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bAVp0NZOEeyZIs3E1iO4Yg" memberEnd="_bAYGEdZOEeyZIs3E1iO4Yg _bAYtINZOEeyZIs3E1iO4Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bAXfANZOEeyZIs3E1iO4Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bAYGENZOEeyZIs3E1iO4Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bAYGEdZOEeyZIs3E1iO4Yg" name="input pedal position" type="_VJ6B8NZOEeyZIs3E1iO4Yg" association="_bAVp0NZOEeyZIs3E1iO4Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bAYtINZOEeyZIs3E1iO4Yg" name="driver" type="_5xJR4MW2EeyyYa73KIbzUQ" association="_bAVp0NZOEeyZIs3E1iO4Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_szUFANg3EeySbq2h8TnUHA" name="Gear Box"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_uyIiINg3EeySbq2h8TnUHA" name="Engine"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_0_t4YN1eEeyB6oChl77ysw" name="Change gears "/>
+      <packagedElement xmi:type="uml:Association" xmi:id="__V_IoN1eEeyB6oChl77ysw" memberEnd="__WBk4N1eEeyB6oChl77ysw __WBk4d1eEeyB6oChl77ysw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__WAWwN1eEeyB6oChl77ysw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__WAWwd1eEeyB6oChl77ysw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__WBk4N1eEeyB6oChl77ysw" name="change gears " type="_0_t4YN1eEeyB6oChl77ysw" association="__V_IoN1eEeyB6oChl77ysw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__WBk4d1eEeyB6oChl77ysw" name="gear box" type="_szUFANg3EeySbq2h8TnUHA" association="__V_IoN1eEeyB6oChl77ysw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_PAn1gN1fEeyB6oChl77ysw" name=" Transfer engine power"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_gaN-kN1fEeyB6oChl77ysw" name="Transmission System"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_jRE28N1fEeyB6oChl77ysw" memberEnd="_jRE2891fEeyB6oChl77ysw _jRFeAN1fEeyB6oChl77ysw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jRE28d1fEeyB6oChl77ysw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jRE28t1fEeyB6oChl77ysw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_jRE2891fEeyB6oChl77ysw" name=" transfer engine power" type="_PAn1gN1fEeyB6oChl77ysw" association="_jRE28N1fEeyB6oChl77ysw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_jRFeAN1fEeyB6oChl77ysw" name="transmission system" type="_gaN-kN1fEeyB6oChl77ysw" association="_jRE28N1fEeyB6oChl77ysw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_kgP_0N1fEeyB6oChl77ysw" name="Wheels"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oTyi4N1fEeyB6oChl77ysw" memberEnd="_oTzJ8t1fEeyB6oChl77ysw _oTzxAN1fEeyB6oChl77ysw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oTzJ8N1fEeyB6oChl77ysw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oTzJ8d1fEeyB6oChl77ysw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_oTzJ8t1fEeyB6oChl77ysw" name=" transfer engine power" type="_PAn1gN1fEeyB6oChl77ysw" association="_oTyi4N1fEeyB6oChl77ysw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_oTzxAN1fEeyB6oChl77ysw" name="engine" type="_uyIiINg3EeySbq2h8TnUHA" association="_oTyi4N1fEeyB6oChl77ysw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_o6TwUN1fEeyB6oChl77ysw" memberEnd="_o6UXYt1fEeyB6oChl77ysw _o6UXY91fEeyB6oChl77ysw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_o6UXYN1fEeyB6oChl77ysw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_o6UXYd1fEeyB6oChl77ysw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_o6UXYt1fEeyB6oChl77ysw" name=" transfer engine power" type="_PAn1gN1fEeyB6oChl77ysw" association="_o6TwUN1fEeyB6oChl77ysw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_o6UXY91fEeyB6oChl77ysw" name="wheels" type="_kgP_0N1fEeyB6oChl77ysw" association="_o6TwUN1fEeyB6oChl77ysw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_K3UHEN29EeyUrvQ0Lh3FUQ" memberEnd="_K3YYgN29EeyUrvQ0Lh3FUQ _K3Y_kN29EeyUrvQ0Lh3FUQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K3V8QN29EeyUrvQ0Lh3FUQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K3V8Qd29EeyUrvQ0Lh3FUQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_K3YYgN29EeyUrvQ0Lh3FUQ" name="gear box" type="_szUFANg3EeySbq2h8TnUHA" association="_K3UHEN29EeyUrvQ0Lh3FUQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_K3Y_kN29EeyUrvQ0Lh3FUQ" name=" transfer engine power" type="_PAn1gN1fEeyB6oChl77ysw" association="_K3UHEN29EeyUrvQ0Lh3FUQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0wVf4MW1EeyyYa73KIbzUQ" name="events">
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_9L_FUMTrEeyhtb6Vq-DBuQ" name="shiftDown" visibility="public">
+        <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_G7_m0MTsEeyhtb6Vq-DBuQ">
+          <language>C</language>
+          <body>currentEngineSpeed == Nmin</body>
+        </changeExpression>
+      </packagedElement>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_ImgA0MTsEeyhtb6Vq-DBuQ" name="shiftUp">
+        <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_NL9wEMTsEeyhtb6Vq-DBuQ">
+          <language>C</language>
+          <body>currentEngineSpeed == Nmax</body>
+        </changeExpression>
+      </packagedElement>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_uWwzUNZLEeyztMSLcHqD0Q" name="Parking">
+        <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_zsTUoNZLEeyztMSLcHqD0Q">
+          <language>C</language>
+          <body>currentGear = &quot;P&quot;</body>
+        </changeExpression>
+      </packagedElement>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_2SCn0NZLEeyztMSLcHqD0Q" name="Reverse">
+        <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_6kvMENZLEeyztMSLcHqD0Q">
+          <language>C</language>
+          <body>currentGear = &quot;R&quot;</body>
+        </changeExpression>
+      </packagedElement>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_8e8O8NZLEeyztMSLcHqD0Q" name="Neutral">
+        <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_Cd0BINZMEeyztMSLcHqD0Q">
+          <language>C</language>
+          <body>currentGear = &quot;N&quot;</body>
+        </changeExpression>
+      </packagedElement>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_DLIaINZMEeyztMSLcHqD0Q" name="Drive">
+        <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_GihMsNZMEeyztMSLcHqD0Q">
+          <language>C</language>
+          <body>currentGear = &quot;D&quot;</body>
+        </changeExpression>
+      </packagedElement>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_OIAPIOXpEeyrmpnLSXdn1g" name="driveGearChanged">
+        <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_ST3yoOXpEeyrmpnLSXdn1g">
+          <language>C</language>
+          <body>driveGear !== driveGear_param</body>
+        </changeExpression>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fbH6EMnMEeyPP-Oq7gEDJg" name="types">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_CvGFYMnKEeyPP-Oq7gEDJg" name="gearEnum" visibility="public">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wiWgwMnMEeyPP-Oq7gEDJg" name="PARKING">
+          <specification xmi:type="uml:LiteralString" xmi:id="_wiWgwcnMEeyPP-Oq7gEDJg" name="gear" value="P"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_yUSYcMnMEeyPP-Oq7gEDJg" name="REVERSE">
+          <specification xmi:type="uml:LiteralString" xmi:id="_yUSYccnMEeyPP-Oq7gEDJg" name="gear" value="R"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zDb9cMnMEeyPP-Oq7gEDJg" name="NEUTRAL">
+          <specification xmi:type="uml:LiteralString" xmi:id="_04R_MMnMEeyPP-Oq7gEDJg" name="gear" value="N"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3fTr0MnMEeyPP-Oq7gEDJg" name="DRIVE">
+          <specification xmi:type="uml:LiteralString" xmi:id="_3fTr0cnMEeyPP-Oq7gEDJg" name="gear" value="D"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_HV-ZUNJvEeyKp65yHsgyfA" name="Vector" visibility="public"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_OIkUkNLJEeyKp65yHsgyfA" name="Matrix"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_EPYMwNZJEeyztMSLcHqD0Q" name="mph"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_IOBk4MoaEeyPP-Oq7gEDJg" name="activities">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_YE7z0N1NEeyB6oChl77ysw" name="act Simulate Flow" node="_qnWvsN1ZEeyB6oChl77ysw _y9h7AN1aEeyB6oChl77ysw _eh_OcN1bEeyB6oChl77ysw _CuDYAN1cEeyB6oChl77ysw _O_etYN1cEeyB6oChl77ysw _z_T2MN1cEeyB6oChl77ysw _H1k2AN1dEeyB6oChl77ysw _lG73QN1dEeyB6oChl77ysw _eMq-YN1eEeyB6oChl77ysw">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Qs9NwN1aEeyB6oChl77ysw" name="getGear" language="" body=""/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1fBnYN1aEeyB6oChl77ysw" name="checkCurrentGear"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_FaaQkN1cEeyB6oChl77ysw" name="Move back"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2b-F4N1cEeyB6oChl77ysw" name="cutoffPower"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4eS04N1aEeyB6oChl77ysw" target="_y9h7AN1aEeyB6oChl77ysw" source="_qnWvsN1ZEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Jr5JUN1bEeyB6oChl77ysw" name="currentGear == 'PARKING'" target="_y9h7AN1aEeyB6oChl77ysw" source="_y9h7AN1aEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_koJUYN1bEeyB6oChl77ysw" name="currentGear == 'REVERSE'" target="_eh_OcN1bEeyB6oChl77ysw" source="_y9h7AN1aEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_K9L8oN1cEeyB6oChl77ysw" name="yes" target="_CuDYAN1cEeyB6oChl77ysw" source="_eh_OcN1bEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_TgSmIN1cEeyB6oChl77ysw" name="no" target="_O_etYN1cEeyB6oChl77ysw" source="_eh_OcN1bEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_aZf5oN1cEeyB6oChl77ysw" name="currentGear == 'REVERSE'" target="_eh_OcN1bEeyB6oChl77ysw" source="_O_etYN1cEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_wXUb0N1cEeyB6oChl77ysw" target="_O_etYN1cEeyB6oChl77ysw" source="_CuDYAN1cEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_43UG8N1cEeyB6oChl77ysw" name="currentGear == 'NEUTRAL'" target="_z_T2MN1cEeyB6oChl77ysw" source="_O_etYN1cEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_KUxcUN1dEeyB6oChl77ysw" target="_H1k2AN1dEeyB6oChl77ysw" source="_z_T2MN1cEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_SB7VQN1dEeyB6oChl77ysw" name="currentGear == 'REVERSE'" target="_CuDYAN1cEeyB6oChl77ysw" source="_H1k2AN1dEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XN0yYN1dEeyB6oChl77ysw" name="currentGear == 'NEUTRAL'" target="_z_T2MN1cEeyB6oChl77ysw" source="_H1k2AN1dEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_pWY6QN1dEeyB6oChl77ysw" name="currentDrive == 'DRIVING'" target="_lG73QN1dEeyB6oChl77ysw" source="_H1k2AN1dEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_hjo6MN1eEeyB6oChl77ysw" target="_eMq-YN1eEeyB6oChl77ysw" source="_lG73QN1dEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ir6J0N1eEeyB6oChl77ysw" name="currentGear == 'DRIVING'" target="_lG73QN1dEeyB6oChl77ysw" source="_eMq-YN1eEeyB6oChl77ysw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_oLRVgN1eEeyB6oChl77ysw" name="CcurrentGear == 'NEUTRAL'" target="_z_T2MN1cEeyB6oChl77ysw" source="_eMq-YN1eEeyB6oChl77ysw"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_qnWvsN1ZEeyB6oChl77ysw" name="Start Simulation / currentGear == 'PARKING'" outgoing="_4eS04N1aEeyB6oChl77ysw"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_y9h7AN1aEeyB6oChl77ysw" name="Check current gear" incoming="_4eS04N1aEeyB6oChl77ysw _Jr5JUN1bEeyB6oChl77ysw" outgoing="_Jr5JUN1bEeyB6oChl77ysw _koJUYN1bEeyB6oChl77ysw" behavior="_1fBnYN1aEeyB6oChl77ysw"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_eh_OcN1bEeyB6oChl77ysw" name="pedalPos > 0" incoming="_koJUYN1bEeyB6oChl77ysw _aZf5oN1cEeyB6oChl77ysw" outgoing="_K9L8oN1cEeyB6oChl77ysw _TgSmIN1cEeyB6oChl77ysw"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_CuDYAN1cEeyB6oChl77ysw" name="Move back" incoming="_K9L8oN1cEeyB6oChl77ysw _SB7VQN1dEeyB6oChl77ysw" outgoing="_wXUb0N1cEeyB6oChl77ysw" behavior="_FaaQkN1cEeyB6oChl77ysw"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_O_etYN1cEeyB6oChl77ysw" name="Check current gear" incoming="_TgSmIN1cEeyB6oChl77ysw _wXUb0N1cEeyB6oChl77ysw" outgoing="_aZf5oN1cEeyB6oChl77ysw _43UG8N1cEeyB6oChl77ysw" behavior="_1fBnYN1aEeyB6oChl77ysw"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_z_T2MN1cEeyB6oChl77ysw" name="Cutoff power" incoming="_43UG8N1cEeyB6oChl77ysw _XN0yYN1dEeyB6oChl77ysw _oLRVgN1eEeyB6oChl77ysw" outgoing="_KUxcUN1dEeyB6oChl77ysw" behavior="_2b-F4N1cEeyB6oChl77ysw"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_H1k2AN1dEeyB6oChl77ysw" name="Check current gear" incoming="_KUxcUN1dEeyB6oChl77ysw" outgoing="_SB7VQN1dEeyB6oChl77ysw _XN0yYN1dEeyB6oChl77ysw _pWY6QN1dEeyB6oChl77ysw" behavior="_1fBnYN1aEeyB6oChl77ysw"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_lG73QN1dEeyB6oChl77ysw" name="Drive" incoming="_pWY6QN1dEeyB6oChl77ysw _ir6J0N1eEeyB6oChl77ysw" outgoing="_hjo6MN1eEeyB6oChl77ysw" behavior="_IdZ_MMQ8Eeye8sWuuOEGkw"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_eMq-YN1eEeyB6oChl77ysw" name="Check current gear" incoming="_hjo6MN1eEeyB6oChl77ysw" outgoing="_ir6J0N1eEeyB6oChl77ysw _oLRVgN1eEeyB6oChl77ysw" behavior="_1fBnYN1aEeyB6oChl77ysw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Q3DI0OAWEey1V-BUgsLF0Q" name="sequence">
+      <packagedElement xmi:type="uml:Interaction" xmi:id="_tGxKUObOEeysC8ykzr1qhw" name="Transmission System">
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_89oVUObOEeysC8ykzr1qhw" name="vs: Vehicle Simulator" coveredBy="_T2u-kObQEeysC8ykzr1qhw _q-xmQObSEeysC8ykzr1qhw _zP9ZUObSEeysC8ykzr1qhw _zP-AYObSEeysC8ykzr1qhw"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="__gAygObOEeysC8ykzr1qhw" name="dr: Driver" coveredBy="_Ruwa4ObPEeysC8ykzr1qhw _e3mD8ObQEeysC8ykzr1qhw"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_CzO2wObPEeysC8ykzr1qhw" name="ts: Transmission System" coveredBy="_T2vloObQEeysC8ykzr1qhw _YFmywebQEeysC8ykzr1qhw"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_FisGoObPEeysC8ykzr1qhw" name="eng: Engine" coveredBy="_YFnZ0ObQEeysC8ykzr1qhw _e3mD8ebQEeysC8ykzr1qhw _iBvrwebQEeysC8ykzr1qhw _wn3LIObREeysC8ykzr1qhw _wn3yMObREeysC8ykzr1qhw __FeEMObREeysC8ykzr1qhw __FfSUObREeysC8ykzr1qhw _exx6YObREeysC8ykzr1qhw _aKd7kObSEeysC8ykzr1qhw"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_IBnAIObPEeysC8ykzr1qhw" name="gbx: Gearbox" coveredBy="_RuxB8ObPEeysC8ykzr1qhw _YF7_YObPEeysC8ykzr1qhw _YF9NgObPEeysC8ykzr1qhw _pcO80ObPEeysC8ykzr1qhw _pcPj4ObPEeysC8ykzr1qhw _iBwS0ObQEeysC8ykzr1qhw _exxTUObREeysC8ykzr1qhw _mV8PYObREeysC8ykzr1qhw _mV82cObREeysC8ykzr1qhw _aKdUgObSEeysC8ykzr1qhw _cy59cObSEeysC8ykzr1qhw _cy6kgObSEeysC8ykzr1qhw _q-w_MObSEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ruwa4ObPEeysC8ykzr1qhw" name="Message7SendEvent" covered="__gAygObOEeysC8ykzr1qhw" message="_RutXkObPEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RuxB8ObPEeysC8ykzr1qhw" name="Message7ReceiveEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_RutXkObPEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_YF7_YObPEeysC8ykzr1qhw" name="CombinedFragment9" covered="_IBnAIObPEeysC8ykzr1qhw" interactionOperator="opt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_YF9NgObPEeysC8ykzr1qhw" name="InteractionOperand0" covered="_IBnAIObPEeysC8ykzr1qhw">
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_YF9NgebPEeysC8ykzr1qhw" name="guard">
+              <specification xmi:type="uml:LiteralString" xmi:id="_uyxjsObPEeysC8ykzr1qhw" value="isNewPosition &amp;&amp; isValidTransition"/>
+            </guard>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pcO80ObPEeysC8ykzr1qhw" name="Message8SendEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_pcOVwObPEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pcPj4ObPEeysC8ykzr1qhw" name="Message8ReceiveEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_pcOVwObPEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T2u-kObQEeysC8ykzr1qhw" name="Message9SendEvent" covered="_89oVUObOEeysC8ykzr1qhw" message="_T2uXgObQEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T2vloObQEeysC8ykzr1qhw" name="Message9ReceiveEvent" covered="_CzO2wObPEeysC8ykzr1qhw" message="_T2uXgObQEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YFmywebQEeysC8ykzr1qhw" name="Message10SendEvent" covered="_CzO2wObPEeysC8ykzr1qhw" message="_YFmywObQEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YFnZ0ObQEeysC8ykzr1qhw" name="Message10ReceiveEvent" covered="_FisGoObPEeysC8ykzr1qhw" message="_YFmywObQEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_e3mD8ObQEeysC8ykzr1qhw" name="Message11SendEvent" covered="__gAygObOEeysC8ykzr1qhw" message="_e3lc4ObQEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_e3mD8ebQEeysC8ykzr1qhw" name="Message11ReceiveEvent" covered="_FisGoObPEeysC8ykzr1qhw" message="_e3lc4ObQEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iBvrwebQEeysC8ykzr1qhw" name="Message12SendEvent" covered="_FisGoObPEeysC8ykzr1qhw" message="_iBvrwObQEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iBwS0ObQEeysC8ykzr1qhw" name="Message12ReceiveEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_iBvrwObQEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_wn3LIObREeysC8ykzr1qhw" name="CombinedFragment16" covered="_FisGoObPEeysC8ykzr1qhw" interactionOperator="opt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_wn3yMObREeysC8ykzr1qhw" name="InteractionOperand0" covered="_FisGoObPEeysC8ykzr1qhw">
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_wn3yMebREeysC8ykzr1qhw" name="guard">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_2lVPIObREeysC8ykzr1qhw">
+                <language>C</language>
+                <body>currentGear == &quot;DRIVE&quot;</body>
+              </specification>
+            </guard>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="__FeEMObREeysC8ykzr1qhw" name="CombinedFragment15" covered="_FisGoObPEeysC8ykzr1qhw" interactionOperator="opt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="__FfSUObREeysC8ykzr1qhw" name="InteractionOperand0" covered="_FisGoObPEeysC8ykzr1qhw">
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="__FfSUebREeysC8ykzr1qhw" name="guard">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_H9qM4ObSEeysC8ykzr1qhw">
+                <language>C</language>
+                <body>engineSpeed == Nmax</body>
+              </specification>
+            </guard>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_exxTUObREeysC8ykzr1qhw" name="Message14SendEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_exwsQObREeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mV8PYObREeysC8ykzr1qhw" name="Message15SendEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_mV7oUObREeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_exx6YObREeysC8ykzr1qhw" name="Message14ReceiveEvent" covered="_FisGoObPEeysC8ykzr1qhw" message="_exwsQObREeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mV82cObREeysC8ykzr1qhw" name="Message15ReceiveEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_mV7oUObREeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_q-w_MObSEeysC8ykzr1qhw" name="Message18SendEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_q-wYIObSEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_q-xmQObSEeysC8ykzr1qhw" name="Message18ReceiveEvent" covered="_89oVUObOEeysC8ykzr1qhw" message="_q-wYIObSEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zP9ZUObSEeysC8ykzr1qhw" name="Message19SendEvent" covered="_89oVUObOEeysC8ykzr1qhw" message="_zP8yQObSEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zP-AYObSEeysC8ykzr1qhw" name="Message19ReceiveEvent" covered="_89oVUObOEeysC8ykzr1qhw" message="_zP8yQObSEeysC8ykzr1qhw"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_MKorAObPEeysC8ykzr1qhw" name="CombinedFragment6" interactionOperator="loop">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_MKp5IObPEeysC8ykzr1qhw" name="InteractionOperand0">
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_MKp5IebPEeysC8ykzr1qhw" name="guard">
+              <specification xmi:type="uml:LiteralBoolean" xmi:id="_myp-oO12Eeye1tc9WkZ9XQ" value="true"/>
+            </guard>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_IiUZIObSEeysC8ykzr1qhw" name="CombinedFragment15" interactionOperator="opt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_IiVAMObSEeysC8ykzr1qhw" name="InteractionOperand0">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aKdUgObSEeysC8ykzr1qhw" name="Message16SendEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_aKctcObSEeysC8ykzr1qhw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cy59cObSEeysC8ykzr1qhw" name="Message17SendEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_cy5WYObSEeysC8ykzr1qhw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aKd7kObSEeysC8ykzr1qhw" name="Message16ReceiveEvent" covered="_FisGoObPEeysC8ykzr1qhw" message="_aKctcObSEeysC8ykzr1qhw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cy6kgObSEeysC8ykzr1qhw" name="Message17ReceiveEvent" covered="_IBnAIObPEeysC8ykzr1qhw" message="_cy5WYObSEeysC8ykzr1qhw"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_IiVAMebSEeysC8ykzr1qhw" name="guard">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_OG1KkObSEeysC8ykzr1qhw">
+                <language>C</language>
+                <body>engineSpeed == Nmin</body>
+              </specification>
+            </guard>
+          </operand>
+        </fragment>
+        <message xmi:type="uml:Message" xmi:id="_RutXkObPEeysC8ykzr1qhw" name="inputGearshifPosition()" messageSort="asynchCall" receiveEvent="_RuxB8ObPEeysC8ykzr1qhw" sendEvent="_Ruwa4ObPEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_pcOVwObPEeysC8ykzr1qhw" name="updateGear()" messageSort="asynchCall" receiveEvent="_pcPj4ObPEeysC8ykzr1qhw" sendEvent="_pcO80ObPEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_T2uXgObQEeysC8ykzr1qhw" name="communicateWheelSpeed()" messageSort="asynchCall" receiveEvent="_T2vloObQEeysC8ykzr1qhw" sendEvent="_T2u-kObQEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_YFmywObQEeysC8ykzr1qhw" name="calculateEngineSpeed()" messageSort="asynchCall" receiveEvent="_YFnZ0ObQEeysC8ykzr1qhw" sendEvent="_YFmywebQEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_e3lc4ObQEeysC8ykzr1qhw" name="inputAcceleratorPedalPosition()" messageSort="asynchCall" receiveEvent="_e3mD8ebQEeysC8ykzr1qhw" sendEvent="_e3mD8ObQEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_iBvrwObQEeysC8ykzr1qhw" name="transmitEngineTorque()" messageSort="asynchCall" receiveEvent="_iBwS0ObQEeysC8ykzr1qhw" sendEvent="_iBvrwebQEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_exwsQObREeysC8ykzr1qhw" name="upShift()" messageSort="asynchCall" receiveEvent="_exx6YObREeysC8ykzr1qhw" sendEvent="_exxTUObREeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_mV7oUObREeysC8ykzr1qhw" name="updateGear()" messageSort="asynchCall" receiveEvent="_mV82cObREeysC8ykzr1qhw" sendEvent="_mV8PYObREeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_aKctcObSEeysC8ykzr1qhw" name="downShift()" messageSort="asynchCall" receiveEvent="_aKd7kObSEeysC8ykzr1qhw" sendEvent="_aKdUgObSEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_cy5WYObSEeysC8ykzr1qhw" name="updateGear()" messageSort="asynchCall" receiveEvent="_cy6kgObSEeysC8ykzr1qhw" sendEvent="_cy59cObSEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_q-wYIObSEeysC8ykzr1qhw" name="transmitGearboxTorque()" messageSort="asynchCall" receiveEvent="_q-xmQObSEeysC8ykzr1qhw" sendEvent="_q-w_MObSEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_zP8yQObSEeysC8ykzr1qhw" name="updateCarSpeed()" messageSort="asynchCall" receiveEvent="_zP-AYObSEeysC8ykzr1qhw" sendEvent="_zP9ZUObSEeysC8ykzr1qhw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_AHvPMO2FEeyifeL_RvG16w" name="env_ro" client="_MPByQN-9EeyQAoCiBoOCcw" supplier="_lqLr8O18Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ICHEwO2FEeyifeL_RvG16w" name="env_cd" client="_cI2KAOASEey1V-BUgsLF0Q" supplier="_lqLr8O18Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_L8RNMO2FEeyifeL_RvG16w" name="env_slope" client="_krnLAN-_EeyQAoCiBoOCcw" supplier="_lqLr8O18Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_OjAl8O2FEeyifeL_RvG16w" name="env_cr" client="_lBF9sN-9EeyQAoCiBoOCcw" supplier="_lqLr8O18Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_0fFfIO2GEeyifeL_RvG16w" name="Wheel" client="_E14GANJtEeyKp65yHsgyfA" supplier="_v9vmcO18Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Dx7XEO2HEeyifeL_RvG16w" name="eng torque - pedal pos 1" client="_L_hRwNcZEeyO7PQk0pa-rA" supplier="_HznPYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_HT6QEO2HEeyifeL_RvG16w" name="eng torque - pedal pos 2" client="_U6mgsNybEeyZdrCSZvBi5g" supplier="_HznPYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ONHjkO2HEeyifeL_RvG16w" name="eng torque - eng speed 1" client="_L_hRwNcZEeyO7PQk0pa-rA" supplier="_VPwEYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_VFHWIO2HEeyifeL_RvG16w" name="eng torque - eng speed 2" client="_2AmGoNyaEeyZdrCSZvBi5g" supplier="_VPwEYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_c1GgoO2HEeyifeL_RvG16w" name="gearshift - current gear" client="_EiPJQNZHEeyztMSLcHqD0Q" supplier="_jgOgYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_f7ozwO2HEeyifeL_RvG16w" name="gearbox sm - gearshift" client="_bU5hEMQlEeye8sWuuOEGkw" supplier="_jgOgYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_rJiPkO2HEeyifeL_RvG16w" name="drive mode" client="_IdZ_MMQ8Eeye8sWuuOEGkw" supplier="_4S8hYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_zzJJsO2HEeyifeL_RvG16w" name="gbx torque constraint" client="_90KO8NfLEeyKDukxCNI3pQ" supplier="_GKF3YO1-Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_5toyMO2HEeyifeL_RvG16w" name="current gear ratio" client="_Hg3yUN_DEeyQAoCiBoOCcw" supplier="_GKF3YO1-Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="__KuF8O2HEeyifeL_RvG16w" name="engine torque" client="_J5QHQOLqEey2GPf_NkcRwg" supplier="_GKF3YO1-Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_kGRWQO2JEeyifeL_RvG16w" name="gearshift - verify" client="_RutXkObPEeysC8ykzr1qhw" supplier="_jgOgYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_vnNC0O2JEeyifeL_RvG16w" name="pedal pos - verify" client="_e3lc4ObQEeysC8ykzr1qhw" supplier="_HznPYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_zcItAO2JEeyifeL_RvG16w" name="engine speed - verify" client="_YFmywObQEeysC8ykzr1qhw" supplier="_VPwEYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_-mIgQO2JEeyifeL_RvG16w" name="downshift - verify" client="_aKctcObSEeysC8ykzr1qhw" supplier="_4S8hYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_glgv0O2KEeyifeL_RvG16w" name="upshift - verify" client="_exwsQObREeysC8ykzr1qhw" supplier="_4S8hYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ko0NMO2KEeyifeL_RvG16w" name="wheel - verify" client="_zP8yQObSEeysC8ykzr1qhw" supplier="_v9vmcO18Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_qKu9oO2KEeyifeL_RvG16w" name="Verify43" client="_zP8yQObSEeysC8ykzr1qhw" supplier="_lqLr8O18Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_4OzVUO2KEeyifeL_RvG16w" name="gbx torque - verify" client="_q-wYIObSEeysC8ykzr1qhw" supplier="_GKF3YO1-Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_-IE10O2KEeyifeL_RvG16w" name="eng torque - eng speed - verify" client="_iBvrwObQEeysC8ykzr1qhw" supplier="_VPwEYO19Eeye1tc9WkZ9XQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_EzuOcO2LEeyifeL_RvG16w" name="eng torque - pedal pos - verify" client="_iBvrwObQEeysC8ykzr1qhw" supplier="_HznPYO19Eeye1tc9WkZ9XQ"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EIffIMQVEeye8sWuuOEGkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EIgGMMQVEeye8sWuuOEGkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EKUrIMQVEeye8sWuuOEGkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EKUrIcQVEeye8sWuuOEGkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EKVSMMQVEeye8sWuuOEGkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EKVSMcQVEeye8sWuuOEGkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EKVSMsQVEeye8sWuuOEGkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EKVSM8QVEeye8sWuuOEGkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EKV5QMQVEeye8sWuuOEGkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EKV5QcQVEeye8sWuuOEGkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EKV5QsQVEeye8sWuuOEGkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EKV5Q8QVEeye8sWuuOEGkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EKWgUMQVEeye8sWuuOEGkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EKWgUcQVEeye8sWuuOEGkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EKWgUsQVEeye8sWuuOEGkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EKWgU8QVEeye8sWuuOEGkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EKXHYMQVEeye8sWuuOEGkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EKXHYcQVEeye8sWuuOEGkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EKXHYsQVEeye8sWuuOEGkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EKXHY8QVEeye8sWuuOEGkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XxaRUMTXEeyhtb6Vq-DBuQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Xxa4YMTXEeyhtb6Vq-DBuQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_au7fgMQgEeye8sWuuOEGkw" base_Class="_atvMsMQgEeye8sWuuOEGkw"/>
+  <Blocks:Block xmi:id="_E2Ao4NJtEeyKp65yHsgyfA" base_Class="_E14GANJtEeyKp65yHsgyfA"/>
+  <Blocks:Block xmi:id="_lsRUQNJtEeyKp65yHsgyfA" base_Class="_lsNp4NJtEeyKp65yHsgyfA"/>
+  <Blocks:ValueType xmi:id="_HWG8MNJvEeyKp65yHsgyfA" base_DataType="_HV-ZUNJvEeyKp65yHsgyfA"/>
+  <Blocks:ValueType xmi:id="_OImw0NLJEeyKp65yHsgyfA" base_DataType="_OIkUkNLJEeyKp65yHsgyfA"/>
+  <DeprecatedElements:FlowPort xmi:id="_4mtycNZGEeyztMSLcHqD0Q" base_Port="_4mqvINZGEeyztMSLcHqD0Q" direction="out"/>
+  <DeprecatedElements:FlowPort xmi:id="_BSkIQNZHEeyztMSLcHqD0Q" base_Port="_BShsANZHEeyztMSLcHqD0Q"/>
+  <DeprecatedElements:FlowPort xmi:id="_EiRlgNZHEeyztMSLcHqD0Q" base_Port="_EiPJQNZHEeyztMSLcHqD0Q" direction="in"/>
+  <Blocks:ValueType xmi:id="_EPaB8NZJEeyztMSLcHqD0Q" base_DataType="_EPYMwNZJEeyztMSLcHqD0Q"/>
+  <DeprecatedElements:FlowPort xmi:id="_duPscNZMEeyztMSLcHqD0Q" base_Port="_duN3QNZMEeyztMSLcHqD0Q" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_hW7qYNZMEeyztMSLcHqD0Q" base_Port="_hWzHgNZMEeyztMSLcHqD0Q" direction="in"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_-vTq0NcWEeyO7PQk0pa-rA" base_Class="_-vROkNcWEeyO7PQk0pa-rA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_c5oUYNcXEeyO7PQk0pa-rA" base_Class="_c5mfMNcXEeyO7PQk0pa-rA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_E2t4gNcYEeyO7PQk0pa-rA" base_Class="_E2sDUNcYEeyO7PQk0pa-rA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_TBJW4NcYEeyO7PQk0pa-rA" base_Class="_TBG6oNcYEeyO7PQk0pa-rA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_spm-0NcYEeyO7PQk0pa-rA" base_Class="_spj7gNcYEeyO7PQk0pa-rA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_L_jG8NcZEeyO7PQk0pa-rA" base_Class="_L_hRwNcZEeyO7PQk0pa-rA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_90TY4NfLEeyKDukxCNI3pQ" base_Class="_90KO8NfLEeyKDukxCNI3pQ"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_6jYlQNfMEeyKDukxCNI3pQ" base_Class="_6jVh8NfMEeyKDukxCNI3pQ"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_uhO90NfTEeyKDukxCNI3pQ" base_Class="_uhMhkNfTEeyKDukxCNI3pQ"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_cYTswNfXEeySbq2h8TnUHA" base_Class="_cYItoNfXEeySbq2h8TnUHA"/>
+  <Blocks:BindingConnector xmi:id="_WXI64NffEeySbq2h8TnUHA" base_Connector="_WXGeoNffEeySbq2h8TnUHA"/>
+  <Blocks:BindingConnector xmi:id="_arRCgNffEeySbq2h8TnUHA" base_Connector="_arN_MNffEeySbq2h8TnUHA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Mva9QNfgEeySbq2h8TnUHA" base_Element="_arQbcNffEeySbq2h8TnUHA" base_ConnectorEnd="_arQbcNffEeySbq2h8TnUHA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ObgEkNfgEeySbq2h8TnUHA" base_Element="_WXIT0NffEeySbq2h8TnUHA" base_ConnectorEnd="_WXIT0NffEeySbq2h8TnUHA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_PgvOUNfgEeySbq2h8TnUHA" base_Element="_WXIT0dffEeySbq2h8TnUHA" base_ConnectorEnd="_WXIT0dffEeySbq2h8TnUHA"/>
+  <DeprecatedElements:FlowPort xmi:id="_DzTv8NyYEeyZdrCSZvBi5g" base_Port="_DzR6wNyYEeyZdrCSZvBi5g"/>
+  <DeprecatedElements:FlowPort xmi:id="_FJEB8NyYEeyZdrCSZvBi5g" base_Port="_FJDa4NyYEeyZdrCSZvBi5g"/>
+  <DeprecatedElements:FlowPort xmi:id="_Z5aEYNyYEeyZdrCSZvBi5g" base_Port="_Z5SIkNyYEeyZdrCSZvBi5g"/>
+  <DeprecatedElements:FlowPort xmi:id="_eWbpUNyYEeyZdrCSZvBi5g" base_Port="_eWTtgNyYEeyZdrCSZvBi5g"/>
+  <DeprecatedElements:FlowPort xmi:id="_qgUMQNyYEeyZdrCSZvBi5g" base_Port="_qgNekNyYEeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_3bKSEtyYEeyZdrCSZvBi5g" base_Connector="_3bIc4NyYEeyZdrCSZvBi5g"/>
+  <DeprecatedElements:FlowPort xmi:id="_vl1fINyZEeyZdrCSZvBi5g" base_Port="_vlp48NyZEeyZdrCSZvBi5g"/>
+  <DeprecatedElements:FlowPort xmi:id="_xs6gYNyZEeyZdrCSZvBi5g" base_Port="_xsykkNyZEeyZdrCSZvBi5g"/>
+  <DeprecatedElements:FlowPort xmi:id="_ZDIRwNyaEeyZdrCSZvBi5g" base_Port="_ZDAV8NyaEeyZdrCSZvBi5g" direction="out"/>
+  <DeprecatedElements:FlowPort xmi:id="_2AuCcNyaEeyZdrCSZvBi5g" base_Port="_2AmGoNyaEeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="__z07QNyaEeyZdrCSZvBi5g" base_Connector="__zyfANyaEeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_EXukQtybEeyZdrCSZvBi5g" base_Connector="_EXsvENybEeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_PbArgtybEeyZdrCSZvBi5g" base_Connector="_Pa-PQNybEeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_RuRHkdybEeyZdrCSZvBi5g" base_Connector="_RuPSYNybEeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_TQzRUtybEeyZdrCSZvBi5g" base_Connector="_TQxcINybEeyZdrCSZvBi5g"/>
+  <DeprecatedElements:FlowPort xmi:id="_U6vDkNybEeyZdrCSZvBi5g" base_Port="_U6mgsNybEeyZdrCSZvBi5g" direction="in"/>
+  <Blocks:BindingConnector xmi:id="_aFMWQtybEeyZdrCSZvBi5g" base_Connector="_aFKhENybEeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_TEj6MNydEeyZdrCSZvBi5g" base_Element="_3bKSENyYEeyZdrCSZvBi5g" base_ConnectorEnd="_3bKSENyYEeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_WVb1ENydEeyZdrCSZvBi5g" base_Element="__z0UMNyaEeyZdrCSZvBi5g" base_ConnectorEnd="__z0UMNyaEeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Ya8JANydEeyZdrCSZvBi5g" base_Element="_PbArgNybEeyZdrCSZvBi5g" base_ConnectorEnd="_PbArgNybEeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ZKsyANydEeyZdrCSZvBi5g" base_Element="_RuQggNybEeyZdrCSZvBi5g" base_ConnectorEnd="_RuQggNybEeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Z0iZMNydEeyZdrCSZvBi5g" base_Element="_TQzRUNybEeyZdrCSZvBi5g" base_ConnectorEnd="_TQzRUNybEeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ai1CkNydEeyZdrCSZvBi5g" base_Element="_aFMWQNybEeyZdrCSZvBi5g" base_ConnectorEnd="_aFMWQNybEeyZdrCSZvBi5g"/>
+  <DeprecatedElements:FlowPort xmi:id="_W9nkgNyfEeyZdrCSZvBi5g" base_Port="_W9dzgNyfEeyZdrCSZvBi5g"/>
+  <Blocks:Block xmi:id="_S-uJMNyjEeyZdrCSZvBi5g" base_Class="_S-p3wNyjEeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_bXd2MN06EeyZdrCSZvBi5g" base_Connector="_bXbZ8N06EeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_sPkbwt06EeyZdrCSZvBi5g" base_Connector="_sPimkN06EeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_ztDhAt06EeyZdrCSZvBi5g" base_Connector="_ztBr0N06EeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_51DaAN06EeyZdrCSZvBi5g" base_Connector="_51A9wN06EeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="__zp_EN09EeyZdrCSZvBi5g" base_Connector="__zni0N09EeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_zioncd0_EeyB6oChl77ysw" base_Connector="_zimLMN0_EeyB6oChl77ysw"/>
+  <DeprecatedElements:FlowPort xmi:id="_JzlhAN1AEeyB6oChl77ysw" base_Port="_JzidsN1AEeyB6oChl77ysw"/>
+  <Blocks:BindingConnector xmi:id="_O0kHkd1AEeyB6oChl77ysw" base_Connector="_O0hrUN1AEeyB6oChl77ysw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_QwGxwN1BEeyB6oChl77ysw" base_Element="_sPkbwd06EeyZdrCSZvBi5g" base_ConnectorEnd="_sPkbwd06EeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_RjZ28N1BEeyB6oChl77ysw" base_Element="_ztDhAN06EeyZdrCSZvBi5g" base_ConnectorEnd="_ztDhAN06EeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_TeDlwN1BEeyB6oChl77ysw" base_Element="_51Cy8d06EeyZdrCSZvBi5g" base_ConnectorEnd="_51Cy8d06EeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_YWwaEN1BEeyB6oChl77ysw" base_Element="__zpYAN09EeyZdrCSZvBi5g" base_ConnectorEnd="__zpYAN09EeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ZQal8N1BEeyB6oChl77ysw" base_Element="__zpYAd09EeyZdrCSZvBi5g" base_ConnectorEnd="__zpYAd09EeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_hTfrkN1BEeyB6oChl77ysw" base_Element="_zioAYN0_EeyB6oChl77ysw" base_ConnectorEnd="_zioAYN0_EeyB6oChl77ysw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_h6k5sN1BEeyB6oChl77ysw" base_Element="_zioncN0_EeyB6oChl77ysw" base_ConnectorEnd="_zioncN0_EeyB6oChl77ysw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ixmBQN1BEeyB6oChl77ysw" base_Element="_O0jggN1AEeyB6oChl77ysw" base_ConnectorEnd="_O0jggN1AEeyB6oChl77ysw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_pJrksN1BEeyB6oChl77ysw" base_Element="_bXdPIN06EeyZdrCSZvBi5g" base_ConnectorEnd="_bXdPIN06EeyZdrCSZvBi5g"/>
+  <Blocks:BindingConnector xmi:id="_exNQ0N-5EeyBKe45X3175g" base_Connector="_exF8EN-5EeyBKe45X3175g"/>
+  <Blocks:BindingConnector xmi:id="_9C2_gd-7EeyBKe45X3175g" base_Connector="_9C0jQN-7EeyBKe45X3175g"/>
+  <Blocks:BindingConnector xmi:id="_JPcRIt-8EeyBKe45X3175g" base_Connector="_JPZ04N-8EeyBKe45X3175g"/>
+  <Blocks:BindingConnector xmi:id="_PGF7cN-8EeyBKe45X3175g" base_Connector="_PGDfMN-8EeyBKe45X3175g"/>
+  <Blocks:BindingConnector xmi:id="_FAMNAN-9EeyQAoCiBoOCcw" base_Connector="_FACcAN-9EeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_RfgNYd-9EeyQAoCiBoOCcw" base_Connector="_RfcjAN-9EeyQAoCiBoOCcw"/>
+  <DeprecatedElements:FlowPort xmi:id="_lBOgkN-9EeyQAoCiBoOCcw" base_Port="_lBF9sN-9EeyQAoCiBoOCcw" direction="in"/>
+  <Blocks:BindingConnector xmi:id="_xX138t-9EeyQAoCiBoOCcw" base_Connector="_xXy0oN-9EeyQAoCiBoOCcw"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_e_pjMN--EeyQAoCiBoOCcw" base_Class="_e_mf4N--EeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_W8csUN-_EeyQAoCiBoOCcw" base_Connector="_W8aQEN-_EeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_iBtJgt-_EeyQAoCiBoOCcw" base_Connector="_iBrUUN-_EeyQAoCiBoOCcw"/>
+  <DeprecatedElements:FlowPort xmi:id="_krqOUN-_EeyQAoCiBoOCcw" base_Port="_krnLAN-_EeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_uh9lEd-_EeyQAoCiBoOCcw" base_Connector="_uh7I0N-_EeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_JyBc8t_AEeyQAoCiBoOCcw" base_Connector="_Jx_nwN_AEeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_R_UOgt_AEeyQAoCiBoOCcw" base_Connector="_R_SZUN_AEeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_7QM80d_AEeyQAoCiBoOCcw" base_Connector="_7QKgkN_AEeyQAoCiBoOCcw"/>
+  <DeprecatedElements:FlowPort xmi:id="_UGObMN_BEeyQAoCiBoOCcw" base_Port="_UGL-8N_BEeyQAoCiBoOCcw" direction="out"/>
+  <Blocks:BindingConnector xmi:id="_u5mXEt_BEeyQAoCiBoOCcw" base_Connector="_u5kh4N_BEeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_QTpE8t_CEeyQAoCiBoOCcw" base_Connector="_QTnPwN_CEeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_Vc_kYt_CEeyQAoCiBoOCcw" base_Connector="_Vc9vMN_CEeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_xR3kEt_DEeyQAoCiBoOCcw" base_Connector="_xR1H0N_DEeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_yrb_Et_DEeyQAoCiBoOCcw" base_Connector="_yraJ4N_DEeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_z7w-gt_DEeyQAoCiBoOCcw" base_Connector="_z7vJUN_DEeyQAoCiBoOCcw"/>
+  <Blocks:BindingConnector xmi:id="_10xHgd_DEeyQAoCiBoOCcw" base_Connector="_10urQN_DEeyQAoCiBoOCcw"/>
+  <DeprecatedElements:FlowPort xmi:id="_Wcww8OASEey1V-BUgsLF0Q" base_Port="_WckjsOASEey1V-BUgsLF0Q" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_cJEzgOASEey1V-BUgsLF0Q" base_Port="_cI2KAOASEey1V-BUgsLF0Q" direction="in"/>
+  <Blocks:BindingConnector xmi:id="_1Cb5wOASEey1V-BUgsLF0Q" base_Connector="_1CYPYOASEey1V-BUgsLF0Q"/>
+  <Blocks:BindingConnector xmi:id="_6ZmLsuASEey1V-BUgsLF0Q" base_Connector="_6ZjvcOASEey1V-BUgsLF0Q"/>
+  <DeprecatedElements:FlowPort xmi:id="_ALQoUOATEey1V-BUgsLF0Q" base_Port="_ALG3UOATEey1V-BUgsLF0Q" direction="in"/>
+  <Blocks:BindingConnector xmi:id="_igFjceATEey1V-BUgsLF0Q" base_Connector="_igDHMOATEey1V-BUgsLF0Q"/>
+  <Blocks:BindingConnector xmi:id="_D2o4cuAUEey1V-BUgsLF0Q" base_Connector="_D2mcMOAUEey1V-BUgsLF0Q"/>
+  <Blocks:BindingConnector xmi:id="_aOzNQuAUEey1V-BUgsLF0Q" base_Connector="_aOwJ8OAUEey1V-BUgsLF0Q"/>
+  <Blocks:BindingConnector xmi:id="_c9530OAUEey1V-BUgsLF0Q" base_Connector="_c93bkOAUEey1V-BUgsLF0Q"/>
+  <Blocks:BindingConnector xmi:id="_gb3McuAUEey1V-BUgsLF0Q" base_Connector="_gb0wMOAUEey1V-BUgsLF0Q"/>
+  <Blocks:BindingConnector xmi:id="_ri_48eAUEey1V-BUgsLF0Q" base_Connector="_ri9csOAUEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_pHQZ0OAVEey1V-BUgsLF0Q" base_Element="_9C2_gN-7EeyBKe45X3175g" base_ConnectorEnd="_9C2_gN-7EeyBKe45X3175g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_pzqM0OAVEey1V-BUgsLF0Q" base_Element="_JPcRId-8EeyBKe45X3175g" base_ConnectorEnd="_JPcRId-8EeyBKe45X3175g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_qkqzAOAVEey1V-BUgsLF0Q" base_Element="_PGFUYd-8EeyBKe45X3175g" base_ConnectorEnd="_PGFUYd-8EeyBKe45X3175g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_vm7L8OAVEey1V-BUgsLF0Q" base_Element="_FAK-4N-9EeyQAoCiBoOCcw" base_ConnectorEnd="_FAK-4N-9EeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_wJxaUOAVEey1V-BUgsLF0Q" base_Element="_FAK-4d-9EeyQAoCiBoOCcw" base_ConnectorEnd="_FAK-4d-9EeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_xBRDAOAVEey1V-BUgsLF0Q" base_Element="_RfgNYN-9EeyQAoCiBoOCcw" base_ConnectorEnd="_RfgNYN-9EeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_x0AukOAVEey1V-BUgsLF0Q" base_Element="_xX138d-9EeyQAoCiBoOCcw" base_ConnectorEnd="_xX138d-9EeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ywgMAOAVEey1V-BUgsLF0Q" base_Element="_W8cFQd-_EeyQAoCiBoOCcw" base_ConnectorEnd="_W8cFQd-_EeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_zXeFYOAVEey1V-BUgsLF0Q" base_Element="_W8cFQN-_EeyQAoCiBoOCcw" base_ConnectorEnd="_W8cFQN-_EeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_0QyTAOAVEey1V-BUgsLF0Q" base_Element="_iBtJgd-_EeyQAoCiBoOCcw" base_ConnectorEnd="_iBtJgd-_EeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_1EEKEOAVEey1V-BUgsLF0Q" base_Element="_uh9lEN-_EeyQAoCiBoOCcw" base_ConnectorEnd="_uh9lEN-_EeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_14tTEOAVEey1V-BUgsLF0Q" base_Element="_JyBc8d_AEeyQAoCiBoOCcw" base_ConnectorEnd="_JyBc8d_AEeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_2qxCIOAVEey1V-BUgsLF0Q" base_Element="_R_UOgd_AEeyQAoCiBoOCcw" base_ConnectorEnd="_R_UOgd_AEeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_3e9fMOAVEey1V-BUgsLF0Q" base_Element="_R_UOgN_AEeyQAoCiBoOCcw" base_ConnectorEnd="_R_UOgN_AEeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_4Pb54OAVEey1V-BUgsLF0Q" base_Element="_7QMVwN_AEeyQAoCiBoOCcw" base_ConnectorEnd="_7QMVwN_AEeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_4wta8OAVEey1V-BUgsLF0Q" base_Element="_7QM80N_AEeyQAoCiBoOCcw" base_ConnectorEnd="_7QM80N_AEeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_8K5p4OAVEey1V-BUgsLF0Q" base_Element="_1CbSseASEey1V-BUgsLF0Q" base_ConnectorEnd="_1CbSseASEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_9MEL8OAVEey1V-BUgsLF0Q" base_Element="_6ZmLseASEey1V-BUgsLF0Q" base_ConnectorEnd="_6ZmLseASEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_92khgOAVEey1V-BUgsLF0Q" base_Element="_igE8YOATEey1V-BUgsLF0Q" base_ConnectorEnd="_igE8YOATEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_-W0H0OAVEey1V-BUgsLF0Q" base_Element="_igFjcOATEey1V-BUgsLF0Q" base_ConnectorEnd="_igFjcOATEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="__jZPsOAVEey1V-BUgsLF0Q" base_Element="_D2o4ceAUEey1V-BUgsLF0Q" base_ConnectorEnd="_D2o4ceAUEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ALDsoOAWEey1V-BUgsLF0Q" base_Element="_aOzNQOAUEey1V-BUgsLF0Q" base_ConnectorEnd="_aOzNQOAUEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_AsrL8OAWEey1V-BUgsLF0Q" base_Element="_aOzNQeAUEey1V-BUgsLF0Q" base_ConnectorEnd="_aOzNQeAUEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_BkTXgOAWEey1V-BUgsLF0Q" base_Element="_c95QwOAUEey1V-BUgsLF0Q" base_ConnectorEnd="_c95QwOAUEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Cd5R8OAWEey1V-BUgsLF0Q" base_Element="_c95QweAUEey1V-BUgsLF0Q" base_ConnectorEnd="_c95QweAUEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_DdTggOAWEey1V-BUgsLF0Q" base_Element="_gb3McOAUEey1V-BUgsLF0Q" base_ConnectorEnd="_gb3McOAUEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_D-FSUOAWEey1V-BUgsLF0Q" base_Element="_gb3MceAUEey1V-BUgsLF0Q" base_ConnectorEnd="_gb3MceAUEey1V-BUgsLF0Q"/>
+  <Blocks:NestedConnectorEnd xmi:id="_E0GUUOAWEey1V-BUgsLF0Q" base_Element="_ri_48OAUEey1V-BUgsLF0Q" base_ConnectorEnd="_ri_48OAUEey1V-BUgsLF0Q"/>
+  <Blocks:Block xmi:id="_XGm6AOAkEeyC6I-5TDX_3g" base_Class="_XGaswOAkEeyC6I-5TDX_3g"/>
+  <Blocks:BindingConnector xmi:id="_et21EOBtEeyz97SW6jXbYw" base_Connector="_etu5QOBtEeyz97SW6jXbYw"/>
+  <DeprecatedElements:FlowPort xmi:id="_4bWuAOBtEeyqBLJ1Eszaaw" base_Port="_4bG2YOBtEeyqBLJ1Eszaaw" direction="in"/>
+  <Blocks:BindingConnector xmi:id="_IUH9gOBuEeyqBLJ1Eszaaw" base_Connector="_IUAowOBuEeyqBLJ1Eszaaw"/>
+  <Blocks:BindingConnector xmi:id="_TiFY0OBwEeyM45x-2cJqcQ" base_Connector="_Th06IOBwEeyM45x-2cJqcQ"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_Drc04OEAEeyXPMXG3lFeMw" base_Class="_DrZxkOEAEeyXPMXG3lFeMw"/>
+  <DeprecatedElements:FlowPort xmi:id="_Mwzk8OECEeyXPMXG3lFeMw" base_Port="_MwuFYOECEeyXPMXG3lFeMw" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_SOZPAOECEeyXPMXG3lFeMw" base_Port="_SOWywOECEeyXPMXG3lFeMw" direction="out"/>
+  <DeprecatedElements:FlowPort xmi:id="_CB-OQOEDEeyXPMXG3lFeMw" base_Port="_CB4HoOEDEeyXPMXG3lFeMw"/>
+  <DeprecatedElements:FlowPort xmi:id="_IPbPAOEDEeyXPMXG3lFeMw" base_Port="_IPReAOEDEeyXPMXG3lFeMw"/>
+  <Blocks:BindingConnector xmi:id="_wKZd0uEEEeyXPMXG3lFeMw" base_Connector="_wKXooOEEEeyXPMXG3lFeMw"/>
+  <Blocks:BindingConnector xmi:id="_5TeiMuEEEeyXPMXG3lFeMw" base_Connector="_5TctAOEEEeyXPMXG3lFeMw"/>
+  <Blocks:BindingConnector xmi:id="_JzmzAuENEeyXPMXG3lFeMw" base_Connector="_Jzk90OENEeyXPMXG3lFeMw"/>
+  <Blocks:BindingConnector xmi:id="_tbiUwuENEeyXPMXG3lFeMw" base_Connector="_tbgfkOENEeyXPMXG3lFeMw"/>
+  <Blocks:BindingConnector xmi:id="_GluFQuEOEeyXPMXG3lFeMw" base_Connector="_GlsQEOEOEeyXPMXG3lFeMw"/>
+  <Blocks:BindingConnector xmi:id="_K0XP8uEOEeyXPMXG3lFeMw" base_Connector="_K0UzsOEOEeyXPMXG3lFeMw"/>
+  <Blocks:BindingConnector xmi:id="_OdmAcuEOEeyXPMXG3lFeMw" base_Connector="_OdkLQOEOEeyXPMXG3lFeMw"/>
+  <DeprecatedElements:FlowPort xmi:id="_gHMUYOEOEeyXPMXG3lFeMw" base_Port="_gHBVQOEOEeyXPMXG3lFeMw"/>
+  <Blocks:BindingConnector xmi:id="_k8hEkuEOEeyXPMXG3lFeMw" base_Connector="_k8fPYOEOEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_MWkNEOEPEeyXPMXG3lFeMw" base_Element="_wKZd0OEEEeyXPMXG3lFeMw" base_ConnectorEnd="_wKZd0OEEEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_M16bgOEPEeyXPMXG3lFeMw" base_Element="_wKZd0eEEEeyXPMXG3lFeMw" base_ConnectorEnd="_wKZd0eEEEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_NeZ-4OEPEeyXPMXG3lFeMw" base_Element="_5TeiMOEEEeyXPMXG3lFeMw" base_ConnectorEnd="_5TeiMOEEEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_N81AQOEPEeyXPMXG3lFeMw" base_Element="_5TeiMeEEEeyXPMXG3lFeMw" base_ConnectorEnd="_5TeiMeEEEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_URh4gOEPEeyXPMXG3lFeMw" base_Element="_JzmzAeENEeyXPMXG3lFeMw" base_ConnectorEnd="_JzmzAeENEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Uzy4EOEPEeyXPMXG3lFeMw" base_Element="_tbiUwOENEeyXPMXG3lFeMw" base_ConnectorEnd="_tbiUwOENEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_VR3UIOEPEeyXPMXG3lFeMw" base_Element="_tbiUweENEeyXPMXG3lFeMw" base_ConnectorEnd="_tbiUweENEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Zf3loOEPEeyXPMXG3lFeMw" base_Element="_GluFQeEOEeyXPMXG3lFeMw" base_ConnectorEnd="_GluFQeEOEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_aTrBIOEPEeyXPMXG3lFeMw" base_Element="_K0XP8eEOEeyXPMXG3lFeMw" base_ConnectorEnd="_K0XP8eEOEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_cYkREOEPEeyXPMXG3lFeMw" base_Element="_k8hEkOEOEeyXPMXG3lFeMw" base_ConnectorEnd="_k8hEkOEOEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_gLHVoOEPEeyXPMXG3lFeMw" base_Element="_OdmAcOEOEeyXPMXG3lFeMw" base_ConnectorEnd="_OdmAcOEOEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_gqZ5sOEPEeyXPMXG3lFeMw" base_Element="_OdmAceEOEeyXPMXG3lFeMw" base_ConnectorEnd="_OdmAceEOEeyXPMXG3lFeMw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_mIhvQOEPEeyXPMXG3lFeMw" base_Element="_et1m8OBtEeyz97SW6jXbYw" base_ConnectorEnd="_et1m8OBtEeyz97SW6jXbYw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_mr8lYOEPEeyXPMXG3lFeMw" base_Element="_TiCVgOBwEeyM45x-2cJqcQ" base_ConnectorEnd="_TiCVgOBwEeyM45x-2cJqcQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_nWD5YOEPEeyXPMXG3lFeMw" base_Element="_IUHWceBuEeyqBLJ1Eszaaw" base_ConnectorEnd="_IUHWceBuEeyqBLJ1Eszaaw"/>
+  <Blocks:Block xmi:id="_hmjG8OEREeyXPMXG3lFeMw" base_Class="_hmhRwOEREeyXPMXG3lFeMw"/>
+  <DeprecatedElements:FlowPort xmi:id="_WKHqcOESEeyXPMXG3lFeMw" base_Port="_WKF1QOESEeyXPMXG3lFeMw" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_ZCcicOESEeyXPMXG3lFeMw" base_Port="_ZCSxcOESEeyXPMXG3lFeMw" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_brBHMOESEeyXPMXG3lFeMw" base_Port="_bq_SAOESEeyXPMXG3lFeMw" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_ew1ooOESEeyXPMXG3lFeMw" base_Port="_ewu68OESEeyXPMXG3lFeMw" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_g-vqoOESEeyXPMXG3lFeMw" base_Port="_g-tOYOESEeyXPMXG3lFeMw" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_jEz_QOESEeyXPMXG3lFeMw" base_Port="_jEsDcOESEeyXPMXG3lFeMw"/>
+  <DeprecatedElements:FlowPort xmi:id="_llU0MOESEeyXPMXG3lFeMw" base_Port="_llM4YOESEeyXPMXG3lFeMw" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_nom6kOESEeyXPMXG3lFeMw" base_Port="_nokeUOESEeyXPMXG3lFeMw" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_qI5tEOESEeyXPMXG3lFeMw" base_Port="_qIuG4OESEeyXPMXG3lFeMw" direction="out"/>
+  <DeprecatedElements:FlowPort xmi:id="_sM9PgOESEeyXPMXG3lFeMw" base_Port="_sM7aUOESEeyXPMXG3lFeMw" direction="out"/>
+  <Blocks:BindingConnector xmi:id="_gfcfoOH7Eeyz1PUmZ5CQVw" base_Connector="_gfWZAOH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_k3uHcuH7Eeyz1PUmZ5CQVw" base_Connector="_k3qdEOH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_po5-gOH7Eeyz1PUmZ5CQVw" base_Connector="_po27MOH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_sOikAuH7Eeyz1PUmZ5CQVw" base_Connector="_sOgHwOH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_vcwzguH7Eeyz1PUmZ5CQVw" base_Connector="_vcuXQOH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_xciS4OH7Eeyz1PUmZ5CQVw" base_Connector="_xcfPkOH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_zvsoUeH7Eeyz1PUmZ5CQVw" base_Connector="_zvqMEOH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_1drNEuH7Eeyz1PUmZ5CQVw" base_Connector="_1dow0OH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_CT__QeH8Eeyz1PUmZ5CQVw" base_Connector="_CT9jAOH8Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_IiDc8uH8Eeyz1PUmZ5CQVw" base_Connector="_IiBAsOH8Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_JqS3YuH8Eeyz1PUmZ5CQVw" base_Connector="_JqQbIOH8Eeyz1PUmZ5CQVw"/>
+  <Blocks:BindingConnector xmi:id="_boHu4uH8Eeyz1PUmZ5CQVw" base_Connector="_boDdcOH8Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_FEi-0OH9Eeyz1PUmZ5CQVw" base_Element="_gfb4kOH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_gfb4kOH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_FyaxcOH9Eeyz1PUmZ5CQVw" base_Element="_k3uHceH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_k3uHceH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_GhXiIOH9Eeyz1PUmZ5CQVw" base_Element="_po5XceH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_po5XceH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_HX79wOH9Eeyz1PUmZ5CQVw" base_Element="_sOikAeH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_sOikAeH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ICCqsOH9Eeyz1PUmZ5CQVw" base_Element="_vcwzgeH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_vcwzgeH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_IskOYOH9Eeyz1PUmZ5CQVw" base_Element="_xchr0eH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_xchr0eH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_JYECcOH9Eeyz1PUmZ5CQVw" base_Element="_zvsBQOH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_zvsBQOH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_KIsOIOH9Eeyz1PUmZ5CQVw" base_Element="_1drNEOH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_1drNEOH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_KlYxMOH9Eeyz1PUmZ5CQVw" base_Element="_1drNEeH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_1drNEeH7Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_McZWIOH9Eeyz1PUmZ5CQVw" base_Element="_CT_YMOH8Eeyz1PUmZ5CQVw" base_ConnectorEnd="_CT_YMOH8Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_NTJ_AOH9Eeyz1PUmZ5CQVw" base_Element="_IiDc8eH8Eeyz1PUmZ5CQVw" base_ConnectorEnd="_IiDc8eH8Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_N3WRMOH9Eeyz1PUmZ5CQVw" base_Element="_JqS3YeH8Eeyz1PUmZ5CQVw" base_ConnectorEnd="_JqS3YeH8Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_PS_v0OH9Eeyz1PUmZ5CQVw" base_Element="_boHu4eH8Eeyz1PUmZ5CQVw" base_ConnectorEnd="_boHu4eH8Eeyz1PUmZ5CQVw"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_DT0-IOK4Eey2GPf_NkcRwg" base_Class="_DTow4OK4Eey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_qsbfsOK5Eey2GPf_NkcRwg" base_Connector="_qsYcYOK5Eey2GPf_NkcRwg"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_uXCwQOK5Eey2GPf_NkcRwg" base_Class="_uXCJMOK5Eey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_LfklouK6Eey2GPf_NkcRwg" base_Connector="_LfiwcOK6Eey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_OvgFUuK6Eey2GPf_NkcRwg" base_Connector="_OvdpEOK6Eey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_wKGz4OK6Eey2GPf_NkcRwg" base_Connector="_wKEXoOK6Eey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_m7tVMOK7Eey2GPf_NkcRwg" base_Element="_qsa4oeK5Eey2GPf_NkcRwg" base_ConnectorEnd="_qsa4oeK5Eey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_njS5oOK7Eey2GPf_NkcRwg" base_Element="_LfkloOK6Eey2GPf_NkcRwg" base_ConnectorEnd="_LfkloOK6Eey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_oEBBEOK7Eey2GPf_NkcRwg" base_Element="_LfkloeK6Eey2GPf_NkcRwg" base_ConnectorEnd="_LfkloeK6Eey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_oyiT8OK7Eey2GPf_NkcRwg" base_Element="_OvgFUOK6Eey2GPf_NkcRwg" base_ConnectorEnd="_OvgFUOK6Eey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_powKQOK7Eey2GPf_NkcRwg" base_Element="_wKGM0OK6Eey2GPf_NkcRwg" base_ConnectorEnd="_wKGM0OK6Eey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_qKBrUOK7Eey2GPf_NkcRwg" base_Element="_wKGM0eK6Eey2GPf_NkcRwg" base_ConnectorEnd="_wKGM0eK6Eey2GPf_NkcRwg"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_ViHhQOK9Eey2GPf_NkcRwg" base_Class="_ViFsEOK9Eey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_aAFE4eK-Eey2GPf_NkcRwg" base_Connector="_aACooOK-Eey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_fRHgsuK-Eey2GPf_NkcRwg" base_Connector="_fRFEcOK-Eey2GPf_NkcRwg"/>
+  <DeprecatedElements:FlowPort xmi:id="_xjJtoOK-Eey2GPf_NkcRwg" base_Port="_xi-HcOK-Eey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_dCeiEOLCEey2GPf_NkcRwg" base_Connector="_dCcF0OLCEey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_tDQeEuLCEey2GPf_NkcRwg" base_Connector="_tDOo4OLCEey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_2CDlEOLCEey2GPf_NkcRwg" base_Connector="_2CBv4OLCEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_RrdxEOLDEey2GPf_NkcRwg" base_Element="_dCd7AOLCEey2GPf_NkcRwg" base_ConnectorEnd="_dCd7AOLCEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_SWGpgOLDEey2GPf_NkcRwg" base_Element="_tDQeEOLCEey2GPf_NkcRwg" base_ConnectorEnd="_tDQeEOLCEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_SzqvQOLDEey2GPf_NkcRwg" base_Element="_tDQeEeLCEey2GPf_NkcRwg" base_ConnectorEnd="_tDQeEeLCEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_TsDIwOLDEey2GPf_NkcRwg" base_Element="_2CC-AeLCEey2GPf_NkcRwg" base_ConnectorEnd="_2CC-AeLCEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_XlPA0OLDEey2GPf_NkcRwg" base_Element="_aAEd0OK-Eey2GPf_NkcRwg" base_ConnectorEnd="_aAEd0OK-Eey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_YG8mwOLDEey2GPf_NkcRwg" base_Element="_aAFE4OK-Eey2GPf_NkcRwg" base_ConnectorEnd="_aAFE4OK-Eey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_YuzQ8OLDEey2GPf_NkcRwg" base_Element="_fRHgsOK-Eey2GPf_NkcRwg" base_ConnectorEnd="_fRHgsOK-Eey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ZPb40OLDEey2GPf_NkcRwg" base_Element="_fRHgseK-Eey2GPf_NkcRwg" base_ConnectorEnd="_fRHgseK-Eey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Iu77IOLoEey2GPf_NkcRwg" base_Element="_boHu4OH8Eeyz1PUmZ5CQVw" base_ConnectorEnd="_boHu4OH8Eeyz1PUmZ5CQVw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_JtBUAOLoEey2GPf_NkcRwg" base_Element="_sPkbwN06EeyZdrCSZvBi5g" base_ConnectorEnd="_sPkbwN06EeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_KauukOLoEey2GPf_NkcRwg" base_Element="_ztDhAd06EeyZdrCSZvBi5g" base_ConnectorEnd="_ztDhAd06EeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_LHBz4OLoEey2GPf_NkcRwg" base_Element="_51Cy8N06EeyZdrCSZvBi5g" base_ConnectorEnd="_51Cy8N06EeyZdrCSZvBi5g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_MIJSoOLoEey2GPf_NkcRwg" base_Element="_2CC-AOLCEey2GPf_NkcRwg" base_ConnectorEnd="_2CC-AOLCEey2GPf_NkcRwg"/>
+  <DeprecatedElements:FlowPort xmi:id="_J5dioOLqEey2GPf_NkcRwg" base_Port="_J5QHQOLqEey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_dGUZEeLqEey2GPf_NkcRwg" base_Connector="_dGR80OLqEey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_0Zj2EOLqEey2GPf_NkcRwg" base_Connector="_0ZhZ0OLqEey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_Me2louLsEey2GPf_NkcRwg" base_Connector="_Me0wcOLsEey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_QIbUYOLsEey2GPf_NkcRwg" base_Connector="_QIY4IOLsEey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_WdAQ0eLsEey2GPf_NkcRwg" base_Connector="_Wc90kOLsEey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_k5oScOLsEey2GPf_NkcRwg" base_Connector="_k5l2MOLsEey2GPf_NkcRwg"/>
+  <Blocks:BindingConnector xmi:id="_ZYG9wOLxEeyMdeINNWNrGg" base_Connector="_ZYBeMOLxEeyMdeINNWNrGg"/>
+  <DeprecatedElements:FlowPort xmi:id="_8y-dAOXoEeyrmpnLSXdn1g" base_Port="_8yvMcOXoEeyrmpnLSXdn1g"/>
+  <Blocks:BindingConnector xmi:id="_kN69YuXpEeyrmpnLSXdn1g" base_Connector="_kN4hIOXpEeyrmpnLSXdn1g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_3Ui5EO11Eeye1tc9WkZ9XQ" base_Element="_dGTyAOLqEey2GPf_NkcRwg" base_ConnectorEnd="_dGTyAOLqEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_32iL0O11Eeye1tc9WkZ9XQ" base_Element="_dGUZEOLqEey2GPf_NkcRwg" base_ConnectorEnd="_dGUZEOLqEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_4p0p8O11Eeye1tc9WkZ9XQ" base_Element="_0ZjPAOLqEey2GPf_NkcRwg" base_ConnectorEnd="_0ZjPAOLqEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_5Y5WcO11Eeye1tc9WkZ9XQ" base_Element="_kN69YOXpEeyrmpnLSXdn1g" base_ConnectorEnd="_kN69YOXpEeyrmpnLSXdn1g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_58UMkO11Eeye1tc9WkZ9XQ" base_Element="_kN69YeXpEeyrmpnLSXdn1g" base_ConnectorEnd="_kN69YeXpEeyrmpnLSXdn1g"/>
+  <Blocks:NestedConnectorEnd xmi:id="_7nCpAO11Eeye1tc9WkZ9XQ" base_Element="_ZYGWseLxEeyMdeINNWNrGg" base_ConnectorEnd="_ZYGWseLxEeyMdeINNWNrGg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_8vCL0O11Eeye1tc9WkZ9XQ" base_Element="_xR3kEN_DEeyQAoCiBoOCcw" base_ConnectorEnd="_xR3kEN_DEeyQAoCiBoOCcw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_9r4OkO11Eeye1tc9WkZ9XQ" base_Element="_Me2loeLsEey2GPf_NkcRwg" base_ConnectorEnd="_Me2loeLsEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_-lA2AO11Eeye1tc9WkZ9XQ" base_Element="_QIatUeLsEey2GPf_NkcRwg" base_ConnectorEnd="_QIatUeLsEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="__a7xYO11Eeye1tc9WkZ9XQ" base_Element="_WdAQ0OLsEey2GPf_NkcRwg" base_ConnectorEnd="_WdAQ0OLsEey2GPf_NkcRwg"/>
+  <Blocks:NestedConnectorEnd xmi:id="_AUOJ0O12Eeye1tc9WkZ9XQ" base_Element="_k5nrYeLsEey2GPf_NkcRwg" base_ConnectorEnd="_k5nrYeLsEey2GPf_NkcRwg"/>
+  <Requirements:Requirement xmi:id="_t-p5AO17Eeye1tc9WkZ9XQ" base_NamedElement="_t-ncwO17Eeye1tc9WkZ9XQ" id="REQ-1" text="The TS SHALL calculate the transmission torque." base_Class="_t-ncwO17Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_0v6KYO17Eeye1tc9WkZ9XQ" base_NamedElement="_0v3uIO17Eeye1tc9WkZ9XQ" id="REQ-1.1" text="The TS SHALL inform the transmission torque for the Vehicle Simulator to calculate the car speed." base_Class="_0v3uIO17Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_-lbeAO17Eeye1tc9WkZ9XQ" base_NamedElement="_-lXzoO17Eeye1tc9WkZ9XQ" id="REQ-1.2" text="The TS SHALL provide the relationship between the engine speed and the wheel speed.&#xD;&#xA;" base_Class="_-lXzoO17Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_ITiiEO18Eeye1tc9WkZ9XQ" base_NamedElement="_ITgs4O18Eeye1tc9WkZ9XQ" id="REQ-1.3" text="The TS SHALL have an Engine to provide power for the car to move." base_Class="_ITgs4O18Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_PAQ4wO18Eeye1tc9WkZ9XQ" base_NamedElement="_PAOcgO18Eeye1tc9WkZ9XQ" id="REQ-1.4" text="The TS SHALL have a Gearbox to act as a torque converter, increasing or decreasing the engine toruqe to allow the vehicle to move in a wide range of speeds." base_Class="_PAOcgO18Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_lqNhIO18Eeye1tc9WkZ9XQ" base_NamedElement="_lqLr8O18Eeye1tc9WkZ9XQ" id="REQ-1.1.1" text="The Vehicle Simulator SHALL receive environment parameters to be able to calculate the velocity." base_Class="_lqLr8O18Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_v9xboO18Eeye1tc9WkZ9XQ" base_NamedElement="_v9vmcO18Eeye1tc9WkZ9XQ" id="REQ-1.1.2" text="The Vehicle Simulator SHALL take into consideration the wheel/tire parameters." base_Class="_v9vmcO18Eeye1tc9WkZ9XQ"/>
+  <Requirements:Refine xmi:id="_4e02sO18Eeye1tc9WkZ9XQ" base_DirectedRelationship="_4eyacO18Eeye1tc9WkZ9XQ" base_Abstraction="_4eyacO18Eeye1tc9WkZ9XQ"/>
+  <Requirements:Refine xmi:id="_5osBwO18Eeye1tc9WkZ9XQ" base_DirectedRelationship="_5oqMkO18Eeye1tc9WkZ9XQ" base_Abstraction="_5oqMkO18Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_7dbV0O18Eeye1tc9WkZ9XQ" base_NamedElement="_7dZgoO18Eeye1tc9WkZ9XQ" id="REQ-1.3.1" text="The engine SHALL calculate the engine torque and inform it to the Gearbox, so it can convert it into the transmission torque." base_Class="_7dZgoO18Eeye1tc9WkZ9XQ"/>
+  <Requirements:Refine xmi:id="_Gv3TYO19Eeye1tc9WkZ9XQ" base_DirectedRelationship="_Gv2FQO19Eeye1tc9WkZ9XQ" base_Abstraction="_Gv2FQO19Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_HzpEkO19Eeye1tc9WkZ9XQ" base_NamedElement="_HznPYO19Eeye1tc9WkZ9XQ" id="REQ-1.3.1.1" text="The engine torque SHALL depend on the pedal position." base_Class="_HznPYO19Eeye1tc9WkZ9XQ"/>
+  <Requirements:Refine xmi:id="_SnclYO19Eeye1tc9WkZ9XQ" base_DirectedRelationship="_SnawMO19Eeye1tc9WkZ9XQ" base_Abstraction="_SnawMO19Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_VPx5kO19Eeye1tc9WkZ9XQ" base_NamedElement="_VPwEYO19Eeye1tc9WkZ9XQ" id="REQ-1.3.1.2" text="The engine torque SHALL depend on the engine speed." base_Class="_VPwEYO19Eeye1tc9WkZ9XQ"/>
+  <Requirements:Refine xmi:id="_d97VcO19Eeye1tc9WkZ9XQ" base_DirectedRelationship="_d96HUO19Eeye1tc9WkZ9XQ" base_Abstraction="_d96HUO19Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_jgQVkO19Eeye1tc9WkZ9XQ" base_NamedElement="_jgOgYO19Eeye1tc9WkZ9XQ" id="REQ-1.4.1" text="The Gearbox SHALL receive the gearshift position from the driver, that indicates the main state (Parking, Reverse, Neutral and Drive) and make only allowed transitions." base_Class="_jgOgYO19Eeye1tc9WkZ9XQ"/>
+  <Requirements:Refine xmi:id="_3dzpIO19Eeye1tc9WkZ9XQ" base_DirectedRelationship="_3dxz8O19Eeye1tc9WkZ9XQ" base_Abstraction="_3dxz8O19Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_4S-9oO19Eeye1tc9WkZ9XQ" base_NamedElement="_4S8hYO19Eeye1tc9WkZ9XQ" id="REQ-1.4.2" text="In the driving mode, the Gearbox SHALL automatically modify the gears, based on the maximum and minimum value of engine rotations." base_Class="_4S8hYO19Eeye1tc9WkZ9XQ"/>
+  <Requirements:Refine xmi:id="_C6P3QO1-Eeye1tc9WkZ9XQ" base_DirectedRelationship="_C6OCEO1-Eeye1tc9WkZ9XQ" base_Abstraction="_C6OCEO1-Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_GKHskO1-Eeye1tc9WkZ9XQ" base_NamedElement="_GKF3YO1-Eeye1tc9WkZ9XQ" id="REQ-1.4.3" text="The Gearbox SHALL calculate the transmission torque based on the engine torque and on the current gear." base_Class="_GKF3YO1-Eeye1tc9WkZ9XQ"/>
+  <Requirements:Refine xmi:id="_O5PY0O1-Eeye1tc9WkZ9XQ" base_DirectedRelationship="_O5NjoO1-Eeye1tc9WkZ9XQ" base_Abstraction="_O5NjoO1-Eeye1tc9WkZ9XQ"/>
+  <Requirements:Requirement xmi:id="_m0xLkO2DEeyifeL_RvG16w" base_NamedElement="_m0SDYO2DEeyifeL_RvG16w" base_Class="_m0SDYO2DEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_AH1V0O2FEeyifeL_RvG16w" base_DirectedRelationship="_AHvPMO2FEeyifeL_RvG16w" base_Abstraction="_AHvPMO2FEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_ICJhAO2FEeyifeL_RvG16w" base_DirectedRelationship="_ICHEwO2FEeyifeL_RvG16w" base_Abstraction="_ICHEwO2FEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_L8TCYO2FEeyifeL_RvG16w" base_DirectedRelationship="_L8RNMO2FEeyifeL_RvG16w" base_Abstraction="_L8RNMO2FEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_OjDpQO2FEeyifeL_RvG16w" base_DirectedRelationship="_OjAl8O2FEeyifeL_RvG16w" base_Abstraction="_OjAl8O2FEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_0fH7YO2GEeyifeL_RvG16w" base_DirectedRelationship="_0fFfIO2GEeyifeL_RvG16w" base_Abstraction="_0fFfIO2GEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_Dx9zUO2HEeyifeL_RvG16w" base_DirectedRelationship="_Dx7XEO2HEeyifeL_RvG16w" base_Abstraction="_Dx7XEO2HEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_HT8sUO2HEeyifeL_RvG16w" base_DirectedRelationship="_HT6QEO2HEeyifeL_RvG16w" base_Abstraction="_HT6QEO2HEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_ONKm4O2HEeyifeL_RvG16w" base_DirectedRelationship="_ONHjkO2HEeyifeL_RvG16w" base_Abstraction="_ONHjkO2HEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_VFJLUO2HEeyifeL_RvG16w" base_DirectedRelationship="_VFHWIO2HEeyifeL_RvG16w" base_Abstraction="_VFHWIO2HEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_c1I84O2HEeyifeL_RvG16w" base_DirectedRelationship="_c1GgoO2HEeyifeL_RvG16w" base_Abstraction="_c1GgoO2HEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_f7qo8O2HEeyifeL_RvG16w" base_DirectedRelationship="_f7ozwO2HEeyifeL_RvG16w" base_Abstraction="_f7ozwO2HEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_rJkEwO2HEeyifeL_RvG16w" base_DirectedRelationship="_rJiPkO2HEeyifeL_RvG16w" base_Abstraction="_rJiPkO2HEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_zzK-4O2HEeyifeL_RvG16w" base_DirectedRelationship="_zzJJsO2HEeyifeL_RvG16w" base_Abstraction="_zzJJsO2HEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="_5trOcO2HEeyifeL_RvG16w" base_DirectedRelationship="_5toyMO2HEeyifeL_RvG16w" base_Abstraction="_5toyMO2HEeyifeL_RvG16w"/>
+  <Requirements:Satisfy xmi:id="__KwiMO2HEeyifeL_RvG16w" base_DirectedRelationship="__KuF8O2HEeyifeL_RvG16w" base_Abstraction="__KuF8O2HEeyifeL_RvG16w"/>
+  <Requirements:Verify xmi:id="_kGTygO2JEeyifeL_RvG16w" base_DirectedRelationship="_kGRWQO2JEeyifeL_RvG16w" base_Abstraction="_kGRWQO2JEeyifeL_RvG16w"/>
+  <Requirements:Verify xmi:id="_vnO4AO2JEeyifeL_RvG16w" base_DirectedRelationship="_vnNC0O2JEeyifeL_RvG16w" base_Abstraction="_vnNC0O2JEeyifeL_RvG16w"/>
+  <Requirements:Verify xmi:id="_zcLJQO2JEeyifeL_RvG16w" base_DirectedRelationship="_zcItAO2JEeyifeL_RvG16w" base_Abstraction="_zcItAO2JEeyifeL_RvG16w"/>
+  <Requirements:Verify xmi:id="_-mK8gO2JEeyifeL_RvG16w" base_DirectedRelationship="_-mIgQO2JEeyifeL_RvG16w" base_Abstraction="_-mIgQO2JEeyifeL_RvG16w"/>
+  <Requirements:Verify xmi:id="_glkaMO2KEeyifeL_RvG16w" base_DirectedRelationship="_glgv0O2KEeyifeL_RvG16w" base_Abstraction="_glgv0O2KEeyifeL_RvG16w"/>
+  <Requirements:Verify xmi:id="_ko2pcO2KEeyifeL_RvG16w" base_DirectedRelationship="_ko0NMO2KEeyifeL_RvG16w" base_Abstraction="_ko0NMO2KEeyifeL_RvG16w"/>
+  <Requirements:Verify xmi:id="_qKxZ4O2KEeyifeL_RvG16w" base_DirectedRelationship="_qKu9oO2KEeyifeL_RvG16w" base_Abstraction="_qKu9oO2KEeyifeL_RvG16w"/>
+  <Requirements:Verify xmi:id="_4O1KgO2KEeyifeL_RvG16w" base_DirectedRelationship="_4OzVUO2KEeyifeL_RvG16w" base_Abstraction="_4OzVUO2KEeyifeL_RvG16w"/>
+  <Requirements:Verify xmi:id="_-IH5IO2KEeyifeL_RvG16w" base_DirectedRelationship="_-IE10O2KEeyifeL_RvG16w" base_Abstraction="_-IE10O2KEeyifeL_RvG16w"/>
+  <Requirements:Verify xmi:id="_EzwDoO2LEeyifeL_RvG16w" base_DirectedRelationship="_EzuOcO2LEeyifeL_RvG16w" base_Abstraction="_EzuOcO2LEeyifeL_RvG16w"/>
+</xmi:XMI>
