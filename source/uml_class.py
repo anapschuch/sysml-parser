@@ -4,7 +4,7 @@ class UMLBasic:
         self.xmi_id = xmi_id
         self.children = []
 
-    def add_children(self, child):base_class
+    def add_children(self, child):
         self.children.append(child)
 
 
