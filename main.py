@@ -16,5 +16,9 @@ if __name__ == '__main__':
             print(base_class_elem.name)
             for child_element in base_class_elem.children:
                 if type(child_element) is UMLPort:
-                    print("     ", child_element.name)
+                    print("     Port: ", child_element.name)
+                elif type(child_element) is UMLProperty:
+                    print("     Property: ", child_element.name)
+                elif child_element is not None:
+                    print("     ", type(child_element), ": ", child_element.name)
             print("")

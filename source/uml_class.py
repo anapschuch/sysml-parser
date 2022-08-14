@@ -25,6 +25,11 @@ class UMLPort(UMLBasic):
         self.aggregation = aggregation
 
 
+class UMLConstraint(UMLBasic):
+    def __init__(self, name, xmi_id):
+        super().__init__(name, xmi_id)
+
+
 class UMLProperty(UMLBasic):
     def __init__(self, name, xmi_id):
         super().__init__(name, xmi_id)
@@ -84,4 +89,3 @@ class RequirementsSatisfy(BaseRequirementsRelationship):
 class RequirementsRefine(BaseRequirementsRelationship):
     def __int__(self, xmi_id, base_directed_relationship, base_abstraction):
         super().__init__(xmi_id, base_directed_relationship, base_abstraction)
-

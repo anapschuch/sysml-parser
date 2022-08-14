@@ -106,10 +106,13 @@ class SysMLParser:
                 element = UMLPackage(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
             elif xmi_type == XMITypeTypes.CLASS:
                 element = UMLClass(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
-
-            if xmi_type == XMITypeTypes.PORT:
+            elif xmi_type == XMITypeTypes.PORT:
                 element = UMLPort(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id, None,
                                   self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.AGGREGATION))
+            elif xmi_type == XMITypeTypes.CONSTRAINT:
+                element = UMLConstraint(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+            elif xmi_type == XMITypeTypes.PROPERTY:
+                element = UMLProperty(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
         self.ids[xmi_id] = element
         if element is not None:
