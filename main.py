@@ -14,11 +14,23 @@ if __name__ == '__main__':
         base_class_elem = parser.ids[base_class_id]
         if base_class_elem is not None and type(base_class_elem) is UMLClass:
             print(base_class_elem.name)
-            for child_element in base_class_elem.children:
-                if type(child_element) is UMLPort:
-                    print("     Port: ", child_element.name)
-                elif type(child_element) is UMLProperty:
-                    print("     Property: ", child_element.name)
-                elif child_element is not None:
-                    print("     ", type(child_element), ": ", child_element.name)
+            print("\n  Attributes:")
+            for attr_id, attr in base_class_elem.attributes.items():
+                if type(attr) is UMLPort:
+                    print("    Port (", attr.direction, "): ", attr_id, " - ", attr.name, sep="")
+                else:
+                    print("    Property:", attr_id, ": ", attr.name, sep="")
+
+            print("\n  Connectors:")
+            for end1, end2 in base_class_elem.connectors.items():
+                print("    ", end1, ": ", end2, sep="")
+
+            print("\n  Children Attributes:")
+            for attr_id, attr_ref in base_class_elem.children_attributes.items():
+                print("    ", attr_id, ": ", attr_ref.name, " (", attr_ref.xmi_id, ")", sep="")
+
+            print("\n  Children:")
+            for child_id, child_element in base_class_elem.children.items():
+                if child_element is not None:
+                    print("     ", type(child_element), ": ", child_element.name, sep="")
             print("")

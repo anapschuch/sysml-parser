@@ -67,14 +67,32 @@ class SysMLParser:
         element = None
 
         if tag_type == XMLTagTypes.MODEL:
-            element = Model(xmi_id, self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME))
+            element = UMLModel(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
-        if tag_type == XMLTagTypes.BLOCK:
+        elif tag_type == XMLTagTypes.BLOCK:
             base_class = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.BASE_CLASS)
             element = Block(xmi_id, base_class)
             self.blocks.append(element)
 
-        if is_tag_requirement_type(tag_type):
+        elif tag_type == XMLTagTypes.BODY:
+            element = Body(tag.text)
+
+        elif tag_type == XMLTagTypes.DEFAULT_VALUE:
+            element = DefaultValue(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.XMI_TYPE), xmi_id)
+
+        elif tag_type == XMLTagTypes.FLOW_PORT:
+            base_port_id = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.BASE_PORT)
+            base_port = self.ids.get(base_port_id, None)
+            if base_port is None:
+                raise Exception("Base Port id ", base_port_id, " not found")
+            if type(base_port) is not UMLPort:
+                raise Exception("Unexpected base port type: ", type(base_port))
+            direction = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.DIRECTION)
+            if direction is None:
+                raise Exception("Missing direction for flow port ", base_port_id)
+            base_port.add_direction(direction)
+
+        elif is_tag_requirement_type(tag_type):
             if tag_type == XMLTagTypes.REQUIREMENT:
                 req_id = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.ID)
                 text = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.TEXT)
@@ -90,32 +108,48 @@ class SysMLParser:
             if tag_type == XMLTagTypes.REQUIREMENTS_REFINE:
                 element = RequirementsRefine(xmi_id, base_directed_relationship, base_abstraction)
 
-            if tag_type == XMLTagTypes.REQUIREMENTS_VERIFY:
+            elif tag_type == XMLTagTypes.REQUIREMENTS_VERIFY:
                 element = RequirementsVerify(xmi_id, base_directed_relationship, base_abstraction)
 
-            if tag_type == XMLTagTypes.REQUIREMENTS_SATISFY:
+            elif tag_type == XMLTagTypes.REQUIREMENTS_SATISFY:
                 element = RequirementsSatisfy(xmi_id, base_directed_relationship, base_abstraction)
 
             self.base_ids[base_abstraction] = element
 
-        xmi_type_string = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.XMI_TYPE)
-        if xmi_type_string is not None:
-            xmi_type = self.get_tag_xmi_type(xmi_type_string)
+        else:
+            xmi_type_string = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.XMI_TYPE)
+            if xmi_type_string is not None:
+                xmi_type = self.get_tag_xmi_type(xmi_type_string)
 
-            if xmi_type == XMITypeTypes.PACKAGE:
-                element = UMLPackage(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
-            elif xmi_type == XMITypeTypes.CLASS:
-                element = UMLClass(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
-            elif xmi_type == XMITypeTypes.PORT:
-                element = UMLPort(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id, None,
-                                  self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.AGGREGATION))
-            elif xmi_type == XMITypeTypes.CONSTRAINT:
-                element = UMLConstraint(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
-            elif xmi_type == XMITypeTypes.PROPERTY:
-                element = UMLProperty(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                if xmi_type == XMITypeTypes.PACKAGE:
+                    element = UMLPackage(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+
+                elif xmi_type == XMITypeTypes.CLASS:
+                    element = UMLClass(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+
+                elif xmi_type == XMITypeTypes.PORT:
+                    element = UMLPort(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id, None,
+                                      self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.AGGREGATION))
+
+                elif xmi_type == XMITypeTypes.CONSTRAINT:
+                    element = UMLConstraint(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+
+                elif xmi_type == XMITypeTypes.PROPERTY:
+                    element = UMLProperty(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+
+                elif xmi_type == XMITypeTypes.PRIMITIVE_TYPE:
+                    element = UMLPrimitiveType(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.HREF))
+
+                elif xmi_type == XMITypeTypes.CONNECTOR:
+                    element = UMLConnector(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+
+                elif xmi_type == XMITypeTypes.CONNECTOR_END:
+                    element = UMLConnectorEnd(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.ROLE))
 
         self.ids[xmi_id] = element
         if element is not None:
             for child in tag:
-                element.add_children(self.parse_tag(child))
+                parsed_child = self.parse_tag(child)
+                if parsed_child is not None:
+                    element.add_children(parsed_child)
         return element
