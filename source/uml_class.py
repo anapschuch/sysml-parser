@@ -89,6 +89,9 @@ class UMLPort(UMLBasic):
         else:
             raise Exception("Unexpected child for UMLPort: ", type(child))
 
+    def print(self, indentation):
+        print(' '*indentation, "Port (", self.direction, "): ", self.xmi_id, " - ", self.name, sep="")
+
 
 class UMLConstraint(UMLBasic):
     def __init__(self, name, xmi_id):
@@ -116,6 +119,9 @@ class UMLProperty(UMLBasic):
         else:
             raise Exception("Unexpected child for UMLProperty: ", type(child))
 
+    def print(self, indentation):
+        print(' ' * indentation, "Property: ", self.xmi_id, " - ", self.name, sep="")
+
 
 class UMLPrimitiveType:
     def __init__(self, href):
@@ -132,6 +138,11 @@ class UMLStateMachine(UMLBasic):
             self.regions.append(child)
         else:
             raise Exception("Unexpected child for UMLStateMachine: ", type(child))
+
+    def print(self, indentation):
+        print(' '*indentation, "State Machine: ", self.name, sep="")
+        for region in self.regions:
+            region.print(indentation+2)
 
 
 class UMLRegion(UMLBasic):
@@ -157,6 +168,16 @@ class UMLRegion(UMLBasic):
         else:
             raise Exception("Unexpected child for UMLRegion: ", type(child))
 
+    def print(self, indentation):
+        print(' ' * indentation, "Region ", self.name, ":", self.xmi_id, sep="")
+        for state in self.states.values():
+            state.print(indentation+2)
+
+        if len(self.transitions) > 0:
+            print("\n" + ' ' * indentation, "Transitions: ", sep="")
+            for trans in self.transitions.values():
+                trans.print(indentation)
+
 
 class UMLState(UMLBasic):
     def __init__(self, name, xmi_id):
@@ -176,6 +197,15 @@ class UMLState(UMLBasic):
         else:
             raise Exception("Unexpected child for UMLState: ", type(child))
 
+    def print(self, indentation):
+        print(' ' * indentation, self.name, ":", self.xmi_id, sep="")
+        if self.entry is not None:
+            txt = self.entry.body
+            txt = txt.replace('\r\n', '\n' + ' ' * (indentation + 9))
+            print(' ' * (indentation + 2), "entry: ", txt, sep="")
+        if self.state_machine is not None:
+            self.state_machine.print(indentation+2)
+
 
 class UMLPseudoState(UMLBasic):
     def __init__(self, name, xmi_id, kind):
@@ -185,10 +215,38 @@ class UMLPseudoState(UMLBasic):
         else:
             raise Exception("Unexpected kind for pseudo state:", self.kind)
 
+    def print(self, indentation):
+        print(' ' * indentation, self.name, ": ", self.xmi_id, sep="")
+
 
 class UMLFinalState(UMLBasic):
     def __init__(self, name, xmi_id):
         super().__init__(name, xmi_id)
+
+    def print(self, indentation):
+        print(' ' * indentation, self.name, ": ", self.xmi_id, sep="")
+
+
+class UMLChangeEvent(UMLBasic):
+    def __init__(self, name, xmi_id):
+        super().__init__(name, xmi_id)
+        self.change_expression = {
+            "language": None,
+            "body": None,
+        }
+
+    def add_children(self, child):
+        if type(child) is Specification:
+            if self.change_expression["body"] is not None:
+                raise Exception("Cannot have two bodies in a change expression")
+            self.change_expression["body"] = child.text
+            self.change_expression["language"] = child.language
+        else:
+            raise Exception("Unexpected child for UMLChangeEvent: ", type(child))
+
+    def print(self, indentation):
+        if self.change_expression["body"] is not None:
+            print(' ' * indentation, self.change_expression["body"])
 
 
 class UMLTransition:
@@ -200,11 +258,16 @@ class UMLTransition:
 
     def add_children(self, child):
         if type(child) is UMLTrigger:
-            self.trigger = child.event
-        elif type(child) is UMLConstraint:
-            self.constraint = child.specification
+            self.trigger = child
         else:
             raise Exception("Unexpected child for UMLTransition: ", type(child))
+
+    def print(self, indentation):
+        print(' ' * indentation, self.source, "->", self.target)
+        if self.constraint is not None:
+            print(' ' * (indentation + 2), self.constraint.text)
+        if self.trigger is not None:
+            self.trigger.print(indentation+2)
 
 
 class UMLStateEntryBehavior(UMLBasic):
@@ -220,8 +283,19 @@ class UMLStateEntryBehavior(UMLBasic):
 
 
 class UMLTrigger:
-    def __init__(self, event):
+    def __init__(self, xmi_id, event_id):
+        self.xmi_id = xmi_id
+        self.event_id = event_id
+        self.event = None
+
+    def add_event(self, event):
         self.event = event
+
+    def print(self, indentation):
+        if self.event is not None:
+            print(' ' * indentation, self.event.change_expression["body"])
+        else:
+            raise Exception("Trigger event is empty. Trigger id: ", self.xmi_id)
 
 
 class DefaultValue:
@@ -303,22 +377,4 @@ class Specification:
             raise Exception("Unexpected child for Specification tag")
 
 
-def print_state_machine(state_machine, indentation):
-    for region in state_machine.regions:
-        print(' ' * indentation, region.name, ":", region.xmi_id, sep="")
-        for state_id, state in region.states.items():
-            print(' ' * (indentation + 2), state.name, ":", state_id, sep="")
-            if type(state) is UMLState:
-                if state.entry is not None:
-                    txt = state.entry.body
-                    txt = txt.replace('\r\n', '\n' + ' ' * (indentation + 11))
-                    print(' ' * (indentation + 4), "entry: ", txt, sep="")
-                if state.state_machine is not None:
-                    print_state_machine(state.state_machine, indentation + 4)
 
-        if len(region.transitions) > 0:
-            print("\n" + ' ' * indentation, "Transitions:", sep="")
-            for trans_id, trans in region.transitions.items():
-                print(' ' * (indentation + 2), trans.source, "->", trans.target)
-                if trans.constraint is not None:
-                    print(' ' * (indentation + 4), trans.constraint.text)

@@ -14,11 +14,8 @@ if __name__ == '__main__':
         if base_class_elem is not None and type(base_class_elem) is UMLClass:
             print(base_class_elem.name)
             print("\n  Attributes:")
-            for attr_id, attr in base_class_elem.attributes.items():
-                if type(attr) is UMLPort:
-                    print("    Port (", attr.direction, "): ", attr_id, " - ", attr.name, sep="")
-                else:
-                    print("    Property:", attr_id, ": ", attr.name, sep="")
+            for attr in base_class_elem.attributes.values():
+                attr.print(4)
 
             print("\n  Connectors:")
             for end1, end2 in base_class_elem.connectors.items():
@@ -29,8 +26,8 @@ if __name__ == '__main__':
                 print("    ", attr_id, ": ", attr_ref.name, " (", attr_ref.xmi_id, ")", sep="")
 
             if base_class_elem.state_machine is not None:
-                print("\n  State Machine:")
-                print_state_machine(base_class_elem.state_machine, 4)
+                print("")
+                base_class_elem.state_machine.print(2)
 
             print("\n  Children:")
             for child_id, child_element in base_class_elem.children.items():

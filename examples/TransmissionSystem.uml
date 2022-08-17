@@ -888,7 +888,6 @@ driveGear_param = driveGear</body>
                 <transition xmi:type="uml:Transition" xmi:id="_yfju8MTXEeyhtb6Vq-DBuQ" name="Neutral" source="_81ZT4MQzEeye8sWuuOEGkw" target="_e4rogMQzEeye8sWuuOEGkw">
                   <trigger xmi:type="uml:Trigger" xmi:id="_ctWPwMTrEeyhtb6Vq-DBuQ" event="_8e8O8NZLEeyztMSLcHqD0Q"/>
                 </transition>
-                <transition xmi:type="uml:Transition" xmi:id="_7q898OIXEeyAy-jGKY3ZyQ" source="_KlSAwMQzEeye8sWuuOEGkw" target="_svTeAOIXEeyAy-jGKY3ZyQ"/>
                 <subvertex xmi:type="uml:State" xmi:id="_KlSAwMQzEeye8sWuuOEGkw" name="Parking">
                   <entry xmi:type="uml:OpaqueBehavior" xmi:id="_Oo6UYMTaEeyhtb6Vq-DBuQ" name="Parking Behavior" visibility="public">
                     <language>C</language>
@@ -912,132 +911,47 @@ driveGear_param = driveGear</body>
                     <region xmi:type="uml:Region" xmi:id="_LQejwMQ8Eeye8sWuuOEGkw" name="Drive">
                       <transition xmi:type="uml:Transition" xmi:id="_Jjmb4MTkEeyhtb6Vq-DBuQ" source="_k1YhYMQ8Eeye8sWuuOEGkw" target="_XbYaYMQ8Eeye8sWuuOEGkw"/>
                       <transition xmi:type="uml:Transition" xmi:id="_QNYhYMTmEeyhtb6Vq-DBuQ" source="_XbYaYMQ8Eeye8sWuuOEGkw" target="_aAGZ4MQ8Eeye8sWuuOEGkw">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_slzvgMTmEeyhtb6Vq-DBuQ">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="__wW40MTmEeyhtb6Vq-DBuQ">
-                            <language>C</language>
-                            <body>RPM >= 2500</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_TY5MYMTsEeyhtb6Vq-DBuQ" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_PadaMMTnEeyhtb6Vq-DBuQ" source="_aAGZ4MQ8Eeye8sWuuOEGkw" target="_XbYaYMQ8Eeye8sWuuOEGkw">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_XkCwcMTnEeyhtb6Vq-DBuQ">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_aPGogMTnEeyhtb6Vq-DBuQ">
-                            <language>C</language>
-                            <body>RPM &lt;= 700</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_QlDLwMTsEeyhtb6Vq-DBuQ" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_i-5DIMTnEeyhtb6Vq-DBuQ" source="_aAGZ4MQ8Eeye8sWuuOEGkw" target="_ahaXMMQ8Eeye8sWuuOEGkw">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_mdcNoMTnEeyhtb6Vq-DBuQ">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_pMvFcMTnEeyhtb6Vq-DBuQ">
-                            <language>C</language>
-                            <body>RPM >= 2500</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_U16kAMTsEeyhtb6Vq-DBuQ" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_sfhr4MTnEeyhtb6Vq-DBuQ" source="_ahaXMMQ8Eeye8sWuuOEGkw" target="_aAGZ4MQ8Eeye8sWuuOEGkw">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_wRGgEMTnEeyhtb6Vq-DBuQ">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_znJO0MTnEeyhtb6Vq-DBuQ">
-                            <language>C</language>
-                            <body>RPM &lt;= 700</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_WPIZsMTsEeyhtb6Vq-DBuQ" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_2EIOoMTnEeyhtb6Vq-DBuQ" source="_ahaXMMQ8Eeye8sWuuOEGkw" target="_a6AdYMQ8Eeye8sWuuOEGkw">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_3r1MQMTnEeyhtb6Vq-DBuQ">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_59FdMMTnEeyhtb6Vq-DBuQ">
-                            <language>C</language>
-                            <body>RPM &lt;= 2500</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_Zi20QMTsEeyhtb6Vq-DBuQ" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_FFmCsMToEeyhtb6Vq-DBuQ" source="_a6AdYMQ8Eeye8sWuuOEGkw" target="_ahaXMMQ8Eeye8sWuuOEGkw">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_HTHDIMToEeyhtb6Vq-DBuQ">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_K035sMToEeyhtb6Vq-DBuQ">
-                            <language>C</language>
-                            <body>RPM &lt;= 700</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_XdAiEMTsEeyhtb6Vq-DBuQ" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_QtsHMMToEeyhtb6Vq-DBuQ" source="_a6AdYMQ8Eeye8sWuuOEGkw" target="_bXayIMQ8Eeye8sWuuOEGkw">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_VCVzQMToEeyhtb6Vq-DBuQ">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WP1hIMToEeyhtb6Vq-DBuQ">
-                            <language>C</language>
-                            <body>RPM >= 2500</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_wdVzAMTsEeyhtb6Vq-DBuQ" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_aXbBkMToEeyhtb6Vq-DBuQ" source="_bXayIMQ8Eeye8sWuuOEGkw" target="_a6AdYMQ8Eeye8sWuuOEGkw">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_dIwgwMToEeyhtb6Vq-DBuQ">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_foc2UMToEeyhtb6Vq-DBuQ">
-                            <language>C</language>
-                            <body>RPM &lt;= 700</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_y7B9cMTsEeyhtb6Vq-DBuQ" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_ggOfcNJoEeyPM_J-D-wR-Q" source="_bXayIMQ8Eeye8sWuuOEGkw" target="_Ym2IYNJoEeyPM_J-D-wR-Q">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_ggOfcdJoEeyPM_J-D-wR-Q">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ggOfctJoEeyPM_J-D-wR-Q">
-                            <language>C</language>
-                            <body>RPM >= 2500</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_ggOfc9JoEeyPM_J-D-wR-Q" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_n133UNJoEeyPM_J-D-wR-Q" source="_Ym2IYNJoEeyPM_J-D-wR-Q" target="_bXayIMQ8Eeye8sWuuOEGkw">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_n133UdJoEeyPM_J-D-wR-Q">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_n133UtJoEeyPM_J-D-wR-Q">
-                            <language>C</language>
-                            <body>RPM &lt;= 700</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_n133U9JoEeyPM_J-D-wR-Q" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_zTgYQNJoEeyPM_J-D-wR-Q" source="_q1qCMNJoEeyPM_J-D-wR-Q" target="_Ym2IYNJoEeyPM_J-D-wR-Q">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_zTgYQdJoEeyPM_J-D-wR-Q">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_zTgYQtJoEeyPM_J-D-wR-Q">
-                            <language>C</language>
-                            <body>RPM >= 2500</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_zTgYQ9JoEeyPM_J-D-wR-Q" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_BK17gNJpEeyPM_J-D-wR-Q" source="_Ym2IYNJoEeyPM_J-D-wR-Q" target="_q1qCMNJoEeyPM_J-D-wR-Q">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_BK17gdJpEeyPM_J-D-wR-Q">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_BK17gtJpEeyPM_J-D-wR-Q">
-                            <language>C</language>
-                            <body>RPM &lt;= 700</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_BK17g9JpEeyPM_J-D-wR-Q" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_i0FjANJpEeyPM_J-D-wR-Q" source="_q1qCMNJoEeyPM_J-D-wR-Q" target="_FL2S0NJpEeyPM_J-D-wR-Q">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_i0FjAdJpEeyPM_J-D-wR-Q">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_i0FjAtJpEeyPM_J-D-wR-Q">
-                            <language>C</language>
-                            <body>RPM &lt;= 2500</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_i0FjA9JpEeyPM_J-D-wR-Q" event="_ImgA0MTsEeyhtb6Vq-DBuQ"/>
                       </transition>
                       <transition xmi:type="uml:Transition" xmi:id="_l8p2cNJpEeyPM_J-D-wR-Q" source="_FL2S0NJpEeyPM_J-D-wR-Q" target="_q1qCMNJoEeyPM_J-D-wR-Q">
-                        <ownedRule xmi:type="uml:Constraint" xmi:id="_l8p2cdJpEeyPM_J-D-wR-Q">
-                          <specification xmi:type="uml:OpaqueExpression" xmi:id="_l8p2ctJpEeyPM_J-D-wR-Q">
-                            <language>C</language>
-                            <body>RPM &lt;= 700</body>
-                          </specification>
-                        </ownedRule>
                         <trigger xmi:type="uml:Trigger" xmi:id="_l8p2c9JpEeyPM_J-D-wR-Q" event="_9L_FUMTrEeyhtb6Vq-DBuQ"/>
                       </transition>
-                      <transition xmi:type="uml:Transition" xmi:id="_lbUBwOXiEeyrmpnLSXdn1g" source="_XbYaYMQ8Eeye8sWuuOEGkw" target="_hjjtEOXiEeyrmpnLSXdn1g"/>
                       <subvertex xmi:type="uml:State" xmi:id="_XbYaYMQ8Eeye8sWuuOEGkw" name="First">
                         <entry xmi:type="uml:OpaqueBehavior" xmi:id="_fNzT8MTjEeyhtb6Vq-DBuQ">
                           <language>C</language>
@@ -1095,12 +1009,10 @@ currentGearRatio_param = 0.84;</body>
 currentGearRatio_param = 0.67;</body>
                         </entry>
                       </subvertex>
-                      <subvertex xmi:type="uml:FinalState" xmi:id="_hjjtEOXiEeyrmpnLSXdn1g" name="End"/>
                     </region>
                   </doActivity>
                 </subvertex>
                 <subvertex xmi:type="uml:Pseudostate" xmi:id="_2JLL4MTVEeyhtb6Vq-DBuQ" name="Begin"/>
-                <subvertex xmi:type="uml:FinalState" xmi:id="_svTeAOIXEeyAy-jGKY3ZyQ" name="End"/>
               </region>
             </ownedBehavior>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_90KO8NfLEeyKDukxCNI3pQ" name="Gearbox Current Torque">
@@ -1244,25 +1156,25 @@ currentGearRatio_param = 0.67;</body>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_uWwzUNZLEeyztMSLcHqD0Q" name="Parking">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_zsTUoNZLEeyztMSLcHqD0Q">
           <language>C</language>
-          <body>currentGear = &quot;P&quot;</body>
+          <body>currentGear == &quot;P&quot;</body>
         </changeExpression>
       </packagedElement>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_2SCn0NZLEeyztMSLcHqD0Q" name="Reverse">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_6kvMENZLEeyztMSLcHqD0Q">
           <language>C</language>
-          <body>currentGear = &quot;R&quot;</body>
+          <body>currentGear == &quot;R&quot;</body>
         </changeExpression>
       </packagedElement>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_8e8O8NZLEeyztMSLcHqD0Q" name="Neutral">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_Cd0BINZMEeyztMSLcHqD0Q">
           <language>C</language>
-          <body>currentGear = &quot;N&quot;</body>
+          <body>currentGear == &quot;N&quot;</body>
         </changeExpression>
       </packagedElement>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_DLIaINZMEeyztMSLcHqD0Q" name="Drive">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_GihMsNZMEeyztMSLcHqD0Q">
           <language>C</language>
-          <body>currentGear = &quot;D&quot;</body>
+          <body>currentGear == &quot;D&quot;</body>
         </changeExpression>
       </packagedElement>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_OIAPIOXpEeyrmpnLSXdn1g" name="driveGearChanged">

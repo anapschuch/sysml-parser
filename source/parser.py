@@ -15,6 +15,7 @@ class SysMLParser:
         self.ids = dict()
         self.base_ids = dict()
         self.blocks = []
+        self.triggers = dict()
 
     def get_tag_types_from_path(self, types_list):
         tag_types = dict()
@@ -77,7 +78,7 @@ class SysMLParser:
         elif tag_type == XMLTagTypes.BODY:
             element = Body(tag.text)
 
-        elif tag_type == XMLTagTypes.SPECIFICATION:
+        elif tag_type == XMLTagTypes.SPECIFICATION or tag_type == XMLTagTypes.CHANGE_EXPRESSION:
             element = Specification(xmi_id)
 
         elif tag_type == XMLTagTypes.DEFAULT_VALUE:
@@ -173,7 +174,18 @@ class SysMLParser:
                                             self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.TARGET))
 
                 elif xmi_type == XMITypeTypes.TRIGGER:
-                    element = UMLTrigger(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.EVENT))
+                    event_id = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.EVENT)
+                    element = UMLTrigger(xmi_id, event_id)
+                    aux = self.triggers.get(event_id, None)
+                    if aux is None:
+                        self.triggers[event_id] = [element]
+                    else:
+                        self.triggers[event_id].append(element)
+
+                elif xmi_type == XMITypeTypes.CHANGE_EVENT:
+                    element = UMLChangeEvent(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    for trigger in self.triggers[xmi_id]:
+                        trigger.event = element
 
         self.ids[xmi_id] = element
         if element is not None:
