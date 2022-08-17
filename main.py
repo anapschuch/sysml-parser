@@ -1,6 +1,5 @@
 from source import *
 
-
 if __name__ == '__main__':
     parser = SysMLParser('examples/TransmissionSystem.uml')
     root = parser.root
@@ -28,6 +27,10 @@ if __name__ == '__main__':
             print("\n  Children Attributes:")
             for attr_id, attr_ref in base_class_elem.children_attributes.items():
                 print("    ", attr_id, ": ", attr_ref.name, " (", attr_ref.xmi_id, ")", sep="")
+
+            if base_class_elem.state_machine is not None:
+                print("\n  State Machine:")
+                print_state_machine(base_class_elem.state_machine, 4)
 
             print("\n  Children:")
             for child_id, child_element in base_class_elem.children.items():

@@ -818,16 +818,19 @@ driveGear_param = driveGear</body>
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_FTvMYN_DEeyQAoCiBoOCcw" name="currentDriveGear_param" visibility="public">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_KmGAYBzYEe2yD_ywZREVXA" value="1"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_Hg3yUN_DEeyQAoCiBoOCcw" name="currentGearRatio_param" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_VtQ_kN_DEeyQAoCiBoOCcw" name="i0_param" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              <defaultValue xmi:type="uml:LiteralReal" xmi:id="_A_Oz0BzYEe2yD_ywZREVXA" value="3.31"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_Xv3JcN_DEeyQAoCiBoOCcw" name="eff_param" visibility="public">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+              <defaultValue xmi:type="uml:LiteralReal" xmi:id="_D11NgBzYEe2yD_ywZREVXA" value="0.85"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_J5QHQOLqEey2GPf_NkcRwg" name="engineTorque" visibility="public" aggregation="composite">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
@@ -865,7 +868,7 @@ driveGear_param = driveGear</body>
               <end xmi:type="uml:ConnectorEnd" xmi:id="_k5nrYeLsEey2GPf_NkcRwg" role="_Q8nGgNfMEeyKDukxCNI3pQ"/>
             </ownedConnector>
             <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_bU5hEMQlEeye8sWuuOEGkw" name="GearBox SM">
-              <region xmi:type="uml:Region" xmi:id="__1cZ8MQyEeye8sWuuOEGkw" name="Region">
+              <region xmi:type="uml:Region" xmi:id="__1cZ8MQyEeye8sWuuOEGkw" name="Gearbox">
                 <transition xmi:type="uml:Transition" xmi:id="_4nFYwMTVEeyhtb6Vq-DBuQ" source="_2JLL4MTVEeyhtb6Vq-DBuQ" target="_KlSAwMQzEeye8sWuuOEGkw"/>
                 <transition xmi:type="uml:Transition" xmi:id="_Jh3pcMTXEeyhtb6Vq-DBuQ" name="Reverse" source="_KlSAwMQzEeye8sWuuOEGkw" target="_U7p-sMQzEeye8sWuuOEGkw">
                   <trigger xmi:type="uml:Trigger" xmi:id="_9yEIgMTYEeyhtb6Vq-DBuQ" event="_2SCn0NZLEeyztMSLcHqD0Q"/>
@@ -906,7 +909,7 @@ driveGear_param = driveGear</body>
                 </subvertex>
                 <subvertex xmi:type="uml:State" xmi:id="_81ZT4MQzEeye8sWuuOEGkw" name="Drive">
                   <doActivity xmi:type="uml:StateMachine" xmi:id="_IdZ_MMQ8Eeye8sWuuOEGkw" name="Drive SM">
-                    <region xmi:type="uml:Region" xmi:id="_LQejwMQ8Eeye8sWuuOEGkw" name="Gear">
+                    <region xmi:type="uml:Region" xmi:id="_LQejwMQ8Eeye8sWuuOEGkw" name="Drive">
                       <transition xmi:type="uml:Transition" xmi:id="_Jjmb4MTkEeyhtb6Vq-DBuQ" source="_k1YhYMQ8Eeye8sWuuOEGkw" target="_XbYaYMQ8Eeye8sWuuOEGkw"/>
                       <transition xmi:type="uml:Transition" xmi:id="_QNYhYMTmEeyhtb6Vq-DBuQ" source="_XbYaYMQ8Eeye8sWuuOEGkw" target="_aAGZ4MQ8Eeye8sWuuOEGkw">
                         <ownedRule xmi:type="uml:Constraint" xmi:id="_slzvgMTmEeyhtb6Vq-DBuQ">

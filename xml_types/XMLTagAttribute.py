@@ -47,3 +47,4 @@ class XMLTagAttributeTypes(Enum):
     EVENT = 'event'
     ROLE = 'role'
     KEY = 'key'
+    KIND = 'kind'

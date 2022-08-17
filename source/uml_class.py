@@ -1,4 +1,5 @@
 from .utils import get_primitive_type
+from .types import PseudoStateTypes
 
 
 class UMLBasic:
@@ -30,6 +31,7 @@ class UMLClass(UMLBasic):
         self.attribute_names = dict()
         self.children_attributes = dict()
         self.connectors = dict()
+        self.state_machine = None
 
     def add_children(self, child):
         if type(child) is UMLPort or type(child) is UMLProperty:
@@ -44,8 +46,14 @@ class UMLClass(UMLBasic):
             for attr_id, _ in child.attributes.items():
                 self.children_attributes[attr_id] = child
             super().add_children(child)
-        else:
+        elif type(child) is UMLStateMachine:
+            if self.state_machine is not None:
+                raise Exception("Expect at most one state machine in a class")
+            self.state_machine = child
+        elif type(child) is UMLConstraint:
             super().add_children(child)
+        else:
+            raise Exception("Unexpected child for UMLClass: ", type(child))
 
 
 class UMLConnector(UMLBasic):
@@ -85,6 +93,13 @@ class UMLPort(UMLBasic):
 class UMLConstraint(UMLBasic):
     def __init__(self, name, xmi_id):
         super().__init__(name, xmi_id)
+        self.specification = None
+
+    def add_children(self, child):
+        if type(child) is Specification:
+            if self.specification is not None:
+                raise Exception("Can only have one specification per Constraint Block")
+            self.specification = child
 
 
 class UMLProperty(UMLBasic):
@@ -105,6 +120,108 @@ class UMLProperty(UMLBasic):
 class UMLPrimitiveType:
     def __init__(self, href):
         self.type = get_primitive_type(href)
+
+
+class UMLStateMachine(UMLBasic):
+    def __init__(self, name, xmi_id):
+        super().__init__(name, xmi_id)
+        self.regions = []
+
+    def add_children(self, child):
+        if type(child) is UMLRegion:
+            self.regions.append(child)
+        else:
+            raise Exception("Unexpected child for UMLStateMachine: ", type(child))
+
+
+class UMLRegion(UMLBasic):
+    def __init__(self, name, xmi_id):
+        super().__init__(name, xmi_id)
+        self.transitions = dict()
+        self.begin_state = None
+        self.end_state = None
+        self.states = dict()
+
+    def add_children(self, child):
+        if type(child) is UMLTransition:
+            self.transitions[child.source] = child
+        elif type(child) is UMLState:
+            self.states[child.xmi_id] = child
+        elif type(child) is UMLPseudoState:
+            if child.kind == PseudoStateTypes.BEGIN:
+                self.begin_state = child
+            self.states[child.xmi_id] = child
+        elif type(child) is UMLFinalState:
+            self.end_state = child
+            self.states[child.xmi_id] = child
+        else:
+            raise Exception("Unexpected child for UMLRegion: ", type(child))
+
+
+class UMLState(UMLBasic):
+    def __init__(self, name, xmi_id):
+        super().__init__(name, xmi_id)
+        self.state_machine = None
+        self.entry = None
+
+    def add_children(self, child):
+        if type(child) is UMLStateMachine:
+            if self.state_machine is not None:
+                raise Exception("Expect at most one state machine in a state")
+            self.state_machine = child
+        elif type(child) is UMLStateEntryBehavior:
+            if self.entry is not None:
+                raise Exception("Expect at most one entry behavior in state")
+            self.entry = child
+        else:
+            raise Exception("Unexpected child for UMLState: ", type(child))
+
+
+class UMLPseudoState(UMLBasic):
+    def __init__(self, name, xmi_id, kind):
+        super().__init__(name, xmi_id)
+        if kind is None:
+            self.kind = PseudoStateTypes.BEGIN
+        else:
+            raise Exception("Unexpected kind for pseudo state:", self.kind)
+
+
+class UMLFinalState(UMLBasic):
+    def __init__(self, name, xmi_id):
+        super().__init__(name, xmi_id)
+
+
+class UMLTransition:
+    def __init__(self, source, target):
+        self.source = source
+        self.target = target
+        self.trigger = None
+        self.constraint = None
+
+    def add_children(self, child):
+        if type(child) is UMLTrigger:
+            self.trigger = child.event
+        elif type(child) is UMLConstraint:
+            self.constraint = child.specification
+        else:
+            raise Exception("Unexpected child for UMLTransition: ", type(child))
+
+
+class UMLStateEntryBehavior(UMLBasic):
+    def __init__(self, name, xmi_id):
+        super().__init__(name, xmi_id)
+        self.body = None
+
+    def add_children(self, child):
+        if type(child) is Body:
+            self.body = child.text
+        else:
+            raise Exception("Unexpected child for UMLStateEntry: ", type(child))
+
+
+class UMLTrigger:
+    def __init__(self, event):
+        self.event = event
 
 
 class DefaultValue:
@@ -171,4 +288,37 @@ class Body:
         self.text = text
 
 
+class Specification:
+    def __init__(self, xmi_id):
+        self.xmi_id = xmi_id
+        self.language = "C"
+        self.text = None
 
+    def add_children(self, child):
+        if type(child) is Body:
+            if self.text is not None:
+                raise Exception("Can only have one body in a specification tag")
+            self.text = child.text
+        else:
+            raise Exception("Unexpected child for Specification tag")
+
+
+def print_state_machine(state_machine, indentation):
+    for region in state_machine.regions:
+        print(' ' * indentation, region.name, ":", region.xmi_id, sep="")
+        for state_id, state in region.states.items():
+            print(' ' * (indentation + 2), state.name, ":", state_id, sep="")
+            if type(state) is UMLState:
+                if state.entry is not None:
+                    txt = state.entry.body
+                    txt = txt.replace('\r\n', '\n' + ' ' * (indentation + 11))
+                    print(' ' * (indentation + 4), "entry: ", txt, sep="")
+                if state.state_machine is not None:
+                    print_state_machine(state.state_machine, indentation + 4)
+
+        if len(region.transitions) > 0:
+            print("\n" + ' ' * indentation, "Transitions:", sep="")
+            for trans_id, trans in region.transitions.items():
+                print(' ' * (indentation + 2), trans.source, "->", trans.target)
+                if trans.constraint is not None:
+                    print(' ' * (indentation + 4), trans.constraint.text)
