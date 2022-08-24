@@ -1,6 +1,8 @@
-import xml.etree.ElementTree as ElementTree
-from source import *
-from xml_types import *
+from xml.etree import ElementTree
+
+from .classes import *
+from source.xml_types import *
+from .utils import is_tag_requirement_type
 
 
 class SysMLParser:
@@ -68,7 +70,7 @@ class SysMLParser:
         element = None
 
         if tag_type == XMLTagTypes.MODEL:
-            element = UMLModel(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+            element = Model(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
         elif tag_type == XMLTagTypes.BLOCK:
             base_class = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.BASE_CLASS)
@@ -82,17 +84,18 @@ class SysMLParser:
             element = Specification(xmi_id)
 
         elif tag_type == XMLTagTypes.DEFAULT_VALUE:
-            element = DefaultValue(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.XMI_TYPE), xmi_id)
+            element = DefaultValue(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.XMI_TYPE),
+                                   self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.VALUE), xmi_id)
 
         elif tag_type == XMLTagTypes.ENTRY:
-            element = UMLStateEntryBehavior(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+            element = StateEntryBehavior(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
         elif tag_type == XMLTagTypes.FLOW_PORT:
             base_port_id = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.BASE_PORT)
             base_port = self.ids.get(base_port_id, None)
             if base_port is None:
                 raise Exception("Base Port id ", base_port_id, " not found")
-            if type(base_port) is not UMLPort:
+            if type(base_port) is not Port:
                 raise Exception("Unexpected base port type: ", type(base_port))
             direction = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.DIRECTION)
             if direction is None:
@@ -129,53 +132,53 @@ class SysMLParser:
                 xmi_type = self.get_tag_xmi_type(xmi_type_string)
 
                 if xmi_type == XMITypeTypes.PACKAGE:
-                    element = UMLPackage(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    element = Package(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
                 elif xmi_type == XMITypeTypes.CLASS:
-                    element = UMLClass(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    element = Class(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
                 elif xmi_type == XMITypeTypes.PORT:
-                    element = UMLPort(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id, None,
+                    element = Port(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id, None,
                                       self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.AGGREGATION))
 
                 elif xmi_type == XMITypeTypes.CONSTRAINT:
-                    element = UMLConstraint(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    element = Constraint(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
                 elif xmi_type == XMITypeTypes.PROPERTY:
-                    element = UMLProperty(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    element = Property(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
                 elif xmi_type == XMITypeTypes.PRIMITIVE_TYPE:
-                    element = UMLPrimitiveType(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.HREF))
+                    element = PrimitiveType(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.HREF))
 
                 elif xmi_type == XMITypeTypes.CONNECTOR:
-                    element = UMLConnector(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    element = Connector(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
                 elif xmi_type == XMITypeTypes.CONNECTOR_END:
-                    element = UMLConnectorEnd(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.ROLE))
+                    element = ConnectorEnd(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.ROLE))
 
                 elif xmi_type == XMITypeTypes.STATE_MACHINE:
-                    element = UMLStateMachine(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    element = StateMachine(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
                 elif xmi_type == XMITypeTypes.REGION:
-                    element = UMLRegion(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    element = Region(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
                 elif xmi_type == XMITypeTypes.STATE:
-                    element = UMLState(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    element = State(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
                 elif xmi_type == XMITypeTypes.PSEUDO_STATE:
-                    element = UMLPseudoState(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id,
+                    element = PseudoState(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id,
                                              self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.KIND))
 
                 elif xmi_type == XMITypeTypes.FINAL_STATE:
-                    element = UMLFinalState(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    element = FinalState(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
                 elif xmi_type == XMITypeTypes.TRANSITION:
-                    element = UMLTransition(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.SOURCE),
+                    element = Transition(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.SOURCE),
                                             self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.TARGET))
 
                 elif xmi_type == XMITypeTypes.TRIGGER:
                     event_id = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.EVENT)
-                    element = UMLTrigger(xmi_id, event_id)
+                    element = Trigger(xmi_id, event_id)
                     aux = self.triggers.get(event_id, None)
                     if aux is None:
                         self.triggers[event_id] = [element]
@@ -183,7 +186,7 @@ class SysMLParser:
                         self.triggers[event_id].append(element)
 
                 elif xmi_type == XMITypeTypes.CHANGE_EVENT:
-                    element = UMLChangeEvent(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
+                    element = ChangeEvent(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
                     for trigger in self.triggers[xmi_id]:
                         trigger.event = element
 

@@ -1,6 +1,6 @@
 from enum import Enum
 
 
-class PrimitiveType(Enum):
+class EnumPrimitiveType(Enum):
     REAL = "Real"
     INTEGER = "Integer"

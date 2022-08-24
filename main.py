@@ -11,7 +11,7 @@ if __name__ == '__main__':
     for block in parser.blocks:
         base_class_id = block.base_class
         base_class_elem = parser.ids[base_class_id]
-        if base_class_elem is not None and type(base_class_elem) is UMLClass:
+        if base_class_elem is not None and type(base_class_elem) is Class:
             print(base_class_elem.name)
             print("\n  Attributes:")
             for attr in base_class_elem.attributes.values():
@@ -33,4 +33,8 @@ if __name__ == '__main__':
             for child_id, child_element in base_class_elem.children.items():
                 if child_element is not None:
                     print("     ", type(child_element), ": ", child_element.name, sep="")
+                    if type(child_element) is Class and len(child_element.constraints) > 0:
+                        for constraint in child_element.constraints:
+                            print("          ", constraint.specification)
+
             print("")
