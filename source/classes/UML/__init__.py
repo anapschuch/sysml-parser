@@ -23,4 +23,4 @@ from .state_machine import StateMachine, Region, State
 from .pseudo_state import PseudoState
 from .state_entry_behavior import StateEntryBehavior
 
-from .uml_class import Class
+from .uml_class import Class, ClassType

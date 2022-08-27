@@ -1,4 +1,5 @@
 from source.xml_types import XMLTagTypes, EnumPrimitiveType
+import re
 
 
 def is_tag_requirement_type(tag):
@@ -17,4 +18,7 @@ def get_primitive_type(href):
         raise Exception("Primitive type not found: ", value)
 
 
-
+def convert_to_file_name(name):
+    s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
+    s2 = re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
+    return s2.replace(' ', '')

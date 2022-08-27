@@ -2,6 +2,7 @@ from xml.etree import ElementTree
 
 from .classes import *
 from source.xml_types import *
+from .validators import validate_element
 from .utils import is_tag_requirement_type
 
 
@@ -72,10 +73,16 @@ class SysMLParser:
         if tag_type == XMLTagTypes.MODEL:
             element = Model(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
-        elif tag_type == XMLTagTypes.BLOCK:
+        elif tag_type == XMLTagTypes.BLOCK or tag_type == XMLTagTypes.CONSTRAINT_BLOCK:
             base_class = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.BASE_CLASS)
-            element = Block(xmi_id, base_class)
-            self.blocks.append(element)
+            base_class_elem = self.ids[base_class]
+            if type(base_class_elem) is not Class:
+                raise Exception("Unexpected type for base class in element " + xmi_id)
+            if tag_type == XMLTagTypes.BLOCK:
+                base_class_elem.set_type(ClassType.BLOCK)
+                self.blocks.append(base_class_elem)
+            else:
+                base_class_elem.set_type(ClassType.CONSTRAINT_BLOCK)
 
         elif tag_type == XMLTagTypes.BODY:
             element = Body(tag.text)
@@ -94,12 +101,12 @@ class SysMLParser:
             base_port_id = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.BASE_PORT)
             base_port = self.ids.get(base_port_id, None)
             if base_port is None:
-                raise Exception("Base Port id ", base_port_id, " not found")
+                raise Exception("Base Port id " + base_port_id + " not found")
             if type(base_port) is not Port:
-                raise Exception("Unexpected base port type: ", type(base_port))
+                raise Exception("Unexpected base port type: " + type(base_port))
             direction = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.DIRECTION)
             if direction is None:
-                raise Exception("Missing direction for flow port ", base_port_id)
+                raise Exception("Missing direction for flow port " + base_port_id + " (direction inout not allowed)")
             base_port.add_direction(direction)
 
         elif is_tag_requirement_type(tag_type):
@@ -139,7 +146,7 @@ class SysMLParser:
 
                 elif xmi_type == XMITypeTypes.PORT:
                     element = Port(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id, None,
-                                      self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.AGGREGATION))
+                                   self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.AGGREGATION))
 
                 elif xmi_type == XMITypeTypes.CONSTRAINT:
                     element = Constraint(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
@@ -167,14 +174,14 @@ class SysMLParser:
 
                 elif xmi_type == XMITypeTypes.PSEUDO_STATE:
                     element = PseudoState(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id,
-                                             self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.KIND))
+                                          self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.KIND))
 
                 elif xmi_type == XMITypeTypes.FINAL_STATE:
                     element = FinalState(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
 
                 elif xmi_type == XMITypeTypes.TRANSITION:
                     element = Transition(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.SOURCE),
-                                            self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.TARGET))
+                                         self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.TARGET))
 
                 elif xmi_type == XMITypeTypes.TRIGGER:
                     event_id = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.EVENT)
@@ -196,4 +203,6 @@ class SysMLParser:
                 parsed_child = self.parse_tag(child)
                 if parsed_child is not None:
                     element.add_children(parsed_child)
+
+        validate_element(element)
         return element

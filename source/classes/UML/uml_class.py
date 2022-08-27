@@ -1,9 +1,15 @@
+from enum import Enum
 from .basic import *
 from .port import Port
 from .property import Property
 from .connector import Connector
 from .state_machine import StateMachine
 from .constraint import Constraint
+
+
+class ClassType(Enum):
+    CONSTRAINT_BLOCK = 'CONSTRAINT_BLOCK'
+    BLOCK = 'BLOCK'
 
 
 class Class(Basic):
@@ -15,6 +21,7 @@ class Class(Basic):
         self.connectors = dict()
         self.state_machine = None
         self.constraints = []
+        self.type = None
 
     def add_children(self, child):
         if type(child) is Port or type(child) is Property:
@@ -22,7 +29,7 @@ class Class(Basic):
             self.attribute_names[child.name] = child.xmi_id
         elif type(child) is Connector:
             if len(child.ends) != 2:
-                raise Exception("Found a connector without two ends: ", child.xmi_id)
+                raise Exception("Found a connector without two ends: " + child.xmi_id)
             self.connectors[child.ends[0]] = child.ends[1]
             self.connectors[child.ends[1]] = child.ends[0]
         elif type(child) is Class:
@@ -36,4 +43,10 @@ class Class(Basic):
         elif type(child) is Constraint:
             self.constraints.append(child)
         else:
-            raise Exception("Unexpected child for UMLClass: ", type(child))
+            raise Exception("Unexpected child for UMLClass: " + type(child))
+
+    def set_type(self, class_type):
+        if self.type is not None:
+            raise Exception("Unable to set type in class because it has already set before. Class name: " + self.name)
+        else:
+            self.type = class_type

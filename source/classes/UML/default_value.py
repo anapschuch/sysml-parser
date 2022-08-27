@@ -9,6 +9,8 @@ class DefaultValue:
         if value is None:
             if value_type == "uml:LiteralReal":
                 self.value = 0.0
+            elif value_type == "uml:LiteralInteger":
+                self.value = 0
 
     def add_children(self, child):
         if type(child) is Body:
