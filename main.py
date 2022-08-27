@@ -127,7 +127,7 @@ def generate_output_files():
         properties = {}
         for attr in class_elem.attributes.values():
             if type(attr) is Property:
-                properties[attr.name] = attr.default_value
+                properties[attr.name] = str(f'Pointer({attr.default_value})')
 
         for inner_class in class_elem.children.values():
             if inner_class.type == ClassType.BLOCK:
