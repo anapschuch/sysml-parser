@@ -17,6 +17,8 @@ class SysMLParser:
         self.root = ElementTree.parse(filename).getroot()
         self.ids = dict()
         self.base_ids = dict()
+        self.items_flow = dict()
+        self.items_flow_reversed = dict()
         self.blocks = []
         self.triggers = dict()
 
@@ -162,6 +164,24 @@ class SysMLParser:
 
                 elif xmi_type == XMITypeTypes.CONNECTOR_END:
                     element = ConnectorEnd(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.ROLE))
+
+                elif xmi_type == XMITypeTypes.INFORMATION_FLOW:
+                    source = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.INFORMATION_SOURCE).split(' ')
+                    target = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.INFORMATION_TARGET).split(' ')
+                    source_string = source[len(source)-1]
+                    target_string = target[len(target)-1]
+                    element = InformationFlow(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id,
+                                              source_string, target_string)
+
+                    if source_string in self.items_flow:
+                        self.items_flow[source_string].append(target_string)
+                    else:
+                        self.items_flow[source_string] = [target_string]
+
+                    if target_string in self.items_flow_reversed:
+                        self.items_flow_reversed[target_string].append(source_string)
+                    else:
+                        self.items_flow_reversed[target_string] = [source_string]
 
                 elif xmi_type == XMITypeTypes.STATE_MACHINE:
                     element = StateMachine(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)

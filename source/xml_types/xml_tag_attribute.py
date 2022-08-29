@@ -48,3 +48,5 @@ class XMLTagAttributeTypes(Enum):
     ROLE = 'role'
     KEY = 'key'
     KIND = 'kind'
+    INFORMATION_SOURCE = 'informationSource'
+    INFORMATION_TARGET = 'informationTarget'

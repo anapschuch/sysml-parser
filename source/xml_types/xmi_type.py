@@ -50,3 +50,4 @@ class XMITypeTypes(Enum):
     ASSOCIATION = 'uml:Association'
     E_STRING_TO_STRING_MAP_ENTRY = 'ecore:EStringToStringMapEntry'
     INCLUDE = 'uml:Include'
+    INFORMATION_FLOW = 'uml:InformationFlow'

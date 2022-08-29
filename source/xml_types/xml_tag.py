@@ -13,6 +13,7 @@ class XMLTagTypes(Enum):
     FLOW_PORT = 'DeprecatedElements:FlowPort'
     BLOCKS_BINDING_CONNECTOR = 'Blocks:BindingConnector'
     BLOCKS_NESTED_CONNECTOR_END = 'Blocks:NestedConnectorEnd'
+    ITEM_FLOW = 'PortsAndFlows:ItemFlow'
 
     PACKAGE_IMPORT = 'packageImport'
     IMPORTED_PACKAGE = 'importedPackage'
@@ -50,3 +51,4 @@ class XMLTagTypes(Enum):
     END = 'end'
     TRIGGER = 'trigger'
     DEFAULT_VALUE = 'defaultValue'
+    CONVEYED = 'conveyed'

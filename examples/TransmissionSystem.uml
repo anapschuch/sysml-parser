@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ConstraintBlocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks" xmlns:DeprecatedElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ConstraintBlocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks" xmlns:DeprecatedElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Model xmi:id="_EHqYsMQVEeye8sWuuOEGkw" name="TransmissionSystem">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_EKXucMQVEeye8sWuuOEGkw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -64,54 +64,6 @@
         <ownedAttribute xmi:type="uml:Port" xmi:id="_sM7aUOESEeyXPMXG3lFeMw" name="drive_gear" aggregation="composite">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_gfWZAOH7Eeyz1PUmZ5CQVw" name="fa">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_gfbRgOH7Eeyz1PUmZ5CQVw" role="_g-tOYOESEeyXPMXG3lFeMw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_gfb4kOH7Eeyz1PUmZ5CQVw" role="_ALG3UOATEey1V-BUgsLF0Q"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_k3qdEOH7Eeyz1PUmZ5CQVw" name="env_cd">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_k3uHcOH7Eeyz1PUmZ5CQVw" role="_ewu68OESEeyXPMXG3lFeMw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_k3uHceH7Eeyz1PUmZ5CQVw" role="_cI2KAOASEey1V-BUgsLF0Q"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_po27MOH7Eeyz1PUmZ5CQVw" name="env_ro">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_po5XcOH7Eeyz1PUmZ5CQVw" role="_bq_SAOESEeyXPMXG3lFeMw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_po5XceH7Eeyz1PUmZ5CQVw" role="_WckjsOASEey1V-BUgsLF0Q"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_sOgHwOH7Eeyz1PUmZ5CQVw" name="env_slope">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_sOikAOH7Eeyz1PUmZ5CQVw" role="_ZCSxcOESEeyXPMXG3lFeMw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_sOikAeH7Eeyz1PUmZ5CQVw" role="_krnLAN-_EeyQAoCiBoOCcw"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_vcuXQOH7Eeyz1PUmZ5CQVw" name="env_cr">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_vcwzgOH7Eeyz1PUmZ5CQVw" role="_WKF1QOESEeyXPMXG3lFeMw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_vcwzgeH7Eeyz1PUmZ5CQVw" role="_lBF9sN-9EeyQAoCiBoOCcw"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_xcfPkOH7Eeyz1PUmZ5CQVw" name="dT">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_xchr0OH7Eeyz1PUmZ5CQVw" role="_jEsDcOESEeyXPMXG3lFeMw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_xchr0eH7Eeyz1PUmZ5CQVw" role="_JzidsN1AEeyB6oChl77ysw"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_zvqMEOH7Eeyz1PUmZ5CQVw" name="vehicleSpeed">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_zvsBQOH7Eeyz1PUmZ5CQVw" role="_UGL-8N_BEeyQAoCiBoOCcw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_zvsoUOH7Eeyz1PUmZ5CQVw" role="_qIuG4OESEeyXPMXG3lFeMw"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_1dow0OH7Eeyz1PUmZ5CQVw" name="gearboxTorque">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_1drNEOH7Eeyz1PUmZ5CQVw" role="_SOWywOECEeyXPMXG3lFeMw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_1drNEeH7Eeyz1PUmZ5CQVw" role="_4bG2YOBtEeyqBLJ1Eszaaw"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_CT9jAOH8Eeyz1PUmZ5CQVw" name="drive_gear">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_CT_YMOH8Eeyz1PUmZ5CQVw" role="_gHBVQOEOEeyXPMXG3lFeMw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_CT__QOH8Eeyz1PUmZ5CQVw" role="_sM7aUOESEeyXPMXG3lFeMw"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_IiBAsOH8Eeyz1PUmZ5CQVw" name="pedalPosition">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_IiDc8OH8Eeyz1PUmZ5CQVw" role="_llM4YOESEeyXPMXG3lFeMw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_IiDc8eH8Eeyz1PUmZ5CQVw" role="_CB4HoOEDEeyXPMXG3lFeMw"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_JqQbIOH8Eeyz1PUmZ5CQVw" name="currentGear">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_JqS3YOH8Eeyz1PUmZ5CQVw" role="_nokeUOESEeyXPMXG3lFeMw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_JqS3YeH8Eeyz1PUmZ5CQVw" role="_IPReAOEDEeyXPMXG3lFeMw"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_boDdcOH8Eeyz1PUmZ5CQVw" name="wheelSpeed - transmission system">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_boHu4OH8Eeyz1PUmZ5CQVw" role="_xi-HcOK-Eey2GPf_NkcRwg"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_boHu4eH8Eeyz1PUmZ5CQVw" role="_MwuFYOECEeyXPMXG3lFeMw"/>
-        </ownedConnector>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_S-p3wNyjEeyZdrCSZvBi5g" name="Vehicle Simulator">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1DvM0N-7EeyBKe45X3175g" name="mass_fm" visibility="public">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
@@ -160,138 +112,6 @@
           <ownedAttribute xmi:type="uml:Port" xmi:id="_xi-HcOK-Eey2GPf_NkcRwg" name="wheel_speed" visibility="public" aggregation="composite">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
           </ownedAttribute>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_sPimkN06EeyZdrCSZvBi5g" name="miua">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_sPkbwN06EeyZdrCSZvBi5g" role="_eWTtgNyYEeyZdrCSZvBi5g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_sPkbwd06EeyZdrCSZvBi5g" role="_xDdh8CSeEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_ztBr0N06EeyZdrCSZvBi5g" name="load">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_ztDhAN06EeyZdrCSZvBi5g" role="_vHoucCSeEe2NCYuc8M5wLg"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_ztDhAd06EeyZdrCSZvBi5g" role="_qgNekNyYEeyZdrCSZvBi5g"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_51A9wN06EeyZdrCSZvBi5g" name="rwd">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_51Cy8N06EeyZdrCSZvBi5g" role="_Z5SIkNyYEeyZdrCSZvBi5g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_51Cy8d06EeyZdrCSZvBi5g" role="_aq7kQCSfEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="__zni0N09EeyZdrCSZvBi5g" name="maxFrictionForce">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="__zpYAN09EeyZdrCSZvBi5g" role="_y2N5ACSeEe2NCYuc8M5wLg"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="__zpYAd09EeyZdrCSZvBi5g" role="_YewnoCSfEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_O0hrUN1AEeyB6oChl77ysw" name="dT">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_O0jggN1AEeyB6oChl77ysw" role="_cPbc4CSfEe2NCYuc8M5wLg"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_O0kHkN1AEeyB6oChl77ysw" role="_JzidsN1AEeyB6oChl77ysw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_9C0jQN-7EeyBKe45X3175g" name="massFm">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_9C2YcN-7EeyBKe45X3175g" role="_1DvM0N-7EeyBKe45X3175g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_9C2_gN-7EeyBKe45X3175g" role="_Jl-SoCSYEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_JPZ04N-8EeyBKe45X3175g" name="massDriver">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_JPcRIN-8EeyBKe45X3175g" role="_FVqjMN-8EeyBKe45X3175g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_JPcRId-8EeyBKe45X3175g" role="_pQKzgCSYEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_PGDfMN-8EeyBKe45X3175g" name="massCurb">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_PGFUYN-8EeyBKe45X3175g" role="_Kr2kwN-8EeyBKe45X3175g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_PGFUYd-8EeyBKe45X3175g" role="_0WzJsCSYEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_FACcAN-9EeyQAoCiBoOCcw" name="totalMass - load force">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_FAK-4N-9EeyQAoCiBoOCcw" role="_-kmacCSYEe2ZkqwwGIJVRw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_FAK-4d-9EeyQAoCiBoOCcw" role="_Pp-48CSXEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_RfcjAN-9EeyQAoCiBoOCcw" name="load force - g">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_RffmUN-9EeyQAoCiBoOCcw" role="_MPByQN-9EeyQAoCiBoOCcw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_RfgNYN-9EeyQAoCiBoOCcw" role="_Z3Wr4CSXEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_xXy0oN-9EeyQAoCiBoOCcw" name="env_cr - load force">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_xX138N-9EeyQAoCiBoOCcw" role="_lBF9sN-9EeyQAoCiBoOCcw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_xX138d-9EeyQAoCiBoOCcw" role="_j2iR0CSXEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_W8aQEN-_EeyQAoCiBoOCcw" name="total mass - slope force">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_W8cFQN-_EeyQAoCiBoOCcw" role="_-kmacCSYEe2ZkqwwGIJVRw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_W8cFQd-_EeyQAoCiBoOCcw" role="_Z6jpgCSaEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_iBrUUN-_EeyQAoCiBoOCcw" name="env_g - slope force">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_iBtJgN-_EeyQAoCiBoOCcw" role="_MPByQN-9EeyQAoCiBoOCcw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_iBtJgd-_EeyQAoCiBoOCcw" role="_10cPkCScEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_uh7I0N-_EeyQAoCiBoOCcw" name="env_slope">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_uh8-AN-_EeyQAoCiBoOCcw" role="_krnLAN-_EeyQAoCiBoOCcw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_uh9lEN-_EeyQAoCiBoOCcw" role="_mFeuQCSaEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_Jx_nwN_AEeyQAoCiBoOCcw" name="env_g - maxFrictionForce">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_JyBc8N_AEeyQAoCiBoOCcw" role="_MPByQN-9EeyQAoCiBoOCcw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_JyBc8d_AEeyQAoCiBoOCcw" role="_taa-sCSeEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_R_SZUN_AEeyQAoCiBoOCcw" name="totalMass - maxFrictionForce">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_R_UOgN_AEeyQAoCiBoOCcw" role="_qQD7gCSeEe2NCYuc8M5wLg"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_R_UOgd_AEeyQAoCiBoOCcw" role="_-kmacCSYEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_7QKgkN_AEeyQAoCiBoOCcw" name="totalMass">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_7QMVwN_AEeyQAoCiBoOCcw" role="_-kmacCSYEe2ZkqwwGIJVRw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_7QM80N_AEeyQAoCiBoOCcw" role="_Wm5uICSfEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_u5kh4N_BEeyQAoCiBoOCcw" name="vehicle_speed">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_u5mXEN_BEeyQAoCiBoOCcw" role="_UGL-8N_BEeyQAoCiBoOCcw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_u5mXEd_BEeyQAoCiBoOCcw" role="_X7-4oOBtEeyz97SW6jXbYw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_1CYPYOASEey1V-BUgsLF0Q" name="env_ro">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_1CbSsOASEey1V-BUgsLF0Q" role="_WckjsOASEey1V-BUgsLF0Q"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_1CbSseASEey1V-BUgsLF0Q" role="_FtRUACSeEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_6ZjvcOASEey1V-BUgsLF0Q" name="env_cd">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_6ZmLsOASEey1V-BUgsLF0Q" role="_cI2KAOASEey1V-BUgsLF0Q"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_6ZmLseASEey1V-BUgsLF0Q" role="_LHyb8CSeEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_igDHMOATEey1V-BUgsLF0Q" name="force balance">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_igE8YOATEey1V-BUgsLF0Q" role="_QOg6oCSdEe2NCYuc8M5wLg"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_igFjcOATEey1V-BUgsLF0Q" role="_UbK2YCSfEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_D2mcMOAUEey1V-BUgsLF0Q" name="vehicle_speed - drag force">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_D2o4cOAUEey1V-BUgsLF0Q" role="_X7-4oOBtEeyz97SW6jXbYw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_D2o4ceAUEey1V-BUgsLF0Q" role="_Hl1YICSeEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_aOwJ8OAUEey1V-BUgsLF0Q" name="drag force">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_aOzNQOAUEey1V-BUgsLF0Q" role="_Mq0U8CSeEe2NCYuc8M5wLg"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_aOzNQeAUEey1V-BUgsLF0Q" role="_WRa4QCSdEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_c93bkOAUEey1V-BUgsLF0Q" name="load force">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_c95QwOAUEey1V-BUgsLF0Q" role="_thc38CSXEe2ZkqwwGIJVRw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_c95QweAUEey1V-BUgsLF0Q" role="_SHaV8CSdEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_gb0wMOAUEey1V-BUgsLF0Q" name="slope force">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_gb3McOAUEey1V-BUgsLF0Q" role="_37xIcCScEe2NCYuc8M5wLg"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_gb3MceAUEey1V-BUgsLF0Q" role="_UF6C8CSdEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_ri9csOAUEey1V-BUgsLF0Q" name="frontal area">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_ri_R4OAUEey1V-BUgsLF0Q" role="_ALG3UOATEey1V-BUgsLF0Q"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_ri_48OAUEey1V-BUgsLF0Q" role="_JYj6ACSeEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_etu5QOBtEeyz97SW6jXbYw" name="vehicle_speed_in">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_et0_4OBtEeyz97SW6jXbYw" role="_X7-4oOBtEeyz97SW6jXbYw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_et1m8OBtEeyz97SW6jXbYw" role="_gL1oECSfEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_IUAowOBuEeyqBLJ1Eszaaw" name="gearbox_torque">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_IUHWcOBuEeyqBLJ1Eszaaw" role="_4bG2YOBtEeyqBLJ1Eszaaw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_IUHWceBuEeyqBLJ1Eszaaw" role="_eIOxkCSfEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_Th06IOBwEeyM45x-2cJqcQ" name="vehicleSpeed out">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_TiCVgOBwEeyM45x-2cJqcQ" role="_STOScCSfEe2NCYuc8M5wLg"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_TiC8kOBwEeyM45x-2cJqcQ" role="_X7-4oOBtEeyz97SW6jXbYw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_dCcF0OLCEey2GPf_NkcRwg" name="wheel speed">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_dCd7AOLCEey2GPf_NkcRwg" role="_zfaccCSdEe2NCYuc8M5wLg"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_dCd7AeLCEey2GPf_NkcRwg" role="_xi-HcOK-Eey2GPf_NkcRwg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_tDOo4OLCEey2GPf_NkcRwg" name="wheelSpeed - wheel rwd">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_tDQeEOLCEey2GPf_NkcRwg" role="_STOScCSfEe2NCYuc8M5wLg"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_tDQeEeLCEey2GPf_NkcRwg" role="_t87rUCSdEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_2CBv4OLCEey2GPf_NkcRwg" name="wheel_rwd">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_2CC-AOLCEey2GPf_NkcRwg" role="_Z5SIkNyYEeyZdrCSZvBi5g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_2CC-AeLCEey2GPf_NkcRwg" role="_wveEYCSdEe2NCYuc8M5wLg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_EgGlACSYEe2ZkqwwGIJVRw" name="env_slope - road load force">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_EgJoUCSYEe2ZkqwwGIJVRw" role="_krnLAN-_EeyQAoCiBoOCcw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_EgJoUSSYEe2ZkqwwGIJVRw" role="_8DJm0CSXEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_spj7gNcYEeyO7PQk0pa-rA" name="Vehicle Total Mass">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_CwevUNcZEeyO7PQk0pa-rA" name="Total Mass">
               <specification xmi:type="uml:OpaqueExpression" xmi:id="_CwevUdcZEeyO7PQk0pa-rA">
@@ -499,30 +319,6 @@
             <ownedAttribute xmi:type="uml:Port" xmi:id="_qgNekNyYEeyZdrCSZvBi5g" name="load" visibility="public" aggregation="composite">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
             </ownedAttribute>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_WXGeoNffEeySbq2h8TnUHA" name="height">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_WXIT0NffEeySbq2h8TnUHA" role="_YI_mUCY8Ee2FC6XF101YWg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_WXIT0dffEeySbq2h8TnUHA" role="_s9IjoCY8Ee2FC6XF101YWg"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_arN_MNffEeySbq2h8TnUHA" name="width">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_arQbcNffEeySbq2h8TnUHA" role="_rKlA4CY8Ee2FC6XF101YWg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_arQbcdffEeySbq2h8TnUHA" role="_Lypv0NfcEeySbq2h8TnUHA"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_3bIc4NyYEeyZdrCSZvBi5g" name="rwd">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_3bKSENyYEeyZdrCSZvBi5g" role="_Z-aP0CY8Ee2FC6XF101YWg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_3bKSEdyYEeyZdrCSZvBi5g" role="_Z5SIkNyYEeyZdrCSZvBi5g"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_bXbZ8N06EeyZdrCSZvBi5g" name="diameter">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_bXdPIN06EeyZdrCSZvBi5g" role="_SgOnACY8Ee2FC6XF101YWg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_bXdPId06EeyZdrCSZvBi5g" role="_VuHoEN06EeyZdrCSZvBi5g"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_SJxPMN-5EeyBKe45X3175g" name="miua">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_SJ384N-5EeyBKe45X3175g" role="_AFE-cN27EeyUrvQ0Lh3FUQ"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_SJ384d-5EeyBKe45X3175g" role="_eWTtgNyYEeyZdrCSZvBi5g"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_exF8EN-5EeyBKe45X3175g" name="load">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_exMCsN-5EeyBKe45X3175g" role="_WXArsN-5EeyBKe45X3175g"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_exMCsd-5EeyBKe45X3175g" role="_qgNekNyYEeyZdrCSZvBi5g"/>
-            </ownedConnector>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_TBG6oNcYEeyO7PQk0pa-rA" name="Wheel Dynamic Radius">
               <ownedRule xmi:type="uml:Constraint" xmi:id="_inq_0NcYEeyO7PQk0pa-rA" name="Dynamic Radius">
                 <specification xmi:type="uml:OpaqueExpression" xmi:id="_inq_0dcYEeyO7PQk0pa-rA">
@@ -570,58 +366,6 @@
           <ownedAttribute xmi:type="uml:Port" xmi:id="_gHBVQOEOEeyXPMXG3lFeMw" name="drive_gear" aggregation="composite">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_wKXooOEEEeyXPMXG3lFeMw" name="Nmax">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_wKZd0OEEEeyXPMXG3lFeMw" role="_DzR6wNyYEeyZdrCSZvBi5g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_wKZd0eEEEeyXPMXG3lFeMw" role="_hWzHgNZMEeyztMSLcHqD0Q"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_5TctAOEEEeyXPMXG3lFeMw" name="Nmin">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_5TeiMOEEEeyXPMXG3lFeMw" role="_FJDa4NyYEeyZdrCSZvBi5g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_5TeiMeEEEeyXPMXG3lFeMw" role="_duN3QNZMEeyztMSLcHqD0Q"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_Jzk90OENEeyXPMXG3lFeMw" name="BindingConnector20">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_JzmzAOENEeyXPMXG3lFeMw" role="_CB4HoOEDEeyXPMXG3lFeMw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_JzmzAeENEeyXPMXG3lFeMw" role="_U6mgsNybEeyZdrCSZvBi5g"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_tbgfkOENEeyXPMXG3lFeMw" name="engineSpeed - engine">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_tbiUwOENEeyXPMXG3lFeMw" role="_88hUQCSWEe2ZkqwwGIJVRw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_tbiUweENEeyXPMXG3lFeMw" role="_2AmGoNyaEeyZdrCSZvBi5g"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_GlsQEOEOEeyXPMXG3lFeMw" name="vehicleSpeed">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_GluFQOEOEeyXPMXG3lFeMw" role="_MwuFYOECEeyXPMXG3lFeMw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_GluFQeEOEeyXPMXG3lFeMw" role="_mttvwCSWEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_K0UzsOEOEeyXPMXG3lFeMw" name="currentGear">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_K0XP8OEOEeyXPMXG3lFeMw" role="_IPReAOEDEeyXPMXG3lFeMw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_K0XP8eEOEeyXPMXG3lFeMw" role="_EiPJQNZHEeyztMSLcHqD0Q"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_OdkLQOEOEeyXPMXG3lFeMw" name="engineSpeed gearbox">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_OdmAcOEOEeyXPMXG3lFeMw" role="_88hUQCSWEe2ZkqwwGIJVRw"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_OdmAceEOEeyXPMXG3lFeMw" role="_W9dzgNyfEeyZdrCSZvBi5g"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_k8fPYOEOEeyXPMXG3lFeMw" name="driveGear">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_k8hEkOEOEeyXPMXG3lFeMw" role="_4mqvINZGEeyztMSLcHqD0Q"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_k8hEkeEOEeyXPMXG3lFeMw" role="_gHBVQOEOEeyXPMXG3lFeMw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_aACooOK-Eey2GPf_NkcRwg" name="i0 - engineSpeed">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_aAEd0OK-Eey2GPf_NkcRwg" role="_vlp48NyZEeyZdrCSZvBi5g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_aAFE4OK-Eey2GPf_NkcRwg" role="_JyAOYCSWEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_fRFEcOK-Eey2GPf_NkcRwg" name="gearRatio - engineSpeed">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_fRHgsOK-Eey2GPf_NkcRwg" role="_BShsANZHEeyztMSLcHqD0Q"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_fRHgseK-Eey2GPf_NkcRwg" role="_1b40YCSWEe2ZkqwwGIJVRw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_dGR80OLqEey2GPf_NkcRwg" name="engineTorque">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_dGTyAOLqEey2GPf_NkcRwg" role="_ZDAV8NyaEeyZdrCSZvBi5g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_dGUZEOLqEey2GPf_NkcRwg" role="_J5QHQOLqEey2GPf_NkcRwg"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_0ZhZ0OLqEey2GPf_NkcRwg" name="transmissionTorque">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_0ZjPAOLqEey2GPf_NkcRwg" role="_xsykkNyZEeyZdrCSZvBi5g"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_0ZjPAeLqEey2GPf_NkcRwg" role="_SOWywOECEeyXPMXG3lFeMw"/>
-          </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_kN4hIOXpEeyrmpnLSXdn1g" name="driveGear - Engine - Gearbox">
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_kN69YOXpEeyrmpnLSXdn1g" role="_4mqvINZGEeyztMSLcHqD0Q"/>
-            <end xmi:type="uml:ConnectorEnd" xmi:id="_kN69YeXpEeyrmpnLSXdn1g" role="_8yvMcOXoEeyrmpnLSXdn1g"/>
-          </ownedConnector>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_DrZxkOEAEeyXPMXG3lFeMw" name="Engine Current Speed">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_ZmoSwOEAEeyXPMXG3lFeMw">
               <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZmoSweEAEeyXPMXG3lFeMw">
@@ -695,58 +439,6 @@
             <ownedAttribute xmi:type="uml:Port" xmi:id="_8yvMcOXoEeyrmpnLSXdn1g" name="drive_gear" visibility="public" aggregation="composite">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
             </ownedAttribute>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="__zyfANyaEeyZdrCSZvBi5g" name="engine torque">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="__z0UMNyaEeyZdrCSZvBi5g" role="_5SmUUCSjEe2NCYuc8M5wLg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="__z0UMdyaEeyZdrCSZvBi5g" role="_ZDAV8NyaEeyZdrCSZvBi5g"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_EXsvENybEeyZdrCSZvBi5g" name="engine speed">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_EXukQNybEeyZdrCSZvBi5g" role="_UGhIUOLxEeyMdeINNWNrGg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_EXukQdybEeyZdrCSZvBi5g" role="_2AmGoNyaEeyZdrCSZvBi5g"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_Pa-PQNybEeyZdrCSZvBi5g" name="pedal pos sample vec">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_PbArgNybEeyZdrCSZvBi5g" role="_1LAz4CSjEe2NCYuc8M5wLg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_PbArgdybEeyZdrCSZvBi5g" role="_0pGf8NJtEeyKp65yHsgyfA"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_RuPSYNybEeyZdrCSZvBi5g" name="torque map">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_RuQggNybEeyZdrCSZvBi5g" role="_y1Uu4CSjEe2NCYuc8M5wLg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_RuRHkNybEeyZdrCSZvBi5g" role="_RBjT4NLJEeyKp65yHsgyfA"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_TQxcINybEeyZdrCSZvBi5g" name="speedSampleVec">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_TQzRUNybEeyZdrCSZvBi5g" role="_vHLCICSjEe2NCYuc8M5wLg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_TQzRUdybEeyZdrCSZvBi5g" role="_Znbz8NJuEeyKp65yHsgyfA"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_aFKhENybEeyZdrCSZvBi5g" name="pedal position ">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_aFMWQNybEeyZdrCSZvBi5g" role="_tIK-0CSjEe2NCYuc8M5wLg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_aFMWQdybEeyZdrCSZvBi5g" role="_U6mgsNybEeyZdrCSZvBi5g"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_QTnPwN_CEeyQAoCiBoOCcw" name="Nmax">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_QTpE8N_CEeyQAoCiBoOCcw" role="_IZ3sUN_CEeyQAoCiBoOCcw"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_QTpE8d_CEeyQAoCiBoOCcw" role="_DzR6wNyYEeyZdrCSZvBi5g"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_Vc9vMN_CEeyQAoCiBoOCcw" name="Nmin">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_Vc_kYN_CEeyQAoCiBoOCcw" role="_TRc54N_CEeyQAoCiBoOCcw"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_Vc_kYd_CEeyQAoCiBoOCcw" role="_FJDa4NyYEeyZdrCSZvBi5g"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_qsYcYOK5Eey2GPf_NkcRwg" name="Nmin - Min constraint">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_qsa4oOK5Eey2GPf_NkcRwg" role="_TRc54N_CEeyQAoCiBoOCcw"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_qsa4oeK5Eey2GPf_NkcRwg" role="_K4GA0CSjEe2NCYuc8M5wLg"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_LfiwcOK6Eey2GPf_NkcRwg" name="min max filter engineSpeed">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_LfkloOK6Eey2GPf_NkcRwg" role="_hpJMMCSiEe2NCYuc8M5wLg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_LfkloeK6Eey2GPf_NkcRwg" role="_MkxlECSjEe2NCYuc8M5wLg"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_OvdpEOK6Eey2GPf_NkcRwg" name="Nmax - max filter">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_OvgFUOK6Eey2GPf_NkcRwg" role="_nERYICSiEe2NCYuc8M5wLg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_OvgFUeK6Eey2GPf_NkcRwg" role="_IZ3sUN_CEeyQAoCiBoOCcw"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_wKEXoOK6Eey2GPf_NkcRwg" name="engineSpeed - output filter to constraint">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_wKGM0OK6Eey2GPf_NkcRwg" role="_kcZ-ACSiEe2NCYuc8M5wLg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_wKGM0eK6Eey2GPf_NkcRwg" role="_3WMSACSjEe2NCYuc8M5wLg"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_ZYBeMOLxEeyMdeINNWNrGg" name="engineSpeed filter in">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_ZYGWsOLxEeyMdeINNWNrGg" role="_UGhIUOLxEeyMdeINNWNrGg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_ZYGWseLxEeyMdeINNWNrGg" role="_JDugMCSjEe2NCYuc8M5wLg"/>
-            </ownedConnector>
             <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_fj3x4OLwEeyMdeINNWNrGg" name="Engine SM">
               <region xmi:type="uml:Region" xmi:id="_gN_F4OLwEeyMdeINNWNrGg" name="engineSpeed">
                 <transition xmi:type="uml:Transition" xmi:id="_4jMWMOLwEeyMdeINNWNrGg" source="_nSPLwOLwEeyMdeINNWNrGg" target="_otawUOLwEeyMdeINNWNrGg"/>
@@ -858,38 +550,6 @@ driveGear_param = driveGear</body>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_J5QHQOLqEey2GPf_NkcRwg" name="engine_torque" visibility="public" aggregation="composite">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
             </ownedAttribute>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_xR1H0N_DEeyQAoCiBoOCcw" name="gearbox torque">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_xR3kEN_DEeyQAoCiBoOCcw" role="_t_0qcCShEe2NCYuc8M5wLg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_xR3kEd_DEeyQAoCiBoOCcw" role="_xsykkNyZEeyZdrCSZvBi5g"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_yraJ4N_DEeyQAoCiBoOCcw" name="i0">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_yrb_EN_DEeyQAoCiBoOCcw" role="_VtQ_kN_DEeyQAoCiBoOCcw"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_yrb_Ed_DEeyQAoCiBoOCcw" role="_vlp48NyZEeyZdrCSZvBi5g"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_z7vJUN_DEeyQAoCiBoOCcw" name="currentDriveGear">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_z7w-gN_DEeyQAoCiBoOCcw" role="_FTvMYN_DEeyQAoCiBoOCcw"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_z7w-gd_DEeyQAoCiBoOCcw" role="_4mqvINZGEeyztMSLcHqD0Q"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_10urQN_DEeyQAoCiBoOCcw" name="currentGearRatio">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_10wgcN_DEeyQAoCiBoOCcw" role="_Hg3yUN_DEeyQAoCiBoOCcw"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_10xHgN_DEeyQAoCiBoOCcw" role="_BShsANZHEeyztMSLcHqD0Q"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_Me0wcOLsEey2GPf_NkcRwg" name="engineTorque">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_Me2loOLsEey2GPf_NkcRwg" role="_J5QHQOLqEey2GPf_NkcRwg"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_Me2loeLsEey2GPf_NkcRwg" role="_obll0CShEe2NCYuc8M5wLg"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_QIY4IOLsEey2GPf_NkcRwg" name="eff">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_QIatUOLsEey2GPf_NkcRwg" role="_Xv3JcN_DEeyQAoCiBoOCcw"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_QIatUeLsEey2GPf_NkcRwg" role="_j9wvoCShEe2NCYuc8M5wLg"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_Wc90kOLsEey2GPf_NkcRwg" name="i0 transmission toruqe">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_Wc_pwOLsEey2GPf_NkcRwg" role="_VtQ_kN_DEeyQAoCiBoOCcw"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_WdAQ0OLsEey2GPf_NkcRwg" role="_iK4cwCShEe2NCYuc8M5wLg"/>
-            </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_k5l2MOLsEey2GPf_NkcRwg" name="gearRatio">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_k5nrYOLsEey2GPf_NkcRwg" role="_Hg3yUN_DEeyQAoCiBoOCcw"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_k5nrYeLsEey2GPf_NkcRwg" role="_lldtQCShEe2NCYuc8M5wLg"/>
-            </ownedConnector>
             <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_bU5hEMQlEeye8sWuuOEGkw" name="GearBox SM">
               <region xmi:type="uml:Region" xmi:id="__1cZ8MQyEeye8sWuuOEGkw" name="Gearbox">
                 <transition xmi:type="uml:Transition" xmi:id="_4nFYwMTVEeyhtb6Vq-DBuQ" source="_2JLL4MTVEeyhtb6Vq-DBuQ" target="_KlSAwMQzEeye8sWuuOEGkw"/>
@@ -1092,6 +752,259 @@ current_gear_ratio_param = 0.67</body>
           <ownedEnd xmi:type="uml:Property" xmi:id="_l3hiQOLlEey2GPf_NkcRwg" type="_S-p3wNyjEeyZdrCSZvBi5g" association="_l3gUIOLlEey2GPf_NkcRwg"/>
         </nestedClassifier>
       </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_KNwDUCcUEe2QzKLBqsARlg" informationSource="_Z-aP0CY8Ee2FC6XF101YWg" informationTarget="_Z5SIkNyYEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_skf0kCcVEe2QzKLBqsARlg" name="ItemFlow4" informationSource="_Lypv0NfcEeySbq2h8TnUHA" informationTarget="_rKlA4CY8Ee2FC6XF101YWg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_zRLvACcVEe2QzKLBqsARlg" name="ItemFlow5" informationSource="_s9IjoCY8Ee2FC6XF101YWg" informationTarget="_YI_mUCY8Ee2FC6XF101YWg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_6N30UCcVEe2QzKLBqsARlg" name="ItemFlow6" informationSource="_WXArsN-5EeyBKe45X3175g" informationTarget="_qgNekNyYEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_9o2GYCcVEe2QzKLBqsARlg" name="ItemFlow7" informationSource="_AFE-cN27EeyUrvQ0Lh3FUQ" informationTarget="_eWTtgNyYEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Jw9HsCcWEe2QzKLBqsARlg" name="ItemFlow8" informationSource="_5SmUUCSjEe2NCYuc8M5wLg" informationTarget="_ZDAV8NyaEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_RLsa8CcWEe2QzKLBqsARlg" name="ItemFlow9" informationSource="_U6mgsNybEeyZdrCSZvBi5g" informationTarget="_tIK-0CSjEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_W4mTYCcWEe2QzKLBqsARlg" name="ItemFlow10" informationSource="_Znbz8NJuEeyKp65yHsgyfA" informationTarget="_vHLCICSjEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_cBITcCcWEe2QzKLBqsARlg" name="ItemFlow11" informationSource="_RBjT4NLJEeyKp65yHsgyfA" informationTarget="_y1Uu4CSjEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_hEsT8CcWEe2QzKLBqsARlg" name="ItemFlow12" informationSource="_0pGf8NJtEeyKp65yHsgyfA" informationTarget="_1LAz4CSjEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_mtIjICcWEe2QzKLBqsARlg" name="ItemFlow13" informationSource="_2AmGoNyaEeyZdrCSZvBi5g" informationTarget="_UGhIUOLxEeyMdeINNWNrGg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_rhXuMCcWEe2QzKLBqsARlg" name="ItemFlow14" informationSource="_UGhIUOLxEeyMdeINNWNrGg" informationTarget="_JDugMCSjEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_xx0_oCcWEe2QzKLBqsARlg" name="ItemFlow15" informationSource="_kcZ-ACSiEe2NCYuc8M5wLg" informationTarget="_3WMSACSjEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_3NjogCcWEe2QzKLBqsARlg" name="ItemFlow16" informationSource="_IZ3sUN_CEeyQAoCiBoOCcw" informationTarget="_DzR6wNyYEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_6Y2f0CcWEe2QzKLBqsARlg" name="ItemFlow17" informationSource="_TRc54N_CEeyQAoCiBoOCcw" informationTarget="_FJDa4NyYEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_8vXrQCcWEe2QzKLBqsARlg" name="ItemFlow18" informationSource="_TRc54N_CEeyQAoCiBoOCcw" informationTarget="_K4GA0CSjEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_AIF6kCcXEe2QzKLBqsARlg" name="ItemFlow19" informationSource="_MkxlECSjEe2NCYuc8M5wLg" informationTarget="_hpJMMCSiEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_DQ3CUCcXEe2QzKLBqsARlg" name="ItemFlow20" informationSource="_IZ3sUN_CEeyQAoCiBoOCcw" informationTarget="_nERYICSiEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_PD7AsCcXEe2QzKLBqsARlg" name="ItemFlow21" informationSource="_Hg3yUN_DEeyQAoCiBoOCcw" informationTarget="_BShsANZHEeyztMSLcHqD0Q">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_TOIXUCcXEe2QzKLBqsARlg" name="ItemFlow22" informationSource="_FTvMYN_DEeyQAoCiBoOCcw" informationTarget="_4mqvINZGEeyztMSLcHqD0Q">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Wvm6ACcXEe2QzKLBqsARlg" name="ItemFlow23" informationSource="_VtQ_kN_DEeyQAoCiBoOCcw" informationTarget="_vlp48NyZEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_cIzMQCcXEe2QzKLBqsARlg" name="ItemFlow24" informationSource="_90KO8NfLEeyKDukxCNI3pQ _t_0qcCShEe2NCYuc8M5wLg" informationTarget="_xsykkNyZEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_fnfgsCcXEe2QzKLBqsARlg" name="ItemFlow25" informationSource="_J5QHQOLqEey2GPf_NkcRwg" informationTarget="_obll0CShEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_h1jTsCcXEe2QzKLBqsARlg" name="ItemFlow26" informationSource="_Hg3yUN_DEeyQAoCiBoOCcw" informationTarget="_lldtQCShEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_mylOYCcXEe2QzKLBqsARlg" name="ItemFlow27" informationSource="_Xv3JcN_DEeyQAoCiBoOCcw" informationTarget="_j9wvoCShEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_qwnxQCcXEe2QzKLBqsARlg" name="ItemFlow28" informationSource="_VtQ_kN_DEeyQAoCiBoOCcw" informationTarget="_iK4cwCShEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_JImcUCcYEe2QzKLBqsARlg" name="ItemFlow29" informationSource="_jEsDcOESEeyXPMXG3lFeMw" informationTarget="_JzidsN1AEeyB6oChl77ysw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_LywVcCcYEe2QzKLBqsARlg" name="ItemFlow30" informationSource="_WKF1QOESEeyXPMXG3lFeMw" informationTarget="_lBF9sN-9EeyQAoCiBoOCcw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_QnKfoCcYEe2QzKLBqsARlg" name="ItemFlow31" informationSource="_ZCSxcOESEeyXPMXG3lFeMw" informationTarget="_krnLAN-_EeyQAoCiBoOCcw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_S12kwCcYEe2QzKLBqsARlg" name="ItemFlow32" informationSource="_bq_SAOESEeyXPMXG3lFeMw" informationTarget="_WckjsOASEey1V-BUgsLF0Q">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_UxGwgCcYEe2QzKLBqsARlg" name="ItemFlow33" informationSource="_ewu68OESEeyXPMXG3lFeMw" informationTarget="_cI2KAOASEey1V-BUgsLF0Q">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_XFTnwCcYEe2QzKLBqsARlg" name="ItemFlow34" informationSource="_g-tOYOESEeyXPMXG3lFeMw" informationTarget="_ALG3UOATEey1V-BUgsLF0Q">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_c3GnQCcYEe2QzKLBqsARlg" name="ItemFlow35" informationSource="_llM4YOESEeyXPMXG3lFeMw" informationTarget="_CB4HoOEDEeyXPMXG3lFeMw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_lsNmwCcYEe2QzKLBqsARlg" name="ItemFlow36" informationSource="_nokeUOESEeyXPMXG3lFeMw" informationTarget="_IPReAOEDEeyXPMXG3lFeMw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_toW98CcYEe2QzKLBqsARlg" name="ItemFlow37" informationSource="_UGL-8N_BEeyQAoCiBoOCcw" informationTarget="_qIuG4OESEeyXPMXG3lFeMw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_yGbkYCcbEe2QzKLBqsARlg" name="ItemFlow38" informationSource="_XGaswOAkEeyC6I-5TDX_3g _MwuFYOECEeyXPMXG3lFeMw" informationTarget="_mttvwCSWEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_IP1f8CcmEe2QzKLBqsARlg" name="ItemFlow39" informationSource="_atvMsMQgEeye8sWuuOEGkw _vlp48NyZEeyZdrCSZvBi5g" informationTarget="_JyAOYCSWEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_NlYBQCcmEe2QzKLBqsARlg" name="ItemFlow40" informationSource="_atvMsMQgEeye8sWuuOEGkw _BShsANZHEeyztMSLcHqD0Q" informationTarget="_1b40YCSWEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Vd-VMCcmEe2QzKLBqsARlg" name="ItemFlow41" informationSource="_lsNp4NJtEeyKp65yHsgyfA _ZDAV8NyaEeyZdrCSZvBi5g" informationTarget="_J5QHQOLqEey2GPf_NkcRwg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_YlnbkCcmEe2QzKLBqsARlg" name="ItemFlow42" informationSource="_lsNp4NJtEeyKp65yHsgyfA _FJDa4NyYEeyZdrCSZvBi5g" informationTarget="_duN3QNZMEeyztMSLcHqD0Q">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_bVrIYCcmEe2QzKLBqsARlg" name="ItemFlow43" informationSource="_lsNp4NJtEeyKp65yHsgyfA _DzR6wNyYEeyZdrCSZvBi5g" informationTarget="_hWzHgNZMEeyztMSLcHqD0Q">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_fmlj8CcmEe2QzKLBqsARlg" name="ItemFlow44" informationSource="_DrZxkOEAEeyXPMXG3lFeMw _88hUQCSWEe2ZkqwwGIJVRw" informationTarget="_W9dzgNyfEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_lmyy4CcmEe2QzKLBqsARlg" name="ItemFlow45" informationSource="_DrZxkOEAEeyXPMXG3lFeMw _88hUQCSWEe2ZkqwwGIJVRw" informationTarget="_2AmGoNyaEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_qhaSwCcmEe2QzKLBqsARlg" name="ItemFlow46" informationSource="_atvMsMQgEeye8sWuuOEGkw _4mqvINZGEeyztMSLcHqD0Q" informationTarget="_gHBVQOEOEeyXPMXG3lFeMw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_uJsBACcmEe2QzKLBqsARlg" name="ItemFlow47" informationSource="_atvMsMQgEeye8sWuuOEGkw _xsykkNyZEeyZdrCSZvBi5g" informationTarget="_SOWywOECEeyXPMXG3lFeMw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_zwDMkCcmEe2QzKLBqsARlg" name="ItemFlow48" informationSource="_CB4HoOEDEeyXPMXG3lFeMw" informationTarget="_U6mgsNybEeyZdrCSZvBi5g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_2dVSMCcmEe2QzKLBqsARlg" name="ItemFlow49" informationSource="_atvMsMQgEeye8sWuuOEGkw _4mqvINZGEeyztMSLcHqD0Q" informationTarget="_8yvMcOXoEeyrmpnLSXdn1g">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_A8SkYCcnEe2QzKLBqsARlg" name="ItemFlow50" informationSource="_XGaswOAkEeyC6I-5TDX_3g _IPReAOEDEeyXPMXG3lFeMw" informationTarget="_EiPJQNZHEeyztMSLcHqD0Q">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_f9EU0CcnEe2QzKLBqsARlg" name="ItemFlow51" informationSource="_SOWywOECEeyXPMXG3lFeMw" informationTarget="_4bG2YOBtEeyqBLJ1Eszaaw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_qvsw8CcnEe2QzKLBqsARlg" name="ItemFlow53" informationSource="_gHBVQOEOEeyXPMXG3lFeMw" informationTarget="_sM7aUOESEeyXPMXG3lFeMw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_TSNWUCcoEe2QzKLBqsARlg" name="ItemFlow54" informationSource="_4bG2YOBtEeyqBLJ1Eszaaw" informationTarget="_eIOxkCSfEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_YXVdECcoEe2QzKLBqsARlg" name="ItemFlow55" informationSource="_JzidsN1AEeyB6oChl77ysw" informationTarget="_cPbc4CSfEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_cabfECcoEe2QzKLBqsARlg" name="ItemFlow56" informationSource="_E14GANJtEeyKp65yHsgyfA _Z5SIkNyYEeyZdrCSZvBi5g" informationTarget="_aq7kQCSfEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_fllMcCcoEe2QzKLBqsARlg" name="ItemFlow57" informationSource="_y2N5ACSeEe2NCYuc8M5wLg" informationTarget="_YewnoCSfEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_k1NTACcoEe2QzKLBqsARlg" name="ItemFlow58" informationSource="_lBF9sN-9EeyQAoCiBoOCcw" informationTarget="_j2iR0CSXEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_oRKcgCcoEe2QzKLBqsARlg" name="ItemFlow59" informationSource="_krnLAN-_EeyQAoCiBoOCcw" informationTarget="_8DJm0CSXEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_rjvnkCcoEe2QzKLBqsARlg" name="ItemFlow60" informationSource="_-kmacCSYEe2ZkqwwGIJVRw" informationTarget="_Pp-48CSXEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_xtInsCcoEe2QzKLBqsARlg" name="ItemFlow61" informationSource="_MPByQN-9EeyQAoCiBoOCcw" informationTarget="_Z3Wr4CSXEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_1jtQoCcoEe2QzKLBqsARlg" name="ItemFlow62" informationSource="_krnLAN-_EeyQAoCiBoOCcw" informationTarget="_mFeuQCSaEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="__Mqu8CcoEe2QzKLBqsARlg" name="ItemFlow63" informationSource="_MPByQN-9EeyQAoCiBoOCcw" informationTarget="_10cPkCScEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_DdS2oCcpEe2QzKLBqsARlg" name="ItemFlow64" informationSource="_-kmacCSYEe2ZkqwwGIJVRw" informationTarget="_Z6jpgCSaEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_HXh3kCcpEe2QzKLBqsARlg" name="ItemFlow65" informationSource="_X7-4oOBtEeyz97SW6jXbYw" informationTarget="_gL1oECSfEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_L1Nj0CcpEe2QzKLBqsARlg" name="ItemFlow66" informationSource="_X7-4oOBtEeyz97SW6jXbYw" informationTarget="_Hl1YICSeEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_QbnHMCcpEe2QzKLBqsARlg" name="ItemFlow67" informationSource="_Mq0U8CSeEe2NCYuc8M5wLg" informationTarget="_WRa4QCSdEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_T__M4CcpEe2QzKLBqsARlg" name="ItemFlow68" informationSource="_37xIcCScEe2NCYuc8M5wLg" informationTarget="_UF6C8CSdEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_d1nOMCcpEe2QzKLBqsARlg" name="ItemFlow70" informationSource="_MPByQN-9EeyQAoCiBoOCcw" informationTarget="_taa-sCSeEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_gtYskCcpEe2QzKLBqsARlg" name="ItemFlow71" informationSource="_eWTtgNyYEeyZdrCSZvBi5g" informationTarget="_xDdh8CSeEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_j3WuMCcpEe2QzKLBqsARlg" name="ItemFlow72" informationSource="_qgNekNyYEeyZdrCSZvBi5g" informationTarget="_vHoucCSeEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_pDI2kCcpEe2QzKLBqsARlg" name="ItemFlow73" informationSource="_-kmacCSYEe2ZkqwwGIJVRw" informationTarget="_qQD7gCSeEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_uuG1UCcpEe2QzKLBqsARlg" name="ItemFlow74" informationSource="_WckjsOASEey1V-BUgsLF0Q" informationTarget="_FtRUACSeEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_zNLBoCcpEe2QzKLBqsARlg" name="ItemFlow75" informationSource="_cI2KAOASEey1V-BUgsLF0Q" informationTarget="_LHyb8CSeEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_60PgsCcpEe2QzKLBqsARlg" name="ItemFlow76" informationSource="_ALG3UOATEey1V-BUgsLF0Q" informationTarget="_JYj6ACSeEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_FnaIUCcqEe2QzKLBqsARlg" name="ItemFlow77" informationSource="_1DvM0N-7EeyBKe45X3175g" informationTarget="_Jl-SoCSYEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_J2v2kCcqEe2QzKLBqsARlg" name="ItemFlow78" informationSource="_FVqjMN-8EeyBKe45X3175g" informationTarget="_pQKzgCSYEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Nz_vQCcqEe2QzKLBqsARlg" name="ItemFlow79" informationSource="_Kr2kwN-8EeyBKe45X3175g" informationTarget="_0WzJsCSYEe2ZkqwwGIJVRw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_UX9LgCcqEe2QzKLBqsARlg" name="ItemFlow80" informationSource="_STOScCSfEe2NCYuc8M5wLg" informationTarget="_X7-4oOBtEeyz97SW6jXbYw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_cChqgCcqEe2QzKLBqsARlg" name="ItemFlow81" informationSource="_X7-4oOBtEeyz97SW6jXbYw" informationTarget="_t87rUCSdEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_kSri0CcqEe2QzKLBqsARlg" name="ItemFlow82" informationSource="_Z5SIkNyYEeyZdrCSZvBi5g" informationTarget="_wveEYCSdEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_rAVGkCcqEe2QzKLBqsARlg" name="ItemFlow83" informationSource="_-kmacCSYEe2ZkqwwGIJVRw" informationTarget="_Wm5uICSfEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_yRiDUCcqEe2QzKLBqsARlg" name="ItemFlow84" informationSource="_uhMhkNfTEeyKDukxCNI3pQ _QOg6oCSdEe2NCYuc8M5wLg" informationTarget="_UbK2YCSfEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_BoMEQCcrEe2QzKLBqsARlg" name="ItemFlow86" informationSource="_X7-4oOBtEeyz97SW6jXbYw" informationTarget="_UGL-8N_BEeyQAoCiBoOCcw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_YLYkYCcrEe2QzKLBqsARlg" name="ItemFlow86" informationSource="_thc38CSXEe2ZkqwwGIJVRw" informationTarget="_SHaV8CSdEe2NCYuc8M5wLg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_22eYsCcrEe2QzKLBqsARlg" name="ItemFlow86" informationSource="_zfaccCSdEe2NCYuc8M5wLg" informationTarget="_xi-HcOK-Eey2GPf_NkcRwg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_HmomYCcwEe2QzKLBqsARlg" name="ItemFlow86" informationSource="_VuHoEN06EeyZdrCSZvBi5g" informationTarget="_SgOnACY8Ee2FC6XF101YWg">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_p03U0CcxEe2QzKLBqsARlg" name="ItemFlow86" informationSource="_xi-HcOK-Eey2GPf_NkcRwg" informationTarget="_MwuFYOECEeyXPMXG3lFeMw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_lueqQMW1EeyyYa73KIbzUQ" name="usecases">
       <packagedElement xmi:type="uml:Actor" xmi:id="_5xJR4MW2EeyyYa73KIbzUQ" name="Driver"/>
@@ -1460,97 +1373,34 @@ current_gear_ratio_param = 0.67</body>
   <ConstraintBlocks:ConstraintBlock xmi:id="_6jYlQNfMEeyKDukxCNI3pQ" base_Class="_6jVh8NfMEeyKDukxCNI3pQ"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_uhO90NfTEeyKDukxCNI3pQ" base_Class="_uhMhkNfTEeyKDukxCNI3pQ"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_cYTswNfXEeySbq2h8TnUHA" base_Class="_cYItoNfXEeySbq2h8TnUHA"/>
-  <Blocks:BindingConnector xmi:id="_WXI64NffEeySbq2h8TnUHA" base_Connector="_WXGeoNffEeySbq2h8TnUHA"/>
-  <Blocks:BindingConnector xmi:id="_arRCgNffEeySbq2h8TnUHA" base_Connector="_arN_MNffEeySbq2h8TnUHA"/>
   <DeprecatedElements:FlowPort xmi:id="_DzTv8NyYEeyZdrCSZvBi5g" base_Port="_DzR6wNyYEeyZdrCSZvBi5g" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_FJEB8NyYEeyZdrCSZvBi5g" base_Port="_FJDa4NyYEeyZdrCSZvBi5g" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_Z5aEYNyYEeyZdrCSZvBi5g" base_Port="_Z5SIkNyYEeyZdrCSZvBi5g" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_eWbpUNyYEeyZdrCSZvBi5g" base_Port="_eWTtgNyYEeyZdrCSZvBi5g" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_qgUMQNyYEeyZdrCSZvBi5g" base_Port="_qgNekNyYEeyZdrCSZvBi5g" direction="out"/>
-  <Blocks:BindingConnector xmi:id="_3bKSEtyYEeyZdrCSZvBi5g" base_Connector="_3bIc4NyYEeyZdrCSZvBi5g"/>
   <DeprecatedElements:FlowPort xmi:id="_vl1fINyZEeyZdrCSZvBi5g" base_Port="_vlp48NyZEeyZdrCSZvBi5g" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_xs6gYNyZEeyZdrCSZvBi5g" base_Port="_xsykkNyZEeyZdrCSZvBi5g" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_ZDIRwNyaEeyZdrCSZvBi5g" base_Port="_ZDAV8NyaEeyZdrCSZvBi5g" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_2AuCcNyaEeyZdrCSZvBi5g" base_Port="_2AmGoNyaEeyZdrCSZvBi5g" direction="in"/>
-  <Blocks:BindingConnector xmi:id="__z07QNyaEeyZdrCSZvBi5g" base_Connector="__zyfANyaEeyZdrCSZvBi5g"/>
-  <Blocks:BindingConnector xmi:id="_EXukQtybEeyZdrCSZvBi5g" base_Connector="_EXsvENybEeyZdrCSZvBi5g"/>
-  <Blocks:BindingConnector xmi:id="_PbArgtybEeyZdrCSZvBi5g" base_Connector="_Pa-PQNybEeyZdrCSZvBi5g"/>
-  <Blocks:BindingConnector xmi:id="_RuRHkdybEeyZdrCSZvBi5g" base_Connector="_RuPSYNybEeyZdrCSZvBi5g"/>
-  <Blocks:BindingConnector xmi:id="_TQzRUtybEeyZdrCSZvBi5g" base_Connector="_TQxcINybEeyZdrCSZvBi5g"/>
   <DeprecatedElements:FlowPort xmi:id="_U6vDkNybEeyZdrCSZvBi5g" base_Port="_U6mgsNybEeyZdrCSZvBi5g" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_aFMWQtybEeyZdrCSZvBi5g" base_Connector="_aFKhENybEeyZdrCSZvBi5g"/>
   <DeprecatedElements:FlowPort xmi:id="_W9nkgNyfEeyZdrCSZvBi5g" base_Port="_W9dzgNyfEeyZdrCSZvBi5g" direction="in"/>
   <Blocks:Block xmi:id="_S-uJMNyjEeyZdrCSZvBi5g" base_Class="_S-p3wNyjEeyZdrCSZvBi5g"/>
-  <Blocks:BindingConnector xmi:id="_bXd2MN06EeyZdrCSZvBi5g" base_Connector="_bXbZ8N06EeyZdrCSZvBi5g"/>
-  <Blocks:BindingConnector xmi:id="_sPkbwt06EeyZdrCSZvBi5g" base_Connector="_sPimkN06EeyZdrCSZvBi5g"/>
-  <Blocks:BindingConnector xmi:id="_ztDhAt06EeyZdrCSZvBi5g" base_Connector="_ztBr0N06EeyZdrCSZvBi5g"/>
-  <Blocks:BindingConnector xmi:id="_51DaAN06EeyZdrCSZvBi5g" base_Connector="_51A9wN06EeyZdrCSZvBi5g"/>
-  <Blocks:BindingConnector xmi:id="__zp_EN09EeyZdrCSZvBi5g" base_Connector="__zni0N09EeyZdrCSZvBi5g"/>
   <DeprecatedElements:FlowPort xmi:id="_JzlhAN1AEeyB6oChl77ysw" base_Port="_JzidsN1AEeyB6oChl77ysw" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_O0kHkd1AEeyB6oChl77ysw" base_Connector="_O0hrUN1AEeyB6oChl77ysw"/>
-  <Blocks:BindingConnector xmi:id="_exNQ0N-5EeyBKe45X3175g" base_Connector="_exF8EN-5EeyBKe45X3175g"/>
-  <Blocks:BindingConnector xmi:id="_9C2_gd-7EeyBKe45X3175g" base_Connector="_9C0jQN-7EeyBKe45X3175g"/>
-  <Blocks:BindingConnector xmi:id="_JPcRIt-8EeyBKe45X3175g" base_Connector="_JPZ04N-8EeyBKe45X3175g"/>
-  <Blocks:BindingConnector xmi:id="_PGF7cN-8EeyBKe45X3175g" base_Connector="_PGDfMN-8EeyBKe45X3175g"/>
-  <Blocks:BindingConnector xmi:id="_FAMNAN-9EeyQAoCiBoOCcw" base_Connector="_FACcAN-9EeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_RfgNYd-9EeyQAoCiBoOCcw" base_Connector="_RfcjAN-9EeyQAoCiBoOCcw"/>
   <DeprecatedElements:FlowPort xmi:id="_lBOgkN-9EeyQAoCiBoOCcw" base_Port="_lBF9sN-9EeyQAoCiBoOCcw" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_xX138t-9EeyQAoCiBoOCcw" base_Connector="_xXy0oN-9EeyQAoCiBoOCcw"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_e_pjMN--EeyQAoCiBoOCcw" base_Class="_e_mf4N--EeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_W8csUN-_EeyQAoCiBoOCcw" base_Connector="_W8aQEN-_EeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_iBtJgt-_EeyQAoCiBoOCcw" base_Connector="_iBrUUN-_EeyQAoCiBoOCcw"/>
   <DeprecatedElements:FlowPort xmi:id="_krqOUN-_EeyQAoCiBoOCcw" base_Port="_krnLAN-_EeyQAoCiBoOCcw" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_uh9lEd-_EeyQAoCiBoOCcw" base_Connector="_uh7I0N-_EeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_JyBc8t_AEeyQAoCiBoOCcw" base_Connector="_Jx_nwN_AEeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_R_UOgt_AEeyQAoCiBoOCcw" base_Connector="_R_SZUN_AEeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_7QM80d_AEeyQAoCiBoOCcw" base_Connector="_7QKgkN_AEeyQAoCiBoOCcw"/>
   <DeprecatedElements:FlowPort xmi:id="_UGObMN_BEeyQAoCiBoOCcw" base_Port="_UGL-8N_BEeyQAoCiBoOCcw" direction="out"/>
-  <Blocks:BindingConnector xmi:id="_u5mXEt_BEeyQAoCiBoOCcw" base_Connector="_u5kh4N_BEeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_QTpE8t_CEeyQAoCiBoOCcw" base_Connector="_QTnPwN_CEeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_Vc_kYt_CEeyQAoCiBoOCcw" base_Connector="_Vc9vMN_CEeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_xR3kEt_DEeyQAoCiBoOCcw" base_Connector="_xR1H0N_DEeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_yrb_Et_DEeyQAoCiBoOCcw" base_Connector="_yraJ4N_DEeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_z7w-gt_DEeyQAoCiBoOCcw" base_Connector="_z7vJUN_DEeyQAoCiBoOCcw"/>
-  <Blocks:BindingConnector xmi:id="_10xHgd_DEeyQAoCiBoOCcw" base_Connector="_10urQN_DEeyQAoCiBoOCcw"/>
   <DeprecatedElements:FlowPort xmi:id="_Wcww8OASEey1V-BUgsLF0Q" base_Port="_WckjsOASEey1V-BUgsLF0Q" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_cJEzgOASEey1V-BUgsLF0Q" base_Port="_cI2KAOASEey1V-BUgsLF0Q" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_1Cb5wOASEey1V-BUgsLF0Q" base_Connector="_1CYPYOASEey1V-BUgsLF0Q"/>
-  <Blocks:BindingConnector xmi:id="_6ZmLsuASEey1V-BUgsLF0Q" base_Connector="_6ZjvcOASEey1V-BUgsLF0Q"/>
   <DeprecatedElements:FlowPort xmi:id="_ALQoUOATEey1V-BUgsLF0Q" base_Port="_ALG3UOATEey1V-BUgsLF0Q" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_igFjceATEey1V-BUgsLF0Q" base_Connector="_igDHMOATEey1V-BUgsLF0Q"/>
-  <Blocks:BindingConnector xmi:id="_D2o4cuAUEey1V-BUgsLF0Q" base_Connector="_D2mcMOAUEey1V-BUgsLF0Q"/>
-  <Blocks:BindingConnector xmi:id="_aOzNQuAUEey1V-BUgsLF0Q" base_Connector="_aOwJ8OAUEey1V-BUgsLF0Q"/>
-  <Blocks:BindingConnector xmi:id="_c9530OAUEey1V-BUgsLF0Q" base_Connector="_c93bkOAUEey1V-BUgsLF0Q"/>
-  <Blocks:BindingConnector xmi:id="_gb3McuAUEey1V-BUgsLF0Q" base_Connector="_gb0wMOAUEey1V-BUgsLF0Q"/>
-  <Blocks:BindingConnector xmi:id="_ri_48eAUEey1V-BUgsLF0Q" base_Connector="_ri9csOAUEey1V-BUgsLF0Q"/>
   <Blocks:Block xmi:id="_XGm6AOAkEeyC6I-5TDX_3g" base_Class="_XGaswOAkEeyC6I-5TDX_3g"/>
-  <Blocks:BindingConnector xmi:id="_et21EOBtEeyz97SW6jXbYw" base_Connector="_etu5QOBtEeyz97SW6jXbYw"/>
   <DeprecatedElements:FlowPort xmi:id="_4bWuAOBtEeyqBLJ1Eszaaw" base_Port="_4bG2YOBtEeyqBLJ1Eszaaw" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_IUH9gOBuEeyqBLJ1Eszaaw" base_Connector="_IUAowOBuEeyqBLJ1Eszaaw"/>
-  <Blocks:BindingConnector xmi:id="_TiFY0OBwEeyM45x-2cJqcQ" base_Connector="_Th06IOBwEeyM45x-2cJqcQ"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_Drc04OEAEeyXPMXG3lFeMw" base_Class="_DrZxkOEAEeyXPMXG3lFeMw"/>
   <DeprecatedElements:FlowPort xmi:id="_Mwzk8OECEeyXPMXG3lFeMw" base_Port="_MwuFYOECEeyXPMXG3lFeMw" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_SOZPAOECEeyXPMXG3lFeMw" base_Port="_SOWywOECEeyXPMXG3lFeMw" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_CB-OQOEDEeyXPMXG3lFeMw" base_Port="_CB4HoOEDEeyXPMXG3lFeMw" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_IPbPAOEDEeyXPMXG3lFeMw" base_Port="_IPReAOEDEeyXPMXG3lFeMw" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_wKZd0uEEEeyXPMXG3lFeMw" base_Connector="_wKXooOEEEeyXPMXG3lFeMw"/>
-  <Blocks:BindingConnector xmi:id="_5TeiMuEEEeyXPMXG3lFeMw" base_Connector="_5TctAOEEEeyXPMXG3lFeMw"/>
-  <Blocks:BindingConnector xmi:id="_JzmzAuENEeyXPMXG3lFeMw" base_Connector="_Jzk90OENEeyXPMXG3lFeMw"/>
-  <Blocks:BindingConnector xmi:id="_tbiUwuENEeyXPMXG3lFeMw" base_Connector="_tbgfkOENEeyXPMXG3lFeMw"/>
-  <Blocks:BindingConnector xmi:id="_GluFQuEOEeyXPMXG3lFeMw" base_Connector="_GlsQEOEOEeyXPMXG3lFeMw"/>
-  <Blocks:BindingConnector xmi:id="_K0XP8uEOEeyXPMXG3lFeMw" base_Connector="_K0UzsOEOEeyXPMXG3lFeMw"/>
-  <Blocks:BindingConnector xmi:id="_OdmAcuEOEeyXPMXG3lFeMw" base_Connector="_OdkLQOEOEeyXPMXG3lFeMw"/>
   <DeprecatedElements:FlowPort xmi:id="_gHMUYOEOEeyXPMXG3lFeMw" base_Port="_gHBVQOEOEeyXPMXG3lFeMw" direction="out"/>
-  <Blocks:BindingConnector xmi:id="_k8hEkuEOEeyXPMXG3lFeMw" base_Connector="_k8fPYOEOEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_MWkNEOEPEeyXPMXG3lFeMw" base_Element="_wKZd0OEEEeyXPMXG3lFeMw" base_ConnectorEnd="_wKZd0OEEEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_M16bgOEPEeyXPMXG3lFeMw" base_Element="_wKZd0eEEEeyXPMXG3lFeMw" base_ConnectorEnd="_wKZd0eEEEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_NeZ-4OEPEeyXPMXG3lFeMw" base_Element="_5TeiMOEEEeyXPMXG3lFeMw" base_ConnectorEnd="_5TeiMOEEEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_N81AQOEPEeyXPMXG3lFeMw" base_Element="_5TeiMeEEEeyXPMXG3lFeMw" base_ConnectorEnd="_5TeiMeEEEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_URh4gOEPEeyXPMXG3lFeMw" base_Element="_JzmzAeENEeyXPMXG3lFeMw" base_ConnectorEnd="_JzmzAeENEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_VR3UIOEPEeyXPMXG3lFeMw" base_Element="_tbiUweENEeyXPMXG3lFeMw" base_ConnectorEnd="_tbiUweENEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_aTrBIOEPEeyXPMXG3lFeMw" base_Element="_K0XP8eEOEeyXPMXG3lFeMw" base_ConnectorEnd="_K0XP8eEOEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_cYkREOEPEeyXPMXG3lFeMw" base_Element="_k8hEkOEOEeyXPMXG3lFeMw" base_ConnectorEnd="_k8hEkOEOEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_gqZ5sOEPEeyXPMXG3lFeMw" base_Element="_OdmAceEOEeyXPMXG3lFeMw" base_ConnectorEnd="_OdmAceEOEeyXPMXG3lFeMw"/>
   <Blocks:Block xmi:id="_hmjG8OEREeyXPMXG3lFeMw" base_Class="_hmhRwOEREeyXPMXG3lFeMw"/>
   <DeprecatedElements:FlowPort xmi:id="_WKHqcOESEeyXPMXG3lFeMw" base_Port="_WKF1QOESEeyXPMXG3lFeMw" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_ZCcicOESEeyXPMXG3lFeMw" base_Port="_ZCSxcOESEeyXPMXG3lFeMw" direction="in"/>
@@ -1562,67 +1412,12 @@ current_gear_ratio_param = 0.67</body>
   <DeprecatedElements:FlowPort xmi:id="_nom6kOESEeyXPMXG3lFeMw" base_Port="_nokeUOESEeyXPMXG3lFeMw" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_qI5tEOESEeyXPMXG3lFeMw" base_Port="_qIuG4OESEeyXPMXG3lFeMw" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_sM9PgOESEeyXPMXG3lFeMw" base_Port="_sM7aUOESEeyXPMXG3lFeMw" direction="out"/>
-  <Blocks:BindingConnector xmi:id="_gfcfoOH7Eeyz1PUmZ5CQVw" base_Connector="_gfWZAOH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_k3uHcuH7Eeyz1PUmZ5CQVw" base_Connector="_k3qdEOH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_po5-gOH7Eeyz1PUmZ5CQVw" base_Connector="_po27MOH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_sOikAuH7Eeyz1PUmZ5CQVw" base_Connector="_sOgHwOH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_vcwzguH7Eeyz1PUmZ5CQVw" base_Connector="_vcuXQOH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_xciS4OH7Eeyz1PUmZ5CQVw" base_Connector="_xcfPkOH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_zvsoUeH7Eeyz1PUmZ5CQVw" base_Connector="_zvqMEOH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_1drNEuH7Eeyz1PUmZ5CQVw" base_Connector="_1dow0OH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_CT__QeH8Eeyz1PUmZ5CQVw" base_Connector="_CT9jAOH8Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_IiDc8uH8Eeyz1PUmZ5CQVw" base_Connector="_IiBAsOH8Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_JqS3YuH8Eeyz1PUmZ5CQVw" base_Connector="_JqQbIOH8Eeyz1PUmZ5CQVw"/>
-  <Blocks:BindingConnector xmi:id="_boHu4uH8Eeyz1PUmZ5CQVw" base_Connector="_boDdcOH8Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_FEi-0OH9Eeyz1PUmZ5CQVw" base_Element="_gfb4kOH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_gfb4kOH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_FyaxcOH9Eeyz1PUmZ5CQVw" base_Element="_k3uHceH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_k3uHceH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_GhXiIOH9Eeyz1PUmZ5CQVw" base_Element="_po5XceH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_po5XceH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_HX79wOH9Eeyz1PUmZ5CQVw" base_Element="_sOikAeH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_sOikAeH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_ICCqsOH9Eeyz1PUmZ5CQVw" base_Element="_vcwzgeH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_vcwzgeH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_IskOYOH9Eeyz1PUmZ5CQVw" base_Element="_xchr0eH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_xchr0eH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_JYECcOH9Eeyz1PUmZ5CQVw" base_Element="_zvsBQOH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_zvsBQOH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_KIsOIOH9Eeyz1PUmZ5CQVw" base_Element="_1drNEOH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_1drNEOH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_KlYxMOH9Eeyz1PUmZ5CQVw" base_Element="_1drNEeH7Eeyz1PUmZ5CQVw" base_ConnectorEnd="_1drNEeH7Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_McZWIOH9Eeyz1PUmZ5CQVw" base_Element="_CT_YMOH8Eeyz1PUmZ5CQVw" base_ConnectorEnd="_CT_YMOH8Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_NTJ_AOH9Eeyz1PUmZ5CQVw" base_Element="_IiDc8eH8Eeyz1PUmZ5CQVw" base_ConnectorEnd="_IiDc8eH8Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_N3WRMOH9Eeyz1PUmZ5CQVw" base_Element="_JqS3YeH8Eeyz1PUmZ5CQVw" base_ConnectorEnd="_JqS3YeH8Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_PS_v0OH9Eeyz1PUmZ5CQVw" base_Element="_boHu4eH8Eeyz1PUmZ5CQVw" base_ConnectorEnd="_boHu4eH8Eeyz1PUmZ5CQVw"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_DT0-IOK4Eey2GPf_NkcRwg" base_Class="_DTow4OK4Eey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_qsbfsOK5Eey2GPf_NkcRwg" base_Connector="_qsYcYOK5Eey2GPf_NkcRwg"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_uXCwQOK5Eey2GPf_NkcRwg" base_Class="_uXCJMOK5Eey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_LfklouK6Eey2GPf_NkcRwg" base_Connector="_LfiwcOK6Eey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_OvgFUuK6Eey2GPf_NkcRwg" base_Connector="_OvdpEOK6Eey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_wKGz4OK6Eey2GPf_NkcRwg" base_Connector="_wKEXoOK6Eey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_oyiT8OK7Eey2GPf_NkcRwg" base_Element="_OvgFUOK6Eey2GPf_NkcRwg" base_ConnectorEnd="_OvgFUOK6Eey2GPf_NkcRwg"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_ViHhQOK9Eey2GPf_NkcRwg" base_Class="_ViFsEOK9Eey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_aAFE4eK-Eey2GPf_NkcRwg" base_Connector="_aACooOK-Eey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_fRHgsuK-Eey2GPf_NkcRwg" base_Connector="_fRFEcOK-Eey2GPf_NkcRwg"/>
   <DeprecatedElements:FlowPort xmi:id="_xjJtoOK-Eey2GPf_NkcRwg" base_Port="_xi-HcOK-Eey2GPf_NkcRwg" direction="out"/>
-  <Blocks:BindingConnector xmi:id="_dCeiEOLCEey2GPf_NkcRwg" base_Connector="_dCcF0OLCEey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_tDQeEuLCEey2GPf_NkcRwg" base_Connector="_tDOo4OLCEey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_2CDlEOLCEey2GPf_NkcRwg" base_Connector="_2CBv4OLCEey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_XlPA0OLDEey2GPf_NkcRwg" base_Element="_aAEd0OK-Eey2GPf_NkcRwg" base_ConnectorEnd="_aAEd0OK-Eey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_YuzQ8OLDEey2GPf_NkcRwg" base_Element="_fRHgsOK-Eey2GPf_NkcRwg" base_ConnectorEnd="_fRHgsOK-Eey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_Iu77IOLoEey2GPf_NkcRwg" base_Element="_boHu4OH8Eeyz1PUmZ5CQVw" base_ConnectorEnd="_boHu4OH8Eeyz1PUmZ5CQVw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_JtBUAOLoEey2GPf_NkcRwg" base_Element="_sPkbwN06EeyZdrCSZvBi5g" base_ConnectorEnd="_sPkbwN06EeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_KauukOLoEey2GPf_NkcRwg" base_Element="_ztDhAd06EeyZdrCSZvBi5g" base_ConnectorEnd="_ztDhAd06EeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_LHBz4OLoEey2GPf_NkcRwg" base_Element="_51Cy8N06EeyZdrCSZvBi5g" base_ConnectorEnd="_51Cy8N06EeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_MIJSoOLoEey2GPf_NkcRwg" base_Element="_2CC-AOLCEey2GPf_NkcRwg" base_ConnectorEnd="_2CC-AOLCEey2GPf_NkcRwg"/>
   <DeprecatedElements:FlowPort xmi:id="_J5dioOLqEey2GPf_NkcRwg" base_Port="_J5QHQOLqEey2GPf_NkcRwg" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_dGUZEeLqEey2GPf_NkcRwg" base_Connector="_dGR80OLqEey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_0Zj2EOLqEey2GPf_NkcRwg" base_Connector="_0ZhZ0OLqEey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_Me2louLsEey2GPf_NkcRwg" base_Connector="_Me0wcOLsEey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_QIbUYOLsEey2GPf_NkcRwg" base_Connector="_QIY4IOLsEey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_WdAQ0eLsEey2GPf_NkcRwg" base_Connector="_Wc90kOLsEey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_k5oScOLsEey2GPf_NkcRwg" base_Connector="_k5l2MOLsEey2GPf_NkcRwg"/>
-  <Blocks:BindingConnector xmi:id="_ZYG9wOLxEeyMdeINNWNrGg" base_Connector="_ZYBeMOLxEeyMdeINNWNrGg"/>
   <DeprecatedElements:FlowPort xmi:id="_8y-dAOXoEeyrmpnLSXdn1g" base_Port="_8yvMcOXoEeyrmpnLSXdn1g" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_kN69YuXpEeyrmpnLSXdn1g" base_Connector="_kN4hIOXpEeyrmpnLSXdn1g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_3Ui5EO11Eeye1tc9WkZ9XQ" base_Element="_dGTyAOLqEey2GPf_NkcRwg" base_ConnectorEnd="_dGTyAOLqEey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_32iL0O11Eeye1tc9WkZ9XQ" base_Element="_dGUZEOLqEey2GPf_NkcRwg" base_ConnectorEnd="_dGUZEOLqEey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_4p0p8O11Eeye1tc9WkZ9XQ" base_Element="_0ZjPAOLqEey2GPf_NkcRwg" base_ConnectorEnd="_0ZjPAOLqEey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_5Y5WcO11Eeye1tc9WkZ9XQ" base_Element="_kN69YOXpEeyrmpnLSXdn1g" base_ConnectorEnd="_kN69YOXpEeyrmpnLSXdn1g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_58UMkO11Eeye1tc9WkZ9XQ" base_Element="_kN69YeXpEeyrmpnLSXdn1g" base_ConnectorEnd="_kN69YeXpEeyrmpnLSXdn1g"/>
   <Requirements:Requirement xmi:id="_t-p5AO17Eeye1tc9WkZ9XQ" base_NamedElement="_t-ncwO17Eeye1tc9WkZ9XQ" id="REQ-1" text="The TS SHALL calculate the transmission torque." base_Class="_t-ncwO17Eeye1tc9WkZ9XQ"/>
   <Requirements:Requirement xmi:id="_0v6KYO17Eeye1tc9WkZ9XQ" base_NamedElement="_0v3uIO17Eeye1tc9WkZ9XQ" id="REQ-1.1" text="The TS SHALL inform the transmission torque for the Vehicle Simulator to calculate the car speed." base_Class="_0v3uIO17Eeye1tc9WkZ9XQ"/>
   <Requirements:Requirement xmi:id="_-lbeAO17Eeye1tc9WkZ9XQ" base_NamedElement="_-lXzoO17Eeye1tc9WkZ9XQ" id="REQ-1.2" text="The TS SHALL provide the relationship between the engine speed and the wheel speed.&#xD;&#xA;" base_Class="_-lXzoO17Eeye1tc9WkZ9XQ"/>
@@ -1679,28 +1474,10 @@ current_gear_ratio_param = 0.67</body>
   <DeprecatedElements:FlowPort xmi:id="_j2q0sCSXEe2ZkqwwGIJVRw" base_Port="_j2iR0CSXEe2ZkqwwGIJVRw" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_thmo8CSXEe2ZkqwwGIJVRw" base_Port="_thc38CSXEe2ZkqwwGIJVRw" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_8DRioCSXEe2ZkqwwGIJVRw" base_Port="_8DJm0CSXEe2ZkqwwGIJVRw" direction="in"/>
-  <Blocks:BindingConnector xmi:id="_EgKPYCSYEe2ZkqwwGIJVRw" base_Connector="_EgGlACSYEe2ZkqwwGIJVRw"/>
   <DeprecatedElements:FlowPort xmi:id="_JmJRwCSYEe2ZkqwwGIJVRw" base_Port="_Jl-SoCSYEe2ZkqwwGIJVRw" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_pQTWYCSYEe2ZkqwwGIJVRw" base_Port="_pQKzgCSYEe2ZkqwwGIJVRw" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_0XCaQCSYEe2ZkqwwGIJVRw" base_Port="_0WzJsCSYEe2ZkqwwGIJVRw" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_-kyAoCSYEe2ZkqwwGIJVRw" base_Port="_-kmacCSYEe2ZkqwwGIJVRw" direction="out"/>
-  <Blocks:NestedConnectorEnd xmi:id="_XKHXoCSZEe2ZkqwwGIJVRw" base_Element="_9C2_gN-7EeyBKe45X3175g" base_ConnectorEnd="_9C2_gN-7EeyBKe45X3175g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_YakS4CSZEe2ZkqwwGIJVRw" base_Element="_JPcRId-8EeyBKe45X3175g" base_ConnectorEnd="_JPcRId-8EeyBKe45X3175g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_Za68oCSZEe2ZkqwwGIJVRw" base_Element="_PGFUYd-8EeyBKe45X3175g" base_ConnectorEnd="_PGFUYd-8EeyBKe45X3175g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_bA_ikCSZEe2ZkqwwGIJVRw" base_Element="_FAK-4N-9EeyQAoCiBoOCcw" base_ConnectorEnd="_FAK-4N-9EeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_bmvT8CSZEe2ZkqwwGIJVRw" base_Element="_FAK-4d-9EeyQAoCiBoOCcw" base_ConnectorEnd="_FAK-4d-9EeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_ca-0UCSZEe2ZkqwwGIJVRw" base_Element="_RfgNYN-9EeyQAoCiBoOCcw" base_ConnectorEnd="_RfgNYN-9EeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_dHG6gCSZEe2ZkqwwGIJVRw" base_Element="_xX138d-9EeyQAoCiBoOCcw" base_ConnectorEnd="_xX138d-9EeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_d06bsCSZEe2ZkqwwGIJVRw" base_Element="_W8cFQN-_EeyQAoCiBoOCcw" base_ConnectorEnd="_W8cFQN-_EeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_ese84CSZEe2ZkqwwGIJVRw" base_Element="_R_UOgd_AEeyQAoCiBoOCcw" base_ConnectorEnd="_R_UOgd_AEeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_fXiFACSZEe2ZkqwwGIJVRw" base_Element="_7QMVwN_AEeyQAoCiBoOCcw" base_ConnectorEnd="_7QMVwN_AEeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_gcwAoCSZEe2ZkqwwGIJVRw" base_Element="_EgJoUSSYEe2ZkqwwGIJVRw" base_ConnectorEnd="_EgJoUSSYEe2ZkqwwGIJVRw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_jHqHsCSZEe2ZkqwwGIJVRw" base_Element="_c95QwOAUEey1V-BUgsLF0Q" base_ConnectorEnd="_c95QwOAUEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_kBTsgCSZEe2ZkqwwGIJVRw" base_Element="_tbiUwOENEeyXPMXG3lFeMw" base_ConnectorEnd="_tbiUwOENEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_kzQG0CSZEe2ZkqwwGIJVRw" base_Element="_GluFQeEOEeyXPMXG3lFeMw" base_ConnectorEnd="_GluFQeEOEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_lbtN8CSZEe2ZkqwwGIJVRw" base_Element="_OdmAcOEOEeyXPMXG3lFeMw" base_ConnectorEnd="_OdmAcOEOEeyXPMXG3lFeMw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_mKWcoCSZEe2ZkqwwGIJVRw" base_Element="_aAFE4OK-Eey2GPf_NkcRwg" base_ConnectorEnd="_aAFE4OK-Eey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_m2VY4CSZEe2ZkqwwGIJVRw" base_Element="_fRHgseK-Eey2GPf_NkcRwg" base_ConnectorEnd="_fRHgseK-Eey2GPf_NkcRwg"/>
   <DeprecatedElements:FlowPort xmi:id="_Z6rlUCSaEe2ZkqwwGIJVRw" base_Port="_Z6jpgCSaEe2ZkqwwGIJVRw" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_mFnRICSaEe2ZkqwwGIJVRw" base_Port="_mFeuQCSaEe2ZkqwwGIJVRw" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_10q5ECScEe2NCYuc8M5wLg" base_Port="_10cPkCScEe2NCYuc8M5wLg" direction="in"/>
@@ -1730,46 +1507,11 @@ current_gear_ratio_param = 0.67</body>
   <DeprecatedElements:FlowPort xmi:id="_cPwNACSfEe2NCYuc8M5wLg" base_Port="_cPbc4CSfEe2NCYuc8M5wLg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_eInMECSfEe2NCYuc8M5wLg" base_Port="_eIOxkCSfEe2NCYuc8M5wLg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_gMJKECSfEe2NCYuc8M5wLg" base_Port="_gL1oECSfEe2NCYuc8M5wLg" direction="in"/>
-  <Blocks:NestedConnectorEnd xmi:id="_ULaGoCSgEe2NCYuc8M5wLg" base_Element="_sPkbwd06EeyZdrCSZvBi5g" base_ConnectorEnd="_sPkbwd06EeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_UzhPgCSgEe2NCYuc8M5wLg" base_Element="_ztDhAN06EeyZdrCSZvBi5g" base_ConnectorEnd="_ztDhAN06EeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_VZwJECSgEe2NCYuc8M5wLg" base_Element="_51Cy8d06EeyZdrCSZvBi5g" base_ConnectorEnd="_51Cy8d06EeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_WAO6QCSgEe2NCYuc8M5wLg" base_Element="__zpYAN09EeyZdrCSZvBi5g" base_ConnectorEnd="__zpYAN09EeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_WiocsCSgEe2NCYuc8M5wLg" base_Element="__zpYAd09EeyZdrCSZvBi5g" base_ConnectorEnd="__zpYAd09EeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_ZCfxYCSgEe2NCYuc8M5wLg" base_Element="_O0jggN1AEeyB6oChl77ysw" base_ConnectorEnd="_O0jggN1AEeyB6oChl77ysw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_Z7GNUCSgEe2NCYuc8M5wLg" base_Element="_W8cFQd-_EeyQAoCiBoOCcw" base_ConnectorEnd="_W8cFQd-_EeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_asq0MCSgEe2NCYuc8M5wLg" base_Element="_iBtJgd-_EeyQAoCiBoOCcw" base_ConnectorEnd="_iBtJgd-_EeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_ba8PcCSgEe2NCYuc8M5wLg" base_Element="_uh9lEN-_EeyQAoCiBoOCcw" base_ConnectorEnd="_uh9lEN-_EeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_cSDdoCSgEe2NCYuc8M5wLg" base_Element="_JyBc8d_AEeyQAoCiBoOCcw" base_ConnectorEnd="_JyBc8d_AEeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_c8AZkCSgEe2NCYuc8M5wLg" base_Element="_R_UOgN_AEeyQAoCiBoOCcw" base_ConnectorEnd="_R_UOgN_AEeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_dvjWYCSgEe2NCYuc8M5wLg" base_Element="_7QM80N_AEeyQAoCiBoOCcw" base_ConnectorEnd="_7QM80N_AEeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_eiEYcCSgEe2NCYuc8M5wLg" base_Element="_1CbSseASEey1V-BUgsLF0Q" base_ConnectorEnd="_1CbSseASEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_fU6xsCSgEe2NCYuc8M5wLg" base_Element="_6ZmLseASEey1V-BUgsLF0Q" base_ConnectorEnd="_6ZmLseASEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_gIx3kCSgEe2NCYuc8M5wLg" base_Element="_igE8YOATEey1V-BUgsLF0Q" base_ConnectorEnd="_igE8YOATEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_hmhA4CSgEe2NCYuc8M5wLg" base_Element="_igFjcOATEey1V-BUgsLF0Q" base_ConnectorEnd="_igFjcOATEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_iYi6wCSgEe2NCYuc8M5wLg" base_Element="_D2o4ceAUEey1V-BUgsLF0Q" base_ConnectorEnd="_D2o4ceAUEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_jD0sYCSgEe2NCYuc8M5wLg" base_Element="_aOzNQOAUEey1V-BUgsLF0Q" base_ConnectorEnd="_aOzNQOAUEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_jgA5ICSgEe2NCYuc8M5wLg" base_Element="_aOzNQeAUEey1V-BUgsLF0Q" base_ConnectorEnd="_aOzNQeAUEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_kCvLsCSgEe2NCYuc8M5wLg" base_Element="_c95QweAUEey1V-BUgsLF0Q" base_ConnectorEnd="_c95QweAUEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_kq27oCSgEe2NCYuc8M5wLg" base_Element="_gb3MceAUEey1V-BUgsLF0Q" base_ConnectorEnd="_gb3MceAUEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_lE-EwCSgEe2NCYuc8M5wLg" base_Element="_gb3McOAUEey1V-BUgsLF0Q" base_ConnectorEnd="_gb3McOAUEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_ludtsCSgEe2NCYuc8M5wLg" base_Element="_ri_48OAUEey1V-BUgsLF0Q" base_ConnectorEnd="_ri_48OAUEey1V-BUgsLF0Q"/>
-  <Blocks:NestedConnectorEnd xmi:id="_m0s9ACSgEe2NCYuc8M5wLg" base_Element="_et1m8OBtEeyz97SW6jXbYw" base_ConnectorEnd="_et1m8OBtEeyz97SW6jXbYw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_noRH8CSgEe2NCYuc8M5wLg" base_Element="_IUHWceBuEeyqBLJ1Eszaaw" base_ConnectorEnd="_IUHWceBuEeyqBLJ1Eszaaw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_oaqOMCSgEe2NCYuc8M5wLg" base_Element="_TiCVgOBwEeyM45x-2cJqcQ" base_ConnectorEnd="_TiCVgOBwEeyM45x-2cJqcQ"/>
-  <Blocks:NestedConnectorEnd xmi:id="_pBTXcCSgEe2NCYuc8M5wLg" base_Element="_dCd7AOLCEey2GPf_NkcRwg" base_ConnectorEnd="_dCd7AOLCEey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_pr6asCSgEe2NCYuc8M5wLg" base_Element="_tDQeEOLCEey2GPf_NkcRwg" base_ConnectorEnd="_tDQeEOLCEey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_qOyeQCSgEe2NCYuc8M5wLg" base_Element="_tDQeEeLCEey2GPf_NkcRwg" base_ConnectorEnd="_tDQeEeLCEey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_q3Ud4CSgEe2NCYuc8M5wLg" base_Element="_2CC-AeLCEey2GPf_NkcRwg" base_ConnectorEnd="_2CC-AeLCEey2GPf_NkcRwg"/>
   <DeprecatedElements:FlowPort xmi:id="_iLGfMCShEe2NCYuc8M5wLg" base_Port="_iK4cwCShEe2NCYuc8M5wLg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_j-GG0CShEe2NCYuc8M5wLg" base_Port="_j9wvoCShEe2NCYuc8M5wLg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_lls90CShEe2NCYuc8M5wLg" base_Port="_lldtQCShEe2NCYuc8M5wLg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_ob02YCShEe2NCYuc8M5wLg" base_Port="_obll0CShEe2NCYuc8M5wLg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_uAEiECShEe2NCYuc8M5wLg" base_Port="_t_0qcCShEe2NCYuc8M5wLg" direction="out"/>
-  <Blocks:NestedConnectorEnd xmi:id="_N5ZrICSiEe2NCYuc8M5wLg" base_Element="_xR3kEN_DEeyQAoCiBoOCcw" base_ConnectorEnd="_xR3kEN_DEeyQAoCiBoOCcw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_OhSxkCSiEe2NCYuc8M5wLg" base_Element="_Me2loeLsEey2GPf_NkcRwg" base_ConnectorEnd="_Me2loeLsEey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_PX5CYCSiEe2NCYuc8M5wLg" base_Element="_QIatUeLsEey2GPf_NkcRwg" base_ConnectorEnd="_QIatUeLsEey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_QLzyoCSiEe2NCYuc8M5wLg" base_Element="_WdAQ0OLsEey2GPf_NkcRwg" base_ConnectorEnd="_WdAQ0OLsEey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_Q9uXwCSiEe2NCYuc8M5wLg" base_Element="_k5nrYeLsEey2GPf_NkcRwg" base_ConnectorEnd="_k5nrYeLsEey2GPf_NkcRwg"/>
   <DeprecatedElements:FlowPort xmi:id="_hpMPgCSiEe2NCYuc8M5wLg" base_Port="_hpJMMCSiEe2NCYuc8M5wLg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_kcjH8CSiEe2NCYuc8M5wLg" base_Port="_kcZ-ACSiEe2NCYuc8M5wLg" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_nEbwMCSiEe2NCYuc8M5wLg" base_Port="_nERYICSiEe2NCYuc8M5wLg" direction="in"/>
@@ -1782,25 +1524,94 @@ current_gear_ratio_param = 0.67</body>
   <DeprecatedElements:FlowPort xmi:id="_1LVkACSjEe2NCYuc8M5wLg" base_Port="_1LAz4CSjEe2NCYuc8M5wLg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_3WcJoCSjEe2NCYuc8M5wLg" base_Port="_3WMSACSjEe2NCYuc8M5wLg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_5S3aECSjEe2NCYuc8M5wLg" base_Port="_5SmUUCSjEe2NCYuc8M5wLg" direction="out"/>
-  <Blocks:NestedConnectorEnd xmi:id="_YJPRUCSkEe2NCYuc8M5wLg" base_Element="__z0UMNyaEeyZdrCSZvBi5g" base_ConnectorEnd="__z0UMNyaEeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_Y24acCSkEe2NCYuc8M5wLg" base_Element="_PbArgNybEeyZdrCSZvBi5g" base_ConnectorEnd="_PbArgNybEeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_Zm_BsCSkEe2NCYuc8M5wLg" base_Element="_RuQggNybEeyZdrCSZvBi5g" base_ConnectorEnd="_RuQggNybEeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_aR8qQCSkEe2NCYuc8M5wLg" base_Element="_TQzRUNybEeyZdrCSZvBi5g" base_ConnectorEnd="_TQzRUNybEeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_a_aNMCSkEe2NCYuc8M5wLg" base_Element="_aFMWQNybEeyZdrCSZvBi5g" base_ConnectorEnd="_aFMWQNybEeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_bvMrYCSkEe2NCYuc8M5wLg" base_Element="_qsa4oeK5Eey2GPf_NkcRwg" base_ConnectorEnd="_qsa4oeK5Eey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_ceRX4CSkEe2NCYuc8M5wLg" base_Element="_LfkloOK6Eey2GPf_NkcRwg" base_ConnectorEnd="_LfkloOK6Eey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_c_RzMCSkEe2NCYuc8M5wLg" base_Element="_LfkloeK6Eey2GPf_NkcRwg" base_ConnectorEnd="_LfkloeK6Eey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_dpJ2oCSkEe2NCYuc8M5wLg" base_Element="_wKGM0OK6Eey2GPf_NkcRwg" base_ConnectorEnd="_wKGM0OK6Eey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_eKwH0CSkEe2NCYuc8M5wLg" base_Element="_wKGM0eK6Eey2GPf_NkcRwg" base_ConnectorEnd="_wKGM0eK6Eey2GPf_NkcRwg"/>
-  <Blocks:NestedConnectorEnd xmi:id="_e06fICSkEe2NCYuc8M5wLg" base_Element="_ZYGWseLxEeyMdeINNWNrGg" base_ConnectorEnd="_ZYGWseLxEeyMdeINNWNrGg"/>
   <DeprecatedElements:FlowPort xmi:id="_SgnBgCY8Ee2FC6XF101YWg" base_Port="_SgOnACY8Ee2FC6XF101YWg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_YJLzkCY8Ee2FC6XF101YWg" base_Port="_YI_mUCY8Ee2FC6XF101YWg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_Z-nrMCY8Ee2FC6XF101YWg" base_Port="_Z-aP0CY8Ee2FC6XF101YWg" direction="out"/>
   <DeprecatedElements:FlowPort xmi:id="_rKtjwCY8Ee2FC6XF101YWg" base_Port="_rKlA4CY8Ee2FC6XF101YWg" direction="in"/>
   <DeprecatedElements:FlowPort xmi:id="_s9RGgCY8Ee2FC6XF101YWg" base_Port="_s9IjoCY8Ee2FC6XF101YWg" direction="out"/>
-  <Blocks:NestedConnectorEnd xmi:id="_5w-CgCY8Ee2FC6XF101YWg" base_Element="_WXIT0NffEeySbq2h8TnUHA" base_ConnectorEnd="_WXIT0NffEeySbq2h8TnUHA"/>
-  <Blocks:NestedConnectorEnd xmi:id="_6Sn-ECY8Ee2FC6XF101YWg" base_Element="_WXIT0dffEeySbq2h8TnUHA" base_ConnectorEnd="_WXIT0dffEeySbq2h8TnUHA"/>
-  <Blocks:NestedConnectorEnd xmi:id="_6749gCY8Ee2FC6XF101YWg" base_Element="_arQbcNffEeySbq2h8TnUHA" base_ConnectorEnd="_arQbcNffEeySbq2h8TnUHA"/>
-  <Blocks:NestedConnectorEnd xmi:id="_7fVBwCY8Ee2FC6XF101YWg" base_Element="_3bKSENyYEeyZdrCSZvBi5g" base_ConnectorEnd="_3bKSENyYEeyZdrCSZvBi5g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_8QYrQCY8Ee2FC6XF101YWg" base_Element="_bXdPIN06EeyZdrCSZvBi5g" base_ConnectorEnd="_bXdPIN06EeyZdrCSZvBi5g"/>
+  <PortsAndFlows:ItemFlow xmi:id="_KN50UCcUEe2QzKLBqsARlg" base_InformationFlow="_KNwDUCcUEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_skiQ0CcVEe2QzKLBqsARlg" base_InformationFlow="_skf0kCcVEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_zRNkMCcVEe2QzKLBqsARlg" base_InformationFlow="_zRLvACcVEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_6N5pgCcVEe2QzKLBqsARlg" base_InformationFlow="_6N30UCcVEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_9o4ioCcVEe2QzKLBqsARlg" base_InformationFlow="_9o2GYCcVEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_Jw-84CcWEe2QzKLBqsARlg" base_InformationFlow="_Jw9HsCcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_RLuQICcWEe2QzKLBqsARlg" base_InformationFlow="_RLsa8CcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_W4oIkCcWEe2QzKLBqsARlg" base_InformationFlow="_W4mTYCcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_cBLWwCcWEe2QzKLBqsARlg" base_InformationFlow="_cBITcCcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_hEuJICcWEe2QzKLBqsARlg" base_InformationFlow="_hEsT8CcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_mtKYUCcWEe2QzKLBqsARlg" base_InformationFlow="_mtIjICcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_rhaKcCcWEe2QzKLBqsARlg" base_InformationFlow="_rhXuMCcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_xx200CcWEe2QzKLBqsARlg" base_InformationFlow="_xx0_oCcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_3NldsCcWEe2QzKLBqsARlg" base_InformationFlow="_3NjogCcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_6Y4VACcWEe2QzKLBqsARlg" base_InformationFlow="_6Y2f0CcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_8vZgcCcWEe2QzKLBqsARlg" base_InformationFlow="_8vXrQCcWEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_AIIW0CcXEe2QzKLBqsARlg" base_InformationFlow="_AIF6kCcXEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_DQ43gCcXEe2QzKLBqsARlg" base_InformationFlow="_DQ3CUCcXEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_PD814CcXEe2QzKLBqsARlg" base_InformationFlow="_PD7AsCcXEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_TOKMgCcXEe2QzKLBqsARlg" base_InformationFlow="_TOIXUCcXEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_WvovMCcXEe2QzKLBqsARlg" base_InformationFlow="_Wvm6ACcXEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_cI1BcCcXEe2QzKLBqsARlg" base_InformationFlow="_cIzMQCcXEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_fnhV4CcXEe2QzKLBqsARlg" base_InformationFlow="_fnfgsCcXEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_h1kh0CcXEe2QzKLBqsARlg" base_InformationFlow="_h1jTsCcXEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_mynDkCcXEe2QzKLBqsARlg" base_InformationFlow="_mylOYCcXEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_qwpmcCcXEe2QzKLBqsARlg" base_InformationFlow="_qwnxQCcXEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_JIoRgCcYEe2QzKLBqsARlg" base_InformationFlow="_JImcUCcYEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_LyyKoCcYEe2QzKLBqsARlg" base_InformationFlow="_LywVcCcYEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_QnM74CcYEe2QzKLBqsARlg" base_InformationFlow="_QnKfoCcYEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_S14Z8CcYEe2QzKLBqsARlg" base_InformationFlow="_S12kwCcYEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_UxJMwCcYEe2QzKLBqsARlg" base_InformationFlow="_UxGwgCcYEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_XFWEACcYEe2QzKLBqsARlg" base_InformationFlow="_XFTnwCcYEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_c3H1YCcYEe2QzKLBqsARlg" base_InformationFlow="_c3GnQCcYEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_lsPb8CcYEe2QzKLBqsARlg" base_InformationFlow="_lsNmwCcYEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_toYzICcYEe2QzKLBqsARlg" base_InformationFlow="_toW98CcYEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_yGdZkCcbEe2QzKLBqsARlg" base_InformationFlow="_yGbkYCcbEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_IP3VICcmEe2QzKLBqsARlg" base_InformationFlow="_IP1f8CcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_NlZPYCcmEe2QzKLBqsARlg" base_InformationFlow="_NlYBQCcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_Vd_jUCcmEe2QzKLBqsARlg" base_InformationFlow="_Vd-VMCcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_YlpQwCcmEe2QzKLBqsARlg" base_InformationFlow="_YlnbkCcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_bVs9kCcmEe2QzKLBqsARlg" base_InformationFlow="_bVrIYCcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_fmnZICcmEe2QzKLBqsARlg" base_InformationFlow="_fmlj8CcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_lm0oECcmEe2QzKLBqsARlg" base_InformationFlow="_lmyy4CcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_qhcH8CcmEe2QzKLBqsARlg" base_InformationFlow="_qhaSwCcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_uJt2MCcmEe2QzKLBqsARlg" base_InformationFlow="_uJsBACcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_zwFBwCcmEe2QzKLBqsARlg" base_InformationFlow="_zwDMkCcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_2dXHYCcmEe2QzKLBqsARlg" base_InformationFlow="_2dVSMCcmEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_A8UZkCcnEe2QzKLBqsARlg" base_InformationFlow="_A8SkYCcnEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_f9GKACcnEe2QzKLBqsARlg" base_InformationFlow="_f9EU0CcnEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_qvumICcnEe2QzKLBqsARlg" base_InformationFlow="_qvsw8CcnEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_TSPLgCcoEe2QzKLBqsARlg" base_InformationFlow="_TSNWUCcoEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_YXX5UCcoEe2QzKLBqsARlg" base_InformationFlow="_YXVdECcoEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_cad7UCcoEe2QzKLBqsARlg" base_InformationFlow="_cabfECcoEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_flnosCcoEe2QzKLBqsARlg" base_InformationFlow="_fllMcCcoEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_k1PIMCcoEe2QzKLBqsARlg" base_InformationFlow="_k1NTACcoEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_oRMRsCcoEe2QzKLBqsARlg" base_InformationFlow="_oRKcgCcoEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_rjyD0CcoEe2QzKLBqsARlg" base_InformationFlow="_rjvnkCcoEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_xtKc4CcoEe2QzKLBqsARlg" base_InformationFlow="_xtInsCcoEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_1jvF0CcoEe2QzKLBqsARlg" base_InformationFlow="_1jtQoCcoEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="__MskICcoEe2QzKLBqsARlg" base_InformationFlow="__Mqu8CcoEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_DdUr0CcpEe2QzKLBqsARlg" base_InformationFlow="_DdS2oCcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_HXjswCcpEe2QzKLBqsARlg" base_InformationFlow="_HXh3kCcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_L1PZACcpEe2QzKLBqsARlg" base_InformationFlow="_L1Nj0CcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_Qbo8YCcpEe2QzKLBqsARlg" base_InformationFlow="_QbnHMCcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_UABCECcpEe2QzKLBqsARlg" base_InformationFlow="_T__M4CcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_d1pqcCcpEe2QzKLBqsARlg" base_InformationFlow="_d1nOMCcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_gtgoYCcpEe2QzKLBqsARlg" base_InformationFlow="_gtYskCcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_j3ZKcCcpEe2QzKLBqsARlg" base_InformationFlow="_j3WuMCcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_pDKrwCcpEe2QzKLBqsARlg" base_InformationFlow="_pDI2kCcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_uuIDcCcpEe2QzKLBqsARlg" base_InformationFlow="_uuG1UCcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_zNM20CcpEe2QzKLBqsARlg" base_InformationFlow="_zNLBoCcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_60RV4CcpEe2QzKLBqsARlg" base_InformationFlow="_60PgsCcpEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_FndLoCcqEe2QzKLBqsARlg" base_InformationFlow="_FnaIUCcqEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_J2xrwCcqEe2QzKLBqsARlg" base_InformationFlow="_J2v2kCcqEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_N0BkcCcqEe2QzKLBqsARlg" base_InformationFlow="_Nz_vQCcqEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_UX_AsCcqEe2QzKLBqsARlg" base_InformationFlow="_UX9LgCcqEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_cCjfsCcqEe2QzKLBqsARlg" base_InformationFlow="_cChqgCcqEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_kSsw8CcqEe2QzKLBqsARlg" base_InformationFlow="_kSri0CcqEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_rAW7wCcqEe2QzKLBqsARlg" base_InformationFlow="_rAVGkCcqEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_yRjRcCcqEe2QzKLBqsARlg" base_InformationFlow="_yRiDUCcqEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_BoOggCcrEe2QzKLBqsARlg" base_InformationFlow="_BoMEQCcrEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_YLaZkCcrEe2QzKLBqsARlg" base_InformationFlow="_YLYkYCcrEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_22gN4CcrEe2QzKLBqsARlg" base_InformationFlow="_22eYsCcrEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_HmqbkCcwEe2QzKLBqsARlg" base_InformationFlow="_HmomYCcwEe2QzKLBqsARlg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_p05KACcxEe2QzKLBqsARlg" base_InformationFlow="_p03U0CcxEe2QzKLBqsARlg"/>
 </xmi:XMI>

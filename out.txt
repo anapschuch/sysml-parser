@@ -1,209 +1,272 @@
+********* Items Flow *********
+rwd  _Z-aP0CY8Ee2FC6XF101YWg ----> rwd  _Z5SIkNyYEeyZdrCSZvBi5g
+width  _Lypv0NfcEeySbq2h8TnUHA ----> w  _rKlA4CY8Ee2FC6XF101YWg
+h  _s9IjoCY8Ee2FC6XF101YWg ----> h  _YI_mUCY8Ee2FC6XF101YWg
+load_param  _WXArsN-5EeyBKe45X3175g ----> load  _qgNekNyYEeyZdrCSZvBi5g
+miua_param  _AFE-cN27EeyUrvQ0Lh3FUQ ----> miua  _eWTtgNyYEeyZdrCSZvBi5g
+torque  _5SmUUCSjEe2NCYuc8M5wLg ----> engine_torque  _ZDAV8NyaEeyZdrCSZvBi5g
+pedalPosition  _U6mgsNybEeyZdrCSZvBi5g ----> pedal_position  _tIK-0CSjEe2NCYuc8M5wLg
+eng_speed_sample_vec  _Znbz8NJuEeyKp65yHsgyfA ----> engine_speed_vec  _vHLCICSjEe2NCYuc8M5wLg
+torque_map_gasoline  _RBjT4NLJEeyKp65yHsgyfA ----> map_torque  _y1Uu4CSjEe2NCYuc8M5wLg
+pedal_pos_sample_vec  _0pGf8NJtEeyKp65yHsgyfA ----> pedal_pos_vec  _1LAz4CSjEe2NCYuc8M5wLg
+engine_speed  _2AmGoNyaEeyZdrCSZvBi5g ----> engine_speed_param  _UGhIUOLxEeyMdeINNWNrGg
+engine_speed_param  _UGhIUOLxEeyMdeINNWNrGg ----> engine_speed_in  _JDugMCSjEe2NCYuc8M5wLg
+engine_speed_out  _kcZ-ACSiEe2NCYuc8M5wLg ----> current_speed  _3WMSACSjEe2NCYuc8M5wLg
+n_max_param  _IZ3sUN_CEeyQAoCiBoOCcw ----> n_max  _DzR6wNyYEeyZdrCSZvBi5g
+n_max_param  _IZ3sUN_CEeyQAoCiBoOCcw ----> n_max  _nERYICSiEe2NCYuc8M5wLg
+n_min_param  _TRc54N_CEeyQAoCiBoOCcw ----> n_min  _FJDa4NyYEeyZdrCSZvBi5g
+n_min_param  _TRc54N_CEeyQAoCiBoOCcw ----> n_min  _K4GA0CSjEe2NCYuc8M5wLg
+engine_speed_out  _MkxlECSjEe2NCYuc8M5wLg ----> engine_speed_in  _hpJMMCSiEe2NCYuc8M5wLg
+current_gear_ratio_param  _Hg3yUN_DEeyQAoCiBoOCcw ----> current_gear_ratio  _BShsANZHEeyztMSLcHqD0Q
+current_gear_ratio_param  _Hg3yUN_DEeyQAoCiBoOCcw ----> gear_ratio  _lldtQCShEe2NCYuc8M5wLg
+current_drive_gear_param  _FTvMYN_DEeyQAoCiBoOCcw ----> current_drive_gear  _4mqvINZGEeyztMSLcHqD0Q
+i0_param  _VtQ_kN_DEeyQAoCiBoOCcw ----> i0  _vlp48NyZEeyZdrCSZvBi5g
+i0_param  _VtQ_kN_DEeyQAoCiBoOCcw ----> i0  _iK4cwCShEe2NCYuc8M5wLg
+gearbox_torque  _90KO8NfLEeyKDukxCNI3pQ _t_0qcCShEe2NCYuc8M5wLg ----> transmission_torque  _xsykkNyZEeyZdrCSZvBi5g
+engine_torque  _J5QHQOLqEey2GPf_NkcRwg ----> engine_torque  _obll0CShEe2NCYuc8M5wLg
+eff_param  _Xv3JcN_DEeyQAoCiBoOCcw ----> eff  _j9wvoCShEe2NCYuc8M5wLg
+dT  _jEsDcOESEeyXPMXG3lFeMw ----> dT  _JzidsN1AEeyB6oChl77ysw
+env_cr  _WKF1QOESEeyXPMXG3lFeMw ----> env_cr  _lBF9sN-9EeyQAoCiBoOCcw
+env_slope  _ZCSxcOESEeyXPMXG3lFeMw ----> env_slope  _krnLAN-_EeyQAoCiBoOCcw
+env_ro  _bq_SAOESEeyXPMXG3lFeMw ----> env_ro  _WckjsOASEey1V-BUgsLF0Q
+env_cd  _ewu68OESEeyXPMXG3lFeMw ----> env_cd  _cI2KAOASEey1V-BUgsLF0Q
+fa  _g-tOYOESEeyXPMXG3lFeMw ----> fa  _ALG3UOATEey1V-BUgsLF0Q
+pedal_position  _llM4YOESEeyXPMXG3lFeMw ----> pedal_position  _CB4HoOEDEeyXPMXG3lFeMw
+current_gear  _nokeUOESEeyXPMXG3lFeMw ----> current_gear  _IPReAOEDEeyXPMXG3lFeMw
+vehicle_speed  _UGL-8N_BEeyQAoCiBoOCcw ----> vehicle_speed  _qIuG4OESEeyXPMXG3lFeMw
+wheel_speed  _XGaswOAkEeyC6I-5TDX_3g _MwuFYOECEeyXPMXG3lFeMw ----> wheel_speed  _mttvwCSWEe2ZkqwwGIJVRw
+i0  _atvMsMQgEeye8sWuuOEGkw _vlp48NyZEeyZdrCSZvBi5g ----> i0  _JyAOYCSWEe2ZkqwwGIJVRw
+current_gear_ratio  _atvMsMQgEeye8sWuuOEGkw _BShsANZHEeyztMSLcHqD0Q ----> gear_ratio  _1b40YCSWEe2ZkqwwGIJVRw
+engine_torque  _lsNp4NJtEeyKp65yHsgyfA _ZDAV8NyaEeyZdrCSZvBi5g ----> engine_torque  _J5QHQOLqEey2GPf_NkcRwg
+n_min  _lsNp4NJtEeyKp65yHsgyfA _FJDa4NyYEeyZdrCSZvBi5g ----> n_min  _duN3QNZMEeyztMSLcHqD0Q
+n_max  _lsNp4NJtEeyKp65yHsgyfA _DzR6wNyYEeyZdrCSZvBi5g ----> n_max  _hWzHgNZMEeyztMSLcHqD0Q
+engine_speed  _DrZxkOEAEeyXPMXG3lFeMw _88hUQCSWEe2ZkqwwGIJVRw ----> current_engine_speed  _W9dzgNyfEeyZdrCSZvBi5g
+engine_speed  _DrZxkOEAEeyXPMXG3lFeMw _88hUQCSWEe2ZkqwwGIJVRw ----> engine_speed  _2AmGoNyaEeyZdrCSZvBi5g
+current_drive_gear  _atvMsMQgEeye8sWuuOEGkw _4mqvINZGEeyztMSLcHqD0Q ----> drive_gear  _gHBVQOEOEeyXPMXG3lFeMw
+current_drive_gear  _atvMsMQgEeye8sWuuOEGkw _4mqvINZGEeyztMSLcHqD0Q ----> drive_gear  _8yvMcOXoEeyrmpnLSXdn1g
+transmission_torque  _atvMsMQgEeye8sWuuOEGkw _xsykkNyZEeyZdrCSZvBi5g ----> transmission_torque  _SOWywOECEeyXPMXG3lFeMw
+pedal_position  _CB4HoOEDEeyXPMXG3lFeMw ----> pedalPosition  _U6mgsNybEeyZdrCSZvBi5g
+current_gear  _XGaswOAkEeyC6I-5TDX_3g _IPReAOEDEeyXPMXG3lFeMw ----> current_gear  _EiPJQNZHEeyztMSLcHqD0Q
+transmission_torque  _SOWywOECEeyXPMXG3lFeMw ----> gearbox_torque  _4bG2YOBtEeyqBLJ1Eszaaw
+System  _xi-HcOK-Eey2GPf_NkcRwg _hmhRwOEREeyXPMXG3lFeMw ----> wheel_speed  _MwuFYOECEeyXPMXG3lFeMw
+drive_gear  _gHBVQOEOEeyXPMXG3lFeMw ----> drive_gear  _sM7aUOESEeyXPMXG3lFeMw
+gearbox_torque  _4bG2YOBtEeyqBLJ1Eszaaw ----> gbx_torque  _eIOxkCSfEe2NCYuc8M5wLg
+dT  _JzidsN1AEeyB6oChl77ysw ----> dt  _cPbc4CSfEe2NCYuc8M5wLg
+rwd  _E14GANJtEeyKp65yHsgyfA _Z5SIkNyYEeyZdrCSZvBi5g ----> rwd  _aq7kQCSfEe2NCYuc8M5wLg
+max_friction  _y2N5ACSeEe2NCYuc8M5wLg ----> friction_force_max  _YewnoCSfEe2NCYuc8M5wLg
+env_cr  _lBF9sN-9EeyQAoCiBoOCcw ----> cr  _j2iR0CSXEe2ZkqwwGIJVRw
+env_slope  _krnLAN-_EeyQAoCiBoOCcw ----> slope  _8DJm0CSXEe2ZkqwwGIJVRw
+env_slope  _krnLAN-_EeyQAoCiBoOCcw ----> slope  _mFeuQCSaEe2ZkqwwGIJVRw
+total_mass  _-kmacCSYEe2ZkqwwGIJVRw ----> m  _Pp-48CSXEe2ZkqwwGIJVRw
+total_mass  _-kmacCSYEe2ZkqwwGIJVRw ----> m  _Z6jpgCSaEe2ZkqwwGIJVRw
+total_mass  _-kmacCSYEe2ZkqwwGIJVRw ----> m  _qQD7gCSeEe2NCYuc8M5wLg
+total_mass  _-kmacCSYEe2ZkqwwGIJVRw ----> m  _Wm5uICSfEe2NCYuc8M5wLg
+env_g  _MPByQN-9EeyQAoCiBoOCcw ----> g  _Z3Wr4CSXEe2ZkqwwGIJVRw
+env_g  _MPByQN-9EeyQAoCiBoOCcw ----> g  _10cPkCScEe2NCYuc8M5wLg
+env_g  _MPByQN-9EeyQAoCiBoOCcw ----> g  _taa-sCSeEe2NCYuc8M5wLg
+vehicle_speed_param  _X7-4oOBtEeyz97SW6jXbYw ----> speed_in  _gL1oECSfEe2NCYuc8M5wLg
+vehicle_speed_param  _X7-4oOBtEeyz97SW6jXbYw ----> speed  _Hl1YICSeEe2NCYuc8M5wLg
+vehicle_speed_param  _X7-4oOBtEeyz97SW6jXbYw ----> vehicle_speed  _t87rUCSdEe2NCYuc8M5wLg
+vehicle_speed_param  _X7-4oOBtEeyz97SW6jXbYw ----> vehicle_speed  _UGL-8N_BEeyQAoCiBoOCcw
+force  _Mq0U8CSeEe2NCYuc8M5wLg ----> drag  _WRa4QCSdEe2NCYuc8M5wLg
+force  _37xIcCScEe2NCYuc8M5wLg ----> slope  _UF6C8CSdEe2NCYuc8M5wLg
+miua  _eWTtgNyYEeyZdrCSZvBi5g ----> miua  _xDdh8CSeEe2NCYuc8M5wLg
+load  _qgNekNyYEeyZdrCSZvBi5g ----> load  _vHoucCSeEe2NCYuc8M5wLg
+env_ro  _WckjsOASEey1V-BUgsLF0Q ----> ro  _FtRUACSeEe2NCYuc8M5wLg
+env_cd  _cI2KAOASEey1V-BUgsLF0Q ----> cd  _LHyb8CSeEe2NCYuc8M5wLg
+fa  _ALG3UOATEey1V-BUgsLF0Q ----> fa  _JYj6ACSeEe2NCYuc8M5wLg
+mass_fm  _1DvM0N-7EeyBKe45X3175g ----> fm  _Jl-SoCSYEe2ZkqwwGIJVRw
+mass_driver  _FVqjMN-8EeyBKe45X3175g ----> mass_driver  _pQKzgCSYEe2ZkqwwGIJVRw
+mass_curb  _Kr2kwN-8EeyBKe45X3175g ----> mass_curb  _0WzJsCSYEe2ZkqwwGIJVRw
+speed_out  _STOScCSfEe2NCYuc8M5wLg ----> vehicle_speed_param  _X7-4oOBtEeyz97SW6jXbYw
+rwd  _Z5SIkNyYEeyZdrCSZvBi5g ----> wheel_rwd  _wveEYCSdEe2NCYuc8M5wLg
+resistance  _uhMhkNfTEeyKDukxCNI3pQ _QOg6oCSdEe2NCYuc8M5wLg ----> force_balance  _UbK2YCSfEe2NCYuc8M5wLg
+force  _thc38CSXEe2ZkqwwGIJVRw ----> load  _SHaV8CSdEe2NCYuc8M5wLg
+wheel_speed  _zfaccCSdEe2NCYuc8M5wLg ----> wheel_speed  _xi-HcOK-Eey2GPf_NkcRwg
+d  _VuHoEN06EeyZdrCSZvBi5g ----> d  _SgOnACY8Ee2FC6XF101YWg
+
 ********* Blocks *********
 GearBox
 
   Attributes:
-    Port (out): _4mqvINZGEeyztMSLcHqD0Q - currentDriveGear
-    Port (out): _BShsANZHEeyztMSLcHqD0Q - currentGearRatio
-    Port (in): _EiPJQNZHEeyztMSLcHqD0Q - currentGear
-    Port (in): _W9dzgNyfEeyZdrCSZvBi5g - currentEngineSpeed
-    Port (in): _duN3QNZMEeyztMSLcHqD0Q - Nmin
-    Port (in): _hWzHgNZMEeyztMSLcHqD0Q - Nmax
+    Port (out): _4mqvINZGEeyztMSLcHqD0Q - current_drive_gear
+    Port (out): _BShsANZHEeyztMSLcHqD0Q - current_gear_ratio
+    Port (in): _EiPJQNZHEeyztMSLcHqD0Q - current_gear
+    Port (in): _W9dzgNyfEeyZdrCSZvBi5g - current_engine_speed
+    Port (in): _duN3QNZMEeyztMSLcHqD0Q - n_min
+    Port (in): _hWzHgNZMEeyztMSLcHqD0Q - n_max
     Port (out): _vlp48NyZEeyZdrCSZvBi5g - i0
-    Port (out): _xsykkNyZEeyZdrCSZvBi5g - transmissionTorque
-    Property: _FTvMYN_DEeyQAoCiBoOCcw - currentDriveGear_param
-    Property: _Hg3yUN_DEeyQAoCiBoOCcw - currentGearRatio_param
+    Port (out): _xsykkNyZEeyZdrCSZvBi5g - transmission_torque
+    Property: _FTvMYN_DEeyQAoCiBoOCcw - current_drive_gear_param
+      Default Value: 1
+    Property: _Hg3yUN_DEeyQAoCiBoOCcw - current_gear_ratio_param
+      Default Value: 0.0
     Property: _VtQ_kN_DEeyQAoCiBoOCcw - i0_param
+      Default Value: 3.31
     Property: _Xv3JcN_DEeyQAoCiBoOCcw - eff_param
-    Port (in): _J5QHQOLqEey2GPf_NkcRwg - engineTorque
-
-  Connectors:
-    _TkCFoNfVEeyKDukxCNI3pQ: _xsykkNyZEeyZdrCSZvBi5g
-    _xsykkNyZEeyZdrCSZvBi5g: _TkCFoNfVEeyKDukxCNI3pQ
-    _VtQ_kN_DEeyQAoCiBoOCcw: _DbIegNfMEeyKDukxCNI3pQ
-    _vlp48NyZEeyZdrCSZvBi5g: _VtQ_kN_DEeyQAoCiBoOCcw
-    _FTvMYN_DEeyQAoCiBoOCcw: _4mqvINZGEeyztMSLcHqD0Q
-    _4mqvINZGEeyztMSLcHqD0Q: _FTvMYN_DEeyQAoCiBoOCcw
-    _Hg3yUN_DEeyQAoCiBoOCcw: _Q8nGgNfMEeyKDukxCNI3pQ
-    _BShsANZHEeyztMSLcHqD0Q: _Hg3yUN_DEeyQAoCiBoOCcw
-    _J5QHQOLqEey2GPf_NkcRwg: _WYijsNfMEeyKDukxCNI3pQ
-    _WYijsNfMEeyKDukxCNI3pQ: _J5QHQOLqEey2GPf_NkcRwg
-    _Xv3JcN_DEeyQAoCiBoOCcw: _JMRWsNfMEeyKDukxCNI3pQ
-    _JMRWsNfMEeyKDukxCNI3pQ: _Xv3JcN_DEeyQAoCiBoOCcw
-    _DbIegNfMEeyKDukxCNI3pQ: _VtQ_kN_DEeyQAoCiBoOCcw
-    _Q8nGgNfMEeyKDukxCNI3pQ: _Hg3yUN_DEeyQAoCiBoOCcw
+      Default Value: 0.85
+    Port (in): _J5QHQOLqEey2GPf_NkcRwg - engine_torque
 
   Children Attributes:
-    _DbIegNfMEeyKDukxCNI3pQ: Gearbox Current Torque (_90KO8NfLEeyKDukxCNI3pQ)
-    _JMRWsNfMEeyKDukxCNI3pQ: Gearbox Current Torque (_90KO8NfLEeyKDukxCNI3pQ)
-    _Q8nGgNfMEeyKDukxCNI3pQ: Gearbox Current Torque (_90KO8NfLEeyKDukxCNI3pQ)
-    _WYijsNfMEeyKDukxCNI3pQ: Gearbox Current Torque (_90KO8NfLEeyKDukxCNI3pQ)
-    _TkCFoNfVEeyKDukxCNI3pQ: Gearbox Current Torque (_90KO8NfLEeyKDukxCNI3pQ)
+    _iK4cwCShEe2NCYuc8M5wLg: Gearbox Current Torque (_90KO8NfLEeyKDukxCNI3pQ)
+    _j9wvoCShEe2NCYuc8M5wLg: Gearbox Current Torque (_90KO8NfLEeyKDukxCNI3pQ)
+    _lldtQCShEe2NCYuc8M5wLg: Gearbox Current Torque (_90KO8NfLEeyKDukxCNI3pQ)
+    _obll0CShEe2NCYuc8M5wLg: Gearbox Current Torque (_90KO8NfLEeyKDukxCNI3pQ)
+    _t_0qcCShEe2NCYuc8M5wLg: Gearbox Current Torque (_90KO8NfLEeyKDukxCNI3pQ)
 
   State Machine: GearBox SM
     Region Gearbox:__1cZ8MQyEeye8sWuuOEGkw
       Parking:_KlSAwMQzEeye8sWuuOEGkw
-        entry: currentGearRatio_param = 0;
+        entry: current_gear_ratio_param = 0
       Reverse:_U7p-sMQzEeye8sWuuOEGkw
-        entry: currentGearRatio_param = -4.71;
+        entry: current_gear_ratio_param = -4.71
       Neutral:_e4rogMQzEeye8sWuuOEGkw
-        entry: currentGearRatio_param = 0;
+        entry: current_gear_ratio_param = 0
       Drive:_81ZT4MQzEeye8sWuuOEGkw
         State Machine: Drive SM
           Region Drive:_LQejwMQ8Eeye8sWuuOEGkw
             First:_XbYaYMQ8Eeye8sWuuOEGkw
-              entry: currentDriveGear_param = 1;
-                     currentGearRatio_param = 4.71;
+              entry: current_drive_gear_param = 1
+                     current_gear_ratio_param = 4.71
             Second:_aAGZ4MQ8Eeye8sWuuOEGkw
-              entry: currentDriveGear_param = 2;
-                     currentGearRatio_param = 3.14;
+              entry: current_drive_gear_param = 2
+                     current_gear_ratio_param = 3.14
             Third:_ahaXMMQ8Eeye8sWuuOEGkw
-              entry: currentDriveGear_param = 3;
-                     currentGearRatio_param = 2.11;
+              entry: current_drive_gear_param = 3
+                     current_gear_ratio_param = 2.11
             Fourth:_a6AdYMQ8Eeye8sWuuOEGkw
-              entry: currentDriveGear_param = 4;
-                     currentGearRatio_param = 1.67;
+              entry: current_drive_gear_param = 4
+                     current_gear_ratio_param = 1.67
             Fifth:_bXayIMQ8Eeye8sWuuOEGkw
-              entry: currentDriveGear_param = 5;
-                     currentGearRatio_param = 1.29;
+              entry: current_drive_gear_param = 5
+                     current_gear_ratio_param = 1.29
             Begin: _k1YhYMQ8Eeye8sWuuOEGkw
             Sixth:_Ym2IYNJoEeyPM_J-D-wR-Q
-              entry: currentDriveGear_param = 6;
-                     currentGearRatio_param = 1.00;
+              entry: current_drive_gear_param = 6
+                     current_gear_ratio_param = 1.00
             Seventh:_q1qCMNJoEeyPM_J-D-wR-Q
-              entry: currentDriveGear_param = 7;
-                     currentGearRatio_param = 0.84;
+              entry: current_drive_gear_param = 7
+                     current_gear_ratio_param = 0.84
             Eighth:_FL2S0NJpEeyPM_J-D-wR-Q
-              entry: currentDriveGear_param = 8;
-                     currentGearRatio_param = 0.67;
+              entry: current_drive_gear_param = 8
+                     current_gear_ratio_param = 0.67
 
           Transitions: 
            _k1YhYMQ8Eeye8sWuuOEGkw -> _XbYaYMQ8Eeye8sWuuOEGkw
            _XbYaYMQ8Eeye8sWuuOEGkw -> _aAGZ4MQ8Eeye8sWuuOEGkw
-             currentEngineSpeed == Nmax
+             current_engine_speed == n_max
            _aAGZ4MQ8Eeye8sWuuOEGkw -> _ahaXMMQ8Eeye8sWuuOEGkw
-             currentEngineSpeed == Nmax
+             current_engine_speed == n_max
            _ahaXMMQ8Eeye8sWuuOEGkw -> _a6AdYMQ8Eeye8sWuuOEGkw
-             currentEngineSpeed == Nmax
+             current_engine_speed == n_max
            _a6AdYMQ8Eeye8sWuuOEGkw -> _bXayIMQ8Eeye8sWuuOEGkw
-             currentEngineSpeed == Nmax
+             current_engine_speed == n_max
            _bXayIMQ8Eeye8sWuuOEGkw -> _Ym2IYNJoEeyPM_J-D-wR-Q
-             currentEngineSpeed == Nmax
+             current_engine_speed == n_max
            _Ym2IYNJoEeyPM_J-D-wR-Q -> _q1qCMNJoEeyPM_J-D-wR-Q
-             currentEngineSpeed == Nmin
+             current_engine_speed == n_min
            _q1qCMNJoEeyPM_J-D-wR-Q -> _FL2S0NJpEeyPM_J-D-wR-Q
-             currentEngineSpeed == Nmax
+             current_engine_speed == n_max
            _FL2S0NJpEeyPM_J-D-wR-Q -> _q1qCMNJoEeyPM_J-D-wR-Q
-             currentEngineSpeed == Nmin
+             current_engine_speed == n_min
       Begin: _2JLL4MTVEeyhtb6Vq-DBuQ
 
     Transitions: 
      _2JLL4MTVEeyhtb6Vq-DBuQ -> _KlSAwMQzEeye8sWuuOEGkw
      _KlSAwMQzEeye8sWuuOEGkw -> _U7p-sMQzEeye8sWuuOEGkw
-       currentGear == "R"
+       current_gear == "R"
      _U7p-sMQzEeye8sWuuOEGkw -> _KlSAwMQzEeye8sWuuOEGkw
-       currentGear == "P"
+       current_gear == "P"
      _e4rogMQzEeye8sWuuOEGkw -> _81ZT4MQzEeye8sWuuOEGkw
-       currentGear == "D"
+       current_gear == "D"
      _81ZT4MQzEeye8sWuuOEGkw -> _e4rogMQzEeye8sWuuOEGkw
-       currentGear == "N"
+       current_gear == "N"
 
   Children:
-     <class 'source.uml_class.UMLClass'>: Gearbox Current Torque
-           gearboxTorque = i0 * eff * gearRatio * engineTorque
+     <class 'source.classes.UML.uml_class.Class'>: Gearbox Current Torque
+          Parameters:
+            Port (in): _iK4cwCShEe2NCYuc8M5wLg - i0
+            Port (in): _j9wvoCShEe2NCYuc8M5wLg - eff
+            Port (in): _lldtQCShEe2NCYuc8M5wLg - gear_ratio
+            Port (in): _obll0CShEe2NCYuc8M5wLg - engine_torque
+            Port (out): _t_0qcCShEe2NCYuc8M5wLg - gearbox_torque
+          Constraints:
+             gearbox_torque = i0 * eff * gear_ratio * engine_torque
 
 Wheel
 
   Attributes:
     Property: _Lypv0NfcEeySbq2h8TnUHA - width
-    Property: _VuHoEN06EeyZdrCSZvBi5g - D
+      Default Value: 0.295
+    Property: _VuHoEN06EeyZdrCSZvBi5g - d
+      Default Value: 20 * 0.0254
     Property: _AFE-cN27EeyUrvQ0Lh3FUQ - miua_param
+      Default Value: 1.1
     Property: _WXArsN-5EeyBKe45X3175g - load_param
+      Default Value: 0.65
     Port (out): _Z5SIkNyYEeyZdrCSZvBi5g - rwd
     Port (out): _eWTtgNyYEeyZdrCSZvBi5g - miua
     Port (out): _qgNekNyYEeyZdrCSZvBi5g - load
 
-  Connectors:
-    _WAO-MNcYEeyO7PQk0pa-rA: _zU-kMNfUEeyKDukxCNI3pQ
-    _zU-kMNfUEeyKDukxCNI3pQ: _WAO-MNcYEeyO7PQk0pa-rA
-    _HUTVQNcYEeyO7PQk0pa-rA: _Lypv0NfcEeySbq2h8TnUHA
-    _Lypv0NfcEeySbq2h8TnUHA: _HUTVQNcYEeyO7PQk0pa-rA
-    _seBTcNfUEeyKDukxCNI3pQ: _Z5SIkNyYEeyZdrCSZvBi5g
-    _Z5SIkNyYEeyZdrCSZvBi5g: _seBTcNfUEeyKDukxCNI3pQ
-    _bcucENcYEeyO7PQk0pa-rA: _VuHoEN06EeyZdrCSZvBi5g
-    _VuHoEN06EeyZdrCSZvBi5g: _bcucENcYEeyO7PQk0pa-rA
-    _AFE-cN27EeyUrvQ0Lh3FUQ: _eWTtgNyYEeyZdrCSZvBi5g
-    _eWTtgNyYEeyZdrCSZvBi5g: _AFE-cN27EeyUrvQ0Lh3FUQ
-    _WXArsN-5EeyBKe45X3175g: _qgNekNyYEeyZdrCSZvBi5g
-    _qgNekNyYEeyZdrCSZvBi5g: _WXArsN-5EeyBKe45X3175g
-
   Children Attributes:
-    _WAO-MNcYEeyO7PQk0pa-rA: Wheel Dynamic Radius (_TBG6oNcYEeyO7PQk0pa-rA)
-    _bcucENcYEeyO7PQk0pa-rA: Wheel Dynamic Radius (_TBG6oNcYEeyO7PQk0pa-rA)
-    _seBTcNfUEeyKDukxCNI3pQ: Wheel Dynamic Radius (_TBG6oNcYEeyO7PQk0pa-rA)
-    _HUTVQNcYEeyO7PQk0pa-rA: Tire Height (_E2sDUNcYEeyO7PQk0pa-rA)
-    _zU-kMNfUEeyKDukxCNI3pQ: Tire Height (_E2sDUNcYEeyO7PQk0pa-rA)
+    _SgOnACY8Ee2FC6XF101YWg: Wheel Dynamic Radius (_TBG6oNcYEeyO7PQk0pa-rA)
+    _YI_mUCY8Ee2FC6XF101YWg: Wheel Dynamic Radius (_TBG6oNcYEeyO7PQk0pa-rA)
+    _Z-aP0CY8Ee2FC6XF101YWg: Wheel Dynamic Radius (_TBG6oNcYEeyO7PQk0pa-rA)
+    _rKlA4CY8Ee2FC6XF101YWg: Tire Height (_E2sDUNcYEeyO7PQk0pa-rA)
+    _s9IjoCY8Ee2FC6XF101YWg: Tire Height (_E2sDUNcYEeyO7PQk0pa-rA)
 
   Children:
-     <class 'source.uml_class.UMLClass'>: Wheel Dynamic Radius
-           rwd = 0.98*(d/2 + h)
-     <class 'source.uml_class.UMLClass'>: Tire Height
-           h = 30 * w / 100
+     <class 'source.classes.UML.uml_class.Class'>: Wheel Dynamic Radius
+          Parameters:
+            Port (in): _SgOnACY8Ee2FC6XF101YWg - d
+            Port (in): _YI_mUCY8Ee2FC6XF101YWg - h
+            Port (out): _Z-aP0CY8Ee2FC6XF101YWg - rwd
+          Constraints:
+             rwd = 0.98*(d/2 + h)
+     <class 'source.classes.UML.uml_class.Class'>: Tire Height
+          Parameters:
+            Port (in): _rKlA4CY8Ee2FC6XF101YWg - w
+            Port (out): _s9IjoCY8Ee2FC6XF101YWg - h
+          Constraints:
+             h = 30 * w / 100
 
 Engine
 
   Attributes:
-    Property: _0pGf8NJtEeyKp65yHsgyfA - pedalPosSampleVec
-    Property: _Znbz8NJuEeyKp65yHsgyfA - engSpeedSampleVec
-    Property: _RBjT4NLJEeyKp65yHsgyfA - torqueMapGasoline
-    Port (out): _DzR6wNyYEeyZdrCSZvBi5g - Nmax
-    Port (out): _FJDa4NyYEeyZdrCSZvBi5g - Nmin
-    Port (out): _ZDAV8NyaEeyZdrCSZvBi5g - engineTorque
-    Port (in): _2AmGoNyaEeyZdrCSZvBi5g - engineSpeed
+    Property: _0pGf8NJtEeyKp65yHsgyfA - pedal_pos_sample_vec
+      Default Value: [5,	10,	20,	30,	40,	50,	60,	100]
+    Property: _Znbz8NJuEeyKp65yHsgyfA - eng_speed_sample_vec
+      Default Value: [800, 1300, 1800, 2300, 2800, 3300, 3800, 4300, 4800, 5300, 5800, 6300]
+    Property: _RBjT4NLJEeyKp65yHsgyfA - torque_map_gasoline
+      Default Value: [[45,90,107,109,110,111,114,116],[60,105,132,133,134,136,138,141], [35,89,133,141,142,144,145,149], [19,70,133,147,148,150,151,155], [3,55,133,153,159,161,163,165], [0,41,126,152,161,165,167,171],[0,33,116,150,160,167,170,175], [0,26,110,155,169,176,180,184],[0,18,106,155,174,179,185,190], [0,12,96,147,167,175,181,187],[0,4,84,136,161,170,175,183], [0,0,72,120,145,153,159,171]]
+    Port (out): _DzR6wNyYEeyZdrCSZvBi5g - n_max
+    Port (out): _FJDa4NyYEeyZdrCSZvBi5g - n_min
+    Port (out): _ZDAV8NyaEeyZdrCSZvBi5g - engine_torque
+    Port (in): _2AmGoNyaEeyZdrCSZvBi5g - engine_speed
     Port (in): _U6mgsNybEeyZdrCSZvBi5g - pedalPosition
-    Property: _IZ3sUN_CEeyQAoCiBoOCcw - Nmax_param
-    Property: _TRc54N_CEeyQAoCiBoOCcw - Nmin_param
-    Property: _UGhIUOLxEeyMdeINNWNrGg - engineSpeed_param
-    Property: _5Ikn0OXoEeyrmpnLSXdn1g - driveGear_param
-    Port (in): _8yvMcOXoEeyrmpnLSXdn1g - driveGear
-
-  Connectors:
-    _NJedANfVEeyKDukxCNI3pQ: _ZDAV8NyaEeyZdrCSZvBi5g
-    _ZDAV8NyaEeyZdrCSZvBi5g: _NJedANfVEeyKDukxCNI3pQ
-    _UGhIUOLxEeyMdeINNWNrGg: _Ge0TcOK4Eey2GPf_NkcRwg
-    _2AmGoNyaEeyZdrCSZvBi5g: _UGhIUOLxEeyMdeINNWNrGg
-    _VDi3ANcZEeyO7PQk0pa-rA: _0pGf8NJtEeyKp65yHsgyfA
-    _0pGf8NJtEeyKp65yHsgyfA: _VDi3ANcZEeyO7PQk0pa-rA
-    _iOxiMNcZEeyO7PQk0pa-rA: _RBjT4NLJEeyKp65yHsgyfA
-    _RBjT4NLJEeyKp65yHsgyfA: _iOxiMNcZEeyO7PQk0pa-rA
-    _oY6wQNcZEeyO7PQk0pa-rA: _Znbz8NJuEeyKp65yHsgyfA
-    _Znbz8NJuEeyKp65yHsgyfA: _oY6wQNcZEeyO7PQk0pa-rA
-    _lNMgQNfLEeyKDukxCNI3pQ: _U6mgsNybEeyZdrCSZvBi5g
-    _U6mgsNybEeyZdrCSZvBi5g: _lNMgQNfLEeyKDukxCNI3pQ
-    _IZ3sUN_CEeyQAoCiBoOCcw: _uXCJNeK5Eey2GPf_NkcRwg
-    _DzR6wNyYEeyZdrCSZvBi5g: _IZ3sUN_CEeyQAoCiBoOCcw
-    _TRc54N_CEeyQAoCiBoOCcw: _It1TQOK5Eey2GPf_NkcRwg
-    _FJDa4NyYEeyZdrCSZvBi5g: _TRc54N_CEeyQAoCiBoOCcw
-    _It1TQOK5Eey2GPf_NkcRwg: _TRc54N_CEeyQAoCiBoOCcw
-    _uXCJM-K5Eey2GPf_NkcRwg: _KCxiYOK4Eey2GPf_NkcRwg
-    _KCxiYOK4Eey2GPf_NkcRwg: _uXCJM-K5Eey2GPf_NkcRwg
-    _uXCJNeK5Eey2GPf_NkcRwg: _IZ3sUN_CEeyQAoCiBoOCcw
-    _uXCJNOK5Eey2GPf_NkcRwg: _PgZXgNcZEeyO7PQk0pa-rA
-    _PgZXgNcZEeyO7PQk0pa-rA: _uXCJNOK5Eey2GPf_NkcRwg
-    _Ge0TcOK4Eey2GPf_NkcRwg: _UGhIUOLxEeyMdeINNWNrGg
+    Property: _IZ3sUN_CEeyQAoCiBoOCcw - n_max_param
+      Default Value: 6300.0
+    Property: _TRc54N_CEeyQAoCiBoOCcw - n_min_param
+      Default Value: 800.0
+    Property: _UGhIUOLxEeyMdeINNWNrGg - engine_speed_param
+      Default Value: 0.0
+    Property: _5Ikn0OXoEeyrmpnLSXdn1g - drive_gear_param
+      Default Value: 1
+    Port (in): _8yvMcOXoEeyrmpnLSXdn1g - drive_gear
 
   Children Attributes:
-    _PgZXgNcZEeyO7PQk0pa-rA: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
-    _VDi3ANcZEeyO7PQk0pa-rA: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
-    _iOxiMNcZEeyO7PQk0pa-rA: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
-    _oY6wQNcZEeyO7PQk0pa-rA: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
-    _lNMgQNfLEeyKDukxCNI3pQ: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
-    _NJedANfVEeyKDukxCNI3pQ: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
-    _Ge0TcOK4Eey2GPf_NkcRwg: Engine Min Filter (_DTow4OK4Eey2GPf_NkcRwg)
-    _KCxiYOK4Eey2GPf_NkcRwg: Engine Min Filter (_DTow4OK4Eey2GPf_NkcRwg)
-    _It1TQOK5Eey2GPf_NkcRwg: Engine Min Filter (_DTow4OK4Eey2GPf_NkcRwg)
-    _uXCJM-K5Eey2GPf_NkcRwg: Engine Max Filter (_uXCJMOK5Eey2GPf_NkcRwg)
-    _uXCJNOK5Eey2GPf_NkcRwg: Engine Max Filter (_uXCJMOK5Eey2GPf_NkcRwg)
-    _uXCJNeK5Eey2GPf_NkcRwg: Engine Max Filter (_uXCJMOK5Eey2GPf_NkcRwg)
+    _tIK-0CSjEe2NCYuc8M5wLg: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
+    _vHLCICSjEe2NCYuc8M5wLg: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
+    _y1Uu4CSjEe2NCYuc8M5wLg: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
+    _1LAz4CSjEe2NCYuc8M5wLg: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
+    _3WMSACSjEe2NCYuc8M5wLg: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
+    _5SmUUCSjEe2NCYuc8M5wLg: Engine Current Torque (_L_hRwNcZEeyO7PQk0pa-rA)
+    _JDugMCSjEe2NCYuc8M5wLg: Engine Min Filter (_DTow4OK4Eey2GPf_NkcRwg)
+    _K4GA0CSjEe2NCYuc8M5wLg: Engine Min Filter (_DTow4OK4Eey2GPf_NkcRwg)
+    _MkxlECSjEe2NCYuc8M5wLg: Engine Min Filter (_DTow4OK4Eey2GPf_NkcRwg)
+    _hpJMMCSiEe2NCYuc8M5wLg: Engine Max Filter (_uXCJMOK5Eey2GPf_NkcRwg)
+    _kcZ-ACSiEe2NCYuc8M5wLg: Engine Max Filter (_uXCJMOK5Eey2GPf_NkcRwg)
+    _nERYICSiEe2NCYuc8M5wLg: Engine Max Filter (_uXCJMOK5Eey2GPf_NkcRwg)
 
   State Machine: Engine SM
     Region engineSpeed:_gN_F4OLwEeyMdeINNWNrGg
@@ -215,129 +278,96 @@ Engine
     Transitions: 
      _nSPLwOLwEeyMdeINNWNrGg -> _otawUOLwEeyMdeINNWNrGg
      _otawUOLwEeyMdeINNWNrGg -> _otawUOLwEeyMdeINNWNrGg
-       driveGear !== driveGear_param
+       drive_gear !== drive_gear_param
 
   Children:
-     <class 'source.uml_class.UMLClass'>: Engine Current Torque
-           torque = interpolate(engineSpeedVec, pedalPosVec, mapTorque, currentSpeed, pedalPos)
-     <class 'source.uml_class.UMLClass'>: Engine Min Filter
-           engineSpeed_out = max(engineSpeed_in, Nmin)
-     <class 'source.uml_class.UMLClass'>: Engine Max Filter
-           engineSpeed_out = min(engineSpeed_in, Nmax)
+     <class 'source.classes.UML.uml_class.Class'>: Engine Current Torque
+          Parameters:
+            Port (in): _tIK-0CSjEe2NCYuc8M5wLg - pedal_position
+            Port (in): _vHLCICSjEe2NCYuc8M5wLg - engine_speed_vec
+            Port (in): _y1Uu4CSjEe2NCYuc8M5wLg - map_torque
+            Port (in): _1LAz4CSjEe2NCYuc8M5wLg - pedal_pos_vec
+            Port (in): _3WMSACSjEe2NCYuc8M5wLg - current_speed
+            Port (out): _5SmUUCSjEe2NCYuc8M5wLg - torque
+          Constraints:
+             torque = interpn(engine_speed_vec, pedal_pos_vec, map_torque, current_speed, pedal_position)
+     <class 'source.classes.UML.uml_class.Class'>: Engine Min Filter
+          Parameters:
+            Port (in): _JDugMCSjEe2NCYuc8M5wLg - engine_speed_in
+            Port (in): _K4GA0CSjEe2NCYuc8M5wLg - n_min
+            Port (out): _MkxlECSjEe2NCYuc8M5wLg - engine_speed_out
+          Constraints:
+             engine_speed_out = max(engine_speed_in, n_min)
+     <class 'source.classes.UML.uml_class.Class'>: Engine Max Filter
+          Parameters:
+            Port (in): _hpJMMCSiEe2NCYuc8M5wLg - engine_speed_in
+            Port (out): _kcZ-ACSiEe2NCYuc8M5wLg - engine_speed_out
+            Port (in): _nERYICSiEe2NCYuc8M5wLg - n_max
+          Constraints:
+             engine_speed_out = min(engine_speed_in, n_max)
 
 Vehicle Simulator
 
   Attributes:
-    Property: _1DvM0N-7EeyBKe45X3175g - massFm
-    Property: _FVqjMN-8EeyBKe45X3175g - massDriver
-    Property: _Kr2kwN-8EeyBKe45X3175g - massCurb
+    Property: _1DvM0N-7EeyBKe45X3175g - mass_fm
+      Default Value: 1.05
+    Property: _FVqjMN-8EeyBKe45X3175g - mass_driver
+      Default Value: 80.0
+    Property: _Kr2kwN-8EeyBKe45X3175g - mass_curb
+      Default Value: 1741.0
     Property: _MPByQN-9EeyQAoCiBoOCcw - env_g
+      Default Value: 9.81
     Property: _X7-4oOBtEeyz97SW6jXbYw - vehicle_speed_param
+      Default Value: 0.0
     Port (in): _lBF9sN-9EeyQAoCiBoOCcw - env_cr
     Port (in): _JzidsN1AEeyB6oChl77ysw - dT
     Port (in): _krnLAN-_EeyQAoCiBoOCcw - env_slope
-    Port (out): _UGL-8N_BEeyQAoCiBoOCcw - vehicleSpeed
+    Port (out): _UGL-8N_BEeyQAoCiBoOCcw - vehicle_speed
     Port (in): _WckjsOASEey1V-BUgsLF0Q - env_ro
     Port (in): _cI2KAOASEey1V-BUgsLF0Q - env_cd
     Port (in): _ALG3UOATEey1V-BUgsLF0Q - fa
-    Port (in): _4bG2YOBtEeyqBLJ1Eszaaw - gearboxTorque
-    Port (out): _xi-HcOK-Eey2GPf_NkcRwg - wheelSpeed
-
-  Connectors:
-    _eWTtgNyYEeyZdrCSZvBi5g: _M-76kNfNEeyKDukxCNI3pQ
-    _M-76kNfNEeyKDukxCNI3pQ: _eWTtgNyYEeyZdrCSZvBi5g
-    _Q1BbUNfNEeyKDukxCNI3pQ: _qgNekNyYEeyZdrCSZvBi5g
-    _qgNekNyYEeyZdrCSZvBi5g: _Q1BbUNfNEeyKDukxCNI3pQ
-    _Z5SIkNyYEeyZdrCSZvBi5g: _nKhJEOLCEey2GPf_NkcRwg
-    _fjoZQNfXEeySbq2h8TnUHA: _Z5SIkNyYEeyZdrCSZvBi5g
-    _Fl26kNfVEeyKDukxCNI3pQ: _rGZ44NfXEeySbq2h8TnUHA
-    _rGZ44NfXEeySbq2h8TnUHA: _Fl26kNfVEeyKDukxCNI3pQ
-    _TkCFoNfVEeyKDukxCNI3pQ: _j8q2ENfXEeySbq2h8TnUHA
-    _j8q2ENfXEeySbq2h8TnUHA: _4bG2YOBtEeyqBLJ1Eszaaw
-    _KoWcsNfYEeySbq2h8TnUHA: _JzidsN1AEeyB6oChl77ysw
-    _JzidsN1AEeyB6oChl77ysw: _KoWcsNfYEeySbq2h8TnUHA
-    _1DvM0N-7EeyBKe45X3175g: _yMIzQNcYEeyO7PQk0pa-rA
-    _yMIzQNcYEeyO7PQk0pa-rA: _1DvM0N-7EeyBKe45X3175g
-    _FVqjMN-8EeyBKe45X3175g: _1XqUENcYEeyO7PQk0pa-rA
-    _1XqUENcYEeyO7PQk0pa-rA: _FVqjMN-8EeyBKe45X3175g
-    _Kr2kwN-8EeyBKe45X3175g: _6o8AcNcYEeyO7PQk0pa-rA
-    _6o8AcNcYEeyO7PQk0pa-rA: _Kr2kwN-8EeyBKe45X3175g
-    _4KxOcNfUEeyKDukxCNI3pQ: _misdINfXEeySbq2h8TnUHA
-    _EjTpwNcXEeyO7PQk0pa-rA: _4KxOcNfUEeyKDukxCNI3pQ
-    _MPByQN-9EeyQAoCiBoOCcw: _G2168NfNEeyKDukxCNI3pQ
-    _IC-1oNcXEeyO7PQk0pa-rA: _MPByQN-9EeyQAoCiBoOCcw
-    _lBF9sN-9EeyQAoCiBoOCcw: _P7SOoNcXEeyO7PQk0pa-rA
-    _P7SOoNcXEeyO7PQk0pa-rA: _lBF9sN-9EeyQAoCiBoOCcw
-    _sigrQN--EeyQAoCiBoOCcw: _4KxOcNfUEeyKDukxCNI3pQ
-    _uKCCsN--EeyQAoCiBoOCcw: _MPByQN-9EeyQAoCiBoOCcw
-    _krnLAN-_EeyQAoCiBoOCcw: _vhwDkN--EeyQAoCiBoOCcw
-    _vhwDkN--EeyQAoCiBoOCcw: _krnLAN-_EeyQAoCiBoOCcw
-    _G2168NfNEeyKDukxCNI3pQ: _MPByQN-9EeyQAoCiBoOCcw
-    _FnCf8NfNEeyKDukxCNI3pQ: _4KxOcNfUEeyKDukxCNI3pQ
-    _misdINfXEeySbq2h8TnUHA: _4KxOcNfUEeyKDukxCNI3pQ
-    _UGL-8N_BEeyQAoCiBoOCcw: _X7-4oOBtEeyz97SW6jXbYw
-    _X7-4oOBtEeyz97SW6jXbYw: _vmk4cNfXEeySbq2h8TnUHA
-    _WckjsOASEey1V-BUgsLF0Q: _hd1fYNcXEeyO7PQk0pa-rA
-    _hd1fYNcXEeyO7PQk0pa-rA: _WckjsOASEey1V-BUgsLF0Q
-    _cI2KAOASEey1V-BUgsLF0Q: _mTGlMNcXEeyO7PQk0pa-rA
-    _mTGlMNcXEeyO7PQk0pa-rA: _cI2KAOASEey1V-BUgsLF0Q
-    _-DmqENfUEeyKDukxCNI3pQ: _6xVgsNfXEeySbq2h8TnUHA
-    _6xVgsNfXEeySbq2h8TnUHA: _-DmqENfUEeyKDukxCNI3pQ
-    _v2QWcNcXEeyO7PQk0pa-rA: _X7-4oOBtEeyz97SW6jXbYw
-    _UG0fENfUEeyKDukxCNI3pQ: _5t_xMNfTEeyKDukxCNI3pQ
-    _5t_xMNfTEeyKDukxCNI3pQ: _UG0fENfUEeyKDukxCNI3pQ
-    _a-kaANfUEeyKDukxCNI3pQ: _zZGEoNfTEeyKDukxCNI3pQ
-    _zZGEoNfTEeyKDukxCNI3pQ: _a-kaANfUEeyKDukxCNI3pQ
-    _RMop0N-_EeyQAoCiBoOCcw: _3RSeMNfTEeyKDukxCNI3pQ
-    _3RSeMNfTEeyKDukxCNI3pQ: _RMop0N-_EeyQAoCiBoOCcw
-    _ALG3UOATEey1V-BUgsLF0Q: _qKftgNcXEeyO7PQk0pa-rA
-    _qKftgNcXEeyO7PQk0pa-rA: _ALG3UOATEey1V-BUgsLF0Q
-    _UbiioOBrEeycv_ul6zyjtw: _X7-4oOBtEeyz97SW6jXbYw
-    _4bG2YOBtEeyqBLJ1Eszaaw: _j8q2ENfXEeySbq2h8TnUHA
-    _vmk4cNfXEeySbq2h8TnUHA: _X40S4OK9Eey2GPf_NkcRwg
-    _cMFe4OK9Eey2GPf_NkcRwg: _xi-HcOK-Eey2GPf_NkcRwg
-    _xi-HcOK-Eey2GPf_NkcRwg: _cMFe4OK9Eey2GPf_NkcRwg
-    _X40S4OK9Eey2GPf_NkcRwg: _vmk4cNfXEeySbq2h8TnUHA
-    _nKhJEOLCEey2GPf_NkcRwg: _Z5SIkNyYEeyZdrCSZvBi5g
+    Port (in): _4bG2YOBtEeyqBLJ1Eszaaw - gearbox_torque
+    Port (out): _xi-HcOK-Eey2GPf_NkcRwg - wheel_speed
 
   Children Attributes:
-    _yMIzQNcYEeyO7PQk0pa-rA: Vehicle Total Mass (_spj7gNcYEeyO7PQk0pa-rA)
-    _1XqUENcYEeyO7PQk0pa-rA: Vehicle Total Mass (_spj7gNcYEeyO7PQk0pa-rA)
-    _6o8AcNcYEeyO7PQk0pa-rA: Vehicle Total Mass (_spj7gNcYEeyO7PQk0pa-rA)
-    _4KxOcNfUEeyKDukxCNI3pQ: Vehicle Total Mass (_spj7gNcYEeyO7PQk0pa-rA)
-    _hd1fYNcXEeyO7PQk0pa-rA: Aerodynamic Drag Force (_c5mfMNcXEeyO7PQk0pa-rA)
-    _mTGlMNcXEeyO7PQk0pa-rA: Aerodynamic Drag Force (_c5mfMNcXEeyO7PQk0pa-rA)
-    _qKftgNcXEeyO7PQk0pa-rA: Aerodynamic Drag Force (_c5mfMNcXEeyO7PQk0pa-rA)
-    _v2QWcNcXEeyO7PQk0pa-rA: Aerodynamic Drag Force (_c5mfMNcXEeyO7PQk0pa-rA)
-    _UG0fENfUEeyKDukxCNI3pQ: Aerodynamic Drag Force (_c5mfMNcXEeyO7PQk0pa-rA)
-    _EjTpwNcXEeyO7PQk0pa-rA: Road Load Force (_-vROkNcWEeyO7PQk0pa-rA)
-    _IC-1oNcXEeyO7PQk0pa-rA: Road Load Force (_-vROkNcWEeyO7PQk0pa-rA)
-    _P7SOoNcXEeyO7PQk0pa-rA: Road Load Force (_-vROkNcWEeyO7PQk0pa-rA)
-    _a-kaANfUEeyKDukxCNI3pQ: Road Load Force (_-vROkNcWEeyO7PQk0pa-rA)
-    _zZGEoNfTEeyKDukxCNI3pQ: Total Resistance Force (_uhMhkNfTEeyKDukxCNI3pQ)
-    _3RSeMNfTEeyKDukxCNI3pQ: Total Resistance Force (_uhMhkNfTEeyKDukxCNI3pQ)
-    _5t_xMNfTEeyKDukxCNI3pQ: Total Resistance Force (_uhMhkNfTEeyKDukxCNI3pQ)
-    _-DmqENfUEeyKDukxCNI3pQ: Total Resistance Force (_uhMhkNfTEeyKDukxCNI3pQ)
-    _fjoZQNfXEeySbq2h8TnUHA: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
-    _j8q2ENfXEeySbq2h8TnUHA: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
-    _misdINfXEeySbq2h8TnUHA: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
-    _rGZ44NfXEeySbq2h8TnUHA: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
-    _vmk4cNfXEeySbq2h8TnUHA: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
-    _6xVgsNfXEeySbq2h8TnUHA: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
-    _KoWcsNfYEeySbq2h8TnUHA: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
-    _UbiioOBrEeycv_ul6zyjtw: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
-    _FnCf8NfNEeyKDukxCNI3pQ: Maximum Friction Force (_6jVh8NfMEeyKDukxCNI3pQ)
-    _G2168NfNEeyKDukxCNI3pQ: Maximum Friction Force (_6jVh8NfMEeyKDukxCNI3pQ)
-    _M-76kNfNEeyKDukxCNI3pQ: Maximum Friction Force (_6jVh8NfMEeyKDukxCNI3pQ)
-    _Q1BbUNfNEeyKDukxCNI3pQ: Maximum Friction Force (_6jVh8NfMEeyKDukxCNI3pQ)
-    _Fl26kNfVEeyKDukxCNI3pQ: Maximum Friction Force (_6jVh8NfMEeyKDukxCNI3pQ)
-    _sigrQN--EeyQAoCiBoOCcw: Road Slope Force (_e_mf4N--EeyQAoCiBoOCcw)
-    _uKCCsN--EeyQAoCiBoOCcw: Road Slope Force (_e_mf4N--EeyQAoCiBoOCcw)
-    _vhwDkN--EeyQAoCiBoOCcw: Road Slope Force (_e_mf4N--EeyQAoCiBoOCcw)
-    _RMop0N-_EeyQAoCiBoOCcw: Road Slope Force (_e_mf4N--EeyQAoCiBoOCcw)
-    _X40S4OK9Eey2GPf_NkcRwg: Wheel Speed (_ViFsEOK9Eey2GPf_NkcRwg)
-    _cMFe4OK9Eey2GPf_NkcRwg: Wheel Speed (_ViFsEOK9Eey2GPf_NkcRwg)
-    _nKhJEOLCEey2GPf_NkcRwg: Wheel Speed (_ViFsEOK9Eey2GPf_NkcRwg)
+    _Jl-SoCSYEe2ZkqwwGIJVRw: Vehicle Total Mass (_spj7gNcYEeyO7PQk0pa-rA)
+    _pQKzgCSYEe2ZkqwwGIJVRw: Vehicle Total Mass (_spj7gNcYEeyO7PQk0pa-rA)
+    _0WzJsCSYEe2ZkqwwGIJVRw: Vehicle Total Mass (_spj7gNcYEeyO7PQk0pa-rA)
+    _-kmacCSYEe2ZkqwwGIJVRw: Vehicle Total Mass (_spj7gNcYEeyO7PQk0pa-rA)
+    _FtRUACSeEe2NCYuc8M5wLg: Aerodynamic Drag Force (_c5mfMNcXEeyO7PQk0pa-rA)
+    _Hl1YICSeEe2NCYuc8M5wLg: Aerodynamic Drag Force (_c5mfMNcXEeyO7PQk0pa-rA)
+    _JYj6ACSeEe2NCYuc8M5wLg: Aerodynamic Drag Force (_c5mfMNcXEeyO7PQk0pa-rA)
+    _LHyb8CSeEe2NCYuc8M5wLg: Aerodynamic Drag Force (_c5mfMNcXEeyO7PQk0pa-rA)
+    _Mq0U8CSeEe2NCYuc8M5wLg: Aerodynamic Drag Force (_c5mfMNcXEeyO7PQk0pa-rA)
+    _Pp-48CSXEe2ZkqwwGIJVRw: Road Load Force (_-vROkNcWEeyO7PQk0pa-rA)
+    _Z3Wr4CSXEe2ZkqwwGIJVRw: Road Load Force (_-vROkNcWEeyO7PQk0pa-rA)
+    _j2iR0CSXEe2ZkqwwGIJVRw: Road Load Force (_-vROkNcWEeyO7PQk0pa-rA)
+    _thc38CSXEe2ZkqwwGIJVRw: Road Load Force (_-vROkNcWEeyO7PQk0pa-rA)
+    _8DJm0CSXEe2ZkqwwGIJVRw: Road Load Force (_-vROkNcWEeyO7PQk0pa-rA)
+    _QOg6oCSdEe2NCYuc8M5wLg: Total Resistance Force (_uhMhkNfTEeyKDukxCNI3pQ)
+    _SHaV8CSdEe2NCYuc8M5wLg: Total Resistance Force (_uhMhkNfTEeyKDukxCNI3pQ)
+    _UF6C8CSdEe2NCYuc8M5wLg: Total Resistance Force (_uhMhkNfTEeyKDukxCNI3pQ)
+    _WRa4QCSdEe2NCYuc8M5wLg: Total Resistance Force (_uhMhkNfTEeyKDukxCNI3pQ)
+    _STOScCSfEe2NCYuc8M5wLg: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
+    _UbK2YCSfEe2NCYuc8M5wLg: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
+    _Wm5uICSfEe2NCYuc8M5wLg: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
+    _YewnoCSfEe2NCYuc8M5wLg: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
+    _aq7kQCSfEe2NCYuc8M5wLg: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
+    _cPbc4CSfEe2NCYuc8M5wLg: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
+    _eIOxkCSfEe2NCYuc8M5wLg: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
+    _gL1oECSfEe2NCYuc8M5wLg: Vehicle Speed (_cYItoNfXEeySbq2h8TnUHA)
+    _qQD7gCSeEe2NCYuc8M5wLg: Maximum Friction Force (_6jVh8NfMEeyKDukxCNI3pQ)
+    _taa-sCSeEe2NCYuc8M5wLg: Maximum Friction Force (_6jVh8NfMEeyKDukxCNI3pQ)
+    _vHoucCSeEe2NCYuc8M5wLg: Maximum Friction Force (_6jVh8NfMEeyKDukxCNI3pQ)
+    _xDdh8CSeEe2NCYuc8M5wLg: Maximum Friction Force (_6jVh8NfMEeyKDukxCNI3pQ)
+    _y2N5ACSeEe2NCYuc8M5wLg: Maximum Friction Force (_6jVh8NfMEeyKDukxCNI3pQ)
+    _Z6jpgCSaEe2ZkqwwGIJVRw: Road Slope Force (_e_mf4N--EeyQAoCiBoOCcw)
+    _mFeuQCSaEe2ZkqwwGIJVRw: Road Slope Force (_e_mf4N--EeyQAoCiBoOCcw)
+    _10cPkCScEe2NCYuc8M5wLg: Road Slope Force (_e_mf4N--EeyQAoCiBoOCcw)
+    _37xIcCScEe2NCYuc8M5wLg: Road Slope Force (_e_mf4N--EeyQAoCiBoOCcw)
+    _t87rUCSdEe2NCYuc8M5wLg: Wheel Speed (_ViFsEOK9Eey2GPf_NkcRwg)
+    _wveEYCSdEe2NCYuc8M5wLg: Wheel Speed (_ViFsEOK9Eey2GPf_NkcRwg)
+    _zfaccCSdEe2NCYuc8M5wLg: Wheel Speed (_ViFsEOK9Eey2GPf_NkcRwg)
     _Lypv0NfcEeySbq2h8TnUHA: Wheel (_E14GANJtEeyKp65yHsgyfA)
     _VuHoEN06EeyZdrCSZvBi5g: Wheel (_E14GANJtEeyKp65yHsgyfA)
     _AFE-cN27EeyUrvQ0Lh3FUQ: Wheel (_E14GANJtEeyKp65yHsgyfA)
@@ -347,64 +377,92 @@ Vehicle Simulator
     _qgNekNyYEeyZdrCSZvBi5g: Wheel (_E14GANJtEeyKp65yHsgyfA)
 
   Children:
-     <class 'source.uml_class.UMLClass'>: Vehicle Total Mass
-           totalMass = massCurb * fm + massDriver
-     <class 'source.uml_class.UMLClass'>: Aerodynamic Drag Force
-           force = 0.5 * ro * cd * fa * speed^2
-     <class 'source.uml_class.UMLClass'>: Road Load Force
-           force = m * g * cr * cos(slope)
-     <class 'source.uml_class.UMLClass'>: Total Resistance Force
-           resistance = load + slope + drag
-     <class 'source.uml_class.UMLClass'>: Vehicle Speed
-           speed_out = speed_in + (min(gbx_torque/rwd, frictionMaxForce) - forceBalance)/m * dT
-     <class 'source.uml_class.UMLClass'>: Maximum Friction Force
-           maxFriction = m * g * miua * load
-     <class 'source.uml_class.UMLClass'>: Road Slope Force
-           force = m * g * sin(slope)
-     <class 'source.uml_class.UMLClass'>: Wheel Speed
-           wheelSpeed = vehicleSpeed/wheel_rwd
-     <class 'source.uml_class.UMLClass'>: Wheel
+     <class 'source.classes.UML.uml_class.Class'>: Vehicle Total Mass
+          Parameters:
+            Port (in): _Jl-SoCSYEe2ZkqwwGIJVRw - fm
+            Port (in): _pQKzgCSYEe2ZkqwwGIJVRw - mass_driver
+            Port (in): _0WzJsCSYEe2ZkqwwGIJVRw - mass_curb
+            Port (out): _-kmacCSYEe2ZkqwwGIJVRw - total_mass
+          Constraints:
+             total_mass = mass_curb * fm + mass_driver
+     <class 'source.classes.UML.uml_class.Class'>: Aerodynamic Drag Force
+          Parameters:
+            Port (in): _FtRUACSeEe2NCYuc8M5wLg - ro
+            Port (in): _Hl1YICSeEe2NCYuc8M5wLg - speed
+            Port (in): _JYj6ACSeEe2NCYuc8M5wLg - fa
+            Port (in): _LHyb8CSeEe2NCYuc8M5wLg - cd
+            Port (out): _Mq0U8CSeEe2NCYuc8M5wLg - force
+          Constraints:
+             force = 0.5 * ro * cd * fa * speed**2
+     <class 'source.classes.UML.uml_class.Class'>: Road Load Force
+          Parameters:
+            Port (in): _Pp-48CSXEe2ZkqwwGIJVRw - m
+            Port (in): _Z3Wr4CSXEe2ZkqwwGIJVRw - g
+            Port (in): _j2iR0CSXEe2ZkqwwGIJVRw - cr
+            Port (out): _thc38CSXEe2ZkqwwGIJVRw - force
+            Port (in): _8DJm0CSXEe2ZkqwwGIJVRw - slope
+          Constraints:
+             force = m * g * cr * math.cos(slope)
+     <class 'source.classes.UML.uml_class.Class'>: Total Resistance Force
+          Parameters:
+            Port (out): _QOg6oCSdEe2NCYuc8M5wLg - resistance
+            Port (in): _SHaV8CSdEe2NCYuc8M5wLg - load
+            Port (in): _UF6C8CSdEe2NCYuc8M5wLg - slope
+            Port (in): _WRa4QCSdEe2NCYuc8M5wLg - drag
+          Constraints:
+             resistance = load + slope + drag
+     <class 'source.classes.UML.uml_class.Class'>: Vehicle Speed
+          Parameters:
+            Port (out): _STOScCSfEe2NCYuc8M5wLg - speed_out
+            Port (in): _UbK2YCSfEe2NCYuc8M5wLg - force_balance
+            Port (in): _Wm5uICSfEe2NCYuc8M5wLg - m
+            Port (in): _YewnoCSfEe2NCYuc8M5wLg - friction_force_max
+            Port (in): _aq7kQCSfEe2NCYuc8M5wLg - rwd
+            Port (in): _cPbc4CSfEe2NCYuc8M5wLg - dt
+            Port (in): _eIOxkCSfEe2NCYuc8M5wLg - gbx_torque
+            Port (in): _gL1oECSfEe2NCYuc8M5wLg - speed_in
+          Constraints:
+             speed_out = speed_in + (min(gbx_torque/rwd, friction_force_max) - force_balance)/m * dt
+     <class 'source.classes.UML.uml_class.Class'>: Maximum Friction Force
+          Parameters:
+            Port (in): _qQD7gCSeEe2NCYuc8M5wLg - m
+            Port (in): _taa-sCSeEe2NCYuc8M5wLg - g
+            Port (in): _vHoucCSeEe2NCYuc8M5wLg - load
+            Port (in): _xDdh8CSeEe2NCYuc8M5wLg - miua
+            Port (out): _y2N5ACSeEe2NCYuc8M5wLg - max_friction
+          Constraints:
+             max_friction = m * g * miua * load
+     <class 'source.classes.UML.uml_class.Class'>: Road Slope Force
+          Parameters:
+            Port (in): _Z6jpgCSaEe2ZkqwwGIJVRw - m
+            Port (in): _mFeuQCSaEe2ZkqwwGIJVRw - slope
+            Port (in): _10cPkCScEe2NCYuc8M5wLg - g
+            Port (out): _37xIcCScEe2NCYuc8M5wLg - force
+          Constraints:
+             force = m * g * math.sin(slope)
+     <class 'source.classes.UML.uml_class.Class'>: Wheel Speed
+          Parameters:
+            Port (in): _t87rUCSdEe2NCYuc8M5wLg - vehicle_speed
+            Port (in): _wveEYCSdEe2NCYuc8M5wLg - wheel_rwd
+            Port (out): _zfaccCSdEe2NCYuc8M5wLg - wheel_speed
+          Constraints:
+             wheel_speed = vehicle_speed/wheel_rwd
+     <class 'source.classes.UML.uml_class.Class'>: Wheel
 
 Transmission System
 
   Attributes:
-    Port (in): _MwuFYOECEeyXPMXG3lFeMw - wheelSpeed
-    Port (out): _SOWywOECEeyXPMXG3lFeMw - transmissionTorque
-    Port (in): _CB4HoOEDEeyXPMXG3lFeMw - pedalPosition
-    Port (in): _IPReAOEDEeyXPMXG3lFeMw - currentGear
-    Port (out): _gHBVQOEOEeyXPMXG3lFeMw - driveGear
-
-  Connectors:
-    _DzR6wNyYEeyZdrCSZvBi5g: _hWzHgNZMEeyztMSLcHqD0Q
-    _hWzHgNZMEeyztMSLcHqD0Q: _DzR6wNyYEeyZdrCSZvBi5g
-    _FJDa4NyYEeyZdrCSZvBi5g: _duN3QNZMEeyztMSLcHqD0Q
-    _duN3QNZMEeyztMSLcHqD0Q: _FJDa4NyYEeyZdrCSZvBi5g
-    _CB4HoOEDEeyXPMXG3lFeMw: _U6mgsNybEeyZdrCSZvBi5g
-    _U6mgsNybEeyZdrCSZvBi5g: _CB4HoOEDEeyXPMXG3lFeMw
-    _do4AMOEAEeyXPMXG3lFeMw: _W9dzgNyfEeyZdrCSZvBi5g
-    _2AmGoNyaEeyZdrCSZvBi5g: _do4AMOEAEeyXPMXG3lFeMw
-    _MwuFYOECEeyXPMXG3lFeMw: _SM6TMOEAEeyXPMXG3lFeMw
-    _SM6TMOEAEeyXPMXG3lFeMw: _MwuFYOECEeyXPMXG3lFeMw
-    _IPReAOEDEeyXPMXG3lFeMw: _EiPJQNZHEeyztMSLcHqD0Q
-    _EiPJQNZHEeyztMSLcHqD0Q: _IPReAOEDEeyXPMXG3lFeMw
-    _W9dzgNyfEeyZdrCSZvBi5g: _do4AMOEAEeyXPMXG3lFeMw
-    _4mqvINZGEeyztMSLcHqD0Q: _8yvMcOXoEeyrmpnLSXdn1g
-    _gHBVQOEOEeyXPMXG3lFeMw: _4mqvINZGEeyztMSLcHqD0Q
-    _vlp48NyZEeyZdrCSZvBi5g: _MPvxMOEAEeyXPMXG3lFeMw
-    _MPvxMOEAEeyXPMXG3lFeMw: _vlp48NyZEeyZdrCSZvBi5g
-    _BShsANZHEeyztMSLcHqD0Q: _OunAUOEAEeyXPMXG3lFeMw
-    _OunAUOEAEeyXPMXG3lFeMw: _BShsANZHEeyztMSLcHqD0Q
-    _ZDAV8NyaEeyZdrCSZvBi5g: _J5QHQOLqEey2GPf_NkcRwg
-    _J5QHQOLqEey2GPf_NkcRwg: _ZDAV8NyaEeyZdrCSZvBi5g
-    _xsykkNyZEeyZdrCSZvBi5g: _SOWywOECEeyXPMXG3lFeMw
-    _SOWywOECEeyXPMXG3lFeMw: _xsykkNyZEeyZdrCSZvBi5g
-    _8yvMcOXoEeyrmpnLSXdn1g: _4mqvINZGEeyztMSLcHqD0Q
+    Port (in): _MwuFYOECEeyXPMXG3lFeMw - wheel_speed
+    Port (out): _SOWywOECEeyXPMXG3lFeMw - transmission_torque
+    Port (in): _CB4HoOEDEeyXPMXG3lFeMw - pedal_position
+    Port (in): _IPReAOEDEeyXPMXG3lFeMw - current_gear
+    Port (out): _gHBVQOEOEeyXPMXG3lFeMw - drive_gear
 
   Children Attributes:
-    _MPvxMOEAEeyXPMXG3lFeMw: Engine Current Speed (_DrZxkOEAEeyXPMXG3lFeMw)
-    _OunAUOEAEeyXPMXG3lFeMw: Engine Current Speed (_DrZxkOEAEeyXPMXG3lFeMw)
-    _SM6TMOEAEeyXPMXG3lFeMw: Engine Current Speed (_DrZxkOEAEeyXPMXG3lFeMw)
-    _do4AMOEAEeyXPMXG3lFeMw: Engine Current Speed (_DrZxkOEAEeyXPMXG3lFeMw)
+    _JyAOYCSWEe2ZkqwwGIJVRw: Engine Current Speed (_DrZxkOEAEeyXPMXG3lFeMw)
+    _mttvwCSWEe2ZkqwwGIJVRw: Engine Current Speed (_DrZxkOEAEeyXPMXG3lFeMw)
+    _1b40YCSWEe2ZkqwwGIJVRw: Engine Current Speed (_DrZxkOEAEeyXPMXG3lFeMw)
+    _88hUQCSWEe2ZkqwwGIJVRw: Engine Current Speed (_DrZxkOEAEeyXPMXG3lFeMw)
     _0pGf8NJtEeyKp65yHsgyfA: Engine (_lsNp4NJtEeyKp65yHsgyfA)
     _Znbz8NJuEeyKp65yHsgyfA: Engine (_lsNp4NJtEeyKp65yHsgyfA)
     _RBjT4NLJEeyKp65yHsgyfA: Engine (_lsNp4NJtEeyKp65yHsgyfA)
@@ -433,10 +491,16 @@ Transmission System
     _J5QHQOLqEey2GPf_NkcRwg: GearBox (_atvMsMQgEeye8sWuuOEGkw)
 
   Children:
-     <class 'source.uml_class.UMLClass'>: Engine Current Speed
-           engineSpeed = wheelSpeed * (30/math.pi) * i0 * gearRatio
-     <class 'source.uml_class.UMLClass'>: Engine
-     <class 'source.uml_class.UMLClass'>: GearBox
+     <class 'source.classes.UML.uml_class.Class'>: Engine Current Speed
+          Parameters:
+            Port (in): _JyAOYCSWEe2ZkqwwGIJVRw - i0
+            Port (in): _mttvwCSWEe2ZkqwwGIJVRw - wheel_speed
+            Port (in): _1b40YCSWEe2ZkqwwGIJVRw - gear_ratio
+            Port (out): _88hUQCSWEe2ZkqwwGIJVRw - engine_speed
+          Constraints:
+             engine_speed = wheel_speed * (30/math.pi) * i0 * gear_ratio
+     <class 'source.classes.UML.uml_class.Class'>: Engine
+     <class 'source.classes.UML.uml_class.Class'>: GearBox
 
 System
 
@@ -447,36 +511,10 @@ System
     Port (in): _ewu68OESEeyXPMXG3lFeMw - env_cd
     Port (in): _g-tOYOESEeyXPMXG3lFeMw - fa
     Port (in): _jEsDcOESEeyXPMXG3lFeMw - dT
-    Port (in): _llM4YOESEeyXPMXG3lFeMw - pedalPosition
-    Port (in): _nokeUOESEeyXPMXG3lFeMw - currentGear
-    Port (out): _qIuG4OESEeyXPMXG3lFeMw - vehicleSpeed
-    Port (out): _sM7aUOESEeyXPMXG3lFeMw - driveGear
-
-  Connectors:
-    _g-tOYOESEeyXPMXG3lFeMw: _ALG3UOATEey1V-BUgsLF0Q
-    _ALG3UOATEey1V-BUgsLF0Q: _g-tOYOESEeyXPMXG3lFeMw
-    _ewu68OESEeyXPMXG3lFeMw: _cI2KAOASEey1V-BUgsLF0Q
-    _cI2KAOASEey1V-BUgsLF0Q: _ewu68OESEeyXPMXG3lFeMw
-    _bq_SAOESEeyXPMXG3lFeMw: _WckjsOASEey1V-BUgsLF0Q
-    _WckjsOASEey1V-BUgsLF0Q: _bq_SAOESEeyXPMXG3lFeMw
-    _ZCSxcOESEeyXPMXG3lFeMw: _krnLAN-_EeyQAoCiBoOCcw
-    _krnLAN-_EeyQAoCiBoOCcw: _ZCSxcOESEeyXPMXG3lFeMw
-    _WKF1QOESEeyXPMXG3lFeMw: _lBF9sN-9EeyQAoCiBoOCcw
-    _lBF9sN-9EeyQAoCiBoOCcw: _WKF1QOESEeyXPMXG3lFeMw
-    _jEsDcOESEeyXPMXG3lFeMw: _JzidsN1AEeyB6oChl77ysw
-    _JzidsN1AEeyB6oChl77ysw: _jEsDcOESEeyXPMXG3lFeMw
-    _UGL-8N_BEeyQAoCiBoOCcw: _qIuG4OESEeyXPMXG3lFeMw
-    _qIuG4OESEeyXPMXG3lFeMw: _UGL-8N_BEeyQAoCiBoOCcw
-    _SOWywOECEeyXPMXG3lFeMw: _4bG2YOBtEeyqBLJ1Eszaaw
-    _4bG2YOBtEeyqBLJ1Eszaaw: _SOWywOECEeyXPMXG3lFeMw
-    _gHBVQOEOEeyXPMXG3lFeMw: _sM7aUOESEeyXPMXG3lFeMw
-    _sM7aUOESEeyXPMXG3lFeMw: _gHBVQOEOEeyXPMXG3lFeMw
-    _llM4YOESEeyXPMXG3lFeMw: _CB4HoOEDEeyXPMXG3lFeMw
-    _CB4HoOEDEeyXPMXG3lFeMw: _llM4YOESEeyXPMXG3lFeMw
-    _nokeUOESEeyXPMXG3lFeMw: _IPReAOEDEeyXPMXG3lFeMw
-    _IPReAOEDEeyXPMXG3lFeMw: _nokeUOESEeyXPMXG3lFeMw
-    _xi-HcOK-Eey2GPf_NkcRwg: _MwuFYOECEeyXPMXG3lFeMw
-    _MwuFYOECEeyXPMXG3lFeMw: _xi-HcOK-Eey2GPf_NkcRwg
+    Port (in): _llM4YOESEeyXPMXG3lFeMw - pedal_position
+    Port (in): _nokeUOESEeyXPMXG3lFeMw - current_gear
+    Port (out): _qIuG4OESEeyXPMXG3lFeMw - vehicle_speed
+    Port (out): _sM7aUOESEeyXPMXG3lFeMw - drive_gear
 
   Children Attributes:
     _1DvM0N-7EeyBKe45X3175g: Vehicle Simulator (_S-p3wNyjEeyZdrCSZvBi5g)
@@ -500,6 +538,6 @@ System
     _gHBVQOEOEeyXPMXG3lFeMw: Transmission System (_XGaswOAkEeyC6I-5TDX_3g)
 
   Children:
-     <class 'source.uml_class.UMLClass'>: Vehicle Simulator
-     <class 'source.uml_class.UMLClass'>: Transmission System
+     <class 'source.classes.UML.uml_class.Class'>: Vehicle Simulator
+     <class 'source.classes.UML.uml_class.Class'>: Transmission System
 

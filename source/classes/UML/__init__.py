@@ -24,3 +24,4 @@ from .pseudo_state import PseudoState
 from .state_entry_behavior import StateEntryBehavior
 
 from .uml_class import Class, ClassType
+from .information_flow import InformationFlow
