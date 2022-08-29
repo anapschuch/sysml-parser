@@ -18,9 +18,9 @@ class StateMachine(Basic):
             raise Exception("Unexpected child for UMLStateMachine: ", type(child))
 
     def print(self, indentation):
-        print(' '*indentation, "State Machine: ", self.name, sep="")
+        print(' ' * indentation, "State Machine: ", self.name, sep="")
         for region in self.regions:
-            region.print(indentation+2)
+            region.print(indentation + 2)
 
 
 class Region(Basic):
@@ -33,7 +33,10 @@ class Region(Basic):
 
     def add_children(self, child):
         if type(child) is Transition:
-            self.transitions[child.source] = child
+            if child.source in self.transitions:
+                self.transitions[child.source].append(child)
+            else:
+                self.transitions[child.source] = [child]
         elif type(child) is State:
             self.states[child.xmi_id] = child
         elif type(child) is PseudoState:

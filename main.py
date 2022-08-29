@@ -1,5 +1,7 @@
 import os
 import shutil
+import plantuml
+from sismic.io import import_from_yaml, export_to_plantuml
 
 from source import *
 
@@ -83,11 +85,11 @@ def generate_constraint_code(constraint_element):
 
     constraint_gen.add_init_mode(properties, function_calls)
 
-    def replace_identifier(matchobj):
-        if matchobj[0] in constraint_element.attribute_names:
-            return f'self.attrs[\'{matchobj[0]}\']'
+    def replace_identifier(match_obj):
+        if match_obj[0] in constraint_element.attribute_names:
+            return f'self.attrs[\'{match_obj[0]}\']'
         else:
-            return matchobj[0]
+            return match_obj[0]
 
     specifications = []
     for c in constraint_element.constraints:
@@ -162,7 +164,21 @@ def generate_output_files():
 
     for class_elem in parser.blocks:
         class_name_file = convert_to_file_name(class_elem.name)
-        f = open(output_folder_path + "{name}.py".format(name=class_name_file), "x")
+
+        if class_elem.state_machine is not None:
+            f = open(output_folder_path + f"{class_name_file}.yaml", "x")
+            state_machine_code_gen = StateMachineGenerator()
+            state_machine_code_gen.create_state_chart(class_elem.state_machine)
+            f.write(state_machine_code_gen.code)
+            f.close()
+
+            f = open(output_folder_path + f"{class_name_file}.PNG", "wb")
+            statechart = import_from_yaml(state_machine_code_gen.code)
+
+            f.write(plant_uml_server.processes(export_to_plantuml(statechart)))
+            f.close()
+
+        f = open(output_folder_path + f"{class_name_file}.py", "x")
 
         gen = Generator()
         class_gen = ClassGenerator()
@@ -197,6 +213,8 @@ def generate_output_files():
 
 
 if __name__ == '__main__':
+    plant_uml_server = plantuml.PlantUML(url='http://www.plantuml.com/plantuml/img/')
+
     parser = SysMLParser('examples/TransmissionSystem.uml')
     root = parser.root
 
