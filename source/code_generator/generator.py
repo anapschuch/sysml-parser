@@ -15,7 +15,7 @@ class Generator:
         return '\n\n'.join([imports, classes])
 
 
-class ClassGenerator:
+class CodeGenerator:
     def __init__(self, level=0, indentation='    '):
         self.indentation = indentation
         self.level = level

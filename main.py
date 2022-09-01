@@ -1,6 +1,7 @@
 import os
 import shutil
 import plantuml
+import sys
 from sismic.io import import_from_yaml, export_to_plantuml
 
 from source import *
@@ -18,17 +19,14 @@ class Block:\n\
         self.attrs[name] = value\n\n\
     def add_port(self, port_id, name): \n\
         self.ids[port_id] = name \n\n\
-    def set_port_value(self, port_id, port_value): \n\
-        if port_id not in self.ids: \n\
-            raise Exception(\"Unexpected port_id: \", port_id) \n\
-        self.attrs[self.ids[port_id]] = port_value \n\n\
-    def get_output_port(self, port_id): \n\
-        if port_id not in self.ids: \n\
-            raise Exception(\"Unexpected port_id: \", port_id) \n\
-        port_name = self.ids[port_id] \n\
+    def set_port_value(self, port_name, port_value): \n\
+        self.attrs[port_name] = port_value \n\n\
+    def get_output_port(self, port_name): \n\
         if port_name not in self.attrs: \n\
             raise Exception(f\"Value not found for port '{port_name}'\") \n\
-        return self.attrs[self.ids[port_id]]\n"
+        return self.attrs[self.ids[port_id]]\n\
+    def update(): \n\
+        pass \n"
 
 
 def print_blocks_info():
@@ -68,7 +66,7 @@ def print_blocks_info():
 
 
 def generate_constraint_code(constraint_element):
-    constraint_gen = ClassGenerator()
+    constraint_gen = CodeGenerator()
     constraint_gen.create_class(constraint_element.name.replace(' ', ''), 'Block')
 
     properties = {}
@@ -124,14 +122,14 @@ def aux_update_element_order(class_element, order_dict, current_order, element_i
         if type(inner_port) is Port and inner_port.direction == 'out':
             for attr in inner_class.attributes.values():
                 if type(attr) is Port and attr.direction == 'in':
-                    aux_update_element_order(class_element, order_dict, current_order+1, attr.xmi_id, visited)
+                    aux_update_element_order(class_element, order_dict, current_order + 1, attr.xmi_id, visited)
 
     connectors = parser.items_flow_reversed
     if element_id not in connectors:
         return
 
     for next_element_id in connectors[element_id]:
-        aux_update_element_order(class_element, order_dict, current_order+1, next_element_id, visited)
+        aux_update_element_order(class_element, order_dict, current_order + 1, next_element_id, visited)
 
 
 def generate_update_elements_order(class_element):
@@ -151,16 +149,45 @@ def generate_update_elements_order(class_element):
     return blocks_order
 
 
-def generate_output_files():
+def generate_main_file(block):
+    f = open('./output/main.py', "x")
+    gen = CodeGenerator()
+    file_name = convert_to_file_name(block.name)
+    class_name = block.name.replace(' ', '')
+    gen.add_code(f'from {file_name} import {class_name}\n\n')
+    gen.add_code('if __name__ == \'__main__\':\n')
+    gen.indent()
+
+    block_var_name = file_name
+    gen.add_code(f'{block_var_name} = {class_name}()\n\n')
+    gen.add_code('# set the port values below\n')
+    for attr in block.attributes.values():
+        if type(attr) is Port and attr.direction == 'in':
+            gen.add_code(f'{block_var_name}.set_port_value(\'{attr.name}\', 0)\n')
+
+    gen.add_code('\n')
+    gen.add_code(f'{block_var_name}.update()\n\n')
+
+    for attr in block.attributes.values():
+        if type(attr) is Port and attr.direction == 'out':
+            gen.add_code(f'print({block_var_name}.get_output_port(\'{attr.name}\'))\n')
+
+    f.write(gen.get_code())
+    f.close()
+
+
+def generate_output_files(block):
     output_folder_path = "./output/"
     if os.path.exists(output_folder_path):
         shutil.rmtree(output_folder_path)
     os.mkdir(output_folder_path)
 
-    os.mkdir(output_folder_path+'utils/')
+    os.mkdir(output_folder_path + 'utils/')
     f = open(output_folder_path + 'utils/helpers.py', "x")
     f.write(helper_file_content)
     f.close()
+
+    generate_main_file(block)
 
     for class_elem in parser.blocks:
         class_name_file = convert_to_file_name(class_elem.name)
@@ -181,7 +208,7 @@ def generate_output_files():
         f = open(output_folder_path + f"{class_name_file}.py", "x")
 
         gen = Generator()
-        class_gen = ClassGenerator()
+        class_gen = CodeGenerator()
         class_gen.create_class(class_elem.name.replace(' ', ''), 'Block')
 
         properties = {}
@@ -213,12 +240,22 @@ def generate_output_files():
 
 
 if __name__ == '__main__':
-    plant_uml_server = plantuml.PlantUML(url='http://www.plantuml.com/plantuml/img/')
+    args = sys.argv[1:]
+    if len(args) != 2:
+        exit("Usage: main.py [file] [block]")
 
-    parser = SysMLParser('examples/TransmissionSystem.uml')
+    plant_uml_server = plantuml.PlantUML(url='http://www.plantuml.com/plantuml/img/')
+    parser = SysMLParser(args[0])
     root = parser.root
 
     for node in root:
         child_parsed = parser.parse_tag(node)
 
-    generate_output_files()
+    block = None
+    for b in parser.blocks:
+        if b.name == args[1]:
+            block = b
+
+    if block is None:
+        exit("Block '" + args[1] + "' not found")
+    generate_output_files(block)
