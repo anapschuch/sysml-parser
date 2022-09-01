@@ -56,6 +56,7 @@ class CodeGenerator:
     def add_method(self, name, code):
         self.add_code(f'def {name}:\n')
         self.indent()
+        code = code.replace('\n', '\n' + self.indentation * self.level)
         self.add_code(code)
         self.dedent()
         self.add_code('\n')

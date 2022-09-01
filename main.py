@@ -24,8 +24,10 @@ class Block:\n\
     def get_output_port(self, port_name): \n\
         if port_name not in self.attrs: \n\
             raise Exception(f\"Value not found for port '{port_name}'\") \n\
-        return self.attrs[self.ids[port_id]]\n\
-    def update(): \n\
+        return self.attrs[port_name]\n\n\
+    def update(self): \n\
+        pass \n\n\
+    def update_state_machine(self): \n\
         pass \n"
 
 
@@ -176,6 +178,30 @@ def generate_main_file(block):
     f.close()
 
 
+def get_state_machine_events(state_machine, events):
+    for region in state_machine.regions:
+        for transitions in region.transitions.values():
+            for single_transition in transitions:
+                if single_transition.trigger is not None:
+                    event = single_transition.trigger.event
+                    events[event.name] = event.change_expression['body']
+
+        for state in region.states.values():
+            if type(state) is State and state.state_machine is not None:
+                get_state_machine_events(state.state_machine, events)
+
+
+def get_state_machine_events_params(events):
+    params_set = set()
+    for event_expression in events.values():
+        params_expression = re.findall(r'[a-zA-Z_][a-zA-Z0-9_]*', event_expression)
+        for param in params_expression:
+            if param not in params_set:
+                params_set.add(param)
+
+    return params_set
+
+
 def generate_output_files(block):
     output_folder_path = "./output/"
     if os.path.exists(output_folder_path):
@@ -191,19 +217,6 @@ def generate_output_files(block):
 
     for class_elem in parser.blocks:
         class_name_file = convert_to_file_name(class_elem.name)
-
-        if class_elem.state_machine is not None:
-            f = open(output_folder_path + f"{class_name_file}.yaml", "x")
-            state_machine_code_gen = StateMachineGenerator()
-            state_machine_code_gen.create_state_chart(class_elem.state_machine)
-            f.write(state_machine_code_gen.code)
-            f.close()
-
-            f = open(output_folder_path + f"{class_name_file}.PNG", "wb")
-            statechart = import_from_yaml(state_machine_code_gen.code)
-
-            f.write(plant_uml_server.processes(export_to_plantuml(statechart)))
-            f.close()
 
         f = open(output_folder_path + f"{class_name_file}.py", "x")
 
@@ -229,11 +242,53 @@ def generate_output_files(block):
             if inner_class.type == ClassType.CONSTRAINT_BLOCK:
                 gen.add_class(generate_constraint_code(inner_class))
 
+        state_machine_code_gen = None
+        if class_elem.state_machine is not None:
+            f_state_machine = open(output_folder_path + f"{class_name_file}.yaml", "x")
+            state_machine_code_gen = StateMachineGenerator()
+            state_machine_code_gen.create_state_chart(class_elem.state_machine)
+            f_state_machine.write(state_machine_code_gen.code)
+            f_state_machine.close()
+
+            f_state_machine = open(output_folder_path + f"{class_name_file}.PNG", "wb")
+            statechart = import_from_yaml(state_machine_code_gen.code)
+
+            events = {}
+            get_state_machine_events(class_elem.state_machine, events)
+
+            gen.add_import('sismic.io', 'import_from_yaml')
+            gen.add_import('sismic.interpreter', 'Interpreter')
+            sm_class_var = f'{class_name_file}_sm'
+            properties[sm_class_var] = f'Interpreter(import_from_yaml(' \
+                                                  f'filepath=\'./{class_name_file}.yaml\'))'
+
+            state_machine_code_gen = CodeGenerator()
+
+            def replace_identifier(match_obj):
+                if match_obj[0] in class_elem.attribute_names:
+                    return f'self.attrs[\'{match_obj[0]}\']'
+                else:
+                    return match_obj[0]
+
+            for event_name, event_code in events.items():
+                code = re.sub(r'[a-zA-Z_][a-zA-Z0-9_]*', replace_identifier, event_code)
+
+                state_machine_code_gen.add_code(f'if {code}:\n')
+                state_machine_code_gen.indent()
+                state_machine_code_gen.add_code(f'self.{sm_class_var}.queue(\'{event_name}\')\n')
+                state_machine_code_gen.dedent()
+            state_machine_code_gen.add_code(f'self.{sm_class_var}.execute()')
+
+            f_state_machine.write(plant_uml_server.processes(export_to_plantuml(statechart)))
+            f_state_machine.close()
+
         update_order = generate_update_elements_order(class_elem)
         update_order_sorted = dict(sorted(update_order.items(), key=lambda item: item[1], reverse=True))
         properties['update_order'] = update_order_sorted
 
         class_gen.add_init_mode(properties, function_calls)
+        if state_machine_code_gen is not None:
+            class_gen.add_method('update_state_machine(self)', state_machine_code_gen.code)
         gen.add_class(class_gen.get_code())
         f.write(gen.get_code())
         f.close()

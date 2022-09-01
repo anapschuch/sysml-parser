@@ -1004,7 +1004,9 @@ current_gear_ratio_param = 0.67</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_HmomYCcwEe2QzKLBqsARlg" name="ItemFlow86" informationSource="_VuHoEN06EeyZdrCSZvBi5g" informationTarget="_SgOnACY8Ee2FC6XF101YWg">
         <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_p03U0CcxEe2QzKLBqsARlg" name="ItemFlow86" informationSource="_xi-HcOK-Eey2GPf_NkcRwg" informationTarget="_MwuFYOECEeyXPMXG3lFeMw"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_p03U0CcxEe2QzKLBqsARlg" name="ItemFlow86" informationSource="_xi-HcOK-Eey2GPf_NkcRwg" informationTarget="_MwuFYOECEeyXPMXG3lFeMw">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_lueqQMW1EeyyYa73KIbzUQ" name="usecases">
       <packagedElement xmi:type="uml:Actor" xmi:id="_5xJR4MW2EeyyYa73KIbzUQ" name="Driver"/>
@@ -1116,7 +1118,7 @@ current_gear_ratio_param = 0.67</body>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_OIAPIOXpEeyrmpnLSXdn1g" name="driveGearChanged">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_ST3yoOXpEeyrmpnLSXdn1g">
           <language>C</language>
-          <body>drive_gear !== drive_gear_param</body>
+          <body>drive_gear != drive_gear_param</body>
         </changeExpression>
       </packagedElement>
     </packagedElement>
