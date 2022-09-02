@@ -22,7 +22,7 @@ current_gear_ratio_param  _Hg3yUN_DEeyQAoCiBoOCcw ----> gear_ratio  _lldtQCShEe2
 current_drive_gear_param  _FTvMYN_DEeyQAoCiBoOCcw ----> current_drive_gear  _4mqvINZGEeyztMSLcHqD0Q
 i0_param  _VtQ_kN_DEeyQAoCiBoOCcw ----> i0  _vlp48NyZEeyZdrCSZvBi5g
 i0_param  _VtQ_kN_DEeyQAoCiBoOCcw ----> i0  _iK4cwCShEe2NCYuc8M5wLg
-gearbox_torque  _90KO8NfLEeyKDukxCNI3pQ _t_0qcCShEe2NCYuc8M5wLg ----> transmission_torque  _xsykkNyZEeyZdrCSZvBi5g
+gearbox_torque  _t_0qcCShEe2NCYuc8M5wLg ----> transmission_torque  _xsykkNyZEeyZdrCSZvBi5g
 engine_torque  _J5QHQOLqEey2GPf_NkcRwg ----> engine_torque  _obll0CShEe2NCYuc8M5wLg
 eff_param  _Xv3JcN_DEeyQAoCiBoOCcw ----> eff  _j9wvoCShEe2NCYuc8M5wLg
 dT  _jEsDcOESEeyXPMXG3lFeMw ----> dT  _JzidsN1AEeyB6oChl77ysw
@@ -34,25 +34,25 @@ fa  _g-tOYOESEeyXPMXG3lFeMw ----> fa  _ALG3UOATEey1V-BUgsLF0Q
 pedal_position  _llM4YOESEeyXPMXG3lFeMw ----> pedal_position  _CB4HoOEDEeyXPMXG3lFeMw
 current_gear  _nokeUOESEeyXPMXG3lFeMw ----> current_gear  _IPReAOEDEeyXPMXG3lFeMw
 vehicle_speed  _UGL-8N_BEeyQAoCiBoOCcw ----> vehicle_speed  _qIuG4OESEeyXPMXG3lFeMw
-wheel_speed  _XGaswOAkEeyC6I-5TDX_3g _MwuFYOECEeyXPMXG3lFeMw ----> wheel_speed  _mttvwCSWEe2ZkqwwGIJVRw
-i0  _atvMsMQgEeye8sWuuOEGkw _vlp48NyZEeyZdrCSZvBi5g ----> i0  _JyAOYCSWEe2ZkqwwGIJVRw
-current_gear_ratio  _atvMsMQgEeye8sWuuOEGkw _BShsANZHEeyztMSLcHqD0Q ----> gear_ratio  _1b40YCSWEe2ZkqwwGIJVRw
-engine_torque  _lsNp4NJtEeyKp65yHsgyfA _ZDAV8NyaEeyZdrCSZvBi5g ----> engine_torque  _J5QHQOLqEey2GPf_NkcRwg
-n_min  _lsNp4NJtEeyKp65yHsgyfA _FJDa4NyYEeyZdrCSZvBi5g ----> n_min  _duN3QNZMEeyztMSLcHqD0Q
-n_max  _lsNp4NJtEeyKp65yHsgyfA _DzR6wNyYEeyZdrCSZvBi5g ----> n_max  _hWzHgNZMEeyztMSLcHqD0Q
-engine_speed  _DrZxkOEAEeyXPMXG3lFeMw _88hUQCSWEe2ZkqwwGIJVRw ----> current_engine_speed  _W9dzgNyfEeyZdrCSZvBi5g
-engine_speed  _DrZxkOEAEeyXPMXG3lFeMw _88hUQCSWEe2ZkqwwGIJVRw ----> engine_speed  _2AmGoNyaEeyZdrCSZvBi5g
-current_drive_gear  _atvMsMQgEeye8sWuuOEGkw _4mqvINZGEeyztMSLcHqD0Q ----> drive_gear  _gHBVQOEOEeyXPMXG3lFeMw
-current_drive_gear  _atvMsMQgEeye8sWuuOEGkw _4mqvINZGEeyztMSLcHqD0Q ----> drive_gear  _8yvMcOXoEeyrmpnLSXdn1g
-transmission_torque  _atvMsMQgEeye8sWuuOEGkw _xsykkNyZEeyZdrCSZvBi5g ----> transmission_torque  _SOWywOECEeyXPMXG3lFeMw
+wheel_speed  _MwuFYOECEeyXPMXG3lFeMw ----> wheel_speed  _mttvwCSWEe2ZkqwwGIJVRw
+i0  _vlp48NyZEeyZdrCSZvBi5g ----> i0  _JyAOYCSWEe2ZkqwwGIJVRw
+current_gear_ratio  _BShsANZHEeyztMSLcHqD0Q ----> gear_ratio  _1b40YCSWEe2ZkqwwGIJVRw
+engine_torque  _ZDAV8NyaEeyZdrCSZvBi5g ----> engine_torque  _J5QHQOLqEey2GPf_NkcRwg
+n_min  _FJDa4NyYEeyZdrCSZvBi5g ----> n_min  _duN3QNZMEeyztMSLcHqD0Q
+n_max  _DzR6wNyYEeyZdrCSZvBi5g ----> n_max  _hWzHgNZMEeyztMSLcHqD0Q
+engine_speed  _88hUQCSWEe2ZkqwwGIJVRw ----> current_engine_speed  _W9dzgNyfEeyZdrCSZvBi5g
+engine_speed  _88hUQCSWEe2ZkqwwGIJVRw ----> engine_speed  _2AmGoNyaEeyZdrCSZvBi5g
+current_drive_gear  _4mqvINZGEeyztMSLcHqD0Q ----> drive_gear  _gHBVQOEOEeyXPMXG3lFeMw
+current_drive_gear  _4mqvINZGEeyztMSLcHqD0Q ----> drive_gear  _8yvMcOXoEeyrmpnLSXdn1g
+transmission_torque  _xsykkNyZEeyZdrCSZvBi5g ----> transmission_torque  _SOWywOECEeyXPMXG3lFeMw
 pedal_position  _CB4HoOEDEeyXPMXG3lFeMw ----> pedalPosition  _U6mgsNybEeyZdrCSZvBi5g
-current_gear  _XGaswOAkEeyC6I-5TDX_3g _IPReAOEDEeyXPMXG3lFeMw ----> current_gear  _EiPJQNZHEeyztMSLcHqD0Q
+current_gear  _IPReAOEDEeyXPMXG3lFeMw ----> current_gear  _EiPJQNZHEeyztMSLcHqD0Q
 transmission_torque  _SOWywOECEeyXPMXG3lFeMw ----> gearbox_torque  _4bG2YOBtEeyqBLJ1Eszaaw
-System  _xi-HcOK-Eey2GPf_NkcRwg _hmhRwOEREeyXPMXG3lFeMw ----> wheel_speed  _MwuFYOECEeyXPMXG3lFeMw
 drive_gear  _gHBVQOEOEeyXPMXG3lFeMw ----> drive_gear  _sM7aUOESEeyXPMXG3lFeMw
 gearbox_torque  _4bG2YOBtEeyqBLJ1Eszaaw ----> gbx_torque  _eIOxkCSfEe2NCYuc8M5wLg
 dT  _JzidsN1AEeyB6oChl77ysw ----> dt  _cPbc4CSfEe2NCYuc8M5wLg
-rwd  _E14GANJtEeyKp65yHsgyfA _Z5SIkNyYEeyZdrCSZvBi5g ----> rwd  _aq7kQCSfEe2NCYuc8M5wLg
+rwd  _Z5SIkNyYEeyZdrCSZvBi5g ----> rwd  _aq7kQCSfEe2NCYuc8M5wLg
+rwd  _Z5SIkNyYEeyZdrCSZvBi5g ----> wheel_rwd  _wveEYCSdEe2NCYuc8M5wLg
 max_friction  _y2N5ACSeEe2NCYuc8M5wLg ----> friction_force_max  _YewnoCSfEe2NCYuc8M5wLg
 env_cr  _lBF9sN-9EeyQAoCiBoOCcw ----> cr  _j2iR0CSXEe2ZkqwwGIJVRw
 env_slope  _krnLAN-_EeyQAoCiBoOCcw ----> slope  _8DJm0CSXEe2ZkqwwGIJVRw
@@ -79,11 +79,11 @@ mass_fm  _1DvM0N-7EeyBKe45X3175g ----> fm  _Jl-SoCSYEe2ZkqwwGIJVRw
 mass_driver  _FVqjMN-8EeyBKe45X3175g ----> mass_driver  _pQKzgCSYEe2ZkqwwGIJVRw
 mass_curb  _Kr2kwN-8EeyBKe45X3175g ----> mass_curb  _0WzJsCSYEe2ZkqwwGIJVRw
 speed_out  _STOScCSfEe2NCYuc8M5wLg ----> vehicle_speed_param  _X7-4oOBtEeyz97SW6jXbYw
-rwd  _Z5SIkNyYEeyZdrCSZvBi5g ----> wheel_rwd  _wveEYCSdEe2NCYuc8M5wLg
-resistance  _uhMhkNfTEeyKDukxCNI3pQ _QOg6oCSdEe2NCYuc8M5wLg ----> force_balance  _UbK2YCSfEe2NCYuc8M5wLg
+resistance  _QOg6oCSdEe2NCYuc8M5wLg ----> force_balance  _UbK2YCSfEe2NCYuc8M5wLg
 force  _thc38CSXEe2ZkqwwGIJVRw ----> load  _SHaV8CSdEe2NCYuc8M5wLg
 wheel_speed  _zfaccCSdEe2NCYuc8M5wLg ----> wheel_speed  _xi-HcOK-Eey2GPf_NkcRwg
 d  _VuHoEN06EeyZdrCSZvBi5g ----> d  _SgOnACY8Ee2FC6XF101YWg
+wheel_speed  _xi-HcOK-Eey2GPf_NkcRwg ----> wheel_speed  _MwuFYOECEeyXPMXG3lFeMw
 
 ********* Blocks *********
 GearBox
@@ -155,16 +155,28 @@ GearBox
            _k1YhYMQ8Eeye8sWuuOEGkw -> _XbYaYMQ8Eeye8sWuuOEGkw
            _XbYaYMQ8Eeye8sWuuOEGkw -> _aAGZ4MQ8Eeye8sWuuOEGkw
              current_engine_speed == n_max
+           _aAGZ4MQ8Eeye8sWuuOEGkw -> _XbYaYMQ8Eeye8sWuuOEGkw
+             current_engine_speed == n_min
            _aAGZ4MQ8Eeye8sWuuOEGkw -> _ahaXMMQ8Eeye8sWuuOEGkw
              current_engine_speed == n_max
+           _ahaXMMQ8Eeye8sWuuOEGkw -> _aAGZ4MQ8Eeye8sWuuOEGkw
+             current_engine_speed == n_min
            _ahaXMMQ8Eeye8sWuuOEGkw -> _a6AdYMQ8Eeye8sWuuOEGkw
              current_engine_speed == n_max
+           _a6AdYMQ8Eeye8sWuuOEGkw -> _ahaXMMQ8Eeye8sWuuOEGkw
+             current_engine_speed == n_min
            _a6AdYMQ8Eeye8sWuuOEGkw -> _bXayIMQ8Eeye8sWuuOEGkw
              current_engine_speed == n_max
+           _bXayIMQ8Eeye8sWuuOEGkw -> _a6AdYMQ8Eeye8sWuuOEGkw
+             current_engine_speed == n_min
            _bXayIMQ8Eeye8sWuuOEGkw -> _Ym2IYNJoEeyPM_J-D-wR-Q
              current_engine_speed == n_max
+           _Ym2IYNJoEeyPM_J-D-wR-Q -> _bXayIMQ8Eeye8sWuuOEGkw
+             current_engine_speed == n_min
            _Ym2IYNJoEeyPM_J-D-wR-Q -> _q1qCMNJoEeyPM_J-D-wR-Q
              current_engine_speed == n_min
+           _q1qCMNJoEeyPM_J-D-wR-Q -> _Ym2IYNJoEeyPM_J-D-wR-Q
+             current_engine_speed == n_max
            _q1qCMNJoEeyPM_J-D-wR-Q -> _FL2S0NJpEeyPM_J-D-wR-Q
              current_engine_speed == n_max
            _FL2S0NJpEeyPM_J-D-wR-Q -> _q1qCMNJoEeyPM_J-D-wR-Q
@@ -175,8 +187,12 @@ GearBox
      _2JLL4MTVEeyhtb6Vq-DBuQ -> _KlSAwMQzEeye8sWuuOEGkw
      _KlSAwMQzEeye8sWuuOEGkw -> _U7p-sMQzEeye8sWuuOEGkw
        current_gear == "R"
+     _U7p-sMQzEeye8sWuuOEGkw -> _e4rogMQzEeye8sWuuOEGkw
+       current_gear == "N"
      _U7p-sMQzEeye8sWuuOEGkw -> _KlSAwMQzEeye8sWuuOEGkw
        current_gear == "P"
+     _e4rogMQzEeye8sWuuOEGkw -> _U7p-sMQzEeye8sWuuOEGkw
+       current_gear == "R"
      _e4rogMQzEeye8sWuuOEGkw -> _81ZT4MQzEeye8sWuuOEGkw
        current_gear == "D"
      _81ZT4MQzEeye8sWuuOEGkw -> _e4rogMQzEeye8sWuuOEGkw
@@ -278,7 +294,7 @@ Engine
     Transitions: 
      _nSPLwOLwEeyMdeINNWNrGg -> _otawUOLwEeyMdeINNWNrGg
      _otawUOLwEeyMdeINNWNrGg -> _otawUOLwEeyMdeINNWNrGg
-       drive_gear !== drive_gear_param
+       drive_gear != drive_gear_param
 
   Children:
      <class 'source.classes.UML.uml_class.Class'>: Engine Current Torque

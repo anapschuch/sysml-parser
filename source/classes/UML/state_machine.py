@@ -56,8 +56,9 @@ class Region(Basic):
 
         if len(self.transitions) > 0:
             print("\n" + ' ' * indentation, "Transitions: ", sep="")
-            for trans in self.transitions.values():
-                trans.print(indentation)
+            for transitions in self.transitions.values():
+                for trans in transitions:
+                    trans.print(indentation)
 
 
 class State(Basic):

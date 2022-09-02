@@ -13,10 +13,13 @@ import numpy as np\n\n\n\
 class Block:\n\
     def __init__(self): \n\
         self.ids = {} \n\
-        self.attrs = {} \n\n\
+        self.attrs = {} \n\
+        self.inner_classes = {} \n\n\
     def add_property(self, property_id, name, value):\n\
         self.ids[property_id] = name\n\
         self.attrs[name] = value\n\n\
+    def add_inner_class(self, class_id, entity):\n\
+        self.inner_classes[class_id] = entity\n\n\
     def add_port(self, port_id, name): \n\
         self.ids[port_id] = name \n\n\
     def set_port_value(self, port_name, port_value): \n\
@@ -108,7 +111,8 @@ def generate_constraint_code(constraint_element):
     return constraint_gen.get_code()
 
 
-def aux_update_element_order(class_element, order_dict, current_order, element_id, visited):
+def aux_update_element_order(class_element, order_dict, current_order, element_id, visited,
+                             inner_classes_connectors, attr_connectors):
     if element_id in visited:
         return
 
@@ -118,27 +122,51 @@ def aux_update_element_order(class_element, order_dict, current_order, element_i
         order_dict[element_id] = current_order
     visited.append(element_id)
 
+    element_id_complete = element_id
     if element_id in class_element.children_attributes.keys():
         inner_class = class_element.children_attributes[element_id]
         inner_port = inner_class.attributes[element_id]
+        element_id_complete = f'{inner_class.xmi_id} {element_id}'
         if type(inner_port) is Port and inner_port.direction == 'out':
             for attr in inner_class.attributes.values():
                 if type(attr) is Port and attr.direction == 'in':
-                    aux_update_element_order(class_element, order_dict, current_order + 1, attr.xmi_id, visited)
+                    aux_update_element_order(class_element, order_dict, current_order + 1, attr.xmi_id, visited,
+                                             inner_classes_connectors, attr_connectors)
+    else:
+        element = parser.ids[element_id]
+        if type(element) is Port and element.direction == 'in':
+            return
 
     connectors = parser.items_flow_reversed
     if element_id not in connectors:
         return
 
     for next_element_id in connectors[element_id]:
-        aux_update_element_order(class_element, order_dict, current_order + 1, next_element_id, visited)
+        next_element_id_complete = next_element_id
+        if next_element_id in class_element.children_attributes.keys():
+            inner_class = class_element.children_attributes[next_element_id]
+            if inner_class.xmi_id not in inner_classes_connectors:
+                inner_classes_connectors[inner_class.xmi_id] = [[next_element_id_complete, element_id_complete]]
+            else:
+                inner_classes_connectors[inner_class.xmi_id].append([next_element_id_complete, element_id_complete])
+        else:
+            if next_element_id_complete not in attr_connectors:
+                attr_connectors[next_element_id_complete] = [element_id_complete]
+            else:
+                attr_connectors[next_element_id_complete].append(element_id_complete)
+
+        aux_update_element_order(class_element, order_dict, current_order + 1, next_element_id, visited,
+                                 inner_classes_connectors, attr_connectors)
 
 
 def generate_update_elements_order(class_element):
     order = {}
+    attr_connectors = {}
+    inner_classes_connectors = {}
     for attr in class_element.attributes.values():
         if type(attr) is Port and attr.direction == 'out':
-            aux_update_element_order(class_element, order, 0, attr.xmi_id, [])
+            aux_update_element_order(class_element, order, 0, attr.xmi_id, [],
+                                     inner_classes_connectors, attr_connectors)
 
     blocks_order = {}
     for item_id in order.keys():
@@ -148,7 +176,11 @@ def generate_update_elements_order(class_element):
                 blocks_order[inner_class.xmi_id] = order[item_id]
         else:
             blocks_order[item_id] = order[item_id]
-    return blocks_order
+    return {
+        'blocks_order': blocks_order,
+        'inner_classes_connectors': inner_classes_connectors,
+        'attr_connectors': attr_connectors
+        }
 
 
 def generate_main_file(block):
@@ -232,7 +264,7 @@ def generate_output_files(block):
             elif type(attr) is Property:
                 function_calls.append(f'self.add_property(\'{attr.xmi_id}\', \'{attr.name}\', {attr.default_value})\n')
 
-        for inner_class in class_elem.children.values():
+        for inner_class_id, inner_class in class_elem.children.items():
             if inner_class.type == ClassType.BLOCK:
                 file_name = convert_to_file_name(inner_class.name)
                 class_name = inner_class.name.replace(' ', '')
@@ -240,7 +272,9 @@ def generate_output_files(block):
                 properties[file_name] = class_name + '()'
 
             if inner_class.type == ClassType.CONSTRAINT_BLOCK:
+                inner_class_name = inner_class.name.replace(' ', '')
                 gen.add_class(generate_constraint_code(inner_class))
+                function_calls.append(f'self.add_inner_class(\'{inner_class_id}\', {inner_class_name}())\n')
 
         state_machine_code_gen = None
         if class_elem.state_machine is not None:
@@ -260,7 +294,7 @@ def generate_output_files(block):
             gen.add_import('sismic.interpreter', 'Interpreter')
             sm_class_var = f'{class_name_file}_sm'
             properties[sm_class_var] = f'Interpreter(import_from_yaml(' \
-                                                  f'filepath=\'./{class_name_file}.yaml\'))'
+                                       f'filepath=\'./{class_name_file}.yaml\'))'
 
             state_machine_code_gen = CodeGenerator()
 
@@ -282,9 +316,14 @@ def generate_output_files(block):
             f_state_machine.write(plant_uml_server.processes(export_to_plantuml(statechart)))
             f_state_machine.close()
 
-        update_order = generate_update_elements_order(class_elem)
+        aux = generate_update_elements_order(class_elem)
+        update_order = aux['blocks_order']
+        inner_classes_connectors = aux['inner_classes_connectors']
+        attr_connectors = aux['attr_connectors']
         update_order_sorted = dict(sorted(update_order.items(), key=lambda item: item[1], reverse=True))
         properties['update_order'] = update_order_sorted
+        properties['inner_classes_connectors'] = inner_classes_connectors
+        properties['attr_connectors'] = attr_connectors
 
         class_gen.add_init_mode(properties, function_calls)
         if state_machine_code_gen is not None:
