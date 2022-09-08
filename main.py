@@ -6,33 +6,6 @@ from sismic.io import import_from_yaml, export_to_plantuml
 
 from source import *
 
-helper_file_content = "\
-import math \n\
-from scipy.interpolate import * \n\
-import numpy as np\n\n\n\
-class Block:\n\
-    def __init__(self): \n\
-        self.ids = {} \n\
-        self.attrs = {} \n\
-        self.inner_classes = {} \n\n\
-    def add_property(self, property_id, name, value):\n\
-        self.ids[property_id] = name\n\
-        self.attrs[name] = value\n\n\
-    def add_inner_class(self, class_id, entity):\n\
-        self.inner_classes[class_id] = entity\n\n\
-    def add_port(self, port_id, name): \n\
-        self.ids[port_id] = name \n\n\
-    def set_port_value(self, port_name, port_value): \n\
-        self.attrs[port_name] = port_value \n\n\
-    def get_output_port(self, port_name): \n\
-        if port_name not in self.attrs: \n\
-            raise Exception(f\"Value not found for port '{port_name}'\") \n\
-        return self.attrs[port_name]\n\n\
-    def update(self): \n\
-        pass \n\n\
-    def update_state_machine(self): \n\
-        pass \n"
-
 
 def print_blocks_info():
     print("********* Items Flow *********")
@@ -72,16 +45,20 @@ def print_blocks_info():
 
 def generate_constraint_code(constraint_element):
     constraint_gen = CodeGenerator()
-    constraint_gen.create_class(constraint_element.name.replace(' ', ''), 'Block')
+    constraint_gen.create_class(constraint_element.name.replace(' ', ''), 'ConstraintBlock')
 
     properties = {}
     ports = []
+    input_ports = []
     for attr in constraint_element.attributes.values():
         if type(attr) is Port:
             ports.append(attr)
+            if attr.direction == 'in':
+                input_ports.append(attr.xmi_id)
         elif type(attr) is Property:
             properties[attr.name] = attr.default_value
 
+    properties['inputs'] = input_ports
     function_calls = []
     for p in ports:
         function_calls.append(f'self.add_port(\'{p.xmi_id}\', \'{p.name}\')\n')
@@ -101,8 +78,12 @@ def generate_constraint_code(constraint_element):
         specifications.append(spec)
 
     if len(specifications) > 0:
-        constraint_gen.add_code('def update_constraint_value(self):\n')
+        constraint_gen.add_code('def update(self):\n')
         constraint_gen.indent()
+        constraint_gen.add_code('if not self.check_if_all_values_are_set():\n')
+        constraint_gen.indent()
+        constraint_gen.add_code('return\n\n')
+        constraint_gen.dedent()
         for spec in specifications:
             constraint_gen.add_code(spec + '\n')
         constraint_gen.add_code('\n')
@@ -113,13 +94,13 @@ def generate_constraint_code(constraint_element):
 
 def aux_update_element_order(class_element, order_dict, current_order, element_id, visited,
                              inner_classes_connectors, attr_connectors):
-    if element_id in visited:
-        return
-
     if element_id in order_dict:
         order_dict[element_id] = max(current_order, order_dict[element_id])
     else:
         order_dict[element_id] = current_order
+
+    if element_id in visited:
+        return
     visited.append(element_id)
 
     element_id_complete = element_id
@@ -130,8 +111,10 @@ def aux_update_element_order(class_element, order_dict, current_order, element_i
         if type(inner_port) is Port and inner_port.direction == 'out':
             for attr in inner_class.attributes.values():
                 if type(attr) is Port and attr.direction == 'in':
-                    aux_update_element_order(class_element, order_dict, current_order + 1, attr.xmi_id, visited,
+                    aux_update_element_order(class_element, order_dict, current_order + 1, attr.xmi_id, visited.copy(),
                                              inner_classes_connectors, attr_connectors)
+            return
+
     else:
         element = parser.ids[element_id]
         if type(element) is Port and element.direction == 'in':
@@ -147,15 +130,15 @@ def aux_update_element_order(class_element, order_dict, current_order, element_i
             inner_class = class_element.children_attributes[next_element_id]
             if inner_class.xmi_id not in inner_classes_connectors:
                 inner_classes_connectors[inner_class.xmi_id] = [[next_element_id_complete, element_id_complete]]
-            else:
+            elif [next_element_id_complete, element_id_complete] not in inner_classes_connectors[inner_class.xmi_id]:
                 inner_classes_connectors[inner_class.xmi_id].append([next_element_id_complete, element_id_complete])
         else:
             if next_element_id_complete not in attr_connectors:
                 attr_connectors[next_element_id_complete] = [element_id_complete]
-            else:
+            elif element_id_complete not in attr_connectors[next_element_id_complete]:
                 attr_connectors[next_element_id_complete].append(element_id_complete)
 
-        aux_update_element_order(class_element, order_dict, current_order + 1, next_element_id, visited,
+        aux_update_element_order(class_element, order_dict, current_order + 1, next_element_id, visited.copy(),
                                  inner_classes_connectors, attr_connectors)
 
 
@@ -174,13 +157,17 @@ def generate_update_elements_order(class_element):
             inner_class = class_element.children_attributes[item_id]
             if inner_class.xmi_id not in blocks_order:
                 blocks_order[inner_class.xmi_id] = order[item_id]
+            else:
+                blocks_order[inner_class.xmi_id] = min(blocks_order[inner_class.xmi_id], order[item_id])
         else:
-            blocks_order[item_id] = order[item_id]
+            element = parser.ids[item_id]
+            if not (type(element) is Port and element.direction == 'out'):
+                blocks_order[item_id] = order[item_id]
     return {
         'blocks_order': blocks_order,
         'inner_classes_connectors': inner_classes_connectors,
         'attr_connectors': attr_connectors
-        }
+    }
 
 
 def generate_main_file(block):
@@ -241,9 +228,7 @@ def generate_output_files(block):
     os.mkdir(output_folder_path)
 
     os.mkdir(output_folder_path + 'utils/')
-    f = open(output_folder_path + 'utils/helpers.py', "x")
-    f.write(helper_file_content)
-    f.close()
+    shutil.copyfile('source/helper_files/output_base_classes.py', output_folder_path + 'utils/helpers.py')
 
     generate_main_file(block)
 
@@ -258,29 +243,32 @@ def generate_output_files(block):
 
         properties = {}
         function_calls = []
+        input_ports = []
         for attr in class_elem.attributes.values():
             if type(attr) is Port:
                 function_calls.append(f'self.add_port(\'{attr.xmi_id}\', \'{attr.name}\')\n')
+                if attr.direction == 'in':
+                    input_ports.append(attr.xmi_id)
             elif type(attr) is Property:
                 function_calls.append(f'self.add_property(\'{attr.xmi_id}\', \'{attr.name}\', {attr.default_value})\n')
+        properties['inputs'] = input_ports
 
         for inner_class_id, inner_class in class_elem.children.items():
+            inner_class_name = inner_class.name.replace(' ', '')
+            function_calls.append(f'self.add_inner_class(\'{inner_class_id}\', {inner_class_name}())\n')
+
             if inner_class.type == ClassType.BLOCK:
                 file_name = convert_to_file_name(inner_class.name)
-                class_name = inner_class.name.replace(' ', '')
-                gen.add_import(file_name, class_name)
-                properties[file_name] = class_name + '()'
+                gen.add_import(file_name, inner_class_name)
 
             if inner_class.type == ClassType.CONSTRAINT_BLOCK:
-                inner_class_name = inner_class.name.replace(' ', '')
                 gen.add_class(generate_constraint_code(inner_class))
-                function_calls.append(f'self.add_inner_class(\'{inner_class_id}\', {inner_class_name}())\n')
 
         state_machine_code_gen = None
         if class_elem.state_machine is not None:
             f_state_machine = open(output_folder_path + f"{class_name_file}.yaml", "x")
             state_machine_code_gen = StateMachineGenerator()
-            state_machine_code_gen.create_state_chart(class_elem.state_machine)
+            state_machine_code_gen.create_state_chart(class_elem.state_machine, class_elem.attribute_names)
             f_state_machine.write(state_machine_code_gen.code)
             f_state_machine.close()
 
@@ -293,10 +281,15 @@ def generate_output_files(block):
             gen.add_import('sismic.io', 'import_from_yaml')
             gen.add_import('sismic.interpreter', 'Interpreter')
             sm_class_var = f'{class_name_file}_sm'
-            properties[sm_class_var] = f'Interpreter(import_from_yaml(' \
-                                       f'filepath=\'./{class_name_file}.yaml\'))'
+            properties[sm_class_var] = 'Interpreter(import_from_yaml(' \
+                                       f'filepath=\'./{class_name_file}.yaml\'), ' \
+                                       'initial_context={\'attrs\': self.attrs})'
 
             state_machine_code_gen = CodeGenerator()
+            state_machine_code_gen.add_code(f'if not self.check_if_all_values_are_set():\n')
+            state_machine_code_gen.indent()
+            state_machine_code_gen.add_code('return\n')
+            state_machine_code_gen.dedent()
 
             def replace_identifier(match_obj):
                 if match_obj[0] in class_elem.attribute_names:

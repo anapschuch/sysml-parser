@@ -1,4 +1,15 @@
 from source import FinalState
+import re
+
+
+def parse_entry_behavior(attribute_names, specification):
+    def replace_identifier(match_obj):
+        if match_obj[0] in attribute_names:
+            return f'attrs[\'{match_obj[0]}\']'
+        else:
+            return match_obj[0]
+
+    return re.sub(r'[a-zA-Z_][a-zA-Z0-9_]*', replace_identifier, specification)
 
 
 class StateMachineGenerator:
@@ -17,7 +28,7 @@ class StateMachineGenerator:
     def add_code(self, code):
         self.code += self.indentation * self.level + code
 
-    def create_state_chart(self, state_machine):
+    def create_state_chart(self, state_machine, attributes):
         self.add_code('statechart:\n')
         self.indent()
         self.add_code(f'name: {state_machine.name}\n')
@@ -25,9 +36,9 @@ class StateMachineGenerator:
         self.indent()
 
         # TODO: Add support for more regions (parallel states)
-        self.add_region(state_machine.regions[0])
+        self.add_region(state_machine.regions[0], attributes)
 
-    def add_region(self, region, show_name=True):
+    def add_region(self, region, attributes, show_name=True):
         if show_name:
             self.add_code(f'name: {region.name}\n')
         if region.begin_state is None:
@@ -58,7 +69,7 @@ class StateMachineGenerator:
                     self.indent()
                     statements = state.entry.body.split('\r\n')
                     for stat in statements:
-                        self.add_code(stat + '\n')
+                        self.add_code(parse_entry_behavior(attributes, stat) + '\n')
                     self.dedent()
                 if state_id in region.transitions:
                     self.add_code('transitions:\n')
@@ -77,5 +88,5 @@ class StateMachineGenerator:
                 if state.state_machine is not None:
                     self.indent()
                     # TODO: Add support for more regions
-                    self.add_region(state.state_machine.regions[0], False)
+                    self.add_region(state.state_machine.regions[0], attributes, False)
                     self.dedent()

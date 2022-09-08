@@ -13,3 +13,5 @@ schema==0.7.5
 scipy==1.9.0
 sismic==1.6.3
 six==1.16.0
+
+matplotlib~=3.5.3

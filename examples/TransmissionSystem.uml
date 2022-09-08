@@ -439,6 +439,9 @@
             <ownedAttribute xmi:type="uml:Port" xmi:id="_8yvMcOXoEeyrmpnLSXdn1g" name="drive_gear" visibility="public" aggregation="composite">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
             </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_0mj6YC8UEe2QRY_d_zBIvQ" name="engine_speed_out" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
             <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_fj3x4OLwEeyMdeINNWNrGg" name="Engine SM">
               <region xmi:type="uml:Region" xmi:id="_gN_F4OLwEeyMdeINNWNrGg" name="engineSpeed">
                 <transition xmi:type="uml:Transition" xmi:id="_4jMWMOLwEeyMdeINNWNrGg" source="_nSPLwOLwEeyMdeINNWNrGg" target="_otawUOLwEeyMdeINNWNrGg"/>
@@ -449,8 +452,8 @@
                 <subvertex xmi:type="uml:State" xmi:id="_otawUOLwEeyMdeINNWNrGg" name="EngineSpeed">
                   <entry xmi:type="uml:OpaqueBehavior" xmi:id="_02L48OLwEeyMdeINNWNrGg">
                     <language>C</language>
-                    <body>engineSpeed_param = Nmin&#xD;
-driveGear_param = driveGear</body>
+                    <body>engine_speed = n_min&#xD;
+drive_gear_param = drive_gear</body>
                   </entry>
                 </subvertex>
               </region>
@@ -459,7 +462,7 @@ driveGear_param = driveGear</body>
               <ownedRule xmi:type="uml:Constraint" xmi:id="_ddmXUNfLEeyKDukxCNI3pQ" name="Engine Torque">
                 <specification xmi:type="uml:OpaqueExpression" xmi:id="_ddmXUdfLEeyKDukxCNI3pQ">
                   <language>C</language>
-                  <body>torque = interpn(engine_speed_vec, pedal_pos_vec, map_torque, current_speed, pedal_position)</body>
+                  <body>torque = interpn((engine_speed_vec, pedal_pos_vec), map_torque, (current_speed, pedal_position))</body>
                 </specification>
               </ownedRule>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_tIK-0CSjEe2NCYuc8M5wLg" name="pedal_position" visibility="public" aggregation="composite">
@@ -875,7 +878,7 @@ current_gear_ratio_param = 0.67</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_bVrIYCcmEe2QzKLBqsARlg" name="ItemFlow43" informationSource="_lsNp4NJtEeyKp65yHsgyfA _DzR6wNyYEeyZdrCSZvBi5g" informationTarget="_hWzHgNZMEeyztMSLcHqD0Q">
         <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_fmlj8CcmEe2QzKLBqsARlg" name="ItemFlow44" informationSource="_DrZxkOEAEeyXPMXG3lFeMw _88hUQCSWEe2ZkqwwGIJVRw" informationTarget="_W9dzgNyfEeyZdrCSZvBi5g">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_fmlj8CcmEe2QzKLBqsARlg" name="ItemFlow44" informationSource="_DrZxkOEAEeyXPMXG3lFeMw _88hUQCSWEe2ZkqwwGIJVRw _0mj6YC8UEe2QRY_d_zBIvQ" informationTarget="_W9dzgNyfEeyZdrCSZvBi5g">
         <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </packagedElement>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_lmyy4CcmEe2QzKLBqsARlg" name="ItemFlow45" informationSource="_DrZxkOEAEeyXPMXG3lFeMw _88hUQCSWEe2ZkqwwGIJVRw" informationTarget="_2AmGoNyaEeyZdrCSZvBi5g">
@@ -1007,6 +1010,9 @@ current_gear_ratio_param = 0.67</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_p03U0CcxEe2QzKLBqsARlg" name="ItemFlow86" informationSource="_xi-HcOK-Eey2GPf_NkcRwg" informationTarget="_MwuFYOECEeyXPMXG3lFeMw">
         <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_H6uSsC8VEe2QRY_d_zBIvQ" name="ItemFlow87" informationSource="_kcZ-ACSiEe2NCYuc8M5wLg" informationTarget="_0mj6YC8UEe2QRY_d_zBIvQ">
+        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_lueqQMW1EeyyYa73KIbzUQ" name="usecases">
       <packagedElement xmi:type="uml:Actor" xmi:id="_5xJR4MW2EeyyYa73KIbzUQ" name="Driver"/>
@@ -1082,7 +1088,7 @@ current_gear_ratio_param = 0.67</body>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_9L_FUMTrEeyhtb6Vq-DBuQ" name="shiftDown" visibility="public">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_G7_m0MTsEeyhtb6Vq-DBuQ">
           <language>C</language>
-          <body>current_engine_speed == n_min</body>
+          <body>current_engine_speed &lt; n_min</body>
         </changeExpression>
       </packagedElement>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_ImgA0MTsEeyhtb6Vq-DBuQ" name="shiftUp">
@@ -1616,4 +1622,6 @@ current_gear_ratio_param = 0.67</body>
   <PortsAndFlows:ItemFlow xmi:id="_22gN4CcrEe2QzKLBqsARlg" base_InformationFlow="_22eYsCcrEe2QzKLBqsARlg"/>
   <PortsAndFlows:ItemFlow xmi:id="_HmqbkCcwEe2QzKLBqsARlg" base_InformationFlow="_HmomYCcwEe2QzKLBqsARlg"/>
   <PortsAndFlows:ItemFlow xmi:id="_p05KACcxEe2QzKLBqsARlg" base_InformationFlow="_p03U0CcxEe2QzKLBqsARlg"/>
+  <DeprecatedElements:FlowPort xmi:id="_0mzyAC8UEe2QRY_d_zBIvQ" base_Port="_0mj6YC8UEe2QRY_d_zBIvQ" direction="out"/>
+  <PortsAndFlows:ItemFlow xmi:id="_H66f8C8VEe2QRY_d_zBIvQ" base_InformationFlow="_H6uSsC8VEe2QRY_d_zBIvQ"/>
 </xmi:XMI>
