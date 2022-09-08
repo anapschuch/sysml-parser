@@ -30,14 +30,14 @@ if __name__ == '__main__':
     time = [0.0 for i in range(n_iter)]
 
     for i in range(n_iter):
-        vel_out[i] = system.get_output_port('vehicle_speed')
+        vel_out[i] = 3.6 * system.get_output_port('vehicle_speed')
         drive_out[i] = system.get_output_port('drive_gear')
         time[i] = i * dt
         system.update()
 
     plt.plot(time, vel_out)
     plt.xlabel('Time (s)')
-    plt.ylabel('Vehicle Speed (kph)')
+    plt.ylabel('Vehicle Speed (km/h)')
     plt.show()
 
     plt.plot(time, drive_out)
