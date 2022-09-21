@@ -175,18 +175,6 @@ def generate_main_file(block):
     gen = CodeGenerator()
     file_name = convert_to_file_name(block.name)
     class_name = block.name.replace(' ', '')
-    gen.add_code(f'import pandas as pd\n')
-    gen.add_code('from matplotlib import pyplot as plt\n')
-    gen.add_code(f'from {file_name} import {class_name}\n\n')
-    gen.add_code('if __name__ == \'__main__\':\n')
-    gen.indent()
-    gen.add_code('file = pd.read_csv(\'../examples/input.csv\', sep=\';\')\n')
-
-    block_var_name = file_name
-    gen.add_code(f'{block_var_name} = {class_name}()\n\n')
-    gen.add_code('# set the number of iterations below:\n')
-    gen.add_code('dT = 0.01\n')
-    gen.add_code('n_iter = 12000\n\n')
 
     input_ports = []
     output_ports = []
@@ -197,15 +185,30 @@ def generate_main_file(block):
             else:
                 output_ports.append(attr.name)
 
-    gen.add_code('input_ports = '+input_ports.__str__()+'\n')
-    gen.add_code('for port in input_ports:\n')
+    gen.add_code(f'import pandas as pd\n')
+    gen.add_code('from matplotlib import pyplot as plt\n')
+    gen.add_code(f'from {file_name} import {class_name}\n\n')
+    gen.add_code('if __name__ == \'__main__\':\n')
     gen.indent()
-    gen.add_code('if port not in file.columns:\n')
-    gen.indent()
-    gen.add_code('raise Exception(\'Missing input port: \' + port)\n')
-    gen.dedent(2)
+    if len(input_ports) > 0:
+        gen.add_code('file = pd.read_csv(\'../examples/input.csv\', sep=\';\')\n')
 
-    gen.add_code('\n')
+    block_var_name = file_name
+    gen.add_code(f'{block_var_name} = {class_name}()\n\n')
+    gen.add_code('# set the number of iterations below:\n')
+    gen.add_code('dT = 0.01\n')
+    gen.add_code('n_iter = 12000\n\n')
+
+    if len(input_ports) > 0:
+        gen.add_code('input_ports = '+input_ports.__str__()+'\n')
+        gen.add_code('for port in input_ports:\n')
+        gen.indent()
+        gen.add_code('if port not in file.columns:\n')
+        gen.indent()
+        gen.add_code('raise Exception(\'Missing input port: \' + port)\n')
+        gen.dedent(2)
+        gen.add_code('\n')
+
     gen.add_code('# output ports\n')
     for out in output_ports:
         gen.add_code(f'{out} = [0 for i in range(n_iter)]\n')
@@ -215,15 +218,17 @@ def generate_main_file(block):
 
     gen.add_code('for i in range(n_iter):\n')
     gen.indent()
-    gen.add_code('if i < file.shape[0]:\n')
-    gen.indent()
-    gen.add_code('for port in input_ports:\n')
-    gen.indent()
-    gen.add_code('if pd.notna(file[port][i]):\n')
-    gen.indent()
-    gen.add_code(f'{block_var_name}.set_port_value(port, file[port][i])\n')
-    gen.dedent(3)
-    gen.add_code('\n')
+
+    if len(input_ports) > 0:
+        gen.add_code('if i < file.shape[0]:\n')
+        gen.indent()
+        gen.add_code('for port in input_ports:\n')
+        gen.indent()
+        gen.add_code('if pd.notna(file[port][i]):\n')
+        gen.indent()
+        gen.add_code(f'{block_var_name}.set_port_value(port, file[port][i])\n')
+        gen.dedent(3)
+        gen.add_code('\n')
     gen.add_code(f'{block_var_name}.update()\n')
     for out in output_ports:
         gen.add_code(f'{out}[i] = {block_var_name}.get_output_port(\'{out}\')\n')

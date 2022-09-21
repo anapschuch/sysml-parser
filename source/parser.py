@@ -45,7 +45,7 @@ class SysMLParser:
         path = tag.split(":")
         full_tag = ""
         for idx in range(len(path) - 1):
-            full_tag += "{" + self.namespaces.get(path[idx]) + "}"
+            full_tag += "{" + self.namespaces.get(path[idx], '') + "}"
         full_tag += path[len(path) - 1]
         return full_tag
 
