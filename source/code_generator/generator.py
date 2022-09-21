@@ -22,11 +22,11 @@ class CodeGenerator:
         self.code = ''
         self.isInherited = False
 
-    def indent(self):
-        self.level += 1
+    def indent(self, val=1):
+        self.level += val
 
-    def dedent(self):
-        self.level -= 1
+    def dedent(self, val=1):
+        self.level -= val
 
     def create_class(self, name, inherited=None):
         if inherited is not None:
