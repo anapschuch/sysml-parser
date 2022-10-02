@@ -19,4 +19,4 @@ class Transition:
         if self.constraint is not None:
             print(' ' * (indentation + 2), self.constraint.text)
         if self.trigger is not None:
-            self.trigger.print(indentation+2)
+            self.trigger.print(indentation + 2)

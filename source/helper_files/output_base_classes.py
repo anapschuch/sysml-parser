@@ -1,8 +1,3 @@
-import math
-from scipy.interpolate import *
-import numpy as np
-
-
 class Basic:
     def __init__(self):
         self.ids = {}

@@ -1,5 +1,33 @@
+from source.globals import allowed_functions_from_external_libraries
 from source.xml_types import XMLTagTypes, EnumPrimitiveType
 import re
+
+
+def parse_code_statement(attribute_names, specification, is_state_machine=False):
+    def replace_identifier(match_obj):
+        if is_state_machine:
+            if match_obj[0] in attribute_names:
+                return f'attrs[\'{match_obj[0]}\']'
+        else:
+            if match_obj[0] in attribute_names:
+                return f'self.attrs[\'{match_obj[0]}\']'
+            if match_obj[0] in allowed_functions_from_external_libraries:
+                return match_obj[0]
+
+        raise Exception('Unexpected token: ' + match_obj[0])
+    return re.sub(r'([a-z]+(\.[a-z]+)+)|(?<!["\'])[a-zA-Z_][a-zA-Z0-9_]*(?!["\'])', replace_identifier, specification)
+
+
+def generate_importers_from_allowed_external_functions():
+    libraries = {}
+    for k, v in allowed_functions_from_external_libraries.items():
+        if not v:
+            continue
+        libraries[v] = libraries.get(v, []) + [k]
+
+    for k, v in libraries.items():
+        libraries[k] = ", ".join(v)
+    return [f'from {k} import {v}' for k, v in libraries.items()]
 
 
 def is_tag_requirement_type(tag):

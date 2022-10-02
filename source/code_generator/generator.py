@@ -20,7 +20,7 @@ class CodeGenerator:
         self.indentation = indentation
         self.level = level
         self.code = ''
-        self.isInherited = False
+        self.is_inherited = False
 
     def indent(self, val=1):
         self.level += val
@@ -31,7 +31,7 @@ class CodeGenerator:
     def create_class(self, name, inherited=None):
         if inherited is not None:
             self.add_code(f'class {name}({inherited}):\n')
-            self.isInherited = True
+            self.is_inherited = True
         else:
             self.add_code(f'class {name}:\n')
         self.indent()
@@ -42,7 +42,7 @@ class CodeGenerator:
 
         self.add_code("def __init__(self):\n")
         self.indent()
-        if self.isInherited:
+        if self.is_inherited:
             self.add_code("super().__init__()\n")
         for prop, val in properties.items():
             self.add_code(f"self.{prop} = {val}\n")

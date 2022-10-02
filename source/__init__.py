@@ -1,5 +1,5 @@
 from .utils import *
-from .parser import *
+from .sysml_parser import *
 from .classes import *
 from .code_generator import *
 

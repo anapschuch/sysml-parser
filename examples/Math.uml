@@ -14,27 +14,27 @@
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_u9XnYDlTEe2ZHoYOIYCrsA" name="y" aggregation="composite"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_wJli4DlTEe2ZHoYOIYCrsA" name="x" aggregation="composite"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_Vj6MIDlQEe2ZHoYOIYCrsA" name="y">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Vj6MIDlQEe2ZHoYOIYCrsA" name="Y">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_mOLxEDlQEe2ZHoYOIYCrsA" name="Constraint3">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZlTywDlVEe2Kb8UHGSKQEA">
             <language>C</language>
-            <body>y=math.cos(z)</body>
+            <body>y=cos(z)</body>
           </specification>
         </ownedRule>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ccR8sDlREe2ZHoYOIYCrsA" name="y" visibility="public" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_fe9qkDlREe2ZHoYOIYCrsA" name="z" visibility="public" aggregation="composite"/>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_Xqg20DlREe2ZHoYOIYCrsA" name="x">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Xqg20DlREe2ZHoYOIYCrsA" name="X">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_onCpYDlREe2ZHoYOIYCrsA" name="x = sin(z)">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_cVZ70DlVEe2Kb8UHGSKQEA">
             <language>C</language>
-            <body>x=math.sin(z)</body>
+            <body>x=sin(z)</body>
           </specification>
         </ownedRule>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_1v-1kDlREe2ZHoYOIYCrsA" name="z" visibility="public" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_3DC_8DlREe2ZHoYOIYCrsA" name="x" visibility="public" aggregation="composite"/>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_VizRgDlTEe2ZHoYOIYCrsA" name="z">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_VizRgDlTEe2ZHoYOIYCrsA" name="Z">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_ZcrGEDlTEe2ZHoYOIYCrsA" name="z = z+0.01">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zcv-kDlTEe2ZHoYOIYCrsA" name="constraintSpec">
             <language>C</language>

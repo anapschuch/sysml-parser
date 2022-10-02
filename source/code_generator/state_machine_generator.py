@@ -1,32 +1,10 @@
-from source import FinalState
-import re
+from source import FinalState, parse_code_statement
+from .generator import CodeGenerator
 
 
-def parse_entry_behavior(attribute_names, specification):
-    def replace_identifier(match_obj):
-        if match_obj[0] in attribute_names:
-            return f'attrs[\'{match_obj[0]}\']'
-        else:
-            return match_obj[0]
-
-    return re.sub(r'[a-zA-Z_][a-zA-Z0-9_]*', replace_identifier, specification)
-
-
-class StateMachineGenerator:
+class StateMachineGenerator(CodeGenerator):
     def __init__(self, level=0, indentation='  '):
-        self.indentation = indentation
-        self.level = level
-        self.code = ''
-        self.isInherited = False
-
-    def indent(self):
-        self.level += 1
-
-    def dedent(self):
-        self.level -= 1
-
-    def add_code(self, code):
-        self.code += self.indentation * self.level + code
+        super().__init__(level, indentation)
 
     def create_state_chart(self, state_machine, attributes):
         self.add_code('statechart:\n')
@@ -69,7 +47,7 @@ class StateMachineGenerator:
                     self.indent()
                     statements = state.entry.body.split('\r\n')
                     for stat in statements:
-                        self.add_code(parse_entry_behavior(attributes, stat) + '\n')
+                        self.add_code(parse_code_statement(attributes, stat, True) + '\n')
                     self.dedent()
                 if state_id in region.transitions:
                     self.add_code('transitions:\n')

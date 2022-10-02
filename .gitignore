@@ -1,5 +1,6 @@
 venv/
 output/
 .idea/
+.txt/
 
 source/xml_types/__pycache__/

@@ -159,7 +159,7 @@
             <ownedRule xmi:type="uml:Constraint" xmi:id="_TDxpkNcXEeyO7PQk0pa-rA" name="Force">
               <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xa0iUNcXEeyO7PQk0pa-rA">
                 <language>C</language>
-                <body>force = m * g * cr * math.cos(slope)</body>
+                <body>force = m * g * cr * cos(slope)</body>
               </specification>
             </ownedRule>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_Pp-48CSXEe2ZkqwwGIJVRw" name="m" visibility="public" aggregation="composite">
@@ -257,7 +257,7 @@
             <ownedRule xmi:type="uml:Constraint" xmi:id="_qd8LcN--EeyQAoCiBoOCcw">
               <specification xmi:type="uml:OpaqueExpression" xmi:id="_qd8Lcd--EeyQAoCiBoOCcw">
                 <language>C</language>
-                <body>force = m * g * math.sin(slope)</body>
+                <body>force = m * g * sin(slope)</body>
               </specification>
             </ownedRule>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_Z6jpgCSaEe2ZkqwwGIJVRw" name="m" visibility="public" aggregation="composite">
@@ -370,7 +370,7 @@
             <ownedRule xmi:type="uml:Constraint" xmi:id="_ZmoSwOEAEeyXPMXG3lFeMw">
               <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZmoSweEAEeyXPMXG3lFeMw">
                 <language>C</language>
-                <body>engine_speed = wheel_speed * (30/math.pi) * i0 * gear_ratio</body>
+                <body>engine_speed = wheel_speed * (30/pi) * i0 * gear_ratio</body>
               </specification>
             </ownedRule>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_JyAOYCSWEe2ZkqwwGIJVRw" name="i0" aggregation="composite">
