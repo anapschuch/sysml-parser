@@ -26,7 +26,15 @@ $ python3 -m pip install -r requirements.txt
 ```
 
 To run the project, you need to specify the input file (the .uml generated from Papyrus project),
-and the block you want to simulate. Then type the following command in the terminal:
-```bash
-$ python3 main.py [file] [block]
+and the block you want to simulate. See the options available below:
+```
+usage: main.py [-h] [--print] file block
+
+positional arguments:
+  file        The .uml file generated from the Papyrus project
+  block       The block you want to simulate
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --print     Use this option if you want to print the model info in the terminal. You can use '> out.txt' at the end of the command to save it in a file
 ```
