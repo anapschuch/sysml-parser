@@ -57,7 +57,6 @@ If you want to print information about the model, type in the terminal:
 ```bash
 $ main.py ./examples/TransmissionSystem.uml System --print
 ```
-</details>
 
 To transform this model into Python classes, you can type:
 
@@ -86,3 +85,5 @@ Two graphs will be generated, one for each output port:
 x             |  y
 :-------------------------:|:-------------------------:
 ![](public/Math-x%20output.png) | ![](public/Math-y%20output.png)
+
+</details>
