@@ -5,42 +5,6 @@ from sismic.io import import_from_yaml, export_to_plantuml
 from source import *
 
 
-def print_blocks_info(parser):
-    print("********* Items Flow *********")
-    for source, targets in parser.items_flow.items():
-        base_source_elem = parser.ids[source]
-        for target in targets:
-            base_target_elem = parser.ids[target]
-            print(f'{base_source_elem.name}  {source} ----> {base_target_elem.name} '
-                  f' {target}')
-
-    print("\n********* Blocks *********")
-    for class_elem in parser.blocks:
-        print(class_elem.name)
-        print("\n  Attributes:")
-        for attr in class_elem.attributes.values():
-            attr.print(4)
-
-        print("\n  Children Attributes:")
-        for attr_id, attr_ref in class_elem.children_attributes.items():
-            print("    ", attr_id, ": ", attr_ref.name, " (", attr_ref.xmi_id, ")", sep="")
-        if class_elem.state_machine is not None:
-            print("")
-            class_elem.state_machine.print(2)
-        print("\n  Children:")
-        for child_id, child_element in class_elem.children.items():
-            if child_element is not None:
-                print("     ", type(child_element), ": ", child_element.name, sep="")
-                if type(child_element) is Class and len(child_element.constraints) > 0:
-                    print("          Parameters:")
-                    for attr in child_element.attributes.values():
-                        attr.print(12)
-                    print("          Constraints:")
-                    for constraint in child_element.constraints:
-                        print("            ", constraint.specification)
-        print("")
-
-
 def generate_constraint_code(constraint_element):
     constraint_gen = CodeGenerator()
     constraint_gen.create_class(constraint_element.name.replace(' ', ''), 'ConstraintBlock')

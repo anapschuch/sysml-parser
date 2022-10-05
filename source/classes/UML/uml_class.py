@@ -58,3 +58,6 @@ class Class(Basic):
             raise Exception("Unable to set type in class because it has already set before. Class name: " + self.name)
         else:
             self.type = class_type
+
+    def get_type(self):
+        return self.type

@@ -8,3 +8,6 @@ class Basic:
         if child is None:
             raise Exception("Error: trying to add a None child")
         self.children[child.xmi_id] = child
+
+    def get_type(self):
+        return type(self)
