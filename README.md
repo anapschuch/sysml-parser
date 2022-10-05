@@ -36,16 +36,17 @@ positional arguments:
 
 optional arguments:
   -h, --help  show this help message and exit
-  --print     Use this option if you want to print information about the model in the terminal. You can use '> out.txt' at the end of the command to save it in a file
+  --print     Use this option if you want to print the model info in the terminal.
+              You can use '> out.txt' at the end of the command to save it in a file
 ```
 
 ## Examples
 
 <details>
-<summary> Calculator
+<summary> Calculator </summary>
 
 Inside the examples' folder, you can find the *Math.uml* file, which represents the Papyrus output from a model that 
-has the following block:</summary>
+has the following block:
 
 ![](public/Math-ParametricDiagram.png)
 
@@ -55,13 +56,13 @@ and x (the sin of z).
 If you want to print information about the model, type in the terminal:
 
 ```bash
-$ main.py ./examples/TransmissionSystem.uml System --print
+$ main.py ./examples/Math.uml Calculator --print
 ```
 
 To transform this model into Python classes, you can type:
 
 ```bash
-$ main.py ./examples/TransmissionSystem.uml System
+$ main.py ./examples/Math.uml Calculator
 ```
 
 Two files will be generated inside the output folder: the *calculator.py* contains the Calculator block seen in the image above, 
@@ -87,3 +88,59 @@ x             |  y
 ![](public/Math-x%20output.png) | ![](public/Math-y%20output.png)
 
 </details>
+
+<details>
+<summary> Transmission System </summary>
+
+**More details coming shortly!**
+
+There is also a more complete example available. 
+This one is about an automatic transmission system of a car, in which the driver can choose between the four usual 
+modes: Parking, Reverse, Neutral and Drive.
+
+This model is based on the work done by Antony Stark in his personal blog. Please take a look [here](https://x-engineer.org/vehicle-acceleration-maximum-speed-modeling-simulation/) if you require additional information.
+
+
+![](public/System-Parametric%20Diagram.PNG)
+
+It receives the following inputs:
+
+* `dT`: time between two iterations of the simulation
+* `env_cr`: road load coefficient
+* `env_slope`: slope angle of the road the car is in
+* `env_ro`: air density
+* `env_cd`: drag coefficient
+* `fa`: frontal area of the car
+* `pedal position`: the percentage of the pedal that is pressed (a number between 0 and 100)
+* `current gear`: the gear (Parking, Reverse, Neutral and Drive) that the driver is in. 
+  Note that there is an order that must be followed to change gears, e.g. the driver cannot go to Drive directly 
+  from Parking, they must go to Reverse and Neutral first. This logic is inside a state machine in the model, so the mode will
+  be changed only if your input is correct.
+  
+These inputs must be given to the simulation in the form of a file. 
+You can check the *examples/inputs_transmission_system.csv* file that is available. Each line of represents an iteration, 
+and an empty cell means that the input hasn't changed.
+
+There are two outputs in this system, the vehicle speed, and the drive gear. In the drive gear, 
+we can see how the automatic transmission is working. 
+
+To generate the python files for this example, type:
+
+```bash
+$ main.py ./examples/TransmissionSystem.uml System
+```
+
+You must change the csv input in the *output/main.py* file. After that, move the terminal to the output folder and start the simulation:
+
+ ```bash
+$ cd output
+$ main.py 
+```
+
+Below is the outputs generated from the inputs given:
+
+vehicle speed (m/s)        |  drive gear
+:-------------------------:|:-------------------------:
+![](public/TransmissionSystem-vehicle%20speed.png) | ![](public/TransmissionSystem-drive%20gear.png)
+</details>
+
