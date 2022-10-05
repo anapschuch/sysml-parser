@@ -144,3 +144,39 @@ vehicle speed (m/s)        |  drive gear
 ![](public/TransmissionSystem-vehicle%20speed.png) | ![](public/TransmissionSystem-drive%20gear.png)
 </details>
 
+
+## How it works 
+
+**This is a work in progress, it will be updated soon**
+<details>
+<summary> About the content of the Papyrus Project </summary>
+
+If we look at the *.uml* file generated from Papyrus, we will see that it looks like the snippet below.
+
+```xml
+<ownedAttribute xmi:type="uml:Port" xmi:id="_WKF1QOESEeyXPMXG3lFeMw" name="env_cr" aggregation="composite">
+    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+</ownedAttribute>
+```
+
+Basically, there are different tag types. Some examples are ownedAttribute, type, defaultValue and ownedRule. 
+The current supported types can be seen [here](https://github.com/anapschuch/xml-parser/blob/main/source/xml_types/xml_tag.py#L4).
+
+If we take a look at the .uml file, we will see that the project structure is built with UML types, while the SysML ones come at the end, and refer to some UML type. 
+For example, for the port in the snippet above, we can see that it is the base port of a FlowPort:
+
+```xml
+<DeprecatedElements:FlowPort xmi:id="_WKHqcOESEeyXPMXG3lFeMw" base_Port="_WKF1QOESEeyXPMXG3lFeMw" direction="in"/>
+```
+
+This will be important when associating elements in the parser.
+
+In addition to this, the tags also have different attributes, like xmi:type, xmi:id, name and base_Port. 
+The current supported attributes can be seen [here](https://github.com/anapschuch/xml-parser/blob/main/source/xml_types/xml_tag_attribute.py#L4).
+Furthermore, there are different *xmi_type* values, which the supported ones can be seen [here](https://github.com/anapschuch/xml-parser/blob/main/source/xml_types/xmi_type.py#L4).
+
+In case you run the project and face an error about a not found type, you can add it in these files. 
+Note that we chose to restrict the allowed types because they must be associated with some logic later. 
+Having a type in these files doesn't mean the parser understands what it means and how it interacts with the other elements in the model. 
+This will be covered in the next session.
+</details>
