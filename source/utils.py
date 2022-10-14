@@ -11,11 +11,11 @@ def parse_code_statement(attribute_names, specification, is_state_machine=False)
         else:
             if match_obj[0] in attribute_names:
                 return f'self.attrs[\'{match_obj[0]}\']'
-            if match_obj[0] in allowed_functions_from_external_libraries:
-                return match_obj[0]
+        if match_obj[0] in allowed_functions_from_external_libraries:
+            return match_obj[0]
 
         raise Exception('Unexpected token: ' + match_obj[0])
-    return re.sub(r'([a-z]+(\.[a-z]+)+)|(?<!["\'])[a-zA-Z_][a-zA-Z0-9_]*(?!["\'])', replace_identifier, specification)
+    return re.sub(r'([a-z]+(\.[a-z]+)+)|\b(?<!["\'])[a-zA-Z_][a-zA-Z0-9_]*\b', replace_identifier, specification)
 
 
 def generate_importers_from_allowed_external_functions():
@@ -42,8 +42,12 @@ def get_primitive_type(href):
         return EnumPrimitiveType.REAL
     elif value == "Integer":
         return EnumPrimitiveType.INTEGER
+    elif value == "Boolean":
+        return EnumPrimitiveType.BOOLEAN
+    elif value == "String":
+        return EnumPrimitiveType.STRING
     else:
-        raise Exception("Primitive type not found: ", value)
+        raise Exception("Primitive type not found: " + value)
 
 
 def convert_to_file_name(name):

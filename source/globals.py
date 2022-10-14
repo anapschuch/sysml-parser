@@ -4,5 +4,11 @@ allowed_functions_from_external_libraries = {
     "pi": "math",
     "interpn": "scipy.interpolate",
     "max": "",
-    "min": ""
+    "min": "",
+    "True": "",
+    "False": "",
+    "if": "",
+    "else": "",
+    "or": "",
+    "and": ""
 }

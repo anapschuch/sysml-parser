@@ -68,3 +68,4 @@ class StateMachineGenerator(CodeGenerator):
                     # TODO: Add support for more regions
                     self.add_region(state.state_machine.regions[0], attributes, False)
                     self.dedent()
+            self.dedent()

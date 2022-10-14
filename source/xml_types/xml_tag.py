@@ -7,6 +7,7 @@ class XMLTagTypes(Enum):
     REQUIREMENTS_REFINE = 'Requirements:Refine'
     REQUIREMENTS_SATISFY = 'Requirements:Satisfy'
     REQUIREMENTS_VERIFY = 'Requirements:Verify'
+    REQUIREMENTS_DERIVE = 'Requirements:DeriveReqt'
     BLOCK = 'Blocks:Block'
     BLOCKS_VALUE_TYPE = 'Blocks:ValueType'
     CONSTRAINT_BLOCK = 'ConstraintBlocks:ConstraintBlock'
