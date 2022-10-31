@@ -1,4 +1,4 @@
-# SysML Parser: Models simulations for Eclipse Papyrus tool
+# SysML Parser: Models simulations for Eclipse Papyrus
 
 Hi there!
 
