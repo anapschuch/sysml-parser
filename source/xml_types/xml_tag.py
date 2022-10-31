@@ -8,6 +8,8 @@ class XMLTagTypes(Enum):
     REQUIREMENTS_SATISFY = 'Requirements:Satisfy'
     REQUIREMENTS_VERIFY = 'Requirements:Verify'
     REQUIREMENTS_DERIVE = 'Requirements:DeriveReqt'
+    TEST_CASE = 'Requirements:TestCase'
+
     BLOCK = 'Blocks:Block'
     BLOCKS_VALUE_TYPE = 'Blocks:ValueType'
     CONSTRAINT_BLOCK = 'ConstraintBlocks:ConstraintBlock'
@@ -34,6 +36,7 @@ class XMLTagTypes(Enum):
     OWNED_BEHAVIOR = 'ownedBehavior'
     OWNED_LITERAL = 'ownedLiteral'
     OWNED_ATTRIBUTE = 'ownedAttribute'
+    OWNED_COMMENT = 'ownedComment'
     OWNED_CONNECTOR = 'ownedConnector'
     CHANGE_EXPRESSION = 'changeExpression'
     NESTED_CLASSIFIER = 'nestedClassifier'

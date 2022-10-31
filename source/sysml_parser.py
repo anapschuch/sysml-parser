@@ -3,7 +3,7 @@ from xml.etree import ElementTree
 from .classes import *
 from source.xml_types import *
 from .validators import validate_element
-from .utils import is_tag_requirement_type
+from .utils import is_tag_requirement_type, raise_error
 
 
 class SysMLParser:
@@ -67,7 +67,7 @@ class SysMLParser:
     def get_tag_attr(self, attr, attr_type):
         return attr.get(self.tag_attributes_types_path[attr_type], None)
 
-    def parse_tag(self, tag):
+    def parse_tag(self, tag, parent):
         xmi_id = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.XMI_ID)
         tag_type = self.get_tag_type(tag.tag)
         element = None
@@ -108,7 +108,10 @@ class SysMLParser:
                 raise Exception("Unexpected base port type: " + type(base_port))
             direction = self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.DIRECTION)
             if direction is None:
-                raise Exception("Missing direction for flow port " + base_port_id + " (direction inout not allowed)")
+                parent = self.ids.get(base_port.parent, None)
+                location_error = f'\nLocation:\n{parent}'
+                raise_error("Missing direction for flow port '" + base_port.name +
+                            "' (direction inout not allowed)" + location_error)
             base_port.add_direction(direction)
 
         elif is_tag_requirement_type(tag_type):
@@ -173,6 +176,15 @@ class SysMLParser:
                     element = InformationFlow(self.get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id,
                                               source_string, target_string)
 
+                    source_element = self.ids.get(source_string)
+                    target_element = self.ids.get(target_string)
+
+                    st = {source_element: 'source', target_element: 'target'}
+                    for k, v in st.items():
+                        if type(k) != Port and type(k) != Property:
+                            raise_error(f'Item flow {v} is not a Port or a Property\nSource: \'{source_element.name}\''
+                                        f'\nTarget: \'{target_element.name}\'\nItemFlow id: \'{xmi_id}\'')
+
                     if source_string in self.items_flow:
                         self.items_flow[source_string].append(target_string)
                     else:
@@ -220,9 +232,11 @@ class SysMLParser:
         self.ids[xmi_id] = element
         if element is not None:
             for child in tag:
-                parsed_child = self.parse_tag(child)
+                parsed_child = self.parse_tag(child, element)
                 if parsed_child is not None:
                     element.add_children(parsed_child)
+                    if hasattr(element, 'xmi_id'):
+                        parsed_child.parent = element.xmi_id
 
-        validate_element(element)
+        validate_element(element, parent)
         return element

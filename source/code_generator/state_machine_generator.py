@@ -3,8 +3,9 @@ from .generator import CodeGenerator
 
 
 class StateMachineGenerator(CodeGenerator):
-    def __init__(self, level=0, indentation='  '):
+    def __init__(self, block_name, level=0, indentation='  '):
         super().__init__(level, indentation)
+        self.block = block_name
 
     def create_state_chart(self, state_machine, attributes):
         self.add_code('statechart:\n')
@@ -14,9 +15,9 @@ class StateMachineGenerator(CodeGenerator):
         self.indent()
 
         # TODO: Add support for more regions (parallel states)
-        self.add_region(state_machine.regions[0], attributes)
+        self.add_region(state_machine.regions[0], attributes, state_machine.name)
 
-    def add_region(self, region, attributes, show_name=True):
+    def add_region(self, region, attributes, state_machine_name, show_name=True):
         if show_name:
             self.add_code(f'name: {region.name}\n')
         if region.begin_state is None:
@@ -47,7 +48,10 @@ class StateMachineGenerator(CodeGenerator):
                     self.indent()
                     statements = state.entry.body.split('\r\n')
                     for stat in statements:
-                        self.add_code(parse_code_statement(attributes, stat, True) + '\n')
+                        error_location = f'Location: \nEntry behavior of state \'{state.name}\'\n' \
+                                        f'    inside state machine \'{state_machine_name}\'\n' \
+                                        f'        of block \'{self.block}\''
+                        self.add_code(parse_code_statement(attributes, stat, True, error_location) + '\n')
                     self.dedent()
                 if state_id in region.transitions:
                     self.add_code('transitions:\n')
@@ -66,6 +70,6 @@ class StateMachineGenerator(CodeGenerator):
                 if state.state_machine is not None:
                     self.indent()
                     # TODO: Add support for more regions
-                    self.add_region(state.state_machine.regions[0], attributes, False)
+                    self.add_region(state.state_machine.regions[0], attributes, state.state_machine.name, False)
                     self.dedent()
             self.dedent()

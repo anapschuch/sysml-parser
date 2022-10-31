@@ -5,7 +5,7 @@ from sismic.io import import_from_yaml, export_to_plantuml
 from source import *
 
 
-def generate_constraint_code(constraint_element):
+def generate_constraint_code(constraint_element, block_name):
     constraint_gen = CodeGenerator()
     constraint_gen.create_class(constraint_element.name.replace(' ', ''), 'ConstraintBlock')
 
@@ -29,7 +29,9 @@ def generate_constraint_code(constraint_element):
 
     specifications = []
     for c in constraint_element.constraints:
-        spec = parse_code_statement(constraint_element.attribute_names, c.specification)
+        error_location = f'Location: \nConstraint block \'{constraint_element.name}\'\n' \
+                         f'    inside block \'{block_name}\''
+        spec = parse_code_statement(constraint_element.attribute_names, c.specification, False, error_location)
         specifications.append(spec)
 
     if len(specifications) > 0:
@@ -191,7 +193,7 @@ def generate_main_file(block):
 
     gen.dedent()
     for out in output_ports:
-        gen.add_code(f'plt.plot(time, {out})\n')
+        gen.add_code(f'plt.scatter(time, {out})\n')
         gen.add_code('plt.xlabel(\'Time (s)\')\n')
         gen.add_code(f'plt.ylabel(\'{out}\')\n')
         gen.add_code('plt.show()\n\n')
@@ -266,12 +268,12 @@ def generate_output_files(block, parser, plant_uml_server):
                 gen.add_import(file_name, inner_class_name)
 
             if inner_class.type == ClassType.CONSTRAINT_BLOCK:
-                gen.add_class(generate_constraint_code(inner_class))
+                gen.add_class(generate_constraint_code(inner_class, class_elem.name))
 
         state_machine_code_gen = None
         if class_elem.state_machine is not None:
             f_state_machine = open(output_folder_path + f"{class_name_file}.yaml", "x")
-            state_machine_code_gen = StateMachineGenerator()
+            state_machine_code_gen = StateMachineGenerator(class_elem.name)
             state_machine_code_gen.create_state_chart(class_elem.state_machine, class_elem.attribute_names)
             f_state_machine.write(state_machine_code_gen.code)
             f_state_machine.close()

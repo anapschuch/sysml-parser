@@ -8,33 +8,33 @@
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_LTchkEpqEe2YPdtfy5e7BA" name="requirements">
-      <packagedElement xmi:type="uml:Class" xmi:id="_eIeUkEpvEe2YPdtfy5e7BA" name="REQ-1.1.1 Water tank radius"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_o-W5AEpvEe2YPdtfy5e7BA" name="REQ-1.3.1 Temperature Set Mode"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_2tQ5AEpvEe2YPdtfy5e7BA" name="REQ-1.3.1.1 Set Temperature Step"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Qgsa0EpwEe2YPdtfy5e7BA" name="REQ-1.2.1 Display Set Temperature Mode"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_t5dEkEpwEe2YPdtfy5e7BA" name="REQ-1.3.1.2 Change Modes Button"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_bZly0Ep3Ee2YPdtfy5e7BA" name="REQ-1.3.2 Heating Mode"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_BduRQEp4Ee2YPdtfy5e7BA" name="REQ-1.2.2 Display Heating Mode"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_hIYsMEp4Ee2YPdtfy5e7BA" name="REQ-1.3.3 Hold Mode"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_wqYacEp4Ee2YPdtfy5e7BA" name="REQ-1.3.2.1 Heat Efficiency"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_wGOIAEp5Ee2YPdtfy5e7BA" name="REQ-1.3.2.2 After Heat Mode"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_MfC-wEp6Ee2YPdtfy5e7BA" name="REQ-1.3.3.1 Hold Button"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_ycKssEpuEe2YPdtfy5e7BA" name="REQ-1 Electric Kettle Responsability">
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_GVekAEpwEe2YPdtfy5e7BA" name="REQ-1.2 Display"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_DcZ6kEpvEe2YPdtfy5e7BA" name="REQ-1.1 Water tank"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_GVekAEpwEe2YPdtfy5e7BA" name="REQ-1.2 Display"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_NJA-QEp5Ee2YPdtfy5e7BA" name="REQ-1.3 Kettle States"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eIeUkEpvEe2YPdtfy5e7BA" name="REQ-1.1.1 Water tank radius"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Qgsa0EpwEe2YPdtfy5e7BA" name="REQ-1.2.1 Display Set Temperature Mode"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BduRQEp4Ee2YPdtfy5e7BA" name="REQ-1.2.2 Display Heating Mode"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_o-W5AEpvEe2YPdtfy5e7BA" name="REQ-1.3.1 Temperature Set Mode"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2tQ5AEpvEe2YPdtfy5e7BA" name="REQ-1.3.1.1 Set Temperature Step"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_t5dEkEpwEe2YPdtfy5e7BA" name="REQ-1.3.1.2 Change Modes Button"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bZly0Ep3Ee2YPdtfy5e7BA" name="REQ-1.3.2 Heating Mode"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wqYacEp4Ee2YPdtfy5e7BA" name="REQ-1.3.2.1 Heat Efficiency"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wGOIAEp5Ee2YPdtfy5e7BA" name="REQ-1.3.2.2 After Heat Mode"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hIYsMEp4Ee2YPdtfy5e7BA" name="REQ-1.3.3 Hold Mode"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MfC-wEp6Ee2YPdtfy5e7BA" name="REQ-1.3.3.1 Hold Button"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_GVeJsEqAEe2YPdtfy5e7BA" name="" client="_eIeUkEpvEe2YPdtfy5e7BA" supplier="_DcZ6kEpvEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_H38pEEqAEe2YPdtfy5e7BA" name="" client="_Qgsa0EpwEe2YPdtfy5e7BA" supplier="_GVekAEpwEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_KsLEMEqAEe2YPdtfy5e7BA" client="_BduRQEp4Ee2YPdtfy5e7BA" supplier="_GVekAEpwEe2YPdtfy5e7BA"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_OVmpAEqAEe2YPdtfy5e7BA" name="" client="_o-W5AEpvEe2YPdtfy5e7BA" supplier="_NJA-QEp5Ee2YPdtfy5e7BA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_OVmpAEqAEe2YPdtfy5e7BA" name="" client="_LTchkEpqEe2YPdtfy5e7BA" supplier="_LTchkEpqEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_ROdsgEqAEe2YPdtfy5e7BA" name="" client="_bZly0Ep3Ee2YPdtfy5e7BA" supplier="_NJA-QEp5Ee2YPdtfy5e7BA"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_SE6MUEqAEe2YPdtfy5e7BA" name="" client="_hIYsMEp4Ee2YPdtfy5e7BA" supplier="_NJA-QEp5Ee2YPdtfy5e7BA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_SE6MUEqAEe2YPdtfy5e7BA" name="" client="_hIYsMEp4Ee2YPdtfy5e7BA" supplier="_LTchkEpqEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_TvZ_QEqAEe2YPdtfy5e7BA" name="" client="_MfC-wEp6Ee2YPdtfy5e7BA" supplier="_hIYsMEp4Ee2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_Ub9jQEqAEe2YPdtfy5e7BA" name="" client="_wGOIAEp5Ee2YPdtfy5e7BA" supplier="_bZly0Ep3Ee2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_Vxpj0EqAEe2YPdtfy5e7BA" name="" client="_wqYacEp4Ee2YPdtfy5e7BA" supplier="_bZly0Ep3Ee2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_Xtp9gEqAEe2YPdtfy5e7BA" name="" client="_2tQ5AEpvEe2YPdtfy5e7BA" supplier="_o-W5AEpvEe2YPdtfy5e7BA"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Y02PEEqAEe2YPdtfy5e7BA" client="_t5dEkEpwEe2YPdtfy5e7BA" supplier="_o-W5AEpvEe2YPdtfy5e7BA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Y02PEEqAEe2YPdtfy5e7BA" client="_t5dEkEpwEe2YPdtfy5e7BA" supplier="_LTchkEpqEe2YPdtfy5e7BA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_NOLI4EpqEe2YPdtfy5e7BA" name="kettle">
       <packagedElement xmi:type="uml:Class" xmi:id="_NL9QoEqREe2YPdtfy5e7BA" name="Electric Kettle" classifierBehavior="_WJ1i0EtbEe2YPdtfy5e7BA">
@@ -47,13 +47,13 @@
         <ownedAttribute xmi:type="uml:Port" xmi:id="_7Z0AgEqXEe2YPdtfy5e7BA" name="temp_minus_button" visibility="public" aggregation="composite">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_9AUrUEqXEe2YPdtfy5e7BA" name="hold_button" visibility="public" aggregation="composite">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_9AUrUEqXEe2YPdtfy5e7BA" name="hold_toggle" visibility="public" aggregation="composite">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_-0OR4EqXEe2YPdtfy5e7BA" name="power_button" visibility="public" aggregation="composite">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_-0OR4EqXEe2YPdtfy5e7BA" name="power_toggle" visibility="public" aggregation="composite">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_AnEIgEqYEe2YPdtfy5e7BA" name="temp_set_button" visibility="public" aggregation="composite">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_AnEIgEqYEe2YPdtfy5e7BA" name="temp_set_toggle" visibility="public" aggregation="composite">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_LkJJwEtLEe2YPdtfy5e7BA" name="dT" visibility="public" aggregation="composite">
@@ -95,7 +95,7 @@
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_8KiqEEtsEe2j86CoMKes6Q" name="hold_time" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
-          <defaultValue xmi:type="uml:LiteralReal" xmi:id="_AhsQgEttEe2j86CoMKes6Q"/>
+          <defaultValue xmi:type="uml:LiteralReal" xmi:id="_wPexIFiwEe2NiYcbfjpKng"/>
         </ownedAttribute>
         <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_WJ1i0EtbEe2YPdtfy5e7BA" name="Electric Kettle">
           <region xmi:type="uml:Region" xmi:id="_XiewwEtbEe2YPdtfy5e7BA" name="Region1">
@@ -112,7 +112,7 @@
                 <region xmi:type="uml:Region" xmi:id="_nKRBIEtfEe2YPdtfy5e7BA" name="Region1">
                   <transition xmi:type="uml:Transition" xmi:id="_3h9BQEtfEe2YPdtfy5e7BA" source="_qAau4EtfEe2YPdtfy5e7BA" target="_rBLBQEtfEe2YPdtfy5e7BA"/>
                   <transition xmi:type="uml:Transition" xmi:id="_9gGasEtfEe2YPdtfy5e7BA" source="_rBLBQEtfEe2YPdtfy5e7BA" target="_tLhY8EtfEe2YPdtfy5e7BA">
-                    <trigger xmi:type="uml:Trigger" xmi:id="_yIvrcEtgEe2YPdtfy5e7BA" event="_G4250EtgEe2YPdtfy5e7BA"/>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_RqkWYFDmEe2HQaLD9ZiQ9A" event="_L0O1IFDmEe2HQaLD9ZiQ9A"/>
                   </transition>
                   <transition xmi:type="uml:Transition" xmi:id="_4BXEoEtgEe2YPdtfy5e7BA" source="_tLhY8EtfEe2YPdtfy5e7BA" target="_rBLBQEtfEe2YPdtfy5e7BA">
                     <trigger xmi:type="uml:Trigger" xmi:id="_6rPQ8EtgEe2YPdtfy5e7BA" event="_G4250EtgEe2YPdtfy5e7BA"/>
@@ -122,6 +122,9 @@
                   </transition>
                   <transition xmi:type="uml:Transition" xmi:id="_HnRNEEtiEe2YPdtfy5e7BA" source="_0tv0QEtfEe2YPdtfy5e7BA" target="_rBLBQEtfEe2YPdtfy5e7BA">
                     <trigger xmi:type="uml:Trigger" xmi:id="_Jcvg8EtiEe2YPdtfy5e7BA" event="_G4250EtgEe2YPdtfy5e7BA"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_KeETEEu6Ee2hhunqe72ckA" source="_tLhY8EtfEe2YPdtfy5e7BA" target="_Ce-8oEu6Ee2hhunqe72ckA">
+                    <trigger xmi:type="uml:Trigger" xmi:id="_Sb4eMEu6Ee2hhunqe72ckA" event="_L0deQEu6Ee2hhunqe72ckA"/>
                   </transition>
                   <subvertex xmi:type="uml:Pseudostate" xmi:id="_qAau4EtfEe2YPdtfy5e7BA" name=""/>
                   <subvertex xmi:type="uml:State" xmi:id="_rBLBQEtfEe2YPdtfy5e7BA" name="Set Temperature Mode">
@@ -199,6 +202,12 @@ hold_led = True&#xD;
 hold_time = 0</body>
                     </entry>
                   </subvertex>
+                  <subvertex xmi:type="uml:State" xmi:id="_Ce-8oEu6Ee2hhunqe72ckA" name="Exit">
+                    <entry xmi:type="uml:OpaqueBehavior" xmi:id="_HKxWUEu6Ee2hhunqe72ckA">
+                      <language>Natural language</language>
+                      <body>power_toggle = False</body>
+                    </entry>
+                  </subvertex>
                 </region>
               </doActivity>
               <entry xmi:type="uml:OpaqueBehavior" xmi:id="_E3oT0EteEe2YPdtfy5e7BA">
@@ -262,6 +271,20 @@ heat_power = 0</body>
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
             </ownedAttribute>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_74HyQEtJEe2YPdtfy5e7BA" name="water_volume" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_qY_9MFh0Ee2P656rxdvIQA" name="Water Max Height">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_sNTMYFh0Ee2P656rxdvIQA" name="Constraint1">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_sNYr8Fh0Ee2P656rxdvIQA" name="constraintSpec">
+                <language>Natural language</language>
+                <body>water_height_out = min(1000/(16*pi), water_height)</body>
+              </specification>
+            </ownedRule>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_L7CwgFh1Ee2P656rxdvIQA" name="water_height" visibility="public" aggregation="composite">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_M3smAFh1Ee2P656rxdvIQA" name="water_height_out" visibility="public" aggregation="composite">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
             </ownedAttribute>
           </nestedClassifier>
@@ -390,7 +413,7 @@ heat_power = 0</body>
             <ownedRule xmi:type="uml:Constraint" xmi:id="_LA3QEEqnEe2YPdtfy5e7BA">
               <specification xmi:type="uml:OpaqueExpression" xmi:id="_LA3QEUqnEe2YPdtfy5e7BA">
                 <language>Natural language</language>
-                <body>display_temperature = target_temperature if current_state == &quot;SET_TEMPERATURE&quot; else current_temperature</body>
+                <body>display_temperature = target_temperature if current_state == &quot;SET_TEMPERATURE&quot; else 0 if current_state == &quot;OFF&quot; else current_temperature</body>
               </specification>
             </ownedRule>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_RS_x8EqmEe2YPdtfy5e7BA" name="current_temperature" visibility="public" aggregation="composite">
@@ -437,8 +460,8 @@ heat_power = 0</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_hk5y0EqpEe2YPdtfy5e7BA" name="ItemFlow10" informationSource="_SqX0kEqmEe2YPdtfy5e7BA" informationTarget="_Nqi7AEqaEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_ThWGUEtKEe2YPdtfy5e7BA" name="ItemFlow11" informationSource="_wN1VYEtJEe2YPdtfy5e7BA" informationTarget="_mns48EqWEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_UR4LYEtKEe2YPdtfy5e7BA" name="ItemFlow12" informationSource="_74HyQEtJEe2YPdtfy5e7BA" informationTarget="_d8yXQEqWEe2YPdtfy5e7BA"/>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_XnTPEEtKEe2YPdtfy5e7BA" name="ItemFlow15" informationSource="_NsLsAEqVEe2YPdtfy5e7BA" informationTarget="_go8EIEtJEe2YPdtfy5e7BA"/>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_kBgtAEtKEe2YPdtfy5e7BA" name="ItemFlow16" informationSource="_NsLsAEqVEe2YPdtfy5e7BA" informationTarget="_06ZLIEtJEe2YPdtfy5e7BA"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_XnTPEEtKEe2YPdtfy5e7BA" name="ItemFlow15" informationSource="_NsLsAEqVEe2YPdtfy5e7BA _M3smAFh1Ee2P656rxdvIQA" informationTarget="_go8EIEtJEe2YPdtfy5e7BA"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_kBgtAEtKEe2YPdtfy5e7BA" name="ItemFlow16" informationSource="_NsLsAEqVEe2YPdtfy5e7BA _M3smAFh1Ee2P656rxdvIQA" informationTarget="_06ZLIEtJEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_0LLF8EtPEe2YPdtfy5e7BA" name="ItemFlow17" informationSource="_gpvOAEtMEe2YPdtfy5e7BA" informationTarget="_pAmV0EtNEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_3Dpu8EtPEe2YPdtfy5e7BA" name="ItemFlow18" informationSource="_GK0pwEtNEe2YPdtfy5e7BA" informationTarget="_aJR8QEtNEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_30-eMEtPEe2YPdtfy5e7BA" name="ItemFlow19" informationSource="_monXkEqZEe2YPdtfy5e7BA" informationTarget="_ZdXRcEtNEe2YPdtfy5e7BA"/>
@@ -467,51 +490,236 @@ heat_power = 0</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_RWv0AEtrEe2j86CoMKes6Q" name="ItemFlow42" informationSource="_L7UGEEtrEe2j86CoMKes6Q" informationTarget="_83miQEqZEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_-vFe4Et2Ee2YfdvAYV9Rgg" name="ItemFlow41" informationSource="_3Qke4Et2Ee2YfdvAYV9Rgg" informationTarget="_hcwGsEtJEe2YPdtfy5e7BA"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Aqn-gEt3Ee2YfdvAYV9Rgg" name="ItemFlow42" informationSource="_3Qke4Et2Ee2YfdvAYV9Rgg" informationTarget="_1tdm0EtJEe2YPdtfy5e7BA"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_y6kgMFh1Ee2P656rxdvIQA" name="ItemFlowGrandeTeste" informationSource="_NsLsAEqVEe2YPdtfy5e7BA" informationTarget="_L7CwgFh1Ee2P656rxdvIQA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_iJogMEtcEe2YPdtfy5e7BA" name="events">
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_ymIu4EtcEe2YPdtfy5e7BA" name="power on">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_OrWGEEtdEe2YPdtfy5e7BA">
           <language>Natural language</language>
-          <body>power_button == True</body>
+          <body>power_toggle</body>
         </changeExpression>
       </packagedElement>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_QvfvIEtdEe2YPdtfy5e7BA" name="power off">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_TSt50EtdEe2YPdtfy5e7BA">
           <language>Natural language</language>
-          <body>power_button == False</body>
+          <body>not power_toggle or hold_time >= 3600</body>
         </changeExpression>
       </packagedElement>
-      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_G4250EtgEe2YPdtfy5e7BA" name="temperature set mode">
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_G4250EtgEe2YPdtfy5e7BA" name="temperature set mode in" visibility="package">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_s-IAsEtgEe2YPdtfy5e7BA">
           <language>Natural language</language>
-          <body>temp_set_button == True</body>
+          <body>temp_set_toggle</body>
         </changeExpression>
       </packagedElement>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_3a99kEthEe2YPdtfy5e7BA" name="trigger hold">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_8RfnoEthEe2YPdtfy5e7BA">
           <language>Natural language</language>
-          <body>current_temperature == target_temperature and hold_button == True</body>
+          <body>current_temperature == target_temperature and hold_toggle</body>
         </changeExpression>
       </packagedElement>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_CkdVUEt0Ee2YfdvAYV9Rgg" name="temp_up">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_HblcUEt0Ee2YfdvAYV9Rgg">
           <language>Natural language</language>
-          <body>temp_plus_button == True</body>
+          <body>temp_plus_button</body>
         </changeExpression>
       </packagedElement>
       <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_IibIkEt0Ee2YfdvAYV9Rgg" name="temp_down">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_IibIkUt0Ee2YfdvAYV9Rgg">
           <language>Natural language</language>
-          <body>temp_minus_button == True</body>
+          <body>temp_minus_button</body>
         </changeExpression>
       </packagedElement>
-      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_96DmQEt0Ee2YfdvAYV9Rgg" name="transition">
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_96DmQEt0Ee2YfdvAYV9Rgg" name="True">
         <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_APmhUEt1Ee2YfdvAYV9Rgg">
           <language>Natural language</language>
           <body>True</body>
         </changeExpression>
       </packagedElement>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_L0deQEu6Ee2hhunqe72ckA" name="exit">
+        <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_QPp3MEu6Ee2hhunqe72ckA">
+          <language>Natural language</language>
+          <body>current_temperature == target_temperature and not hold_toggle</body>
+        </changeExpression>
+      </packagedElement>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_L0O1IFDmEe2HQaLD9ZiQ9A" name="temperature set mode out">
+        <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_O--54FDmEe2HQaLD9ZiQ9A">
+          <language>Natural language</language>
+          <body>not temp_set_toggle</body>
+        </changeExpression>
+      </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_9VBFcFDYEe2HQaLD9ZiQ9A" name="activities">
+      <packagedElement xmi:type="uml:Activity" xmi:id="__A9p4FDYEe2HQaLD9ZiQ9A" name="Kettle Main Behavior" node="_kWJ-sFDZEe2HQaLD9ZiQ9A _oTyR4FDZEe2HQaLD9ZiQ9A _Mbff4FDaEe2HQaLD9ZiQ9A _W4lw4FDaEe2HQaLD9ZiQ9A _hvGAYFDaEe2HQaLD9ZiQ9A _KhxvwFDbEe2HQaLD9ZiQ9A _bNwk4FDbEe2HQaLD9ZiQ9A _vW6EcFDbEe2HQaLD9ZiQ9A _y98ckFDbEe2HQaLD9ZiQ9A _tBrdAFDcEe2HQaLD9ZiQ9A _8rYVwFDcEe2HQaLD9ZiQ9A _SZQXcFDdEe2HQaLD9ZiQ9A _kXDZwFDdEe2HQaLD9ZiQ9A _sixhMFDhEe2HQaLD9ZiQ9A _WcOEUFDiEe2HQaLD9ZiQ9A">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_HYzpIFDaEe2HQaLD9ZiQ9A" target="_kWJ-sFDZEe2HQaLD9ZiQ9A" source="_oTyR4FDZEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_oEbx0FDaEe2HQaLD9ZiQ9A" target="_hvGAYFDaEe2HQaLD9ZiQ9A" source="_W4lw4FDaEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_qJVo0FDaEe2HQaLD9ZiQ9A" name="[temp_plus_button == True]" target="_Mbff4FDaEe2HQaLD9ZiQ9A" source="_hvGAYFDaEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_5RqS0FDaEe2HQaLD9ZiQ9A" name="[else]" target="_bNwk4FDbEe2HQaLD9ZiQ9A" source="_hvGAYFDaEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_8wM2QFDaEe2HQaLD9ZiQ9A" target="_W4lw4FDaEe2HQaLD9ZiQ9A" source="_kWJ-sFDZEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_e8gHgFDbEe2HQaLD9ZiQ9A" name="[temp_minus_button == True]" target="_KhxvwFDbEe2HQaLD9ZiQ9A" source="_bNwk4FDbEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_04_M8FDbEe2HQaLD9ZiQ9A" name="[else]" target="_y98ckFDbEe2HQaLD9ZiQ9A" source="_bNwk4FDbEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZjrzQFDcEe2HQaLD9ZiQ9A" name="[temp_set_toggle == False]" target="_vW6EcFDbEe2HQaLD9ZiQ9A" source="_y98ckFDbEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_er64YFDcEe2HQaLD9ZiQ9A" name="[else]" target="_W4lw4FDaEe2HQaLD9ZiQ9A" source="_y98ckFDbEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_-RKn0FDcEe2HQaLD9ZiQ9A" target="_8rYVwFDcEe2HQaLD9ZiQ9A" source="_vW6EcFDbEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_IHvrYFDdEe2HQaLD9ZiQ9A" name="[current_temperature == target_temperature]" target="_kXDZwFDdEe2HQaLD9ZiQ9A" source="_8rYVwFDcEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_pJsCUFDdEe2HQaLD9ZiQ9A" name="[hold_toggle == True]" target="_SZQXcFDdEe2HQaLD9ZiQ9A" source="_kXDZwFDdEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_tzzBAFDdEe2HQaLD9ZiQ9A" name="[else]" target="_tBrdAFDcEe2HQaLD9ZiQ9A" source="_kXDZwFDdEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JlgNYFDeEe2HQaLD9ZiQ9A" name="[else]" target="_sixhMFDhEe2HQaLD9ZiQ9A" source="_8rYVwFDcEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_fwWe8FDeEe2HQaLD9ZiQ9A" target="_bNwk4FDbEe2HQaLD9ZiQ9A" source="_Mbff4FDaEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_quCfEFDfEe2HQaLD9ZiQ9A" name="[else]" target="_y98ckFDbEe2HQaLD9ZiQ9A" source="_KhxvwFDbEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_x3RgsFDhEe2HQaLD9ZiQ9A" name="[temp_set_toggle == True]" target="_W4lw4FDaEe2HQaLD9ZiQ9A" source="_sixhMFDhEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_3ddtIFDhEe2HQaLD9ZiQ9A" name="[else]" target="_vW6EcFDbEe2HQaLD9ZiQ9A" source="_sixhMFDhEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_SJwJkFDiEe2HQaLD9ZiQ9A" target="_WcOEUFDiEe2HQaLD9ZiQ9A" source="_SZQXcFDdEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ygBtUFDiEe2HQaLD9ZiQ9A" name="[temp_set_toggle == True]" target="_kWJ-sFDZEe2HQaLD9ZiQ9A" source="_WcOEUFDiEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_-B84YFDiEe2HQaLD9ZiQ9A" name="[else]" target="_SZQXcFDdEe2HQaLD9ZiQ9A" source="_WcOEUFDiEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_kWJ-sFDZEe2HQaLD9ZiQ9A" name="Set target temperature to 100ºC" incoming="_HYzpIFDaEe2HQaLD9ZiQ9A _ygBtUFDiEe2HQaLD9ZiQ9A" outgoing="_8wM2QFDaEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_oTyR4FDZEe2HQaLD9ZiQ9A" outgoing="_HYzpIFDaEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_Mbff4FDaEe2HQaLD9ZiQ9A" name="Increase target temperature by 1 ºC" incoming="_qJVo0FDaEe2HQaLD9ZiQ9A" outgoing="_fwWe8FDeEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_W4lw4FDaEe2HQaLD9ZiQ9A" name="Temperature Set Mode" incoming="_8wM2QFDaEe2HQaLD9ZiQ9A _er64YFDcEe2HQaLD9ZiQ9A _x3RgsFDhEe2HQaLD9ZiQ9A" outgoing="_oEbx0FDaEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_hvGAYFDaEe2HQaLD9ZiQ9A" incoming="_oEbx0FDaEe2HQaLD9ZiQ9A" outgoing="_qJVo0FDaEe2HQaLD9ZiQ9A _5RqS0FDaEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_KhxvwFDbEe2HQaLD9ZiQ9A" name="Decrease target temperature by 1 ºC" incoming="_e8gHgFDbEe2HQaLD9ZiQ9A" outgoing="_quCfEFDfEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_bNwk4FDbEe2HQaLD9ZiQ9A" incoming="_5RqS0FDaEe2HQaLD9ZiQ9A _fwWe8FDeEe2HQaLD9ZiQ9A" outgoing="_e8gHgFDbEe2HQaLD9ZiQ9A _04_M8FDbEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_vW6EcFDbEe2HQaLD9ZiQ9A" name="Heat Water" incoming="_ZjrzQFDcEe2HQaLD9ZiQ9A _3ddtIFDhEe2HQaLD9ZiQ9A" outgoing="_-RKn0FDcEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_y98ckFDbEe2HQaLD9ZiQ9A" name="" incoming="_04_M8FDbEe2HQaLD9ZiQ9A _quCfEFDfEe2HQaLD9ZiQ9A" outgoing="_ZjrzQFDcEe2HQaLD9ZiQ9A _er64YFDcEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_tBrdAFDcEe2HQaLD9ZiQ9A" name="Shut Down" incoming="_tzzBAFDdEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_8rYVwFDcEe2HQaLD9ZiQ9A" name="" incoming="_-RKn0FDcEe2HQaLD9ZiQ9A" outgoing="_IHvrYFDdEe2HQaLD9ZiQ9A _JlgNYFDeEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_SZQXcFDdEe2HQaLD9ZiQ9A" name="Hold Mode" incoming="_pJsCUFDdEe2HQaLD9ZiQ9A _-B84YFDiEe2HQaLD9ZiQ9A" outgoing="_SJwJkFDiEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_kXDZwFDdEe2HQaLD9ZiQ9A" incoming="_IHvrYFDdEe2HQaLD9ZiQ9A" outgoing="_pJsCUFDdEe2HQaLD9ZiQ9A _tzzBAFDdEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_sixhMFDhEe2HQaLD9ZiQ9A" incoming="_JlgNYFDeEe2HQaLD9ZiQ9A" outgoing="_x3RgsFDhEe2HQaLD9ZiQ9A _3ddtIFDhEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_WcOEUFDiEe2HQaLD9ZiQ9A" incoming="_SJwJkFDiEe2HQaLD9ZiQ9A" outgoing="_ygBtUFDiEe2HQaLD9ZiQ9A _-B84YFDiEe2HQaLD9ZiQ9A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_PVoRkFDhEe2HQaLD9ZiQ9A" name="Temperature Display Behavior" node="_Zw_dMFDhEe2HQaLD9ZiQ9A _bICvsFDhEe2HQaLD9ZiQ9A _cM50EFDjEe2HQaLD9ZiQ9A _zxjKIFDjEe2HQaLD9ZiQ9A _DJs_4FDkEe2HQaLD9ZiQ9A">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_emi24FDhEe2HQaLD9ZiQ9A" target="_bICvsFDhEe2HQaLD9ZiQ9A" source="_Zw_dMFDhEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_1DM_QFDjEe2HQaLD9ZiQ9A" target="_zxjKIFDjEe2HQaLD9ZiQ9A" source="_bICvsFDhEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_6dIRUFDjEe2HQaLD9ZiQ9A" name="[temp_set_toggle == False]" target="_cM50EFDjEe2HQaLD9ZiQ9A" source="_zxjKIFDjEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_-h8KkFDjEe2HQaLD9ZiQ9A" name="[else]" target="_bICvsFDhEe2HQaLD9ZiQ9A" source="_zxjKIFDjEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_EsS0AFDkEe2HQaLD9ZiQ9A" target="_DJs_4FDkEe2HQaLD9ZiQ9A" source="_cM50EFDjEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_YAnkYFDkEe2HQaLD9ZiQ9A" name="[temp_set_toggle == True]" target="_bICvsFDhEe2HQaLD9ZiQ9A" source="_DJs_4FDkEe2HQaLD9ZiQ9A"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_AAln8FDmEe2HQaLD9ZiQ9A" name="[else]" target="_cM50EFDjEe2HQaLD9ZiQ9A" source="_DJs_4FDkEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_Zw_dMFDhEe2HQaLD9ZiQ9A" name="" outgoing="_emi24FDhEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_bICvsFDhEe2HQaLD9ZiQ9A" name="display_flash = True &amp; display_temperature = target_temperature" incoming="_emi24FDhEe2HQaLD9ZiQ9A _-h8KkFDjEe2HQaLD9ZiQ9A _YAnkYFDkEe2HQaLD9ZiQ9A" outgoing="_1DM_QFDjEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_cM50EFDjEe2HQaLD9ZiQ9A" name="display_flash = False &amp; display_temperature = current_temperature" incoming="_6dIRUFDjEe2HQaLD9ZiQ9A _AAln8FDmEe2HQaLD9ZiQ9A" outgoing="_EsS0AFDkEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_zxjKIFDjEe2HQaLD9ZiQ9A" name="" incoming="_1DM_QFDjEe2HQaLD9ZiQ9A" outgoing="_6dIRUFDjEe2HQaLD9ZiQ9A _-h8KkFDjEe2HQaLD9ZiQ9A"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_DJs_4FDkEe2HQaLD9ZiQ9A" name="" incoming="_EsS0AFDkEe2HQaLD9ZiQ9A" outgoing="_YAnkYFDkEe2HQaLD9ZiQ9A _AAln8FDmEe2HQaLD9ZiQ9A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_1omLwFe8Ee2L6YI1JB-H5A" name="test cases">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ZR8NUFe-Ee2L6YI1JB-H5A" annotatedElement="_gTv70FfBEe2L6YI1JB-H5A">
+        <body>Scenario: hold_toggle selected in the display&#xD;
+Expected: 60 min in hold mode after heating (hold_led turned on), and then the kettle shuts off (hold_led and power_led off)</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_7wJG4Fe-Ee2L6YI1JB-H5A" annotatedElement="_UJb7EFfBEe2L6YI1JB-H5A">
+        <body>Scenario: user define target temperature (e.g 95ºC), press set_temperature_toggle, and waits until water is heated.&#xD;
+Expected: kettle shuts off (power_led off) after achieving the target temperature</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_wyTY8FfBEe2L6YI1JB-H5A" annotatedElement="_rYIPQFfBEe2L6YI1JB-H5A">
+        <body>Scenario: starter and target temperature at limit (0ºC and 100ºC, respectively), considering an enviroment temperature of 25ºC.&#xD;
+Expected: kettle reaches target temperature at most 2 min after start heating.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_XnKwwFfCEe2L6YI1JB-H5A" annotatedElement="_RkqbwFfCEe2L6YI1JB-H5A">
+        <body>Scenario: set temperature mode&#xD;
+Expected: kettle turns on in the set temperature mode, target temperature increases/decreases by 1ºC everytime a button is pressed (temp_plus_button and temp_minus_button), and is kept under the limits of 60 and 100 ºC.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_cuR_EFfDEe2L6YI1JB-H5A" annotatedElement="_8Eg3kFfCEe2L6YI1JB-H5A">
+        <body>Scenario: checking for the temperature display in all three modes (hold, heat and set temperature)&#xD;
+Expected: display flashes and shows target temperature in the set temperature mode. In other modes, does not flash and show current water temperature.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_rvHhAFfDEe2L6YI1JB-H5A" annotatedElement="_WGkrQFfDEe2L6YI1JB-H5A">
+        <body>Scenario: set_temperature_toggle (in the display) and power_toggle.&#xD;
+Expected: at any time the kettle is on, turning on the set_temperature toggle will lead to the set temperature mode, while turning off the power_toggle will shut off the kettle.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_aZMKMFh3Ee2P656rxdvIQA" annotatedElement="_9MPu4Fh2Ee2P656rxdvIQA">
+        <body>Scenario: check for water tank constraints and display buttons&#xD;
+Expected: water tank cylindrical, with 4cm radius and capacity of 1L. Display having hold_toggle and set_temperature_toggle.</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_UJb7EFfBEe2L6YI1JB-H5A" name="Test Case 1: Default Heating Behavior"/>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_gTv70FfBEe2L6YI1JB-H5A" name="Test Case 2: Hold Mode"/>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_rYIPQFfBEe2L6YI1JB-H5A" name="Test Case 4: Kettle Performance"/>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_RkqbwFfCEe2L6YI1JB-H5A" name="Test Case 3: Temperature Set Mode"/>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_8Eg3kFfCEe2L6YI1JB-H5A" name="Test Case 6: Temperature Display"/>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_WGkrQFfDEe2L6YI1JB-H5A" name="Test Case 7: Changes between modes"/>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_9MPu4Fh2Ee2P656rxdvIQA" name="Test Case 5: Visual Inspection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ADF6EFfQEe2L6YI1JB-H5A" name="digital thread">
+      <packagedElement xmi:type="uml:Package" xmi:id="_DEP98FfQEe2L6YI1JB-H5A" name="Digital Twin">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2xtjYFfREe2L6YI1JB-H5A">
+          <body>Digital asset receiving data from the physical twin&#xD;
+DT able to provide insights on the operation of the physical element</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_DHlecFfTEe2L6YI1JB-H5A">
+          <body>Verification if the digital asset is capturing all data it needs.&#xD;
+Validation of model and algorithms, now with real data</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_dvaRoFfTEe2L6YI1JB-H5A">
+          <body>DT integrated with the physical asset</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Package" xmi:id="_hBHaUFfQEe2L6YI1JB-H5A" name="Implementation">
+          <packagedElement xmi:type="uml:Realization" xmi:id="_H3_5cFfTEe2L6YI1JB-H5A" client="_hBHaUFfQEe2L6YI1JB-H5A" supplier="_jtruQFfQEe2L6YI1JB-H5A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_jtruQFfQEe2L6YI1JB-H5A" name="Test and Evaluation">
+          <packagedElement xmi:type="uml:Realization" xmi:id="_Jr78QFfTEe2L6YI1JB-H5A" client="_jtruQFfQEe2L6YI1JB-H5A" supplier="_lujZ0FfQEe2L6YI1JB-H5A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_lujZ0FfQEe2L6YI1JB-H5A" name="Operation and Maintenance"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_IjOvIFfQEe2L6YI1JB-H5A" name="Pre-Digital Twin">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2pJ5wFfQEe2L6YI1JB-H5A">
+          <body>SysML Requirements Diagram (req)&#xD;
+SysML Activity Diagram (act)&#xD;
+Definition of test case scenarios</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="__fF_sFfQEe2L6YI1JB-H5A">
+          <body>SysML Block Definition Diagram (bdd)&#xD;
+SysML Parametric Diagram (par)&#xD;
+Simulation Tools (validate the model with the test case scenarios using theoretical inputs)</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Z0HLoFfREe2L6YI1JB-H5A">
+          <body>Software and hardware specification&#xD;
+Definition of how sensors are connected with model elements</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Package" xmi:id="_KmdLIFfQEe2L6YI1JB-H5A" name="Concept Exploration">
+          <packagedElement xmi:type="uml:Abstraction" xmi:id="_OoQFQFfTEe2L6YI1JB-H5A" name="" client="_KmdLIFfQEe2L6YI1JB-H5A" supplier="_Un7QEFfQEe2L6YI1JB-H5A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Un7QEFfQEe2L6YI1JB-H5A" name="Preliminary Design">
+          <packagedElement xmi:type="uml:Abstraction" xmi:id="_U6opUFfTEe2L6YI1JB-H5A" name="" client="_Un7QEFfQEe2L6YI1JB-H5A" supplier="_XOwvcFfQEe2L6YI1JB-H5A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_XOwvcFfQEe2L6YI1JB-H5A" name="Detailed Design"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_GeP4QFfTEe2L6YI1JB-H5A" client="_IjOvIFfQEe2L6YI1JB-H5A" supplier="_DEP98FfQEe2L6YI1JB-H5A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_UJQr8FhxEe2P656rxdvIQA" name="Satisfy20" client="_NL9QoEqREe2YPdtfy5e7BA" supplier="_ycKssEpuEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_cANaEFhxEe2P656rxdvIQA" name="Satisfy21" client="_GiiQIEqSEe2YPdtfy5e7BA" supplier="_DcZ6kEpvEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_tQWFIFhxEe2P656rxdvIQA" name="Verify22" client="_rYIPQFfBEe2L6YI1JB-H5A" supplier="_wqYacEp4Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_38dpkFhxEe2P656rxdvIQA" name="Verify23" client="_UJb7EFfBEe2L6YI1JB-H5A" supplier="_wGOIAEp5Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_6B4d8FhxEe2P656rxdvIQA" name="Verify24" client="_gTv70FfBEe2L6YI1JB-H5A" supplier="_wGOIAEp5Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_-IS5sFhxEe2P656rxdvIQA" name="Verify25" client="_gTv70FfBEe2L6YI1JB-H5A" supplier="_hIYsMEp4Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_KXurAFhyEe2P656rxdvIQA" name="Verify26" client="_RkqbwFfCEe2L6YI1JB-H5A" supplier="_o-W5AEpvEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_PF2nAFhyEe2P656rxdvIQA" name="Verify27" client="_RkqbwFfCEe2L6YI1JB-H5A" supplier="_2tQ5AEpvEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_SPn0UFhyEe2P656rxdvIQA" name="Verify28" client="_UJb7EFfBEe2L6YI1JB-H5A" supplier="_bZly0Ep3Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_X878cFhyEe2P656rxdvIQA" name="Verify29" client="_8Eg3kFfCEe2L6YI1JB-H5A" supplier="_Qgsa0EpwEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_bBmnUFhyEe2P656rxdvIQA" name="Verify30" client="_8Eg3kFfCEe2L6YI1JB-H5A" supplier="_BduRQEp4Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_eHyVIFhyEe2P656rxdvIQA" name="Verify31" client="_UJb7EFfBEe2L6YI1JB-H5A" supplier="_ycKssEpuEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_jwaKgFhyEe2P656rxdvIQA" name="Verify32" client="_WGkrQFfDEe2L6YI1JB-H5A" supplier="_t5dEkEpwEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_VWqoUFhzEe2P656rxdvIQA" name="Satisfy34" client="_QDp74EqkEe2YPdtfy5e7BA" supplier="_Qgsa0EpwEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ekQZQFhzEe2P656rxdvIQA" name="Satisfy35" client="_SR1DoEqkEe2YPdtfy5e7BA" supplier="_Qgsa0EpwEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_g0xqYFhzEe2P656rxdvIQA" name="Satisfy36" client="_SR1DoEqkEe2YPdtfy5e7BA" supplier="_BduRQEp4Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_s6gGEFhzEe2P656rxdvIQA" name="Satisfy37" client="_GiiQIEqSEe2YPdtfy5e7BA" supplier="_eIeUkEpvEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_3dNP0FhzEe2P656rxdvIQA" name="Satisfy38" client="_NL9QoEqREe2YPdtfy5e7BA" supplier="_o-W5AEpvEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_51y30FhzEe2P656rxdvIQA" name="Satisfy39" client="_NL9QoEqREe2YPdtfy5e7BA" supplier="_2tQ5AEpvEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_8rcPQFhzEe2P656rxdvIQA" name="Satisfy40" client="_NL9QoEqREe2YPdtfy5e7BA" supplier="_t5dEkEpwEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="__vzYIFhzEe2P656rxdvIQA" name="Satisfy41" client="_MbCRMEppEe2YPdtfy5e7BA" supplier="_bZly0Ep3Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_CwvZkFh0Ee2P656rxdvIQA" name="Satisfy42" client="_Hzp5wEqSEe2YPdtfy5e7BA" supplier="_wqYacEp4Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_HRXFEFh0Ee2P656rxdvIQA" name="Satisfy43" client="_NL9QoEqREe2YPdtfy5e7BA" supplier="_wGOIAEp5Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Ldvl8Fh0Ee2P656rxdvIQA" name="Satisfy44" client="_NL9QoEqREe2YPdtfy5e7BA" supplier="_hIYsMEp4Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_NDBhsFh0Ee2P656rxdvIQA" name="Satisfy45" client="_NL9QoEqREe2YPdtfy5e7BA" supplier="_MfC-wEp6Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_MRIf0Fh2Ee2P656rxdvIQA" name="Satisfy46" client="_qY_9MFh0Ee2P656rxdvIQA" supplier="_DcZ6kEpvEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_VUpHsFh2Ee2P656rxdvIQA" name="Satisfy47" client="_NL9QoEqREe2YPdtfy5e7BA" supplier="_GVekAEpwEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_cxRRUFh2Ee2P656rxdvIQA" name="Satisfy49" client="_NL9QoEqREe2YPdtfy5e7BA" supplier="_NJA-QEp5Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_e5pLsFh5Ee2P656rxdvIQA" name="Verify50" client="_9MPu4Fh2Ee2P656rxdvIQA" supplier="_DcZ6kEpvEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_i4-IAFh5Ee2P656rxdvIQA" name="Verify51" client="_9MPu4Fh2Ee2P656rxdvIQA" supplier="_eIeUkEpvEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_H0Z5AFh6Ee2P656rxdvIQA" name="Verify52" client="_8Eg3kFfCEe2L6YI1JB-H5A" supplier="_GVekAEpwEe2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_1lWSIFh6Ee2P656rxdvIQA" name="Verify52" client="_gTv70FfBEe2L6YI1JB-H5A" supplier="_MfC-wEp6Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_b-FSIFh8Ee2P656rxdvIQA" name="Verify53" client="_gTv70FfBEe2L6YI1JB-H5A" supplier="_NJA-QEp5Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ocLKgFh8Ee2P656rxdvIQA" name="Verify53" client="_WGkrQFfDEe2L6YI1JB-H5A" supplier="_NJA-QEp5Ee2YPdtfy5e7BA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_XO2Q8Fh-Ee2P656rxdvIQA" name="Verify54" client="_WGkrQFfDEe2L6YI1JB-H5A" supplier="_GVekAEpwEe2YPdtfy5e7BA"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_McJEcEppEe2YPdtfy5e7BA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_McLgsEppEe2YPdtfy5e7BA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -581,19 +789,19 @@ heat_power = 0</body>
   </uml:Model>
   <Requirements:Requirement xmi:id="_ycPlMEpuEe2YPdtfy5e7BA" base_NamedElement="_ycKssEpuEe2YPdtfy5e7BA" id="REQ-1" text="The kettle SHALL allow the user to heat water up to the desired temperature" base_Class="_ycKssEpuEe2YPdtfy5e7BA"/>
   <Requirements:Requirement xmi:id="_Dcc94EpvEe2YPdtfy5e7BA" base_NamedElement="_DcZ6kEpvEe2YPdtfy5e7BA" id="REQ-1.1" text="The water tank SHALL be cylindrical and have a capacity of up to 1L of water." base_Class="_DcZ6kEpvEe2YPdtfy5e7BA"/>
-  <Requirements:Requirement xmi:id="_eIgw0EpvEe2YPdtfy5e7BA" base_NamedElement="_eIeUkEpvEe2YPdtfy5e7BA" id="REQ-1.1.1 Water tank radius" text="The water tank SHALL have a radius of 4cm." base_Class="_eIeUkEpvEe2YPdtfy5e7BA"/>
+  <Requirements:Requirement xmi:id="_eIgw0EpvEe2YPdtfy5e7BA" base_NamedElement="_eIeUkEpvEe2YPdtfy5e7BA" id="REQ-1.1.1" text="The water tank SHALL have a radius of 4cm." base_Class="_eIeUkEpvEe2YPdtfy5e7BA"/>
   <Requirements:Requirement xmi:id="_o-ZVQEpvEe2YPdtfy5e7BA" base_NamedElement="_o-W5AEpvEe2YPdtfy5e7BA" id="REQ-1.3.1" text="The kettle SHALL start in the temperature set mode, in wich the user can select the desired water temperature." base_Class="_o-W5AEpvEe2YPdtfy5e7BA"/>
-  <Requirements:Requirement xmi:id="_2tTVQEpvEe2YPdtfy5e7BA" base_NamedElement="_2tQ5AEpvEe2YPdtfy5e7BA" id="REQ-1.3.1.1" text="The user SHALL be able to change the temperature with 1º increment/decrement steps." base_Class="_2tQ5AEpvEe2YPdtfy5e7BA"/>
-  <Requirements:Requirement xmi:id="_GVi1cEpwEe2YPdtfy5e7BA" base_NamedElement="_GVekAEpwEe2YPdtfy5e7BA" id="REQ-1.2" text="The kettle SHALL have a display to show the water temperature to the user." base_Class="_GVekAEpwEe2YPdtfy5e7BA"/>
-  <Requirements:Requirement xmi:id="_Qgu3EEpwEe2YPdtfy5e7BA" base_NamedElement="_Qgsa0EpwEe2YPdtfy5e7BA" id="REQ-1.2.1" text="In the temperature set mode, the display SHALL flash and show the target temperature. " base_Class="_Qgsa0EpwEe2YPdtfy5e7BA"/>
-  <Requirements:Requirement xmi:id="_t5gH4EpwEe2YPdtfy5e7BA" base_NamedElement="_t5dEkEpwEe2YPdtfy5e7BA" id="REQ-1.3.1.2" text="The kettle SHALL have a button for the user to change from temperature set mode to the heating mode." base_Class="_t5dEkEpwEe2YPdtfy5e7BA"/>
+  <Requirements:Requirement xmi:id="_2tTVQEpvEe2YPdtfy5e7BA" base_NamedElement="_2tQ5AEpvEe2YPdtfy5e7BA" id="REQ-1.3.1.1" text="The user SHALL be able to change the target temperature with 1º increment/decrement steps, using the kettle display, considering the limits [60ºC, 100ºC]" base_Class="_2tQ5AEpvEe2YPdtfy5e7BA"/>
+  <Requirements:Requirement xmi:id="_GVi1cEpwEe2YPdtfy5e7BA" base_NamedElement="_GVekAEpwEe2YPdtfy5e7BA" id="REQ-1.2" text="The kettle SHALL have a display to show the water temperature to the user and allow the user to change between modes." base_Class="_GVekAEpwEe2YPdtfy5e7BA"/>
+  <Requirements:Requirement xmi:id="_Qgu3EEpwEe2YPdtfy5e7BA" base_NamedElement="_Qgsa0EpwEe2YPdtfy5e7BA" id="REQ-1.2.1" text="The display SHALL show the target temperature flashing in the set temperature mode" base_Class="_Qgsa0EpwEe2YPdtfy5e7BA"/>
+  <Requirements:Requirement xmi:id="_t5gH4EpwEe2YPdtfy5e7BA" base_NamedElement="_t5dEkEpwEe2YPdtfy5e7BA" id="REQ-1.3.1.2" text="The kettle display SHALL have a toggle for the user to change from temperature set mode to the heating mode." base_Class="_t5dEkEpwEe2YPdtfy5e7BA"/>
   <Requirements:Requirement xmi:id="_bZuVsEp3Ee2YPdtfy5e7BA" base_NamedElement="_bZly0Ep3Ee2YPdtfy5e7BA" id="REQ-1.3.2" text="The kettle SHALL have a heating mode, in which the water is being heated up to the target temperature." base_Class="_bZly0Ep3Ee2YPdtfy5e7BA"/>
-  <Requirements:Requirement xmi:id="_BdxUkEp4Ee2YPdtfy5e7BA" base_NamedElement="_BduRQEp4Ee2YPdtfy5e7BA" id="REQ-1.2.2" text="The display SHALL show the current water temperature in the heating mode." base_Class="_BduRQEp4Ee2YPdtfy5e7BA"/>
+  <Requirements:Requirement xmi:id="_BdxUkEp4Ee2YPdtfy5e7BA" base_NamedElement="_BduRQEp4Ee2YPdtfy5e7BA" id="REQ-1.2.2" text="The display SHALL show the current water temperature in the heating and hold modes." base_Class="_BduRQEp4Ee2YPdtfy5e7BA"/>
   <Requirements:Requirement xmi:id="_hIahYEp4Ee2YPdtfy5e7BA" base_NamedElement="_hIYsMEp4Ee2YPdtfy5e7BA" id="REQ-1.3.3" text="The kettle SHALL have an optional hold mode, in which the water is kept at the target temperature for up to 60 min, when it is shuted off." base_Class="_hIYsMEp4Ee2YPdtfy5e7BA"/>
   <Requirements:Requirement xmi:id="_wqa2sEp4Ee2YPdtfy5e7BA" base_NamedElement="_wqYacEp4Ee2YPdtfy5e7BA" id="REQ-1.3.2.1" text="The kettle SHALL reach the target temperate in at most 2 min." base_Class="_wqYacEp4Ee2YPdtfy5e7BA"/>
-  <Requirements:Requirement xmi:id="_NJDagEp5Ee2YPdtfy5e7BA" base_NamedElement="_NJA-QEp5Ee2YPdtfy5e7BA" id="REQ-1.3" text="While on, the kettle SHALL be in one of these modes: set temperature, heat and hold" base_Class="_NJA-QEp5Ee2YPdtfy5e7BA"/>
-  <Requirements:Requirement xmi:id="_wGQkQEp5Ee2YPdtfy5e7BA" base_NamedElement="_wGOIAEp5Ee2YPdtfy5e7BA" id="REQ-1.3.2.2" text="If hold is not selected by the user, the kettle SHALL shut off after achieving the target temperature. Otherwise, SHALL go to the hold mode." base_Class="_wGOIAEp5Ee2YPdtfy5e7BA"/>
-  <Requirements:Requirement xmi:id="_MfFbAEp6Ee2YPdtfy5e7BA" base_NamedElement="_MfC-wEp6Ee2YPdtfy5e7BA" id="REQ-1.3.3.1" text="The kettle SHALL have a button for the user to select if they want the kettle to be held in hold mode." base_Class="_MfC-wEp6Ee2YPdtfy5e7BA"/>
+  <Requirements:Requirement xmi:id="_NJDagEp5Ee2YPdtfy5e7BA" base_NamedElement="_NJA-QEp5Ee2YPdtfy5e7BA" id="REQ-1.3" text="The kettle SHALL have three modes of operation: temperature, heat and hold (when on)" base_Class="_NJA-QEp5Ee2YPdtfy5e7BA"/>
+  <Requirements:Requirement xmi:id="_wGQkQEp5Ee2YPdtfy5e7BA" base_NamedElement="_wGOIAEp5Ee2YPdtfy5e7BA" id="REQ-1.3.2.2" text="The kettle SHALL shut off after achieving the target temperature if hold is not selected by the user. Otherwise, SHALL go to the hold mode." base_Class="_wGOIAEp5Ee2YPdtfy5e7BA"/>
+  <Requirements:Requirement xmi:id="_MfFbAEp6Ee2YPdtfy5e7BA" base_NamedElement="_MfC-wEp6Ee2YPdtfy5e7BA" id="REQ-1.3.3.1" text="The kettle display SHALL have a toggle for the user to select if they want the kettle to be held in hold mode." base_Class="_MfC-wEp6Ee2YPdtfy5e7BA"/>
   <Requirements:DeriveReqt xmi:id="_GVjpQEqAEe2YPdtfy5e7BA" base_DirectedRelationship="_GVeJsEqAEe2YPdtfy5e7BA" base_Abstraction="_GVeJsEqAEe2YPdtfy5e7BA"/>
   <Requirements:DeriveReqt xmi:id="_H3-eQEqAEe2YPdtfy5e7BA" base_DirectedRelationship="_H38pEEqAEe2YPdtfy5e7BA" base_Abstraction="_H38pEEqAEe2YPdtfy5e7BA"/>
   <Requirements:DeriveReqt xmi:id="_KsM5YEqAEe2YPdtfy5e7BA" base_DirectedRelationship="_KsLEMEqAEe2YPdtfy5e7BA" base_Abstraction="_KsLEMEqAEe2YPdtfy5e7BA"/>
@@ -709,4 +917,52 @@ heat_power = 0</body>
   <PortsAndFlows:ItemFlow xmi:id="_RW3IwEtrEe2j86CoMKes6Q" base_InformationFlow="_RWv0AEtrEe2j86CoMKes6Q"/>
   <PortsAndFlows:ItemFlow xmi:id="_-vHUEEt2Ee2YfdvAYV9Rgg" base_InformationFlow="_-vFe4Et2Ee2YfdvAYV9Rgg"/>
   <PortsAndFlows:ItemFlow xmi:id="_AqqawEt3Ee2YfdvAYV9Rgg" base_InformationFlow="_Aqn-gEt3Ee2YfdvAYV9Rgg"/>
+  <Requirements:TestCase xmi:id="_UJflcFfBEe2L6YI1JB-H5A" base_Behavior="_UJb7EFfBEe2L6YI1JB-H5A"/>
+  <Requirements:TestCase xmi:id="_gTyYEFfBEe2L6YI1JB-H5A" base_Behavior="_gTv70FfBEe2L6YI1JB-H5A"/>
+  <Requirements:TestCase xmi:id="_rYLSkFfBEe2L6YI1JB-H5A" base_Behavior="_rYIPQFfBEe2L6YI1JB-H5A"/>
+  <Requirements:TestCase xmi:id="_Rks4AFfCEe2L6YI1JB-H5A" base_Behavior="_RkqbwFfCEe2L6YI1JB-H5A"/>
+  <Requirements:TestCase xmi:id="_8ElJAFfCEe2L6YI1JB-H5A" base_Behavior="_8Eg3kFfCEe2L6YI1JB-H5A"/>
+  <Requirements:TestCase xmi:id="_WGmgcFfDEe2L6YI1JB-H5A" base_Behavior="_WGkrQFfDEe2L6YI1JB-H5A"/>
+  <Requirements:Refine xmi:id="_OoU9wFfTEe2L6YI1JB-H5A" base_DirectedRelationship="_OoQFQFfTEe2L6YI1JB-H5A" base_Abstraction="_OoQFQFfTEe2L6YI1JB-H5A"/>
+  <Requirements:Refine xmi:id="_U6rFkFfTEe2L6YI1JB-H5A" base_DirectedRelationship="_U6opUFfTEe2L6YI1JB-H5A" base_Abstraction="_U6opUFfTEe2L6YI1JB-H5A"/>
+  <Requirements:Satisfy xmi:id="_UJTIMFhxEe2P656rxdvIQA" base_DirectedRelationship="_UJQr8FhxEe2P656rxdvIQA" base_Abstraction="_UJQr8FhxEe2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_cAP2UFhxEe2P656rxdvIQA" base_DirectedRelationship="_cANaEFhxEe2P656rxdvIQA" base_Abstraction="_cANaEFhxEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_tQYhYFhxEe2P656rxdvIQA" base_DirectedRelationship="_tQWFIFhxEe2P656rxdvIQA" base_Abstraction="_tQWFIFhxEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_38gs4FhxEe2P656rxdvIQA" base_DirectedRelationship="_38dpkFhxEe2P656rxdvIQA" base_Abstraction="_38dpkFhxEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_6B66MFhxEe2P656rxdvIQA" base_DirectedRelationship="_6B4d8FhxEe2P656rxdvIQA" base_Abstraction="_6B4d8FhxEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_-IV9AFhxEe2P656rxdvIQA" base_DirectedRelationship="_-IS5sFhxEe2P656rxdvIQA" base_Abstraction="_-IS5sFhxEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_KXxHQFhyEe2P656rxdvIQA" base_DirectedRelationship="_KXurAFhyEe2P656rxdvIQA" base_Abstraction="_KXurAFhyEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_PF4cMFhyEe2P656rxdvIQA" base_DirectedRelationship="_PF2nAFhyEe2P656rxdvIQA" base_Abstraction="_PF2nAFhyEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_SPq3oFhyEe2P656rxdvIQA" base_DirectedRelationship="_SPn0UFhyEe2P656rxdvIQA" base_Abstraction="_SPn0UFhyEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_X8-YsFhyEe2P656rxdvIQA" base_DirectedRelationship="_X878cFhyEe2P656rxdvIQA" base_Abstraction="_X878cFhyEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_bBpDkFhyEe2P656rxdvIQA" base_DirectedRelationship="_bBmnUFhyEe2P656rxdvIQA" base_Abstraction="_bBmnUFhyEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_eH0KUFhyEe2P656rxdvIQA" base_DirectedRelationship="_eHyVIFhyEe2P656rxdvIQA" base_Abstraction="_eHyVIFhyEe2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_jwb_sFhyEe2P656rxdvIQA" base_DirectedRelationship="_jwaKgFhyEe2P656rxdvIQA" base_Abstraction="_jwaKgFhyEe2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_VWtEkFhzEe2P656rxdvIQA" base_DirectedRelationship="_VWqoUFhzEe2P656rxdvIQA" base_Abstraction="_VWqoUFhzEe2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_ekSOcFhzEe2P656rxdvIQA" base_DirectedRelationship="_ekQZQFhzEe2P656rxdvIQA" base_Abstraction="_ekQZQFhzEe2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_g04YEFhzEe2P656rxdvIQA" base_DirectedRelationship="_g0xqYFhzEe2P656rxdvIQA" base_Abstraction="_g0xqYFhzEe2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_s6jJYFhzEe2P656rxdvIQA" base_DirectedRelationship="_s6gGEFhzEe2P656rxdvIQA" base_Abstraction="_s6gGEFhzEe2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_3dPFAFhzEe2P656rxdvIQA" base_DirectedRelationship="_3dNP0FhzEe2P656rxdvIQA" base_Abstraction="_3dNP0FhzEe2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_5117IFhzEe2P656rxdvIQA" base_DirectedRelationship="_51y30FhzEe2P656rxdvIQA" base_Abstraction="_51y30FhzEe2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_8reEcFhzEe2P656rxdvIQA" base_DirectedRelationship="_8rcPQFhzEe2P656rxdvIQA" base_Abstraction="_8rcPQFhzEe2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="__v1NUFhzEe2P656rxdvIQA" base_DirectedRelationship="__vzYIFhzEe2P656rxdvIQA" base_Abstraction="__vzYIFhzEe2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_CwwnsFh0Ee2P656rxdvIQA" base_DirectedRelationship="_CwvZkFh0Ee2P656rxdvIQA" base_Abstraction="_CwvZkFh0Ee2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_HRY6QFh0Ee2P656rxdvIQA" base_DirectedRelationship="_HRXFEFh0Ee2P656rxdvIQA" base_Abstraction="_HRXFEFh0Ee2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_LdxbIFh0Ee2P656rxdvIQA" base_DirectedRelationship="_Ldvl8Fh0Ee2P656rxdvIQA" base_Abstraction="_Ldvl8Fh0Ee2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_NDD98Fh0Ee2P656rxdvIQA" base_DirectedRelationship="_NDBhsFh0Ee2P656rxdvIQA" base_Abstraction="_NDBhsFh0Ee2P656rxdvIQA"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_qZCZcFh0Ee2P656rxdvIQA" base_Class="_qY_9MFh0Ee2P656rxdvIQA"/>
+  <DeprecatedElements:FlowPort xmi:id="_L7ElsFh1Ee2P656rxdvIQA" base_Port="_L7CwgFh1Ee2P656rxdvIQA" direction="in"/>
+  <DeprecatedElements:FlowPort xmi:id="_M3ubMFh1Ee2P656rxdvIQA" base_Port="_M3smAFh1Ee2P656rxdvIQA" direction="out"/>
+  <PortsAndFlows:ItemFlow xmi:id="_y6m8cFh1Ee2P656rxdvIQA" base_InformationFlow="_y6kgMFh1Ee2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_MRKVAFh2Ee2P656rxdvIQA" base_DirectedRelationship="_MRIf0Fh2Ee2P656rxdvIQA" base_Abstraction="_MRIf0Fh2Ee2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_VUq84Fh2Ee2P656rxdvIQA" base_DirectedRelationship="_VUpHsFh2Ee2P656rxdvIQA" base_Abstraction="_VUpHsFh2Ee2P656rxdvIQA"/>
+  <Requirements:Satisfy xmi:id="_cxTGgFh2Ee2P656rxdvIQA" base_DirectedRelationship="_cxRRUFh2Ee2P656rxdvIQA" base_Abstraction="_cxRRUFh2Ee2P656rxdvIQA"/>
+  <Requirements:TestCase xmi:id="_9MRkEFh2Ee2P656rxdvIQA" base_Behavior="_9MPu4Fh2Ee2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_e5sPAFh5Ee2P656rxdvIQA" base_DirectedRelationship="_e5pLsFh5Ee2P656rxdvIQA" base_Abstraction="_e5pLsFh5Ee2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_i4_9MFh5Ee2P656rxdvIQA" base_DirectedRelationship="_i4-IAFh5Ee2P656rxdvIQA" base_Abstraction="_i4-IAFh5Ee2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_H0cVQFh6Ee2P656rxdvIQA" base_DirectedRelationship="_H0Z5AFh6Ee2P656rxdvIQA" base_Abstraction="_H0Z5AFh6Ee2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_1lYHUFh6Ee2P656rxdvIQA" base_DirectedRelationship="_1lWSIFh6Ee2P656rxdvIQA" base_Abstraction="_1lWSIFh6Ee2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_b-HHUFh8Ee2P656rxdvIQA" base_DirectedRelationship="_b-FSIFh8Ee2P656rxdvIQA" base_Abstraction="_b-FSIFh8Ee2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_ocM_sFh8Ee2P656rxdvIQA" base_DirectedRelationship="_ocLKgFh8Ee2P656rxdvIQA" base_Abstraction="_ocLKgFh8Ee2P656rxdvIQA"/>
+  <Requirements:Verify xmi:id="_XO57UFh-Ee2P656rxdvIQA" base_DirectedRelationship="_XO2Q8Fh-Ee2P656rxdvIQA" base_Abstraction="_XO2Q8Fh-Ee2P656rxdvIQA"/>
 </xmi:XMI>

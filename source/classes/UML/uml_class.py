@@ -61,3 +61,11 @@ class Class(Basic):
 
     def get_type(self):
         return self.type
+
+    def __str__(self):
+        if self.type == ClassType.CONSTRAINT_BLOCK:
+            return f'Constraint Block: \'{self.name}\''
+        if self.type == ClassType.BLOCK:
+            return f'Block: \'{self.name}\''
+
+        raise Exception(f"Unexpected class type: '{self.type}'")

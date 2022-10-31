@@ -10,5 +10,6 @@ allowed_functions_from_external_libraries = {
     "if": "",
     "else": "",
     "or": "",
-    "and": ""
+    "and": "",
+    "not": ""
 }

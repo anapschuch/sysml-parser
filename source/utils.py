@@ -1,9 +1,12 @@
 from source.globals import allowed_functions_from_external_libraries
 from source.xml_types import XMLTagTypes, EnumPrimitiveType
 import re
+import logging
+
+logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.ERROR)
 
 
-def parse_code_statement(attribute_names, specification, is_state_machine=False):
+def parse_code_statement(attribute_names, specification, is_state_machine=False, error_message=''):
     def replace_identifier(match_obj):
         if is_state_machine:
             if match_obj[0] in attribute_names:
@@ -14,7 +17,7 @@ def parse_code_statement(attribute_names, specification, is_state_machine=False)
         if match_obj[0] in allowed_functions_from_external_libraries:
             return match_obj[0]
 
-        raise Exception('Unexpected token: ' + match_obj[0])
+        raise_error('Unexpected token: ' + match_obj[0] + f'\nStatement: \'{specification}\'\n' + error_message)
     return re.sub(r'([a-z]+(\.[a-z]+)+)|\b(?<!["\'])[a-zA-Z_][a-zA-Z0-9_]*\b', replace_identifier, specification)
 
 
@@ -54,3 +57,8 @@ def convert_to_file_name(name):
     s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
     s2 = re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
     return s2.replace(' ', '')
+
+
+def raise_error(message):
+    logging.error(message)
+    exit(1)

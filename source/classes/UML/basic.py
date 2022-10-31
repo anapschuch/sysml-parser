@@ -3,6 +3,7 @@ class Basic:
         self.name = name
         self.xmi_id = xmi_id
         self.children = dict()
+        self.parent = None
 
     def add_children(self, child):
         if child is None:
