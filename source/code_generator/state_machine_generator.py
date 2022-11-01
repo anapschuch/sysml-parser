@@ -7,7 +7,7 @@ class StateMachineGenerator(CodeGenerator):
         super().__init__(level, indentation)
         self.block = block_name
 
-    def create_state_chart(self, state_machine, attributes):
+    def create_state_chart(self, state_machine, attributes, events):
         self.add_code('statechart:\n')
         self.indent()
         self.add_code(f'name: {state_machine.name}\n')
@@ -15,9 +15,9 @@ class StateMachineGenerator(CodeGenerator):
         self.indent()
 
         # TODO: Add support for more regions (parallel states)
-        self.add_region(state_machine.regions[0], attributes, state_machine.name)
+        self.add_region(state_machine.regions[0], attributes, state_machine.name, events)
 
-    def add_region(self, region, attributes, state_machine_name, show_name=True):
+    def add_region(self, region, attributes, state_machine_name, events, show_name=True):
         if show_name:
             self.add_code(f'name: {region.name}\n')
         if region.begin_state is None:
@@ -61,7 +61,7 @@ class StateMachineGenerator(CodeGenerator):
                         target_state = region.states[trans.target]
                         self.add_code(f'- target: {target_state.name}\n')
                         if trans.trigger is not None:
-                            event = trans.trigger.event.name
+                            event = events[trans.trigger.event_id].name
                             self.indent()
                             self.add_code(f'event: {event}\n')
                             self.dedent()
@@ -70,6 +70,6 @@ class StateMachineGenerator(CodeGenerator):
                 if state.state_machine is not None:
                     self.indent()
                     # TODO: Add support for more regions
-                    self.add_region(state.state_machine.regions[0], attributes, state.state_machine.name, False)
+                    self.add_region(state.state_machine.regions[0], attributes, state.state_machine.name, events, False)
                     self.dedent()
             self.dedent()

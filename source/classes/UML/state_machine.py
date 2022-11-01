@@ -17,10 +17,10 @@ class StateMachine(Basic):
         else:
             raise Exception("Unexpected child for UMLStateMachine: ", type(child))
 
-    def print(self, indentation):
+    def print(self, indentation, events):
         print(' ' * indentation, "State Machine: ", self.name, sep="")
         for region in self.regions:
-            region.print(indentation + 2)
+            region.print(indentation + 2, events)
 
 
 class Region(Basic):
@@ -49,16 +49,16 @@ class Region(Basic):
         else:
             raise Exception("Unexpected child for UMLRegion: ", type(child))
 
-    def print(self, indentation):
+    def print(self, indentation, events):
         print(' ' * indentation, "Region ", self.name, ":", self.xmi_id, sep="")
         for state in self.states.values():
-            state.print(indentation + 2)
+            state.print(indentation + 2, events)
 
         if len(self.transitions) > 0:
             print("\n" + ' ' * indentation, "Transitions: ", sep="")
             for transitions in self.transitions.values():
                 for trans in transitions:
-                    trans.print(indentation)
+                    trans.print(indentation, events)
 
 
 class State(Basic):
@@ -79,11 +79,11 @@ class State(Basic):
         else:
             raise Exception("Unexpected child for UMLState: ", type(child))
 
-    def print(self, indentation):
+    def print(self, indentation, events):
         print(' ' * indentation, self.name, ":", self.xmi_id, sep="")
         if self.entry is not None:
             txt = self.entry.body
             txt = txt.replace('\r\n', '\n' + ' ' * (indentation + 9))
             print(' ' * (indentation + 2), "entry: ", txt, sep="")
         if self.state_machine is not None:
-            self.state_machine.print(indentation + 2)
+            self.state_machine.print(indentation + 2, events)

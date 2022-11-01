@@ -31,5 +31,5 @@ def print_blocks_info(parser):
 
         if class_elem.state_machine is not None:
             print("\n  State Machine:")
-            class_elem.state_machine.print(5)
+            class_elem.state_machine.print(5, parser.events)
         print("")

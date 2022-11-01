@@ -68,7 +68,8 @@ def aux_update_element_order(parser, class_element, order_dict, current_order, e
         if type(inner_port) is Port and inner_port.direction == 'out':
             for attr in inner_class.attributes.values():
                 if type(attr) is Port and attr.direction == 'in':
-                    aux_update_element_order(parser, class_element, order_dict, current_order + 1, attr.xmi_id, visited.copy(),
+                    aux_update_element_order(parser, class_element, order_dict, current_order + 1, attr.xmi_id,
+                                             visited.copy(),
                                              inner_classes_connectors, attr_connectors)
             return
 
@@ -157,7 +158,7 @@ def generate_main_file(block):
     gen.add_code('n_iter = 12000\n\n')
 
     if len(input_ports) > 0:
-        gen.add_code('input_ports = '+input_ports.__str__()+'\n')
+        gen.add_code('input_ports = ' + input_ports.__str__() + '\n')
         gen.add_code('for port in input_ports:\n')
         gen.indent()
         gen.add_code('if port not in file.columns:\n')
@@ -201,17 +202,17 @@ def generate_main_file(block):
     f.close()
 
 
-def get_state_machine_events(state_machine, events):
+def get_state_machine_events(state_machine, parser_events, state_machine_events):
     for region in state_machine.regions:
         for transitions in region.transitions.values():
             for single_transition in transitions:
                 if single_transition.trigger is not None:
-                    event = single_transition.trigger.event
-                    events[event.name] = event.change_expression['body']
+                    event = parser_events[single_transition.trigger.event_id]
+                    state_machine_events[event.name] = event.change_expression['body']
 
         for state in region.states.values():
             if type(state) is State and state.state_machine is not None:
-                get_state_machine_events(state.state_machine, events)
+                get_state_machine_events(state.state_machine, parser_events, state_machine_events)
 
 
 def generate_output_files(block, parser, plant_uml_server):
@@ -223,7 +224,8 @@ def generate_output_files(block, parser, plant_uml_server):
     os.mkdir(output_folder_path + 'utils/')
     helper_input = open(output_folder_path + 'utils/helpers.py', 'a+')
     helper_output = open('source/helper_files/output_base_classes.py', 'r')
-    helper_input.write('\n'.join(generate_importers_from_allowed_external_functions()) + '\n\n\n' + helper_output.read())
+    helper_input.write(
+        '\n'.join(generate_importers_from_allowed_external_functions()) + '\n\n\n' + helper_output.read())
 
     generate_main_file(block)
 
@@ -263,7 +265,8 @@ def generate_output_files(block, parser, plant_uml_server):
         if class_elem.state_machine is not None:
             f_state_machine = open(output_folder_path + f"{class_name_file}.yaml", "x")
             state_machine_code_gen = StateMachineGenerator(class_elem.name)
-            state_machine_code_gen.create_state_chart(class_elem.state_machine, class_elem.attribute_names)
+            state_machine_code_gen.create_state_chart(class_elem.state_machine,
+                                                      class_elem.attribute_names, parser.events)
             f_state_machine.write(state_machine_code_gen.code)
             f_state_machine.close()
 
@@ -271,7 +274,7 @@ def generate_output_files(block, parser, plant_uml_server):
             statechart = import_from_yaml(state_machine_code_gen.code)
 
             events = {}
-            get_state_machine_events(class_elem.state_machine, events)
+            get_state_machine_events(class_elem.state_machine, parser.events, events)
 
             gen.add_import('sismic.io', 'import_from_yaml')
             gen.add_import('sismic.interpreter', 'Interpreter')

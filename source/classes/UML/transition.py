@@ -6,7 +6,6 @@ class Transition:
         self.source = source
         self.target = target
         self.trigger = None
-        self.constraint = None
 
     def add_children(self, child):
         if type(child) is Trigger:
@@ -14,9 +13,8 @@ class Transition:
         else:
             raise Exception("Unexpected child for UMLTransition: ", type(child))
 
-    def print(self, indentation):
+    def print(self, indentation, events):
         print(' ' * indentation, self.source, "->", self.target)
-        if self.constraint is not None:
-            print(' ' * (indentation + 2), self.constraint.text)
+
         if self.trigger is not None:
-            self.trigger.print(indentation + 2)
+            self.trigger.print(indentation + 2, events)

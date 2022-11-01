@@ -10,5 +10,5 @@ class PseudoState(Basic):
         else:
             raise Exception("Unexpected kind for pseudo state:", self.kind)
 
-    def print(self, indentation):
+    def print(self, indentation, _events):
         print(' ' * indentation, self.name, ": ", self.xmi_id, sep="")

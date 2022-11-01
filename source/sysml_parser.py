@@ -12,6 +12,7 @@ class SysMLParser:
         self.ids = dict()
         self.items_flow = dict()
         self.items_flow_reversed = dict()
+        self.events = dict()
         self.triggers = dict()
         self.__namespaces = get_xml_file_namespaces(filename)
         self.__tag_types = self.__get_tag_types_from_path(XMLTagTypes)
@@ -118,7 +119,8 @@ class SysMLParser:
                 base_class = self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.BASE_CLASS)
                 element = Requirement(xmi_id, req_id, text, base_named_element, base_class)
 
-            base_directed_relationship = self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.BASE_DIRECTED_RELATIONSHIP)
+            base_directed_relationship = self.__get_tag_attr(tag.attrib,
+                                                             XMLTagAttributeTypes.BASE_DIRECTED_RELATIONSHIP)
             base_abstraction = self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.BASE_ABSTRACTION)
 
             if tag_type == XMLTagTypes.REQUIREMENTS_REFINE:
@@ -218,8 +220,7 @@ class SysMLParser:
 
                 elif xmi_type == XMITypeTypes.CHANGE_EVENT:
                     element = ChangeEvent(self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
-                    for trigger in self.triggers[xmi_id]:
-                        trigger.event = element
+                    self.events[xmi_id] = element
 
         self.ids[xmi_id] = element
         if element is not None:
