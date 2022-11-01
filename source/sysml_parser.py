@@ -63,6 +63,13 @@ class SysMLParser:
     def __get_tag_attr(self, attr, attr_type):
         return attr.get(self.__tag_attributes_path[attr_type], None)
 
+    def get_block(self, name):
+        for block_id in self.blocks:
+            base_block = self.ids.get(block_id)
+            if base_block.name == name:
+                return base_block
+        return None
+
     def parse_tag(self, tag, parent):
         xmi_id = self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.XMI_ID)
         tag_type = self.__get_tag_type(tag.tag)
@@ -79,7 +86,7 @@ class SysMLParser:
                                 f"for base class in element \'{xmi_id}\'")
             if tag_type == XMLTagTypes.BLOCK:
                 base_class_elem.set_type(ClassType.BLOCK)
-                self.blocks.append(base_class_elem)
+                self.blocks.append(base_class)
             else:
                 base_class_elem.set_type(ClassType.CONSTRAINT_BLOCK)
 

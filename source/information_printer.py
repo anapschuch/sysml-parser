@@ -11,7 +11,10 @@ def print_blocks_info(parser):
                   f' {target}')
 
     print("\n********* Blocks *********")
-    for class_elem in parser.blocks:
+    for class_elem_id in parser.blocks:
+        class_elem = parser.ids.get(class_elem_id, None)
+        if class_elem is None:
+            raise Exception(f"Block with id \'{class_elem_id}\' not found!")
         print(class_elem.name)
         print("\n  Attributes:")
         for attr in class_elem.attributes.values():

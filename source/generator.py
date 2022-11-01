@@ -229,7 +229,10 @@ def generate_output_files(block, parser, plant_uml_server):
 
     generate_main_file(block)
 
-    for class_elem in parser.blocks:
+    for class_elem_id in parser.blocks:
+        class_elem = parser.ids.get(class_elem_id, None)
+        if class_elem is None:
+            raise Exception(f"Block id \'{class_elem_id}\' not found!")
         class_name_file = convert_to_file_name(class_elem.name)
 
         f = open(output_folder_path + f"{class_name_file}.py", "x")
