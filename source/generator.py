@@ -214,17 +214,6 @@ def get_state_machine_events(state_machine, events):
                 get_state_machine_events(state.state_machine, events)
 
 
-def get_state_machine_events_params(events):
-    params_set = set()
-    for event_expression in events.values():
-        params_expression = re.findall(r'[a-zA-Z_][a-zA-Z0-9_]*', event_expression)
-        for param in params_expression:
-            if param not in params_set:
-                params_set.add(param)
-
-    return params_set
-
-
 def generate_output_files(block, parser, plant_uml_server):
     output_folder_path = "./output/"
     if os.path.exists(output_folder_path):

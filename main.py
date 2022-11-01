@@ -16,10 +16,6 @@ You can use \'> out.txt\' at the end of the command to save it in a file''')
 
     plant_uml_server = plantuml.PlantUML(url='http://www.plantuml.com/plantuml/img/')
     parser = SysMLParser(args.file)
-    root = parser.root
-
-    for node in root:
-        child_parsed = parser.parse_tag(node, None)
 
     block = None
     for b in parser.blocks:

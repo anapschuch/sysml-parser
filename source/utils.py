@@ -1,5 +1,6 @@
 from source.globals import allowed_functions_from_external_libraries
 from source.xml_types import XMLTagTypes, EnumPrimitiveType
+from xml.etree import ElementTree
 import re
 import logging
 
@@ -57,6 +58,12 @@ def convert_to_file_name(name):
     s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
     s2 = re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
     return s2.replace(' ', '')
+
+
+def get_xml_file_namespaces(filename):
+    return dict([
+        elem for _, elem in ElementTree.iterparse(filename, events=['start-ns'])
+    ])
 
 
 def raise_error(message):
