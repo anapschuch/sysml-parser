@@ -163,12 +163,6 @@ class SysMLParser:
                 elif xmi_type == XMITypeTypes.PRIMITIVE_TYPE:
                     element = PrimitiveType(self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.HREF))
 
-                elif xmi_type == XMITypeTypes.CONNECTOR:
-                    element = Connector(self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id)
-
-                elif xmi_type == XMITypeTypes.CONNECTOR_END:
-                    element = ConnectorEnd(self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.ROLE))
-
                 elif xmi_type == XMITypeTypes.INFORMATION_FLOW:
                     source = self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.INFORMATION_SOURCE).split(' ')
                     target = self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.INFORMATION_TARGET).split(' ')

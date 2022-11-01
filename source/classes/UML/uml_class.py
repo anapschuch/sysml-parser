@@ -2,7 +2,6 @@ from enum import Enum
 from .basic import *
 from .port import Port
 from .property import Property
-from .connector import Connector
 from .state_machine import StateMachine
 from .constraint import Constraint
 
@@ -18,7 +17,6 @@ class Class(Basic):
         self.attributes = dict()
         self.attribute_names = dict()
         self.children_attributes = dict()
-        self.connectors = dict()
         self.state_machine = None
         self.constraints = []
         self.type = None
@@ -27,19 +25,7 @@ class Class(Basic):
         if type(child) is Port or type(child) is Property:
             self.attributes[child.xmi_id] = child
             self.attribute_names[child.name] = child.xmi_id
-        elif type(child) is Connector:
-            if len(child.ends) != 2:
-                raise Exception("Found a connector without two ends: " + child.xmi_id)
 
-            if child.ends[0] not in self.connectors:
-                self.connectors[child.ends[0]] = [child.ends[1]]
-            else:
-                self.connectors[child.ends[0]].append(child.ends[1])
-
-            if child.ends[1] not in self.connectors:
-                self.connectors[child.ends[1]] = [child.ends[0]]
-            else:
-                self.connectors[child.ends[1]].append(child.ends[0])
         elif type(child) is Class:
             for attr_id, _ in child.attributes.items():
                 self.children_attributes[attr_id] = child

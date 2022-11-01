@@ -4,9 +4,6 @@ from .default_value import DefaultValue
 
 from .change_event import ChangeEvent
 
-from .connector_end import ConnectorEnd
-from .connector import Connector
-
 from .primitive_type import PrimitiveType
 
 from .constraint import Constraint
