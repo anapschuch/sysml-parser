@@ -1,4 +1,4 @@
-from source.globals import allowed_functions_from_external_libraries
+from source.globals import special_values_and_functions
 from source.xml_types import XMLTagTypes, EnumPrimitiveType
 from xml.etree import ElementTree
 import re
@@ -15,7 +15,7 @@ def parse_code_statement(attribute_names, specification, is_state_machine=False,
         else:
             if match_obj[0] in attribute_names:
                 return f'self.attrs[\'{match_obj[0]}\']'
-        if match_obj[0] in allowed_functions_from_external_libraries:
+        if match_obj[0] in special_values_and_functions:
             return match_obj[0]
 
         raise_error('Unexpected token: ' + match_obj[0] + f'\nStatement: \'{specification}\'\n' + error_message)
@@ -24,7 +24,7 @@ def parse_code_statement(attribute_names, specification, is_state_machine=False,
 
 def generate_importers_from_allowed_external_functions():
     libraries = {}
-    for k, v in allowed_functions_from_external_libraries.items():
+    for k, v in special_values_and_functions.items():
         if not v:
             continue
         libraries[v] = libraries.get(v, []) + [k]

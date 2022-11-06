@@ -7,13 +7,28 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="__n9SMDlPEe2ZHoYOIYCrsA">
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_DVrhIDlQEe2ZHoYOIYCrsA" name="Calculator">
+    <packagedElement xmi:type="uml:Class" xmi:id="_DVrhIDlQEe2ZHoYOIYCrsA" name="Calculator" classifierBehavior="_ChBkEFmcEe2fUpe9XJdmWg">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_7zTfYDlQEe2ZHoYOIYCrsA" name="z" visibility="public">
         <type xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real"/>
         <defaultValue xmi:type="uml:LiteralReal" xmi:id="_JEGqQDlVEe2Kb8UHGSKQEA"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_u9XnYDlTEe2ZHoYOIYCrsA" name="y" aggregation="composite"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_wJli4DlTEe2ZHoYOIYCrsA" name="x" aggregation="composite"/>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_ChBkEFmcEe2fUpe9XJdmWg" name="Calculator">
+        <region xmi:type="uml:Region" xmi:id="_D9GggFmcEe2fUpe9XJdmWg" name="Region">
+          <transition xmi:type="uml:Transition" xmi:id="_VWIB0FmcEe2fUpe9XJdmWg" source="_GZaK4FmcEe2fUpe9XJdmWg" target="_G7Sv8FmcEe2fUpe9XJdmWg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V-MucFmcEe2fUpe9XJdmWg" source="_G7Sv8FmcEe2fUpe9XJdmWg" target="_G7Sv8FmcEe2fUpe9XJdmWg">
+            <trigger xmi:type="uml:Trigger" xmi:id="_iBgvUFmcEe2fUpe9XJdmWg" event="_c86NAFmcEe2fUpe9XJdmWg"/>
+          </transition>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_GZaK4FmcEe2fUpe9XJdmWg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_G7Sv8FmcEe2fUpe9XJdmWg" name="Reset">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_TPqEkFmcEe2fUpe9XJdmWg">
+              <language>Natural language</language>
+              <body>z = 0</body>
+            </entry>
+          </subvertex>
+        </region>
+      </ownedBehavior>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Vj6MIDlQEe2ZHoYOIYCrsA" name="Y">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_mOLxEDlQEe2ZHoYOIYCrsA" name="Constraint3">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZlTywDlVEe2Kb8UHGSKQEA">
@@ -51,6 +66,12 @@
     <packagedElement xmi:type="uml:InformationFlow" xmi:id="_pFt3gDlTEe2ZHoYOIYCrsA" name="ItemFlow18" informationSource="_7zTfYDlQEe2ZHoYOIYCrsA" informationTarget="_fndNUDlTEe2ZHoYOIYCrsA"/>
     <packagedElement xmi:type="uml:InformationFlow" xmi:id="_rtaSgDlTEe2ZHoYOIYCrsA" name="ItemFlow19" informationSource="_hG18cDlTEe2ZHoYOIYCrsA" informationTarget="_7zTfYDlQEe2ZHoYOIYCrsA"/>
     <packagedElement xmi:type="uml:InformationFlow" xmi:id="_1_mUADlTEe2ZHoYOIYCrsA" name="ItemFlow20" informationSource="_3DC_8DlREe2ZHoYOIYCrsA" informationTarget="_wJli4DlTEe2ZHoYOIYCrsA"/>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_c86NAFmcEe2fUpe9XJdmWg" name="reset z">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_erRMQFmcEe2fUpe9XJdmWg">
+        <language>Natural language</language>
+        <body>z >= pi</body>
+      </changeExpression>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__laUgDlPEe2ZHoYOIYCrsA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__ldX0DlPEe2ZHoYOIYCrsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>

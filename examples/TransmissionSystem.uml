@@ -64,6 +64,9 @@
         <ownedAttribute xmi:type="uml:Port" xmi:id="_sM7aUOESEeyXPMXG3lFeMw" name="drive_gear" aggregation="composite">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ugGOEFroEe2YrPbiuF6wzg" name="engine_speed" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_S-p3wNyjEeyZdrCSZvBi5g" name="Vehicle Simulator">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1DvM0N-7EeyBKe45X3175g" name="mass_fm" visibility="public">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
@@ -365,6 +368,9 @@
           <ownedAttribute xmi:type="uml:Port" xmi:id="_IPReAOEDEeyXPMXG3lFeMw" name="current_gear" type="_CvGFYMnKEeyPP-Oq7gEDJg" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_gHBVQOEOEeyXPMXG3lFeMw" name="drive_gear" aggregation="composite">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_zFkkYFroEe2YrPbiuF6wzg" name="engine_speed" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_DrZxkOEAEeyXPMXG3lFeMw" name="Engine Current Speed">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_ZmoSwOEAEeyXPMXG3lFeMw">
@@ -794,7 +800,7 @@ current_gear_ratio_param = 0.67</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_xx0_oCcWEe2QzKLBqsARlg" name="ItemFlow15" informationSource="_kcZ-ACSiEe2NCYuc8M5wLg" informationTarget="_3WMSACSjEe2NCYuc8M5wLg">
         <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_3NjogCcWEe2QzKLBqsARlg" name="ItemFlow16" informationSource="_IZ3sUN_CEeyQAoCiBoOCcw" informationTarget="_DzR6wNyYEeyZdrCSZvBi5g">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_3NjogCcWEe2QzKLBqsARlg" name="ItemFlow16" informationSource="_IZ3sUN_CEeyQAoCiBoOCcw" informationTarget="_DzR6wNyYEeyZdrCSZvBi5g _lsNp4NJtEeyKp65yHsgyfA">
         <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </packagedElement>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_6Y2f0CcWEe2QzKLBqsARlg" name="ItemFlow17" informationSource="_TRc54N_CEeyQAoCiBoOCcw" informationTarget="_FJDa4NyYEeyZdrCSZvBi5g">
@@ -1013,6 +1019,8 @@ current_gear_ratio_param = 0.67</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_H6uSsC8VEe2QRY_d_zBIvQ" name="ItemFlow87" informationSource="_kcZ-ACSiEe2NCYuc8M5wLg" informationTarget="_0mj6YC8UEe2QRY_d_zBIvQ">
         <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_6Jc20FroEe2YrPbiuF6wzg" name="ItemFlow88" informationSource="_88hUQCSWEe2ZkqwwGIJVRw _0mj6YC8UEe2QRY_d_zBIvQ" informationTarget="_zFkkYFroEe2YrPbiuF6wzg"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_URmEYFrpEe2YrPbiuF6wzg" name="ItemFlow89" informationSource="_zFkkYFroEe2YrPbiuF6wzg" informationTarget="_ugGOEFroEe2YrPbiuF6wzg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_lueqQMW1EeyyYa73KIbzUQ" name="usecases">
       <packagedElement xmi:type="uml:Actor" xmi:id="_5xJR4MW2EeyyYa73KIbzUQ" name="Driver"/>
@@ -1254,9 +1262,9 @@ current_gear_ratio_param = 0.67</body>
             </guard>
           </operand>
         </fragment>
-        <message xmi:type="uml:Message" xmi:id="_RutXkObPEeysC8ykzr1qhw" name="inputGearshifPosition()" messageSort="asynchCall" receiveEvent="_RuxB8ObPEeysC8ykzr1qhw" sendEvent="_Ruwa4ObPEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_RutXkObPEeysC8ykzr1qhw" name="inputGearshifPosition()" receiveEvent="_RuxB8ObPEeysC8ykzr1qhw" sendEvent="_Ruwa4ObPEeysC8ykzr1qhw"/>
         <message xmi:type="uml:Message" xmi:id="_pcOVwObPEeysC8ykzr1qhw" name="updateGear()" messageSort="asynchCall" receiveEvent="_pcPj4ObPEeysC8ykzr1qhw" sendEvent="_pcO80ObPEeysC8ykzr1qhw"/>
-        <message xmi:type="uml:Message" xmi:id="_T2uXgObQEeysC8ykzr1qhw" name="communicateWheelSpeed()" messageSort="asynchCall" receiveEvent="_T2vloObQEeysC8ykzr1qhw" sendEvent="_T2u-kObQEeysC8ykzr1qhw"/>
+        <message xmi:type="uml:Message" xmi:id="_T2uXgObQEeysC8ykzr1qhw" name="communicateWheelSpeed()" receiveEvent="_T2vloObQEeysC8ykzr1qhw" sendEvent="_T2u-kObQEeysC8ykzr1qhw"/>
         <message xmi:type="uml:Message" xmi:id="_YFmywObQEeysC8ykzr1qhw" name="calculateEngineSpeed()" messageSort="asynchCall" receiveEvent="_YFnZ0ObQEeysC8ykzr1qhw" sendEvent="_YFmywebQEeysC8ykzr1qhw"/>
         <message xmi:type="uml:Message" xmi:id="_e3lc4ObQEeysC8ykzr1qhw" name="inputAcceleratorPedalPosition()" messageSort="asynchCall" receiveEvent="_e3mD8ebQEeysC8ykzr1qhw" sendEvent="_e3mD8ObQEeysC8ykzr1qhw"/>
         <message xmi:type="uml:Message" xmi:id="_iBvrwObQEeysC8ykzr1qhw" name="transmitEngineTorque()" messageSort="asynchCall" receiveEvent="_iBwS0ObQEeysC8ykzr1qhw" sendEvent="_iBvrwebQEeysC8ykzr1qhw"/>
@@ -1624,4 +1632,8 @@ current_gear_ratio_param = 0.67</body>
   <PortsAndFlows:ItemFlow xmi:id="_p05KACcxEe2QzKLBqsARlg" base_InformationFlow="_p03U0CcxEe2QzKLBqsARlg"/>
   <DeprecatedElements:FlowPort xmi:id="_0mzyAC8UEe2QRY_d_zBIvQ" base_Port="_0mj6YC8UEe2QRY_d_zBIvQ" direction="out"/>
   <PortsAndFlows:ItemFlow xmi:id="_H66f8C8VEe2QRY_d_zBIvQ" base_InformationFlow="_H6uSsC8VEe2QRY_d_zBIvQ"/>
+  <DeprecatedElements:FlowPort xmi:id="_ugqOwFroEe2YrPbiuF6wzg" base_Port="_ugGOEFroEe2YrPbiuF6wzg" direction="out"/>
+  <DeprecatedElements:FlowPort xmi:id="_zFlygFroEe2YrPbiuF6wzg" base_Port="_zFkkYFroEe2YrPbiuF6wzg" direction="out"/>
+  <PortsAndFlows:ItemFlow xmi:id="_6JiWYFroEe2YrPbiuF6wzg" base_InformationFlow="_6Jc20FroEe2YrPbiuF6wzg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_URrj8FrpEe2YrPbiuF6wzg" base_InformationFlow="_URmEYFrpEe2YrPbiuF6wzg"/>
 </xmi:XMI>

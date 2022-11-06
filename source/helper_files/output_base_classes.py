@@ -14,11 +14,11 @@ class Basic:
     def set_port_value(self, port_name, port_value):
         self.attrs[port_name] = port_value
 
-    def set_attr_value_id(self, port_id, port_value):
-        if port_id not in self.ids:
-            raise Exception('Unknown port id ' + port_id)
-        port_name = self.ids[port_id]
-        self.attrs[port_name] = port_value
+    def set_attr_value_id(self, attr_id, attr_value):
+        if attr_id not in self.ids:
+            raise Exception('Unknown attribute id ' + attr_id)
+        attr_name = self.ids[attr_id]
+        self.attrs[attr_name] = attr_value
 
     def get_output_port(self, port_name):
         if port_name not in self.attrs:

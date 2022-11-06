@@ -7,19 +7,19 @@ from .utils import is_tag_requirement_type, raise_error, get_xml_file_namespaces
 
 
 class SysMLParser:
-    def __init__(self, filename):
+    def __init__(self, file_path):
         self.blocks = []
         self.ids = dict()
         self.items_flow = dict()
         self.items_flow_reversed = dict()
         self.events = dict()
         self.triggers = dict()
-        self.__namespaces = get_xml_file_namespaces(filename)
+        self.__namespaces = get_xml_file_namespaces(file_path)
         self.__tag_types = self.__get_tag_types_from_path(XMLTagTypes)
         self.__tag_attributes_path = self.__get_tag_path_from_type(XMLTagAttributeTypes)
         self.__tag_xmi_types = {i.value: i for i in XMITypeTypes}
         self.__tag_attributes_types = self.__get_tag_types_from_path(XMLTagAttributeTypes)
-        root = ElementTree.parse(filename).getroot()
+        root = ElementTree.parse(file_path).getroot()
         for node in root:
             self.parse_tag(node, None)
 
@@ -106,16 +106,17 @@ class SysMLParser:
         elif tag_type == XMLTagTypes.FLOW_PORT:
             base_port_id = self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.BASE_PORT)
             base_port = self.ids.get(base_port_id, None)
+
             if base_port is None:
-                raise Exception("Base Port id " + base_port_id + " not found")
+                raise Exception(f"Base Port id '{base_port_id}' not found")
             if type(base_port) is not Port:
-                raise Exception("Unexpected base port type: " + type(base_port))
+                raise Exception(f"Unexpected base port type: {type(base_port)}")
+
             direction = self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.DIRECTION)
             if direction is None:
                 parent = self.ids.get(base_port.parent, None)
-                location_error = f'\nLocation:\n{parent}'
-                raise_error("Missing direction for flow port '" + base_port.name +
-                            "' (direction inout not allowed)" + location_error)
+                raise_error(f"Missing direction for flow port '{base_port.name}'"
+                            f" (direction inout not allowed) \nLocation:\n{parent}")
             base_port.add_direction(direction)
 
         elif is_tag_requirement_type(tag_type):
@@ -167,7 +168,7 @@ class SysMLParser:
                     source = self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.INFORMATION_SOURCE).split(' ')
                     target = self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.INFORMATION_TARGET).split(' ')
                     source_string = source[len(source) - 1]
-                    target_string = target[len(target) - 1]
+                    target_string = target[0]
                     element = InformationFlow(self.__get_tag_attr(tag.attrib, XMLTagAttributeTypes.NAME), xmi_id,
                                               source_string, target_string)
 

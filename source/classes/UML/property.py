@@ -15,9 +15,9 @@ class Property(Basic):
         elif type(child) is DefaultValue:
             self.default_value = child.value
         else:
-            raise Exception("Unexpected child for UMLProperty: ", type(child))
+            raise Exception("Unexpected child for UMLProperty: " + type(child))
 
     def print(self, indentation):
-        print(' ' * indentation, "Property: ", self.xmi_id, " - ", self.name, sep="")
+        print(' ' * indentation, f"Property: {self.xmi_id} - {self.name}", sep="")
         if self.default_value is not None:
-            print(' ' * (indentation + 2), "Default Value: ", self.default_value, sep="")
+            print(' ' * (indentation + 2), f"Default Value: {self.default_value}", sep="")

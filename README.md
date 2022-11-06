@@ -4,6 +4,10 @@ Hi there!
 
 This project allows you to generate Python classes from a SysML model built with Papyrus. 
 
+## Modeling Guide
+
+Please refer to <a href="https://github.com/anapschuch/sysml-parser/blob/main/docs/Modeling%20Guide%20-%20-Electric%20Kettle.pdf" target="_blank">Kettle Modeling Guide</a> for help on 
+how to create the project, diagrams and elements in Papyrus.
 ## Running the project
 
 First, clone or download this repository.
@@ -117,8 +121,8 @@ It receives the following inputs:
 * `env_ro`: air density
 * `env_cd`: drag coefficient
 * `fa`: frontal area of the car
-* `pedal position`: the percentage of the pedal that is pressed (a number between 0 and 100)
-* `current gear`: the gear (Parking, Reverse, Neutral and Drive) that the driver is in. 
+* `pedal_position`: the percentage of the pedal that is pressed (a number between 0 and 100)
+* `current_gear`: the gear (Parking, Reverse, Neutral and Drive) that the driver is in. 
   Note that there is an order that must be followed to change gears, e.g. the driver cannot go to Drive directly 
   from Parking, they must go to Reverse and Neutral first. This logic is inside a state machine in the model, so the mode will
   be changed only if your input is correct.
