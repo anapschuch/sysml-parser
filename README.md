@@ -1,4 +1,4 @@
-# SysML Parser: Models simulations for Eclipse Papyrus
+# SysML Parser: Model simulations for Eclipse Papyrus
 
 Hi there!
 
@@ -6,7 +6,7 @@ This project allows you to generate Python classes from a SysML model built with
 
 ## Modeling Guide
 
-Please refer to <a href="https://github.com/anapschuch/sysml-parser/blob/main/docs/Modeling%20Guide%20-%20-Electric%20Kettle.pdf" target="_blank">Kettle Modeling Guide</a> for help on 
+Please refer to <a href="https://github.com/anapschuch/sysml-parser/blob/main/docs/Modeling%20Guide%20-%20Electric%20Kettle.pdf" target="_blank">Kettle Modeling Guide</a> for help on 
 how to create the project, diagrams and elements in Papyrus.
 ## Running the project
 
