@@ -1,4 +1,4 @@
-allowed_functions_from_external_libraries = {
+special_values_and_functions = {
     "cos": "math",
     "sin": "math",
     "pi": "math",
