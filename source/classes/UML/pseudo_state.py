@@ -1,5 +1,9 @@
 from .basic import Basic
-from ...types import PseudoStateTypes
+from enum import Enum
+
+
+class PseudoStateTypes(Enum):
+    BEGIN = "Begin"
 
 
 class PseudoState(Basic):

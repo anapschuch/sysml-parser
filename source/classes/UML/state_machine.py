@@ -1,9 +1,8 @@
 from .basic import Basic
 from .transition import Transition
-from .pseudo_state import PseudoState
+from .pseudo_state import PseudoState, PseudoStateTypes
 from .final_state import FinalState
 from .state_entry_behavior import StateEntryBehavior
-from ...types import PseudoStateTypes
 
 
 class StateMachine(Basic):
@@ -11,7 +10,7 @@ class StateMachine(Basic):
         super().__init__(name, xmi_id)
         self.regions = []
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is Region:
             self.regions.append(child)
         else:
@@ -31,7 +30,7 @@ class Region(Basic):
         self.end_state = None
         self.states = dict()
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is Transition:
             if child.source in self.transitions:
                 self.transitions[child.source].append(child)
@@ -67,7 +66,7 @@ class State(Basic):
         self.state_machine = None
         self.entry = None
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is StateMachine:
             if self.state_machine is not None:
                 raise Exception("Expect at most one state machine in a state")

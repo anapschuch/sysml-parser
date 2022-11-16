@@ -7,5 +7,5 @@ class InformationFlow(Basic):
         self.source = source
         self.target = target
 
-    def add_children(self, child):
+    def add_child(self, child):
         pass

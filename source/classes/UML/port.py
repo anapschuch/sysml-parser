@@ -12,7 +12,7 @@ class Port(Basic):
     def add_direction(self, direction):
         self.direction = direction
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is PrimitiveType:
             self.port_type = child
         else:

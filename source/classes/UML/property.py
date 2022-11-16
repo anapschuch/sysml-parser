@@ -9,7 +9,7 @@ class Property(Basic):
         self.type = None
         self.default_value = None
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is PrimitiveType:
             self.type = child.type
         elif type(child) is DefaultValue:

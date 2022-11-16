@@ -7,7 +7,7 @@ class Specification:
         self.language = "C"
         self.text = None
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is Body:
             if self.text is not None:
                 raise Exception("Can only have one body in a specification tag")

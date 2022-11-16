@@ -7,7 +7,7 @@ class StateEntryBehavior(Basic):
         super().__init__(name, xmi_id)
         self.body = None
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is Body:
             self.body = child.text
         else:

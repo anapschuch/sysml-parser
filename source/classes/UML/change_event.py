@@ -10,7 +10,7 @@ class ChangeEvent(Basic):
             "body": None,
         }
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is Specification:
             if self.change_expression["body"] is not None:
                 raise Exception("Cannot have two bodies in a change expression")

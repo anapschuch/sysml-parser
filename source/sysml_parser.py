@@ -229,7 +229,7 @@ class SysMLParser:
             for child in tag:
                 parsed_child = self.parse_tag(child, element)
                 if parsed_child is not None:
-                    element.add_children(parsed_child)
+                    element.add_child(parsed_child)
                     if hasattr(element, 'xmi_id'):
                         parsed_child.parent = element.xmi_id
 

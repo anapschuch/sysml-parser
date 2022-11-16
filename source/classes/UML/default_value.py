@@ -12,6 +12,6 @@ class DefaultValue:
             elif value_type == "uml:LiteralInteger":
                 self.value = 0
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is Body:
             self.value = child.text

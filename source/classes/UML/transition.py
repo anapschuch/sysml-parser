@@ -7,7 +7,7 @@ class Transition:
         self.target = target
         self.trigger = None
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is Trigger:
             self.trigger = child
         else:

@@ -7,7 +7,7 @@ class Constraint(Basic):
         super().__init__(name, xmi_id)
         self.specification = None
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is Specification:
             if self.specification is not None:
                 raise Exception("Can only have one specification per Constraint Block")

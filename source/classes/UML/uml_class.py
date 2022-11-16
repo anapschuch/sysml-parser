@@ -21,7 +21,7 @@ class Class(Basic):
         self.constraints = []
         self.type = None
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is Port or type(child) is Property:
             self.attributes[child.xmi_id] = child
             self.attribute_names[child.name] = child.xmi_id
@@ -29,7 +29,7 @@ class Class(Basic):
         elif type(child) is Class:
             for attr_id, _ in child.attributes.items():
                 self.children_attributes[attr_id] = child
-            super().add_children(child)
+            super().add_child(child)
         elif type(child) is StateMachine:
             if self.state_machine is not None:
                 raise Exception("Expect at most one state machine in a class")

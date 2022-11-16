@@ -270,7 +270,7 @@ such as the `PrimitiveType`, which stores only a reference to the type.
 The idea is similar to the XML tags: each class can add children and transform them
 into attributes that have some meaning. For example, the code snippet below shows the
 Property class. Note that, in addition to the default attributes, it has other two, `type`
-and `default_value`. The method `add_children` sets these attributes, depending on the
+and `default_value`. The method `add_child` sets these attributes, depending on the
 type of child received. In the case of an unexpected child, an error is thrown.
 
 ```python
@@ -280,7 +280,7 @@ class Property(Basic):
         self.type = None
         self.default_value = None
 
-    def add_children(self, child):
+    def add_child(self, child):
         if type(child) is PrimitiveType:
             self.type = child.type
         elif type(child) is DefaultValue:
@@ -311,7 +311,7 @@ it exists.
 the tag type and xmi type received, an element of one of the classes discussed above
 is created or updated (or noting is done, in case of receiving a tag that is not used
 in the simulation). Children of this tag are parsed recursively, and added in the
-element created (using the `add_children` function mentioned before). This method
+element created (using the `add_child` function mentioned before). This method
 also populates the attributes of the `SysMLParser` class, as discussed in other items.
 
 * `__init__`: method called when the class is created. Receives the path of the file in
